@@ -11,6 +11,21 @@
 |
 */
 
+Route::prefix('yonetim')->as('admin.')->group(function () {
+
+    Route::get('anasayfa', 'Admin\DashboardController@index');
+
+    //region Ayarlar Yolları
+//    Route::get('/ayarlar', 'Admin\SettingController@edit');
+//    Route::post('/ayarlar', 'Admin\SettingController@update');
+    //endregion
+
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
