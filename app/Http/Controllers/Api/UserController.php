@@ -1,22 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Api;
 
-use App\Sector;
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 
-class DashboardController extends Controller
+class UserController extends Controller
 {
-    public function __construct()
-    {
-        $this->page['index'] = 0;
-        $this->page['sub_index'] = 0;
-        $this->page['title'] = 'Kullanıcılar';
-        $this->page['sub_title'] = '';
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -24,9 +17,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        $sectors = Sector::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors]);
+        //
     }
 
     /**
@@ -47,7 +38,17 @@ class DashboardController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User();
+        $user->name = $request->name;
+        $user->surname = $request->surname;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        if ($user->save()){
+            $json['status'] = 1;
+            $json['message'] = "Kayıt başarılı";
+            $json['user'] = $user;
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
     }
 
     /**

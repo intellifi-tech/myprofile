@@ -315,7 +315,6 @@ var Dashboard = function() {
                 });
             }
 
-
             if ($('#site_activities').size() != 0) {
                 //site activities
                 var previousPoint2 = null;

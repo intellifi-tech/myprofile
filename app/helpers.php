@@ -14,6 +14,7 @@ function set_active($path, $active = 'active')
     }
     return Request::is($path) ? $active : '';
 }
+
 function upload_path($folder = null, $file = null)
 {
     $path = 'storage';
@@ -25,14 +26,17 @@ function upload_path($folder = null, $file = null)
     }
     return $path;
 }
+
 function admin_asset($file)
 {
     return asset('admin' . '/' . $file);
 }
+
 function front_asset($file)
 {
     return asset('front' . '/' . $file);
 }
+
 function media_path($folder = null, $file = null)
 {
     if ($folder == 'admin') {
@@ -41,41 +45,48 @@ function media_path($folder = null, $file = null)
         return 'resources/front/images/' . $file;
     }
 }
+
 // Session Message Helpers
 function session_success($text)
 {
     Session::flash('success_message', $text);
 }
+
 function session_error($text)
 {
     Session::flash('error_message', $text);
 }
+
 function session_info($text)
 {
     Session::flash('info_message', $text);
 }
+
 // Api Helpers
 function api_success($data = null)
 {
     return response()->json([
-        'status'  => 'success',
-        'data'    => $data
+        'status' => 'success',
+        'data' => $data
     ]);
 }
+
 function api_error($message)
 {
     return response()->json([
-        'status'    => 'error',
-        'message'   => $message
+        'status' => 'error',
+        'message' => $message
     ]);
 }
+
 function api_fail($data)
 {
     return response()->json([
-        'status'    => 'fail',
-        'data'      => $data
+        'status' => 'fail',
+        'data' => $data
     ]);
 }
+
 // Migration Schema Helpers
 function BaseActions(Illuminate\Database\Schema\Blueprint $table)
 {
@@ -86,6 +97,7 @@ function BaseActions(Illuminate\Database\Schema\Blueprint $table)
     $table->foreign('updated_by')->references('id')->on('users');
     $table->foreign('deleted_by')->references('id')->on('users');
 }
+
 function DropBaseActions(Illuminate\Database\Schema\Blueprint $table)
 {
     $table->dropForeign(['created_by']);
@@ -95,12 +107,14 @@ function DropBaseActions(Illuminate\Database\Schema\Blueprint $table)
     $table->dropColumn('updated_by');
     $table->dropColumn('deleted_by');
 }
+
 function Approval(Illuminate\Database\Schema\Blueprint $table)
 {
     $table->dateTime('approved_at')->nullable();
     $table->integer('approved_by')->unsigned()->nullable();
     $table->foreign('approved_by')->references('id')->on('users');
 }
+
 // String Helpers
 function remove_turkish($string)
 {
@@ -117,29 +131,37 @@ function remove_turkish($string)
     }
     return $string;
 }
+
 function title_case_turkish($string)
 {
     return mb_convert_case(str_replace('i', 'İ', str_replace('I', 'ı', $string)), MB_CASE_TITLE, 'UTF-8');
 }
+
 function upper_case_turkish($string)
 {
     return mb_convert_case(str_replace('i', 'İ', str_replace('ı', 'I', $string)), MB_CASE_UPPER, 'UTF-8');
 }
+
 function lower_case_turkish($string)
 {
     return mb_convert_case(str_replace('İ', 'i', str_replace('I', 'ı', $string)), MB_CASE_LOWER, 'UTF-8');
 }
+
 function clean_text($text)
 {
     return preg_replace("/<([a-z][a-z0-9]*)[^>]*?(\/?)>/i", '<$1$2>', strip_tags($text, '<p><a><br><pre><i><b><u><ul><li><ol><img><blockquote><h1><h2><h3><h4><h5>'));
 }
+
 function make_mobile($mobile)
 {
     return substr(str_replace(['\0', '+', ')', '(', '-', ' ', '\t'], '', $mobile), -10);
 }
-function seo_min($str) {
+
+function seo_min($str)
+{
     return str_replace(['ü', 'Ü', 'ö', 'Ö'], ['u', 'U', 'o', 'O'], $str);
 }
+
 function citiesToSelect($code = false, $placeholder = null)
 {
     $cities = collect();
@@ -233,7 +255,8 @@ function citiesToSelect($code = false, $placeholder = null)
     return $placeholder ? collect(['' => $placeholder])->union($result) : $result;
 }
 
-function youtubeUrlAyristir($url) {
+function youtubeUrlAyristir($url)
+{
     if (strpos($url, 'youtube.com')) {
         $url = explode('v=', $url);
         $url = $url[1];
@@ -245,4 +268,11 @@ function youtubeUrlAyristir($url) {
         $url = explode('?', $url);
         return $url[0];
     }
+}
+
+function jsonTr($json)
+{
+    $sorunlu = array("u00fc","u011f","u0131","u015f","u00e7","u00f6","u00dc","u011e","u0130","u015e","u00c7","u00d6");
+    $duzeltilecek = array("ü","ğ","ı","ş","ç","ö","Ü","Ğ","İ","Ş","Ç","Ö");
+    return str_replace($sorunlu, $duzeltilecek, json_encode($json));
 }

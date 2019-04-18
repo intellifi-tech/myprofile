@@ -3,20 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Sector;
-use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class SectorController extends Controller
 {
     public function __construct()
     {
-        $this->page['index'] = 0;
+        $this->page['index'] = 3;
         $this->page['sub_index'] = 0;
-        $this->page['title'] = 'Kullanıcılar';
+        $this->page['title'] = 'Sektörler';
         $this->page['sub_title'] = '';
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -24,9 +22,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        $sectors = Sector::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors]);
+        $sectors = Sector::orderBy('name', 'ASC')->paginate(15);
+        return view('admin.sector.index', ['page' => $this->page, 'sectors' => $sectors]);
     }
 
     /**
@@ -36,7 +33,8 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        //
+        $this->page['sub_title'] = 'Sektör Ekle';
+        return view('admin.sector.create', ['page' => $this->page]);
     }
 
     /**
@@ -47,7 +45,11 @@ class DashboardController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $sector = new Sector();
+        $sector->name = $request->name;
+        if ($sector->save())
+            session_success($sector->name.' kaydedildi.');
+        return redirect()->action('Admin\SectorController@index');
     }
 
     /**
@@ -69,7 +71,9 @@ class DashboardController extends Controller
      */
     public function edit($id)
     {
-        //
+        $sector = Sector::find($id);
+        $this->page['sub_title'] = $sector->name .' düzenle';
+        return view('admin.sector.edit', ['page' => $this->page, 'sector' => $sector]);
     }
 
     /**
@@ -81,7 +85,11 @@ class DashboardController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $sector = Sector::find($id);
+        $sector->name = $request->name;
+        if ($sector->save())
+            session_success($sector->name.' güncellendi.');
+        return redirect()->action('Admin\SectorController@index');
     }
 
     /**
@@ -92,6 +100,10 @@ class DashboardController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $sector = Sector::find($id);
+        if ($sector->delete())
+            session_success($sector->name.' silindi.');
+        return redirect()->action('Admin\SectorController@index');
+
     }
 }

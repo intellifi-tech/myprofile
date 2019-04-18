@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Sector;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class UserController extends Controller
 {
     public function __construct()
     {
-        $this->page['index'] = 0;
+        $this->page['index'] = 1;
         $this->page['sub_index'] = 0;
         $this->page['title'] = 'Kullanıcılar';
         $this->page['sub_title'] = '';
     }
-
     /**
      * Display a listing of the resource.
      *
@@ -25,8 +23,7 @@ class DashboardController extends Controller
     public function index()
     {
         $users = User::all();
-        $sectors = Sector::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors]);
+        return view('admin.user.index', ['page' => $this->page, 'users' => $users]);
     }
 
     /**
@@ -58,7 +55,9 @@ class DashboardController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+        $this->page['sub_title'] = $user->name.' düzenle';
+        return view('admin.user.show', ['page' => $this->page, 'user' => $user]);
     }
 
     /**
@@ -69,7 +68,9 @@ class DashboardController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        $this->page['sub_title'] = $user->name.' '.$user->surname.' düzenle';
+        return view('admin.user.edit', ['page' => $this->page, 'user' => $user]);
     }
 
     /**
@@ -81,7 +82,18 @@ class DashboardController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->surname = $request->surname;
+        if ($request->status == "on"){
+            $user->status = 1;
+        }else{
+            $user->status = 0;
+        }
+        if ($user->save()){
+            session_success($user->name.' '. $user->surname .' güncellendi.');
+            return redirect()->back();
+        }
     }
 
     /**
