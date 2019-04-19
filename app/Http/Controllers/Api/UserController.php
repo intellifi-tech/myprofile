@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\User;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
 
 class UserController extends Controller
 {
@@ -39,6 +40,27 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $user = new User();
+
+        //region Profil Fotoğrafı Yükleme
+        $path = public_path('uploads/profile/');
+        $profileImage = $request->profile_image;  // your base64 encoded
+        $profileImage = str_replace('data:image/png;base64,', '', $profileImage);
+        $profileImage = str_replace(' ', '+', $profileImage);
+        $profileImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).'.'.'png';
+        \File::put($path. '/' . $profileImageName, base64_decode($profileImage));
+        // endregion
+
+        //region Kapak Fotoğrafı Yükleme
+        $path = public_path('uploads/cover/');
+        $coverImage = $request->cover_image;  // your base64 encoded
+        $coverImage = str_replace('data:image/png;base64,', '', $coverImage);
+        $coverImage = str_replace(' ', '+', $coverImage);
+        $coverImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).'.'.'png';
+        \File::put($path. '/' . $coverImageName, base64_decode($coverImage));
+        // endregion
+
+        $user->profile_photo = $profileImageName;
+        $user->cover_photo = $coverImageName;
         $user->name = $request->name;
         $user->surname = $request->surname;
         $user->email = $request->email;

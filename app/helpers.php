@@ -37,6 +37,11 @@ function front_asset($file)
     return asset('front' . '/' . $file);
 }
 
+function upload_asset($file)
+{
+    return asset('uploads/profile' . '/' . $file);
+}
+
 function media_path($folder = null, $file = null)
 {
     if ($folder == 'admin') {

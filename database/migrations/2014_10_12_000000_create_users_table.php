@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('surname');
             $table->longText('career_history')->nullable();
             $table->longText('short_biography')->nullable();
+            $table->longText('credentials')->nullable();
+            $table->string('date_of_birth')->nullable();
             $table->integer('sector')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
