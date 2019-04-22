@@ -40,11 +40,6 @@
                         </div>
                     @endif
 
-                    <a href="{{ action('Admin\SectorController@create') }}" class="btn btn-primary">
-                        <i class="fa fa-plus"></i> Sektör Ekle
-                    </a>
-                    <br/><br/>
-
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption">
@@ -72,25 +67,25 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @forelse($sectors as $sector)
+                                    @forelse($companies as $company)
                                         <tr>
-                                            <td>{{ $sector->name  }}</td>
-                                            <td class="text-center">{{ $sector->users->count() }}</td>
+                                            <td>{{ $company->name  }}</td>
+                                            <td class="text-center">{{ $company->users->count() }}</td>
                                             <td>
-                                                <a href="{{ action('Admin\SectorController@edit', $sector->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
-                                                <a href="{{ action('Admin\SectorController@destroy', $sector->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
+                                                <a href="{{ action('Admin\CompanyController@edit', $company->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
+                                                <a href="{{ action('Admin\CompanyController@destroy', $company->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
                                             </td>
                                         </tr>
                                     @empty
                                         <tr>
-                                            <td colspan="4" class="text-center">Henüz bir sektör yok.</td>
+                                            <td colspan="4" class="text-center">Henüz bir şirket yok.</td>
                                         </tr>
                                     @endforelse
                                     </tbody>
                                 </table>
                                 <div class="text-center">
 
-                                    {{ $sectors->links() }}
+                                    {{ $companies->links() }}
                                 </div>
                             </div>
                         </div>

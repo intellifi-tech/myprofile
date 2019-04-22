@@ -19,6 +19,10 @@ Route::prefix('yonetim')->as('admin.')->group(function () {
     Route::resource('sector', 'Admin\SectorController');
     Route::get('sector-sil/{id}', 'Admin\SectorController@destroy');
 
+    Route::resource('company', 'Admin\CompanyController');
+
+    Route::resource('event', 'Admin\EventController');
+
     Route::resource('user', 'Admin\UserController');
 });
 //endregion

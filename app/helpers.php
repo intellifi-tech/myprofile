@@ -39,7 +39,7 @@ function front_asset($file)
 
 function upload_asset($file)
 {
-    return asset('uploads/profile' . '/' . $file);
+    return asset('uploads' . '/' . $file);
 }
 
 function media_path($folder = null, $file = null)

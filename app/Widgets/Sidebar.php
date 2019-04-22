@@ -32,8 +32,8 @@ class Sidebar extends AbstractWidget
             3 => new MenuItem('Sektörler', 'fa-list', action('Admin\SectorController@index')),
             4 => new MenuItem('İller', 'fa-list', null),
             5 => new MenuItem('İlçeler', 'fa-list', null),
-            6 => new MenuItem('Şirketler', 'fa-list', null),
-            7 => new MenuItem('Etkinlikler', 'fa-list', null),
+            6 => new MenuItem('Şirketler', 'fa-list', action('Admin\CompanyController@index')),
+            7 => new MenuItem('Etkinlikler', 'fa-list', action('Admin\EventController@index')),
         ];
     }
 }

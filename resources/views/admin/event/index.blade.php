@@ -40,11 +40,6 @@
                         </div>
                     @endif
 
-                    <a href="{{ action('Admin\SectorController@create') }}" class="btn btn-primary">
-                        <i class="fa fa-plus"></i> Sektör Ekle
-                    </a>
-                    <br/><br/>
-
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption">
@@ -65,32 +60,38 @@
                             <div class="table-responsive" style="overflow: hidden">
                                 <table class="table table-striped table-bordered table-hover datatable">
                                     <thead>
-                                    <tr>
-                                        <th>Adı</th>
-                                        <th width="3%"><span class="tooltips" data-placement="top" data-original-title="Bağlantılı Kullanıcı Sayısı" style="cursor: pointer">B.K.S.</span></th>
-                                        <th width="10%">İşlemler</th>
-                                    </tr>
+                                        <tr>
+                                            <th>Adı</th>
+                                            <th>Durumu</th>
+                                            <th>Tarih ve Saat</th>
+                                            <th>Katılımcı Sayısı</th>
+                                            <th width="10%">İşlemler</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    @forelse($sectors as $sector)
+                                    @forelse($events as $event)
                                         <tr>
-                                            <td>{{ $sector->name  }}</td>
-                                            <td class="text-center">{{ $sector->users->count() }}</td>
+                                            <td>{{ $event->name  }}</td>
                                             <td>
-                                                <a href="{{ action('Admin\SectorController@edit', $sector->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
-                                                <a href="{{ action('Admin\SectorController@destroy', $sector->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
+                                                <span class="label label-success">Yakında</span>
+                                            </td>
+                                            <td>{{ $event->activity_date }}</td>
+                                            <td>20</td>
+                                            <td>
+                                                <a href="{{ action('Admin\EventController@edit', $event->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
+                                                <a href="{{ action('Admin\EventController@destroy', $event->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
                                             </td>
                                         </tr>
                                     @empty
                                         <tr>
-                                            <td colspan="4" class="text-center">Henüz bir sektör yok.</td>
+                                            <td colspan="4" class="text-center">Henüz bir etkinlik yok.</td>
                                         </tr>
                                     @endforelse
                                     </tbody>
                                 </table>
                                 <div class="text-center">
 
-                                    {{ $sectors->links() }}
+{{--                                    {{ $companies->links() }}--}}
                                 </div>
                             </div>
                         </div>
