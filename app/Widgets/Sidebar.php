@@ -30,8 +30,8 @@ class Sidebar extends AbstractWidget
             1 => new MenuItem('Kullanıcılar', 'fa-users', action('Admin\UserController@index')),
             2 => new MenuItem('Varlıklar', 'fa-list', null,null, true),
             3 => new MenuItem('Sektörler', 'fa-list', action('Admin\SectorController@index')),
-            4 => new MenuItem('İller', 'fa-list', null),
-            5 => new MenuItem('İlçeler', 'fa-list', null),
+            4 => new MenuItem('İller', 'fa-list', action('Admin\CityController@index')),
+            5 => new MenuItem('İlçeler', 'fa-list', action('Admin\TownController@index')),
             6 => new MenuItem('Şirketler', 'fa-list', action('Admin\CompanyController@index')),
             7 => new MenuItem('Etkinlikler', 'fa-list', action('Admin\EventController@index')),
         ];

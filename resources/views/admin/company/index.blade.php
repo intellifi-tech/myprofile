@@ -73,7 +73,7 @@
                                             <td class="text-center">{{ $company->users->count() }}</td>
                                             <td>
                                                 <a href="{{ action('Admin\CompanyController@edit', $company->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
-                                                <a href="{{ action('Admin\CompanyController@destroy', $company->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
+{{--                                                <a href="{{ action('Admin\CompanyController@destroy', $company->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>--}}
                                             </td>
                                         </tr>
                                     @empty

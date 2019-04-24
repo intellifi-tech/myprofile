@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Company;
+use App\City;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class CompanyController extends Controller
+class CityController extends Controller
 {
     public function __construct()
     {
-        $this->page['index'] = 6;
+        $this->page['index'] = 4;
         $this->page['sub_index'] = 0;
-        $this->page['title'] = 'Şirketler';
+        $this->page['title'] = 'İller';
         $this->page['sub_title'] = '';
     }
     /**
@@ -22,8 +22,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $companies = Company::orderBy('name', 'ASC')->paginate(15);
-        return view('admin.company.index', ['page' => $this->page, 'companies' => $companies]);
+        $cities = City::orderBy('name', 'ASC')->paginate(15);
+        return view('admin.city.index', ['page' => $this->page, 'cities' => $cities]);
     }
 
     /**
@@ -66,9 +66,9 @@ class CompanyController extends Controller
      */
     public function edit($id)
     {
-        $company = Company::find($id);
-        $this->page['sub_title'] = $company->name . ' düzenle';
-        return view('admin.company.edit', ['page' => $this->page, 'company' => $company]);
+        $city = City::find($id);
+        $this->page['sub_title'] = $city->name.' düzenle';
+        return view('admin.city.edit', ['page' => $this->page, 'city' => $city]);
     }
 
     /**
@@ -80,12 +80,13 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $company = Company::find($id);
-        $company->name = $request->name;
-        if ($company->save()){
-            session_success($company->name.' güncellendi.');
-            return redirect()->action('Admin\CompanyController@index');
+        $city = City::find($id);
+        $city->name = $request->name;
+        if ($city->save()){
+            session_success($city->name.' ili güncellendi.');
+            return redirect()->action('Admin\CityController@index');
         }
+
     }
 
     /**

@@ -78,7 +78,7 @@
                                             <td class="text-center">{{ $sector->users->count() }}</td>
                                             <td>
                                                 <a href="{{ action('Admin\SectorController@edit', $sector->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
-                                                <a href="{{ action('Admin\SectorController@destroy', $sector->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>
+{{--                                                <a href="{{ action('Admin\SectorController@destroy', $sector->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>--}}
                                             </td>
                                         </tr>
                                     @empty

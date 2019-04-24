@@ -24,6 +24,10 @@ Route::prefix('yonetim')->as('admin.')->group(function () {
     Route::resource('event', 'Admin\EventController');
 
     Route::resource('user', 'Admin\UserController');
+
+    Route::resource('city', 'Admin\CityController');
+
+    Route::resource('town', 'Admin\TownController');
 });
 //endregion
 

@@ -66,7 +66,9 @@ class EventController extends Controller
      */
     public function edit($id)
     {
-        //
+        $event = Event::find($id);
+        $this->page['sub_title'] = $event->name . ' düzenle';
+        return view('admin.event.edit', ['page' => $this->page, 'event' => $event]);
     }
 
     /**
@@ -78,7 +80,13 @@ class EventController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $event = Event::find($id);
+        $event->name = $request->name;
+        $event->activity_date = $request->activity_date;
+        if ($event->save()){
+            session_success($event->name.' güncellendi.');
+            return redirect()->action('Admin\EventController@index');
+        }
     }
 
     /**
