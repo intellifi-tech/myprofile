@@ -50,36 +50,6 @@
         }
       }
     },
-    "/user/store": {
-      "post": {
-        "tags": [
-          "user"
-        ],
-        "summary": "Yeni kullanıcı ekle",
-        "description": "",
-        "operationId": "storeUser",
-        "produces": [
-          "application/xml",
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Kullanıcı alanları",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/User"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": "successful operation"
-          }
-        }
-      }
-    },
     "/user/show/{id}": {
       "get": {
         "tags": [
