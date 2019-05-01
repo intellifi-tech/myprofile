@@ -181,30 +181,44 @@
         }
       }
     },
-    "/user/login": {
-      "get": {
+    "/user/register": {
+      "post": {
         "tags": [
           "user"
         ],
-        "summary": "Logs user into the system",
+        "summary": "Kullanıcı kayıt",
         "description": "",
-        "operationId": "loginUser",
+        "operationId": "registerUser",
         "produces": [
           "application/xml",
           "application/json"
         ],
         "parameters": [
           {
-            "name": "username",
+            "name": "name",
             "in": "query",
-            "description": "The user name for login",
+            "description": "Adı",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "surname",
+            "in": "query",
+            "description": "Soyadı",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Kullanıcı email adresi.",
             "required": true,
             "type": "string"
           },
           {
             "name": "password",
             "in": "query",
-            "description": "The password for login in clear text",
+            "description": "Kullanıcı şifresi.",
             "required": true,
             "type": "string"
           }
@@ -234,22 +248,55 @@
         }
       }
     },
-    "/user/logout": {
-      "get": {
+    "/user/login": {
+      "post": {
         "tags": [
           "user"
         ],
-        "summary": "Logs out current logged in user session",
+        "summary": "Kullanıcı girişi",
         "description": "",
-        "operationId": "logoutUser",
+        "operationId": "loginUser",
         "produces": [
           "application/xml",
           "application/json"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Kullanıcı email adresi.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "Kullanıcı şifresi.",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
-          "default": {
-            "description": "successful operation"
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "string"
+            },
+            "headers": {
+              "X-Rate-Limit": {
+                "type": "integer",
+                "format": "int32",
+                "description": "calls per hour allowed by the user"
+              },
+              "X-Expires-After": {
+                "type": "string",
+                "format": "date-time",
+                "description": "date in UTC when token expires"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
           }
         }
       }

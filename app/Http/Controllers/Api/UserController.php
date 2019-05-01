@@ -119,4 +119,50 @@ class UserController extends Controller
     {
         //
     }
+
+    public function register(Request $request)
+    {
+        if ($request->name && $request->surname && $request->email && $request->password) {
+            $user = new User();
+            $user->name = $request->name;
+            $user->surname = $request->surname;
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+            $user->api_token = Str::random(60);
+            if ($user->save()){
+                $json['status'] = 1;
+                $json['message'] = "Kullanıcı oluşturuldu.";
+                $json['user'] = $user;
+                $json['api_token'] = $user->api_token;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        }else{
+            $json['status'] = 0;
+            $json['message'] = "Adı, Soyadı, E-Mail ve Şifre zorunludur.";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function login(Request $request)
+    {
+        if ($request->email && $request->password){
+            $user = User::where('email', $request->email)->first();
+            $check = Hash::check($request->password, $user->password);
+            if ($check == false){
+                $json['status'] = 0;
+                $json['message'] = "Giriş başarısız.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }else{
+                $json['status'] = 1;
+                $json['message'] = "Giriş başarılı.";
+                $json['user'] = $user;
+                $json['api_token'] = $user->api_token;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        }else{
+            $json['status'] = 0;
+            $json['message'] = "Kullanıcı adı ve şifre zorunludur.";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
