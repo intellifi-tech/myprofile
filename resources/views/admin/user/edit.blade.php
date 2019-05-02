@@ -5,7 +5,8 @@
 @endsection
 
 @section('css')
-    <link href="{{ admin_asset('pages/css/profile.min.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ admin_asset('pages/css/profile.min.css') }}" rel="stylesheet" type="text/css"/>
+<link href="{{ admin_asset('pages/css/pricing.min.css') }}" rel="stylesheet" type="text/css"/>
 @stop
 
 @section('content')
@@ -65,6 +66,9 @@
                                             </li>
                                             <li>
                                                 <a href="#tab_1_4" data-toggle="tab">Privacy Settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab_1_5" data-toggle="tab">Abonelik Ayarı</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -224,6 +228,135 @@
                                                         <a href="javascript:;" class="btn default"> Cancel </a>
                                                     </div>
                                                 </form>
+                                            </div>
+                                            <!-- END PRIVACY SETTINGS TAB -->
+                                            <!-- PRIVACY SETTINGS TAB -->
+                                            <div class="tab-pane" id="tab_1_5">
+                                                <div class="pricing-content-1">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="price-column-container border-active">
+                                                                <div class="price-table-head bg-blue">
+                                                                    <h2 class="no-margin">1. Paket</h2>
+                                                                </div>
+                                                                <div class="arrow-down border-top-blue"></div>
+                                                                <div class="price-table-pricing">
+                                                                    <h3>
+                                                                        <sup class="price-sign">₺</sup>24</h3>
+                                                                    <p>aylık</p>
+                                                                    @if($user->package == 1)
+                                                                        <div class="price-ribbon">Aktif</div>
+                                                                    @endif
+                                                                </div>
+                                                                <div class="price-table-content">
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-user-follow"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">1. Özellik</div>
+                                                                    </div>
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-drawer"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">2. Özellik</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="price-column-container border-active">
+                                                                <div class="price-table-head bg-red">
+                                                                    <h2 class="no-margin">2. Paket</h2>
+                                                                </div>
+                                                                <div class="arrow-down border-top-red"></div>
+                                                                <div class="price-table-pricing">
+                                                                    <h3>
+                                                                        <sup class="price-sign">₺</sup>39</h3>
+                                                                    <p>aylık</p>
+                                                                    @if($user->package == 2)
+                                                                        <div class="price-ribbon">Aktif</div>
+                                                                    @endif
+                                                                </div>
+                                                                <div class="price-table-content">
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-user-follow"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">1. Özellik</div>
+                                                                    </div>
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-drawer"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">2. Özellik</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="price-column-container border-active">
+                                                                <div class="price-table-head bg-green">
+                                                                    <h2 class="no-margin">3. Paket</h2>
+                                                                </div>
+                                                                <div class="arrow-down border-top-green"></div>
+                                                                <div class="price-table-pricing">
+                                                                    <h3>
+                                                                        <sup class="price-sign">₺</sup>59</h3>
+                                                                    <p>aylık</p>
+                                                                    @if($user->package == 3)
+                                                                        <div class="price-ribbon">Aktif</div>
+                                                                    @endif
+                                                                </div>
+                                                                <div class="price-table-content">
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-user-follow"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">1. Özellik</div>
+                                                                    </div>
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-drawer"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">2. Özellik</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="price-column-container border-active">
+                                                                <div class="price-table-head bg-purple">
+                                                                    <h2 class="no-margin">4. Paket</h2>
+                                                                </div>
+                                                                <div class="arrow-down border-top-purple"></div>
+                                                                <div class="price-table-pricing">
+                                                                    <h3>
+                                                                        <sup class="price-sign">₺</sup>128
+                                                                    </h3>
+                                                                    <p>aylık</p>
+                                                                    @if($user->package == 4)
+                                                                        <div class="price-ribbon">Aktif</div>
+                                                                    @endif
+                                                                </div>
+                                                                <div class="price-table-content">
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-user-follow"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">1. Özellik</div>
+                                                                    </div>
+                                                                    <div class="row mobile-padding">
+                                                                        <div class="col-xs-3 text-right mobile-padding">
+                                                                            <i class="icon-drawer"></i>
+                                                                        </div>
+                                                                        <div class="col-xs-9 text-left mobile-padding">2. Özellik</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!-- END PRIVACY SETTINGS TAB -->
                                         </div>

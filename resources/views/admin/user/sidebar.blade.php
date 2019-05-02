@@ -1,6 +1,8 @@
 <div class="profile-sidebar">
+
     <!-- PORTLET MAIN -->
     <div class="portlet light profile-sidebar-portlet bordered">
+
         <!-- SIDEBAR USERPIC -->
         <div class="profile-userpic">
             <img src="{{ upload_asset('profile/' . $user->profile_photo)  }}" class="img-responsive" alt="">
@@ -31,6 +33,18 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mt-widget-1">
+            <div class="mt-stats">
+                <div class="btn-group btn-group btn-group-justified">
+                    <a href="javascript:;" class="btn font-red">
+                        <i class="icon-bubbles"></i> 1,7k </a>
+                    <a href="javascript:;" class="btn font-green">
+                        <i class="icon-social-twitter"></i> 2,6k </a>
+                    <a href="javascript:;" class="btn font-yellow">
+                        <i class="icon-emoticon-smile"></i> 3,7k </a>
+                </div>
+            </div>
         </div>
         <!-- END MENU -->
     </div>
