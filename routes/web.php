@@ -12,7 +12,7 @@
 */
 
 //region Yönetim Yolları
-Route::prefix('yonetim')->as('admin.')->group(function () {
+Route::middleware('auth')->prefix('yonetim')->as('admin.')->group(function () {
 
     Route::get('anasayfa', 'Admin\DashboardController@index');
 

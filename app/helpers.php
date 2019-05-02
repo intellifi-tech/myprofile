@@ -1,5 +1,6 @@
 <?php
 // General Helpers
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 function set_active($path, $active = 'active')
@@ -280,4 +281,9 @@ function jsonTr($json)
     $sorunlu = array("u00fc","u011f","u0131","u015f","u00e7","u00f6","u00dc","u011e","u0130","u015e","u00c7","u00d6");
     $duzeltilecek = array("ü","ğ","ı","ş","ç","ö","Ü","Ğ","İ","Ş","Ç","Ö");
     return str_replace($sorunlu, $duzeltilecek, json_encode($json));
+}
+
+function getNameSurname()
+{
+    return Auth::user()->name . ' ' . Auth::user()->surname;
 }
