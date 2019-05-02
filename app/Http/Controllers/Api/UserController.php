@@ -49,9 +49,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($api_token)
     {
-        $user = User::find($id);
+        $user = User::where('api_token', $api_token)->first();
         return response()->json($user);
     }
 
@@ -73,9 +73,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $api_token)
     {
-        $user = User::find($id);
+        $user = User::where('api_token', $api_token)->first();
 
         //region Profil Fotoğrafı Yükleme
         $path = public_path('uploads/profile/');

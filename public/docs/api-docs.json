@@ -50,7 +50,7 @@
         }
       }
     },
-    "/user/show/{id}": {
+    "/user/show/{api_token}": {
       "get": {
         "tags": [
           "user"
@@ -64,7 +64,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "api_token",
             "in": "path",
             "required": true,
             "type": "string"
@@ -86,7 +86,7 @@
         }
       }
     },
-    "/user/update/{id}": {
+    "/user/update/{api_token}": {
       "put": {
         "tags": [
           "user"
@@ -100,7 +100,7 @@
         "parameters": [
           {
             "in": "path",
-            "name": "id",
+            "name": "api_token",
             "required": true,
             "schema": {
               "$ref": "#/definitions/User"
@@ -109,36 +109,6 @@
           {
             "in": "path",
             "name": "type",
-            "schema": {
-              "$ref": "#/definitions/User"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": "successful operation"
-          }
-        }
-      }
-    },
-    "/user/destroy/{id}": {
-      "delete": {
-        "tags": [
-          "user"
-        ],
-        "summary": "Kulanıcı sil",
-        "description": "",
-        "operationId": "deleteUser",
-        "produces": [
-          "application/xml",
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "id",
-            "description": "Kullanıcı alanları",
-            "required": true,
             "schema": {
               "$ref": "#/definitions/User"
             }
