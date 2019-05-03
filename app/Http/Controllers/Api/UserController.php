@@ -149,7 +149,7 @@ class UserController extends Controller
         if ($request->email && $request->password){
             $user = User::where([
                 ['email', $request->email],
-                ['type', '==' ,1]
+                ['type', 1]
             ])->first();
             dd($user);
             if ($user){
