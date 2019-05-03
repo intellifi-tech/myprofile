@@ -42,6 +42,31 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2019-05-02 11:31:35',
                 'updated_at' => '2019-05-02 11:31:35',
             ),
+            1 => 
+            array (
+                'id' => 2,
+                'type' => 0,
+                'profile_photo' => NULL,
+                'cover_photo' => NULL,
+                'title' => NULL,
+                'name' => 'MyProfile',
+                'surname' => 'MyProfile',
+                'career_history' => NULL,
+                'short_biography' => NULL,
+                'credentials' => NULL,
+                'date_of_birth' => NULL,
+                'company_id' => NULL,
+                'sector_id' => NULL,
+                'email' => 'demo@myprofile.com',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$kHWZaspPfh2ZkcaNQVEdDuas/uVqyO3QkHxzj/UJERUms71z.eAfu',
+                'api_token' => 'Qh6aZ325SG5FBBiAAHlOQkuDfh8kKXGQOw7BTLO7fl09MAQNlR7DEOjWTmWo',
+                'status' => 1,
+                'package' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2019-05-03 11:18:54',
+                'updated_at' => '2019-05-03 11:18:54',
+            ),
         ));
         
         
