@@ -202,18 +202,13 @@
         ],
         "parameters": [
           {
-            "name": "email",
-            "in": "query",
-            "description": "Kullanıcı email adresi.",
+            "name": "body",
+            "in": "body",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "password",
-            "in": "query",
-            "description": "Kullanıcı şifresi.",
-            "required": true,
-            "type": "string"
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
           }
         ],
         "responses": {
