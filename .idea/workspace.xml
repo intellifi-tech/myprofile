@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-    </list>
+    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,44 +13,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="152" column="36" lean-forward="true" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
+            <state relative-caret-position="827">
+              <caret line="151" column="33" lean-forward="true" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
               <folding>
                 <element signature="e#44#57#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1031">
-              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-              <folding>
-                <element signature="e#45#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -350,18 +318,18 @@
       <workItem from="1556716038398" duration="6663000" />
       <workItem from="1556788181543" duration="1237000" />
       <workItem from="1556807799407" duration="142000" />
-      <workItem from="1556872371659" duration="1673000" />
+      <workItem from="1556872371659" duration="2029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139829000" />
+    <option name="totallyTimeSpent" value="140185000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12480127" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12480127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -724,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="152" column="36" lean-forward="true" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
-          <folding>
-            <element signature="e#44#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -761,6 +719,16 @@
           <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="151" column="33" lean-forward="true" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+          <folding>
+            <element signature="e#44#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
