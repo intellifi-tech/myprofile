@@ -372,17 +372,19 @@
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    map.scrollWheelZoom.disable();
+
     var LeafIcon = L.Icon.extend({
         options: {
-            iconSize:     [38, 95],
-            shadowSize:   [50, 64],
-            iconAnchor:   [22, 94],
+            iconSize:     [38, 60],
+            shadowSize:   [50, 34],
+            iconAnchor:   [22, 55],
             shadowAnchor: [4, 62],
             popupAnchor:  [-3, -76]
         }
     });
 
-    var greenIcon = new LeafIcon({iconUrl: 'https://leafletjs.com/examples/custom-icons/leaf-red.png'});
+    var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
 
     L.marker([41.0322435, 29.0275606], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map);
     L.marker([41.0403672, 28.9132088], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map);
