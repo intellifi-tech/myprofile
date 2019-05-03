@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -26,7 +27,9 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/yonetim/anasayfa';
+    protected $redirectToAdmin = '/yonetim/anasayfa';
+
+    protected $redirectToLogin = '/login';
 
     /**
      * Create a new controller instance.
@@ -45,5 +48,23 @@ class LoginController extends Controller
         $request->session()->invalidate();
 
         return $this->loggedOut($request) ?: redirect('/login');
+    }
+
+    public function redirectPath()
+    {
+        /*
+         * 0 = Admin
+         * 1 = User
+         *
+         */
+
+        if(Auth::user()->type = 0){
+            return $this->redirectToAdmin;
+        }elseif (Auth::user()->type = 1){
+            return $this->redirectToLogin;
+        }
+
+
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/login';
     }
 }
