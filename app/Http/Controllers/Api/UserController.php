@@ -148,16 +148,22 @@ class UserController extends Controller
     {
         if ($request->email && $request->password){
             $user = User::where('email', $request->email)->where('type', 1)->first();
-            $check = Hash::check($request->password, $user->password);
-            if ($check == false){
+            if ($user){
+                $check = Hash::check($request->password, $user->password);
+                if ($check == false){
+                    $json['status'] = 0;
+                    $json['message'] = "Giriş başarısız.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    $json['status'] = 1;
+                    $json['message'] = "Giriş başarılı.";
+                    $json['user'] = $user;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            }else{
                 $json['status'] = 0;
                 $json['message'] = "Giriş başarısız.";
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-            }else{
-                $json['status'] = 1;
-                $json['message'] = "Giriş başarılı.";
-                $json['user'] = $user;
-                $json['api_token'] = $user->api_token;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
