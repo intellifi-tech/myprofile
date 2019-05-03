@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,51 +12,7 @@
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
-              <folding>
-                <element signature="e#2813#2855#0#HTML" expanded="true" />
-                <element signature="e#3186#3205#0#HTML" expanded="true" />
-                <element signature="e#5020#5038#0#HTML" expanded="true" />
-                <element signature="e#8019#8039#0#HTML" expanded="true" />
-                <element signature="e#18331#18388#0#HTML" expanded="true" />
-                <element signature="e#78811#78844#0#HTML" expanded="true" />
-                <element signature="e#11583#11636#0#HTML" expanded="true" />
-                <element signature="e#15818#15860#0#HTML" expanded="true" />
-                <element signature="e#16106#16124#0#HTML" expanded="true" />
-                <element signature="e#18172#18190#0#HTML" expanded="true" />
-                <element signature="e#20238#20256#0#HTML" expanded="true" />
-                <element signature="e#22304#22322#0#HTML" expanded="true" />
-                <element signature="e#24370#24388#0#HTML" expanded="true" />
-                <element signature="e#26436#26454#0#HTML" expanded="true" />
-                <element signature="e#28502#28520#0#HTML" expanded="true" />
-                <element signature="e#30568#30586#0#HTML" expanded="true" />
-                <element signature="e#32634#32652#0#HTML" expanded="true" />
-                <element signature="e#34700#34718#0#HTML" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="370" selection-start-line="370" selection-end-line="401" selection-end-column="9" />
-              <folding>
-                <element signature="e#4117#11311#0#HTML" />
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,7 +23,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>delete</find>
       <find>Update user</find>
       <find>updateUser</find>
       <find>/definitions/Pet</find>
@@ -99,6 +52,7 @@
       <find>user-ma</find>
       <find>user-map</find>
       <find>Tamamlanan</find>
+      <find>Kullanıcı</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -343,12 +297,12 @@
       <workItem from="1556716038398" duration="6663000" />
       <workItem from="1556788181543" duration="1237000" />
       <workItem from="1556807799407" duration="142000" />
-      <workItem from="1556872371659" duration="9012000" />
+      <workItem from="1556872371659" duration="9312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147168000" />
+    <option name="totallyTimeSpent" value="147468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -744,21 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="370" selection-start-line="370" selection-end-line="401" selection-end-column="9" />
-          <folding>
-            <element signature="e#4117#11311#0#HTML" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="226" column="62" selection-start-line="226" selection-start-column="62" selection-end-line="226" selection-end-column="62" />
+        <state relative-caret-position="415">
+          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
           <folding>
             <element signature="e#2813#2855#0#HTML" expanded="true" />
             <element signature="e#3186#3205#0#HTML" expanded="true" />
@@ -778,6 +721,17 @@
             <element signature="e#30568#30586#0#HTML" expanded="true" />
             <element signature="e#32634#32652#0#HTML" expanded="true" />
             <element signature="e#34700#34718#0#HTML" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="370" selection-start-line="370" selection-end-line="401" selection-end-column="9" />
+          <folding>
+            <element signature="e#4117#11311#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
