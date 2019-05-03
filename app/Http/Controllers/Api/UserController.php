@@ -124,6 +124,7 @@ class UserController extends Controller
     {
         if ($request->name && $request->surname && $request->email && $request->password) {
             $user = new User();
+            $user->type = 0;
             $user->name = $request->name;
             $user->surname = $request->surname;
             $user->email = $request->email;
@@ -146,7 +147,7 @@ class UserController extends Controller
     public function login(Request $request)
     {
         if ($request->email && $request->password){
-            $user = User::where('email', $request->email)->first();
+            $user = User::where('email', $request->email)->where('type', 1)->first();
             $check = Hash::check($request->password, $user->password);
             if ($check == false){
                 $json['status'] = 0;
