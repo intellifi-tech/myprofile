@@ -151,7 +151,6 @@ class UserController extends Controller
                 ['email', $request->email],
                 ['type', 1]
             ])->first();
-            dd($user);
             if ($user){
                 $check = Hash::check($request->password, $user->password);
                 if ($check == false){
