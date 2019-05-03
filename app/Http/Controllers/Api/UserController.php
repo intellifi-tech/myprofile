@@ -152,7 +152,7 @@ class UserController extends Controller
                 $check = Hash::check($request->password, $user->password);
                 if ($check == false){
                     $json['status'] = 0;
-                    $json['message'] = "Giriş başarısız.";
+                    $json['message'] = "Giriş başarısız. Şifre yanlış.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     $json['status'] = 1;
@@ -163,12 +163,12 @@ class UserController extends Controller
                 }
             }else{
                 $json['status'] = 0;
-                $json['message'] = "Giriş başarısız.";
+                $json['message'] = "Giriş başarısız. Böyle bir kullanıcı yok.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
             $json['status'] = 0;
-            $json['message'] = "Kullanıcı adı ve şifre zorunludur.";
+            $json['message'] = "Kullanıcı adı ve şifre boş olamaz.";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
