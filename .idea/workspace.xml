@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +16,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="229" column="96" selection-start-line="229" selection-start-column="96" selection-end-line="229" selection-end-column="96" />
+              <folding>
+                <element signature="e#2813#2855#0#HTML" expanded="true" />
+                <element signature="e#5020#5038#0#HTML" expanded="true" />
+                <element signature="e#78811#78844#0#HTML" expanded="true" />
+                <element signature="e#11583#11636#0#HTML" expanded="true" />
+                <element signature="e#15818#15860#0#HTML" expanded="true" />
+                <element signature="e#16106#16124#0#HTML" expanded="true" />
+                <element signature="e#18172#18190#0#HTML" expanded="true" />
+                <element signature="e#20238#20256#0#HTML" expanded="true" />
+                <element signature="e#22304#22322#0#HTML" expanded="true" />
+                <element signature="e#24370#24388#0#HTML" expanded="true" />
+                <element signature="e#26436#26454#0#HTML" expanded="true" />
+                <element signature="e#28502#28520#0#HTML" expanded="true" />
+                <element signature="e#30568#30586#0#HTML" expanded="true" />
+                <element signature="e#32634#32652#0#HTML" expanded="true" />
+                <element signature="e#34700#34718#0#HTML" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="370" selection-start-line="370" selection-end-line="401" selection-end-column="9" />
+              <folding>
+                <element signature="e#4117#11311#0#HTML" />
+                <element signature="e#0#6#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -31,22 +66,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Online Kull</find>
-      <find>online-user-maps</find>
-      <find>Online Kullanıcı Sa</find>
-      <find>Kullanıcı</find>
-      <find>Etkin</find>
-      <find>Etkinlik İst</find>
-      <find>View</find>
-      <find>Middleware\CreateFreshApiToken</find>
-      <find>versi</find>
-      <find>Add a new pet to the store</find>
-      <find>Models</find>
-      <find>Order</find>
-      <find>id</find>
-      <find>pet</find>
-      <find>username</find>
-      <find>Created user object</find>
       <find>in</find>
       <find>delete</find>
       <find>Update user</find>
@@ -61,6 +80,22 @@
       <find>dropdown dropdown-extended dropdown-notification dropdown-dark</find>
       <find>home</find>
       <find>/home</find>
+      <find>Activity</find>
+      <find>Etkinl</find>
+      <find>Kullanı</find>
+      <find>Etkinlik</find>
+      <find>Kullanıcı Etkinlik</find>
+      <find>Custome</find>
+      <find>Feeds</find>
+      <find>Customer</find>
+      <find>Feed</find>
+      <find>Task</find>
+      <find>Timeline</find>
+      <find>Deste</find>
+      <find>Zaman T</find>
+      <find>gmap_polygons</find>
+      <find>user-ma</find>
+      <find>user-map</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -76,14 +111,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Company.php" />
         <option value="$PROJECT_DIR$/app/Event.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php" />
         <option value="$PROJECT_DIR$/public/admin/global/plugins/leaflet/leaflet.js" />
         <option value="$PROJECT_DIR$/public/admin/global/plugins/leaflet/Leaflet.fullscreen.js" />
         <option value="$PROJECT_DIR$/public/geojson.js" />
         <option value="$PROJECT_DIR$/storage/framework/views/c754fad0666c00c46761a2a4c21717cdec0e36f3.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/CitiesTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_22_154731_create_towns_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/TownsTableSeeder.php" />
@@ -127,6 +160,8 @@
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
       </list>
     </option>
   </component>
@@ -305,12 +340,12 @@
       <workItem from="1556716038398" duration="6663000" />
       <workItem from="1556788181543" duration="1237000" />
       <workItem from="1556807799407" duration="142000" />
-      <workItem from="1556872371659" duration="5354000" />
+      <workItem from="1556872371659" duration="7715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143510000" />
+    <option name="totallyTimeSpent" value="145871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -583,9 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Widgets/Sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -711,7 +743,40 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="370" selection-start-line="370" selection-end-line="401" selection-end-column="9" />
+          <folding>
+            <element signature="e#4117#11311#0#HTML" />
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="229" column="96" selection-start-line="229" selection-start-column="96" selection-end-line="229" selection-end-column="96" />
+          <folding>
+            <element signature="e#2813#2855#0#HTML" expanded="true" />
+            <element signature="e#5020#5038#0#HTML" expanded="true" />
+            <element signature="e#78811#78844#0#HTML" expanded="true" />
+            <element signature="e#11583#11636#0#HTML" expanded="true" />
+            <element signature="e#15818#15860#0#HTML" expanded="true" />
+            <element signature="e#16106#16124#0#HTML" expanded="true" />
+            <element signature="e#18172#18190#0#HTML" expanded="true" />
+            <element signature="e#20238#20256#0#HTML" expanded="true" />
+            <element signature="e#22304#22322#0#HTML" expanded="true" />
+            <element signature="e#24370#24388#0#HTML" expanded="true" />
+            <element signature="e#26436#26454#0#HTML" expanded="true" />
+            <element signature="e#28502#28520#0#HTML" expanded="true" />
+            <element signature="e#30568#30586#0#HTML" expanded="true" />
+            <element signature="e#32634#32652#0#HTML" expanded="true" />
+            <element signature="e#34700#34718#0#HTML" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
