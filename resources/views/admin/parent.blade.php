@@ -14,7 +14,7 @@
     <meta content="Preview page of Metronic Admin Theme #4 for statistics, charts, recent events and reports" name="description" />
     <meta content="" name="author" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link href="{{ admin_asset('global/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ admin_asset('global/plugins/simple-line-icons/simple-line-icons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ admin_asset('global/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -47,7 +47,7 @@
     <div class="page-header-inner ">
         <!-- BEGIN LOGO -->
         <div class="page-logo">
-            <a href="index.html" style="margin-top: 13px">
+            <a href="{{ action('Admin\DashboardController@index') }}" style="margin-top: 13px">
 {{--                <img src="{{ admin_asset('layouts/layout4/img/logo-light.png') }}" alt="logo" class="logo-default" />--}}
                 <span style="color: white; font-size: xx-large">MyProfile</span>
             </a>
