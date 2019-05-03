@@ -71,10 +71,20 @@ License: You must have a valid license purchased only from themeforest(the above
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label class="control-label">E-Posta Adresi</label>
             <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" autocomplete="off" required autofocus>
+            @if ($errors->has('email'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
         </div>
         <div class="form-group">
             <label class="control-label">Şifre</label>
             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" autocomplete="off" required>
+            @if ($errors->has('password'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
         </div>
         <div class="form-actions text-center">
             <button type="submit" class="btn green uppercase"><i class="fa fa-sign-in"></i> Giriş Yap</button>
