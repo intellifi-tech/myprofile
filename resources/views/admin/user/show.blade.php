@@ -63,7 +63,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="portlet-body" style="height: 473px; overflow-y: scroll;">
+                                    <div class="portlet-body" style="height: 469px; overflow-y: scroll;">
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab_actions_pending">
                                             @for($i = 0; $i < 50; $i++)
