@@ -89,12 +89,6 @@
                                                                         <span class="mt-action-dot bg-green"></span>
                                                                         <span class="mt=action-time">9:30-13:00</span>
                                                                     </div>
-                                                                    <div class="mt-action-buttons" style="width: 22%">
-                                                                        <div class="btn-group btn-group-circle">
-                                                                            <button type="button" class="btn btn-outline green btn-sm active">Katıldı</button>
-                                                                            <button type="button" class="btn btn-outline red btn-sm">Katılmadı</button>
-                                                                        </div>
-                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -125,12 +119,6 @@
                                                                         <span class="mt-action-date">20 Ekim</span>
                                                                         <span class="mt-action-dot bg-red"></span>
                                                                         <span class="mt=action-time">9:30-13:00</span>
-                                                                    </div>
-                                                                    <div class="mt-action-buttons" style="width: 22%">
-                                                                        <div class="btn-group btn-group-circle">
-                                                                            <button type="button" class="btn btn-outline green btn-sm">Katıldı</button>
-                                                                            <button type="button" class="btn btn-outline red btn-sm active">Katılmadı</button>
-                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
