@@ -162,28 +162,6 @@
                                                             <a href="javascript:;" class="timeline-body-title font-blue-madison">Lisa Strong</a>
                                                             <span class="timeline-body-time font-grey-cascade">Replied at 17:45 PM</span>
                                                         </div>
-                                                        <div class="timeline-body-head-actions">
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-circle green btn-outline btn-sm dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu pull-right" role="menu">
-                                                                    <li>
-                                                                        <a href="javascript:;">Action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Another action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Something else here </a>
-                                                                    </li>
-                                                                    <li class="divider"></li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Separated link </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     <div class="timeline-body-content">
                                                                 <span class="font-grey-cascade"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit laoreet dolore magna aliquam erat volutpat. Ut wisi enim
@@ -202,28 +180,6 @@
                                                         <div class="timeline-body-head-caption">
                                                             <a href="javascript:;" class="timeline-body-title font-blue-madison">Paul Kiton</a>
                                                             <span class="timeline-body-time font-grey-cascade">Added office location at 2:50 PM</span>
-                                                        </div>
-                                                        <div class="timeline-body-head-actions">
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-circle red btn-sm dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu pull-right" role="menu">
-                                                                    <li>
-                                                                        <a href="javascript:;">Action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Another action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Something else here </a>
-                                                                    </li>
-                                                                    <li class="divider"></li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Separated link </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="timeline-body-content">
@@ -245,30 +201,6 @@
                                                         <div class="timeline-body-head-caption">
                                                             <span class="timeline-body-alerttitle font-red-intense">You have new follower</span>
                                                             <span class="timeline-body-time font-grey-cascade">at 11:00 PM</span>
-                                                        </div>
-                                                        <div class="timeline-body-head-actions">
-                                                            <div class="btn-group">
-                                                                <button class="btn btn-circle green btn-outline
-
-                                        btn-sm dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu pull-right" role="menu">
-                                                                    <li>
-                                                                        <a href="javascript:;">Action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Another action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Something else here </a>
-                                                                    </li>
-                                                                    <li class="divider"></li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Separated link </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="timeline-body-content">
@@ -293,33 +225,11 @@
                                                             <span class="timeline-body-alerttitle font-green-haze">Server Report</span>
                                                             <span class="timeline-body-time font-grey-cascade">Yesterday at 11:00 PM</span>
                                                         </div>
-                                                        <div class="timeline-body-head-actions">
-                                                            <div class="btn-group dropup">
-                                                                <button class="btn btn-circle red btn-sm dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> Actions
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </button>
-                                                                <ul class="dropdown-menu pull-right" role="menu">
-                                                                    <li>
-                                                                        <a href="javascript:;">Action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Another action </a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Something else here </a>
-                                                                    </li>
-                                                                    <li class="divider"></li>
-                                                                    <li>
-                                                                        <a href="javascript:;">Separated link </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                     <div class="timeline-body-content">
-                                                                <span class="font-grey-cascade"> Lorem ipsum dolore sit amet
-                                                                    <a href="javascript:;">Ispect</a>
-                                                                </span>
+                                                        <span class="font-grey-cascade"> Lorem ipsum dolore sit amet
+                                                            <a href="javascript:;">Ispect</a>
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
