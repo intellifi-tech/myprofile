@@ -55,15 +55,14 @@ class LoginController extends Controller
         /*
          * 0 = Admin
          * 1 = User
-         *
          */
 
-        if(Auth::user()->type = 0){
+        if(Auth::user()->type == 0){
             return $this->redirectToAdmin;
-        }elseif (Auth::user()->type = 1){
+        }elseif (Auth::user()->type == 1){
+            Auth::logout();
             return $this->redirectToLogin;
         }
-
 
         return property_exists($this, 'redirectTo') ? $this->redirectTo : '/login';
     }

@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'type' => 1,
+                'type' => 0,
                 'profile_photo' => 'no-profile.png',
                 'cover_photo' => NULL,
                 'title' => NULL,
