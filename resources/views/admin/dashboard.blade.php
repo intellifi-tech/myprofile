@@ -126,7 +126,7 @@
                                                             <span class="mt-action-dot bg-green"></span>
                                                             <span class="mt=action-time">9:30-13:00</span>
                                                         </div>
-                                                        <div class="mt-action-buttons" style="width: 175px">
+                                                        <div class="mt-action-buttons" style="width: 20%">
                                                             <div class="btn-group btn-group-circle">
                                                                 <button type="button" class="btn btn-outline green btn-sm active">Katıldı</button>
                                                                 <button type="button" class="btn btn-outline red btn-sm">Katılmadı</button>
