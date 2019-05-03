@@ -147,7 +147,7 @@ class UserController extends Controller
     public function login(Request $request)
     {
         if ($request->email && $request->password){
-            $user = User::where('email', $request->email)->where('type', 1)->first();
+            $user = User::where('type', 1)->where('email', $request->email)->first();
             dd($user);
             if ($user){
                 $check = Hash::check($request->password, $user->password);
