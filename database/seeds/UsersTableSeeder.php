@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder
                 'date_of_birth' => NULL,
                 'company_id' => NULL,
                 'sector_id' => NULL,
-                'email' => 'muharrem@clouidsoft.com',
+                'email' => 'muharrem@clouditsoft.com',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$SXxhZIZz2PxaJboiRs/PNuvj4b9KJUh1q6pzqWIK1IemT3I16Azea',
                 'api_token' => 'kY9su8Y5VVksM4tXRPvcGpRH9vNbIj8Aya1nR2cGU2kvX6K5HQidEm7p19E5',
