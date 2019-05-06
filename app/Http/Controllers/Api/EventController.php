@@ -27,7 +27,7 @@ class EventController extends Controller
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Giriş başarısız. Api_token geçersizdir.";
+                $json['message'] = "Etkinlikler çekilemedi. Api_token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
