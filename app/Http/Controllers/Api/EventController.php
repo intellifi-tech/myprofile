@@ -42,9 +42,37 @@ class EventController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        if ($request->api_token) {
+            $user = User::where('api_token', $request->api_token)->first();
+            if ($user) {
+                if ($request->name && $request->activity_date) {
+                    $event = new Event();
+                    $event->name = $request->name;
+                    $event->activity_date = $request->activity_date;
+                    $event->save();
+
+                    $json['status'] = 1;
+                    $json['message'] = "Etkinlik oluşturuldu.";
+                    $json['event'] = $event;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
     }
 
     /**

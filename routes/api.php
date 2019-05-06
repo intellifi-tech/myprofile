@@ -23,6 +23,7 @@ Route::post('user/register', 'Api\UserController@register');
 
 // region Etkinlikler
 Route::post('event/index', 'Api\EventController@index');
+Route::post('event/create', 'Api\EventController@create');
 // endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
