@@ -51,7 +51,6 @@ class UserController extends Controller
      */
     public function show(Request $request)
     {
-        dd($request->all());
         $user = User::where('api_token', $request->api_token)->first();
         return response()->json($user);
     }
@@ -74,9 +73,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $api_token)
+    public function update(Request $request)
     {
-        $user = User::where('api_token', $api_token)->first();
+        $user = User::where('api_token', $request->api_token)->first();
 
         //region Profil Fotoğrafı Yükleme
         $path = public_path('uploads/profile/');
