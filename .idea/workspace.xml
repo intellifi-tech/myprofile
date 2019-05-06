@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="" />
+    <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +18,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="202" column="16" lean-forward="true" selection-start-line="202" selection-start-column="16" selection-end-line="202" selection-end-column="16" />
+            <state relative-caret-position="408">
+              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/user/show/{api_token}#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
@@ -268,12 +269,12 @@
       <workItem from="1556898375353" duration="9000" />
       <workItem from="1557126511545" duration="7130000" />
       <workItem from="1557137157180" duration="5622000" />
-      <workItem from="1557147269577" duration="592000" />
+      <workItem from="1557147269577" duration="710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170943000" />
+    <option name="totallyTimeSpent" value="171061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -754,11 +755,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="202" column="16" lean-forward="true" selection-start-line="202" selection-start-column="16" selection-end-line="202" selection-end-column="16" />
+        <state relative-caret-position="408">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/show/{api_token}#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
