@@ -59,15 +59,16 @@
         "description": "",
         "operationId": "showUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
           {
-            "name": "api_token",
-            "in": "path",
+            "in": "body",
+            "name": "body",
             "required": true,
-            "type": "string"
+            "schema": {
+              "$ref": "#/definitions/UserEdit"
+            }
           }
         ],
         "responses": {
@@ -86,37 +87,35 @@
         }
       }
     },
-    "/user/update/{api_token}": {
+    "/user/update": {
       "put": {
         "tags": [
           "user"
         ],
-        "summary": "Kulanıcı güncelle",
+        "summary": "Kulanıcı günceller",
         "operationId": "updateUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
           {
-            "in": "path",
-            "name": "api_token",
+            "in": "body",
+            "name": "body",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/User"
-            }
-          },
-          {
-            "in": "path",
-            "name": "type",
-            "schema": {
-              "$ref": "#/definitions/User"
+              "$ref": "#/definitions/UserUpdate"
             }
           }
         ],
         "responses": {
-          "default": {
-            "description": "successful operation"
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Invalid username/password supplied"
           }
         }
       }
@@ -127,59 +126,26 @@
           "user"
         ],
         "summary": "Kullanıcı kayıt",
-        "description": "",
         "operationId": "registerUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
           {
-            "name": "name",
-            "in": "query",
-            "description": "Adı",
+            "name": "body",
+            "in": "body",
             "required": true,
-            "type": "string"
-          },
-          {
-            "name": "surname",
-            "in": "query",
-            "description": "Soyadı",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "email",
-            "in": "query",
-            "description": "Kullanıcı email adresi.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "password",
-            "in": "query",
-            "description": "Kullanıcı şifresi.",
-            "required": true,
-            "type": "string"
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/UserRegister"
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "OK",
             "schema": {
-              "type": "string"
-            },
-            "headers": {
-              "X-Rate-Limit": {
-                "type": "integer",
-                "format": "int32",
-                "description": "calls per hour allowed by the user"
-              },
-              "X-Expires-After": {
-                "type": "string",
-                "format": "date-time",
-                "description": "date in UTC when token expires"
-              }
+              "$ref": "#/definitions/UserResponse"
             }
           },
           "400": {
@@ -247,6 +213,104 @@
         "id": {
           "type": "integer",
           "format": "bigInteger"
+        },
+        "profile_photo": {
+          "type": "string",
+          "format": "longText"
+        },
+        "cover_photo": {
+          "type": "string",
+          "format": "text"
+        },
+        "title": {
+          "type": "string",
+          "format": "text"
+        },
+        "name": {
+          "type": "string"
+        },
+        "career_history": {
+          "type": "string",
+          "format": "longText"
+        },
+        "short_biography": {
+          "type": "string",
+          "format": "longText"
+        },
+        "credentials": {
+          "type": "string",
+          "format": "longText"
+        },
+        "date_of_birth": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "sector_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer",
+          "format": "tinyInteger"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserShow": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserRegister": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserEdit": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserUpdate": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
         },
         "profile_photo": {
           "type": "string",
