@@ -177,6 +177,25 @@
           }
         }
       }
+    },
+
+    "/event/index": {
+      "get": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Tüm etkinlikler",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "allEvent",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
     }
   },
   "securityDefinitions": {
