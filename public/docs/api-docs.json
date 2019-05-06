@@ -50,7 +50,7 @@
         }
       }
     },
-    "/user/show/{api_token}": {
+    "/user/show": {
       "get": {
         "tags": [
           "user"
