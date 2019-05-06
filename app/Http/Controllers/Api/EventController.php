@@ -20,19 +20,11 @@ class EventController extends Controller
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
-                $check = Hash::check($request->password, $user->password);
-                if ($check == false) {
-                    $json['status'] = 0;
-                    $json['message'] = "Giriş başarısız. Şifre yanlış.";
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                } else {
-                    $events = Event::all();
-                    $json['status'] = 1;
-                    $json['message'] = "Giriş başarılı.";
-                    $json['events'] = $events;
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                }
+                $events = Event::all();
+                $json['status'] = 1;
+                $json['events'] = $events;
+                $json['api_token'] = $user->api_token;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Giriş başarısız. Api_token geçersizdir.";
