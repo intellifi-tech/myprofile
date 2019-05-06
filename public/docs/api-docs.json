@@ -32,17 +32,6 @@
           "application/xml",
           "application/json"
         ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Created user object",
-            "required": false,
-            "schema": {
-              "$ref": ""
-            }
-          }
-        ],
         "responses": {
           "default": {
             "description": "successful operation"
