@@ -44,6 +44,7 @@ class EventController extends Controller
      */
     public function create(Request $request)
     {
+        dd($request->all());
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
