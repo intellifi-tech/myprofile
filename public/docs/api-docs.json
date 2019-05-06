@@ -197,7 +197,6 @@
         "description": "",
         "operationId": "loginUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "parameters": [
@@ -316,6 +315,9 @@
     "UserResponse": {
       "type": "object",
       "properties": {
+        "api_token": {
+          "type": "string"
+        },
         "id": {
           "type": "integer",
           "format": "bigInteger"

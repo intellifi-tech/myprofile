@@ -146,32 +146,39 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        if ($request->email && $request->password){
-            $user = User::where([
-                ['email', $request->email],
-                ['type', 1]
-            ])->first();
-            if ($user){
-                $check = Hash::check($request->password, $user->password);
-                if ($check == false){
-                    $json['status'] = 0;
-                    $json['message'] = "Giriş başarısız. Şifre yanlış.";
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        $user = User::where('email', $request->email)->first();
+        if($user->type == 1){
+            if ($request->email && $request->password){
+                $user = User::where([
+                    ['email', $user->email],
+                    ['type', 1]
+                ])->first();
+                if ($user){
+                    $check = Hash::check($request->password, $user->password);
+                    if ($check == false){
+                        $json['status'] = 0;
+                        $json['message'] = "Giriş başarısız. Şifre yanlış.";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 1;
+                        $json['message'] = "Giriş başarılı.";
+                        $json['user'] = $user;
+                        $json['api_token'] = $user->api_token;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
                 }else{
-                    $json['status'] = 1;
-                    $json['message'] = "Giriş başarılı.";
-                    $json['user'] = $user;
-                    $json['api_token'] = $user->api_token;
+                    $json['status'] = 0;
+                    $json['message'] = "Giriş başarısız. Böyle bir kullanıcı yok.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
             }else{
                 $json['status'] = 0;
-                $json['message'] = "Giriş başarısız. Böyle bir kullanıcı yok.";
+                $json['message'] = "Kullanıcı adı ve şifre boş olamaz.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
             $json['status'] = 0;
-            $json['message'] = "Kullanıcı adı ve şifre boş olamaz.";
+            $json['message'] = "Kullanıcı erişim izni yok.";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
