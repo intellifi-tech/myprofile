@@ -66,12 +66,6 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
-          },
-          "400": {
-            "description": "Invalid username supplied"
-          },
-          "404": {
-            "description": "User not found"
           }
         }
       }
@@ -102,9 +96,6 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
-          },
-          "400": {
-            "description": "Invalid username/password supplied"
           }
         }
       }
@@ -136,9 +127,6 @@
             "schema": {
               "$ref": "#/definitions/UserResponse"
             }
-          },
-          "400": {
-            "description": "Invalid username/password supplied"
           }
         }
       }
@@ -171,9 +159,6 @@
             "schema": {
               "$ref": "#/definitions/UserResponse"
             }
-          },
-          "400": {
-            "description": "Invalid username/password supplied"
           }
         }
       }
@@ -199,6 +184,100 @@
           },
           "400": {
             "description": "Invalid username/password supplied"
+          }
+        }
+      }
+    },
+    "/event/create": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Yeni etkinlik oluştur.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "createEvent",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/EventCreate"
+            }
+          }
+        }
+      }
+    },
+    "/event/show": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Etkinlik getir.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "showEvent",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EventShow"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
+          }
+        }
+      }
+    },
+    "/event/update": {
+      "put": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Etkinlik güncelle.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "updateEvent",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/EventUpdate"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
           }
         }
       }
@@ -542,7 +621,7 @@
         "name": "User"
       }
     },
-    "EventShow": {
+    "EventCreate": {
       "type": "object",
       "properties": {
         "id": {
@@ -554,7 +633,43 @@
         },
         "activity_date": {
           "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "EventShow": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
         },
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "EventUpdate": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        },
+        "name": {
+          "type": "string"
+        },
+        "activity_date": {
+          "type": "string"
+        }
       },
       "xml": {
         "name": "User"

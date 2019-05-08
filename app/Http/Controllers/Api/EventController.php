@@ -83,31 +83,7 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
-            if ($user) {
-                $check = Hash::check($request->password, $user->password);
-                if ($check == false) {
-                    $json['status'] = 0;
-                    $json['message'] = "Giriş başarısız. Şifre yanlış.";
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                } else {
-                    $json['status'] = 1;
-                    $json['message'] = "Giriş başarılı.";
-                    $json['user'] = $user;
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                }
-            } else {
-                $json['status'] = 0;
-                $json['message'] = "Giriş başarısız. Api_token geçersizdir.";
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-            }
-        } else {
-            $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
-            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-        }
+        //
     }
 
     /**
@@ -116,9 +92,37 @@ class EventController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request)
     {
-        //
+        if ($request->api_token) {
+            $user = User::where('api_token', $request->api_token)->first();
+            if ($user) {
+                if ($request->name && $request->activity_date) {
+                    $event = Event::find($request->id);
+                    $event->name = $request->name;
+                    $event->activity_date = $request->activity_date;
+                    $event->save();
+
+                    $json['status'] = 1;
+                    $json['message'] = "Etkinlik güncellendi.";
+                    $json['event'] = $event;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
     }
 
     /**
@@ -141,7 +145,35 @@ class EventController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if ($request->api_token) {
+            $user = User::where('api_token', $request->api_token)->first();
+            if ($user) {
+                if ($request->name && $request->activity_date) {
+                    $event = Event::find($request->id);
+                    $event->name = $request->name;
+                    $event->activity_date = $request->activity_date;
+                    $event->save();
+
+                    $json['status'] = 1;
+                    $json['message'] = "Etkinlik oluşturuldu.";
+                    $json['event'] = $event;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
     }
 
     /**
