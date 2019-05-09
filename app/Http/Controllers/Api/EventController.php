@@ -6,7 +6,6 @@ use App\Event;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
 
 class EventController extends Controller
 {
