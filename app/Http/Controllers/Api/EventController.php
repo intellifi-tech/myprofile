@@ -149,6 +149,7 @@ class EventController extends Controller
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->name && $request->activity_date) {
+
                     $event = Event::find($request->id);
                     $event->name = $request->name;
                     $event->activity_date = $request->activity_date;
