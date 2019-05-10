@@ -43,7 +43,7 @@ class EventController extends Controller
                     $event->save();
 
                     $json['status'] = 1;
-                    $json['message'] = "Etkinlik oluşturuldu.";
+                    $json['message'] = "Success";
                     $json['event'] = $event;
                     $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
@@ -69,17 +69,17 @@ class EventController extends Controller
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
-                if ($request->name && $request->activity_date) {
+                if ($request->id) {
                     $event = Event::find($request->id);
 
                     $json['status'] = 1;
-                    $json['message'] = "Etkinlik geldi.";
+                    $json['message'] = "Success";
                     $json['event'] = $event;
                     $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
-                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    $json['message'] = "Etkinlik id boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
