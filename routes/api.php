@@ -31,6 +31,10 @@ Route::post('event/show', 'Api\EventController@show');
 Route::post('comment/create', 'Api\CommentController@create');
 //endregion
 
+//region Mesajlar
+Route::post('message/send', 'Api\MessageController@send');
+//endregion
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

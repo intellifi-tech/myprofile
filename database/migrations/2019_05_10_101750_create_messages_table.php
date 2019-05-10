@@ -18,7 +18,7 @@ class CreateMessagesTable extends Migration
             $table->bigInteger('from_user_id');
             $table->bigInteger('to_user_id');
             $table->text('message');
-            $table->tinyInteger('status');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
     }
