@@ -648,6 +648,9 @@
         "activity_date": {
           "type": "string",
           "format": "date"
+        },
+        "comments": {
+          "$ref": "#/definitions/Comments"
         }
       },
       "xml": {
@@ -713,7 +716,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "string"
+          "type": "integer"
         },
         "event_id": {
           "type": "integer"

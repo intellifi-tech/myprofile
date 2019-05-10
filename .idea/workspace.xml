@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-json.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-json.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="746" column="19" lean-forward="true" selection-start-line="746" selection-start-column="19" selection-end-line="746" selection-end-column="19" />
+            <state relative-caret-position="485">
+              <caret line="584" column="6" lean-forward="true" selection-start-line="584" selection-start-column="6" selection-end-line="584" selection-end-column="6" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -28,7 +29,6 @@
                 <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/create#1;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
@@ -42,7 +42,6 @@
                 <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
@@ -54,10 +53,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13689" selection-start-column="13689" selection-end-column="13689" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="72" column="75" selection-start-line="72" selection-start-column="75" selection-end-line="72" selection-end-column="75" />
+            <state relative-caret-position="195">
+              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding>
                 <element signature="e#44#58#0#PHP" expanded="true" />
               </folding>
@@ -68,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="735">
+              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -168,7 +176,6 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-json.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
@@ -176,11 +183,12 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_05_09_102322_create_comments_table.php" />
         <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Event.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
+        <option value="$PROJECT_DIR$/app/Event.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
+        <option value="$PROJECT_DIR$/public/docs/api-json.json" />
       </list>
     </option>
   </component>
@@ -348,12 +356,12 @@
       <workItem from="1557395544061" duration="3535000" />
       <workItem from="1557412769636" duration="161000" />
       <workItem from="1557472641320" duration="441000" />
-      <workItem from="1557476407313" duration="3630000" />
+      <workItem from="1557476407313" duration="4493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199573000" />
+    <option name="totallyTimeSpent" value="200436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="22" width="2560" height="1342" extended-state="6" />
@@ -607,100 +615,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swagger.json" />
-    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="3000" column="18" selection-start-line="3000" selection-start-column="18" selection-end-line="3000" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/authenticate#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/cities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/cities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/cities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/cities/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/cities/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/invoice-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/invoice-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/test-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/api/test-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/test-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-data/dashboard#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-data/notsolved#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-data/solved#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/test-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-question-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/test-question-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/test-question-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/test-question-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/test-question-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/towns#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/towns#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/towns#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/towns/city/{cityId}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/towns/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/towns/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/transcript/test/{subjectId}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/transcript/trial/{lessonId}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/trial-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="e#92215#92474#0" />
-            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/api/trial-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/trial-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-data/notsolved#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/trial-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-result-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/trial-result-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/trial-result-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-result-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/trial-result-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-session-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/trial-session-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/trial-session-data#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-session-data/solved#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/trial-session-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/trial-session-data/{id}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/users#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#post#0;n#!!block;n#/api/users#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#put#0;n#!!block;n#/api/users#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/users/authorities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/api/users/{login}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#/api/users/{login}#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#CityDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#InvoiceDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LessonDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LessonGroupDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LicenceDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LicencePackageDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LoginVM#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#MemberDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#MessageDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NotSolvedDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NotificationDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#OptionDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#PasswordChangeDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#PaymentDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#PaymentHistoryDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#QuestionDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#RegisterVM#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#SolvedDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#SubjectDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TestAnalysisDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TestDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TestDataExpDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TestQuestionDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TownDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TranscriptSubject#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TrialDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TrialResultDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#TrialSessionDataDTO#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserDTO#0;n#!!block;n#definitions#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -797,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="904">
@@ -814,10 +721,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="746" column="19" lean-forward="true" selection-start-line="746" selection-start-column="19" selection-end-line="746" selection-end-column="19" />
+        <state relative-caret-position="485">
+          <caret line="584" column="6" lean-forward="true" selection-start-line="584" selection-start-column="6" selection-end-line="584" selection-end-column="6" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -826,7 +757,6 @@
             <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/create#1;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
@@ -840,7 +770,6 @@
             <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
@@ -850,20 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
+    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="72" column="75" selection-start-line="72" selection-start-column="75" selection-end-line="72" selection-end-column="75" />
-          <folding>
-            <element signature="e#44#58#0#PHP" expanded="true" />
-          </folding>
+        <state>
+          <caret column="13689" selection-start-column="13689" selection-end-column="13689" />
         </state>
       </provider>
     </entry>
