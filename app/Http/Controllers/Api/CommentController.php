@@ -94,14 +94,4 @@ class CommentController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
-
-    public function edit(Request $request)
-    {
-        //
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
 }
