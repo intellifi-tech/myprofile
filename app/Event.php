@@ -10,6 +10,6 @@ class Event extends Model
 
     public function comments()
     {
-        return $this->hasMany('App\Comment', 'comment_id', 'id');
+        return $this->hasMany('App\Comment', 'id', 'comment_id');
     }
 }
