@@ -44,7 +44,7 @@ class CommentController extends Controller
                     $comment->save();
 
                     $json['status'] = 1;
-                    $json['message'] = "Yorum önderildi.";
+                    $json['message'] = "Yorum gönderildi.";
                     $json['comment'] = $comment;
                     $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
