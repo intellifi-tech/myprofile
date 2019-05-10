@@ -163,7 +163,6 @@
         }
       }
     },
-
     "/event/index": {
       "get": {
         "tags": [
@@ -282,7 +281,6 @@
         }
       }
     },
-
     "/comment/create": {
       "post": {
         "tags": [
@@ -310,6 +308,70 @@
             "description": "OK",
             "schema": {
               "$ref": "#/definitions/Comments"
+            }
+          }
+        }
+      }
+    },
+    "/message/sendMessage": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "summary": "Yeni mesaj gönderir.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "SendMessage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/SendMessage"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Message"
+            }
+          }
+        }
+      }
+    },
+    "/message/answerMessage": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "summary": "Mesaj yanıtla",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "AnswerMessage",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/AnswerMessage"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Message"
             }
           }
         }
@@ -634,7 +696,6 @@
         "name": "User"
       }
     },
-
     "Events": {
       "type": "object",
       "properties": {
@@ -711,7 +772,6 @@
         "name": "User"
       }
     },
-
     "Comments": {
       "type": "object",
       "properties": {
@@ -740,6 +800,81 @@
         },
         "comment": {
           "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Message": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "parent_id": {
+          "type": "integer"
+        },
+        "from_user_id": {
+          "type": "integer"
+        },
+        "to_user_id": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "SendMessage": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "from_user_id": {
+          "type": "integer"
+        },
+        "to_user_id": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AnswerMessage": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "parent_id": {
+          "type": "integer"
+        },
+        "from_user_id": {
+          "type": "integer"
+        },
+        "to_user_id": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer"
         }
       },
       "xml": {

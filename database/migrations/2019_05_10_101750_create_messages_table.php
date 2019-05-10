@@ -9,12 +9,16 @@ class CreateMessagesTable extends Migration
     /**
      * Run the migrations.
      *
-     * @return void
+     * type
+     * 0                = Ana mesaj
+     * 1                = Alt mesaj
      */
     public function up()
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->tinyInteger('type')->default(0);
+            $table->bigInteger('parent_id')->nullable();
             $table->bigInteger('from_user_id');
             $table->bigInteger('to_user_id');
             $table->text('message');

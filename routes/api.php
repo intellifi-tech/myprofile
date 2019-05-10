@@ -32,7 +32,8 @@ Route::post('comment/create', 'Api\CommentController@create');
 //endregion
 
 //region Mesajlar
-Route::post('message/send', 'Api\MessageController@send');
+Route::post('message/newMessage', 'Api\MessageController@newMessage');
+Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
