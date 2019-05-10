@@ -281,6 +281,39 @@
           }
         }
       }
+    },
+
+    "/comment/create": {
+      "post": {
+        "tags": [
+          "comment"
+        ],
+        "summary": "Yeni yorum oluştur.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "createComment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/CommentCreate"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Comments"
+            }
+          }
+        }
+      }
     }
   },
   "securityDefinitions": {
@@ -668,6 +701,41 @@
           "type": "string"
         },
         "activity_date": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+
+    "Comments": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "event_id": {
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "CommentCreate": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "event_id": {
+          "type": "integer"
+        },
+        "comment": {
           "type": "string"
         }
       },

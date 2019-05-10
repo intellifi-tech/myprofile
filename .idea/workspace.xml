@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +15,65 @@
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="32">
+                  <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
+                  <folding>
+                    <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventCreate#1;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#CommentCreate#1;n#!!block;n#definitions#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="326">
+                  <caret line="41" column="59" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#44#60#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,13 +173,13 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_09_102322_create_comments_table.php" />
         <option value="$PROJECT_DIR$/app/Comment.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Event.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -164,6 +211,49 @@
               <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -257,19 +347,19 @@
       <workItem from="1557395544061" duration="3535000" />
       <workItem from="1557412769636" duration="161000" />
       <workItem from="1557472641320" duration="441000" />
-      <workItem from="1557476407313" duration="970000" />
+      <workItem from="1557476407313" duration="2675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196913000" />
+    <option name="totallyTimeSpent" value="198618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13860206" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.13860206" />
+      <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.13860206" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -658,37 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="253" column="22" lean-forward="true" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -706,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1167">
-          <caret line="69" column="75" selection-start-line="69" selection-start-column="75" selection-end-line="69" selection-end-column="75" />
-          <folding>
-            <element signature="e#44#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -727,16 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1491">
-          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,8 +805,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="53" lean-forward="true" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        <state relative-caret-position="210">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="59" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
+          <folding>
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventCreate#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#1;n#!!block;n#definitions#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
