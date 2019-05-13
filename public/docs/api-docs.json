@@ -855,13 +855,10 @@
     "AnswerMessage": {
       "type": "object",
       "properties": {
-        "id": {
-          "type": "integer"
+        "api_token": {
+          "type": "string"
         },
         "parent_id": {
-          "type": "integer"
-        },
-        "from_user_id": {
           "type": "integer"
         },
         "to_user_id": {
