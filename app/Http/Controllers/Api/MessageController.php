@@ -19,6 +19,7 @@ class MessageController extends Controller
                     $message->from_user_id = $user->id;
                     $message->to_user_id = $request->to_user_id;
                     $message->message = $request->message;
+                    $message->status = 0;
                     $message->save();
 
                     $json['status'] = 1;
@@ -54,6 +55,7 @@ class MessageController extends Controller
                     $message->from_user_id = $user->id;
                     $message->to_user_id = $request->to_user_id;
                     $message->message = $request->message;
+                    $message->status = 0;
                     $message->save();
 
                     $json['status'] = 1;
