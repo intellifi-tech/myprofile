@@ -313,7 +313,7 @@
         }
       }
     },
-    "/message/sendMessage": {
+    "/message/newMessage": {
       "post": {
         "tags": [
           "message"
@@ -331,7 +331,7 @@
             "required": true,
             "type": "string",
             "schema": {
-              "$ref": "#/definitions/SendMessage"
+              "$ref": "#/definitions/NewMessage"
             }
           }
         ],
@@ -832,7 +832,7 @@
         "name": "User"
       }
     },
-    "SendMessage": {
+    "NewMessage": {
       "type": "object",
       "properties": {
         "api_token": {
