@@ -124,7 +124,7 @@ class UserController extends Controller
     {
         if ($request->name && $request->surname && $request->email && $request->password) {
             $user = new User();
-            $user->type = 0;
+            $user->type = 1;
             $user->name = $request->name;
             $user->surname = $request->surname;
             $user->email = $request->email;

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_10_101750_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_10_101750_create_messages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,92 +15,20 @@
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="609">
-                  <caret line="251" column="6" lean-forward="true" selection-start-line="251" selection-start-column="6" selection-end-line="251" selection-end-column="6" />
-                  <folding>
-                    <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/event/create#1;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/comment/create#1;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/message/sendMessage#1;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
-                    <element signature="n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#EventCreate#1;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#CommentCreate#1;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#Messages#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#SendMessage#1;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#SendMessage#1;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#externalDocs#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/routes/api.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="798">
-                  <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="586">
-                  <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#44#60#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_10_101750_create_messages_table.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="708">
+              <caret line="131" column="47" lean-forward="true" selection-start-line="131" selection-start-column="47" selection-end-line="131" selection-end-column="47" />
+              <folding>
+                <element signature="e#44#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,7 +119,6 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
@@ -209,13 +134,14 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
         <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="1342" />
@@ -228,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,26 +187,11 @@
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,17 +281,18 @@
       <workItem from="1557412769636" duration="161000" />
       <workItem from="1557472641320" duration="441000" />
       <workItem from="1557476407313" duration="14051000" />
+      <workItem from="1557731317259" duration="231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209994000" />
+    <option name="totallyTimeSpent" value="210226000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="2560" height="1342" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.13860206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918962" visible="true" weight="0.13939634" />
       <window_info id="Structure" order="1" sideWeight="0.5008104" side_tool="true" weight="0.13860206" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -629,16 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#44#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -708,13 +609,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessegaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessegaController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -811,6 +706,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="131" column="47" lean-forward="true" selection-start-line="131" selection-start-column="47" selection-end-line="131" selection-end-column="47" />
+          <folding>
+            <element signature="e#44#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
