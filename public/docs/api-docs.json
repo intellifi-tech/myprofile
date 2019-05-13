@@ -838,9 +838,6 @@
         "api_token": {
           "type": "string"
         },
-        "from_user_id": {
-          "type": "integer"
-        },
         "to_user_id": {
           "type": "integer"
         },
