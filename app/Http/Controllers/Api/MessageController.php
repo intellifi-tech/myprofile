@@ -16,7 +16,6 @@ class MessageController extends Controller
             if ($user) {
                 if ($request->from_user_id && $request->to_user_id && $request->message) {
                     $message = new Message();
-                    $message->parent_id = null;
                     $message->from_user_id = $user->id;
                     $message->to_user_id = $request->to_user_id;
                     $message->message = $request->message;
