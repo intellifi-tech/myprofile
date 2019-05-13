@@ -14,7 +14,7 @@ class MessageController extends Controller
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
-                if ($request->from_user_id && $request->to_user_id && $request->message) {
+                if ($request->to_user_id && $request->message) {
                     $message = new Message();
                     $message->from_user_id = $user->id;
                     $message->to_user_id = $request->to_user_id;
