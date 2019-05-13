@@ -835,8 +835,8 @@
     "SendMessage": {
       "type": "object",
       "properties": {
-        "id": {
-          "type": "integer"
+        "api_token": {
+          "type": "string"
         },
         "from_user_id": {
           "type": "integer"
