@@ -20,6 +20,7 @@ class UserCoordinateController extends Controller
                     $userCoordination->longitude = $request->longitude;
                     $userCoordination->save();
                     $json['status'] = 1;
+                    $json['message'] = "Success";
                     $json['userCoordination'] = $userCoordination;
                     $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
