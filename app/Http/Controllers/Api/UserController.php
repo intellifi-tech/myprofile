@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\User;
+use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -138,6 +139,41 @@ class UserController extends Controller
         }else{
             $json['status'] = 0;
             $json['message'] = "Kullanıcı erişim izni yok.";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function nearbyUsers(Request $request)
+    {
+        if ($request->api_token) {
+            $user = User::where('api_token', $request->api_token)->first();
+            if ($user) {
+                if ($request->latitude && $request->longitude) {
+
+                    $coordinates = UserCoordinate::all();
+                    for ($i = 0; $coordinates->count() > $i; $i++){
+                        distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
+                        $user = UserCoordinate::where('latitude', $request->latitude)->where('longitude', $request->longitude)->first();
+                    }
+
+
+                    $json['status'] = 1;
+                    $json['message'] = "Success";
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Enlem ve boylam boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }

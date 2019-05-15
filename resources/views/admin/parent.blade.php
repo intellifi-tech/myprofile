@@ -34,6 +34,7 @@
     <link href="{{ admin_asset('layouts/layout4/css/layout.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ admin_asset('layouts/layout4/css/themes/default.min.css') }}" rel="stylesheet" type="text/css" id="style_color" />
     <link href="{{ admin_asset('layouts/layout4/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- END THEME LAYOUT STYLES -->
     @yield('css')
     <link rel="shortcut icon" href="favicon.ico" />

@@ -278,12 +278,36 @@ function youtubeUrlAyristir($url)
 
 function jsonTr($json)
 {
-    $sorunlu = array("u00fc","u011f","u0131","u015f","u00e7","u00f6","u00dc","u011e","u0130","u015e","u00c7","u00d6");
-    $duzeltilecek = array("ü","ğ","ı","ş","ç","ö","Ü","Ğ","İ","Ş","Ç","Ö");
+    $sorunlu = array("u00fc", "u011f", "u0131", "u015f", "u00e7", "u00f6", "u00dc", "u011e", "u0130", "u015e", "u00c7", "u00d6");
+    $duzeltilecek = array("ü", "ğ", "ı", "ş", "ç", "ö", "Ü", "Ğ", "İ", "Ş", "Ç", "Ö");
     return str_replace($sorunlu, $duzeltilecek, json_encode($json));
 }
 
 function getNameSurname()
 {
     return Auth::user()->name . ' ' . Auth::user()->surname;
+}
+
+function distance($lat1, $lon1, $lat2, $lon2, $unit)
+{
+    if (($lat1 == $lat2) && ($lon1 == $lon2)) {
+        return 0;
+    } else {
+        $theta = $lon1 - $lon2;
+        $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+        $dist = acos($dist);
+        $dist = rad2deg($dist);
+        $miles = $dist * 60 * 1.1515;
+        $unit = strtoupper($unit);
+
+        if ($unit == "K") {
+            return ($miles * 1.609344);
+        } else if ($unit == "N") {
+            return ($miles * 0.8684);
+        } else if ($unit == "M") {
+            return ($miles * 1.609344) * 1000;
+        } else {
+            return $miles;
+        }
+    }
 }

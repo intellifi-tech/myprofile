@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\User;
+use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -96,14 +97,9 @@ class UserController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+    public function getOnlineUserCoordinates()
     {
-        //
+        $userCoordinates = UserCoordinate::with(['user'])->get();
+        return response()->json($userCoordinates, 200, [], JSON_UNESCAPED_UNICODE);
     }
 }

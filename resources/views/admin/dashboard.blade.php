@@ -3,6 +3,11 @@
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
     <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.fullscreen/dist/leaflet.fullscreen.css"/>
+    <style>
+        .leaflet-fade-anim .leaflet-map-pane .leaflet-popup{
+            bottom: -28px !important;
+        }
+    </style>
 @stop
 
 @section('content')
@@ -348,46 +353,59 @@
 @stop
 
 @section('js')
-{{--    <script>--}}
-{{--        $(document).ready(function (){--}}
-{{--            $('.portlet-body').slimScroll({--}}
-{{--                height: '250px',--}}
-{{--                wheelStep: 5,--}}
-{{--            });--}}
-{{--        });--}}
-{{--    </script>--}}
 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
 <script src="{{ admin_asset('global/plugins/leaflet/Leaflet.fullscreen.js') }}" ></script>
-<script src="{{ admin_asset('geojson.js') }}" type="text/javascript"></script>
 <script>
-    var map = L.map('online-user-maps', {
-        fullscreenControl: true,
-        fullscreenControlOptions: {
-            position: 'topright',
-            title: 'Tam Ekran Modu'
-        }
-    }).setView([41.0448525, 29.0204335], 10);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    map.scrollWheelZoom.disable();
-
-    var LeafIcon = L.Icon.extend({
-        options: {
-            iconSize:     [38, 60],
-            shadowSize:   [50, 34],
-            iconAnchor:   [22, 55],
-            shadowAnchor: [4, 62],
-            popupAnchor:  [-3, -76]
-        }
+    $(document).ready(function () {
+        getOnlineUserCoordinates();
     });
+    function getOnlineUserCoordinates() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+            type: "POST",
+            dataType: "JSON",
+            timeout: 10000,
+            data: {obj: 1},
+            success: function (response) {
 
-    var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
+                var map = L.map('online-user-maps', {
+                    fullscreenControl: true,
+                    fullscreenControlOptions: {
+                        position: 'topright',
+                        title: 'Tam Ekran Modu'
+                    }
+                }).setView([41.0448525, 29.0204335], 10);
 
-    L.marker([41.0322435, 29.0275606], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map);
-    L.marker([41.0403672, 28.9132088], {icon: greenIcon}).bindPopup("I am a green leaf.").addTo(map);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                map.scrollWheelZoom.disable();
+                var LeafIcon = L.Icon.extend({
+                    options: {
+                        iconSize:     [38, 60],
+                        shadowSize:   [50, 34],
+                        iconAnchor:   [22, 55],
+                        shadowAnchor: [4, 62],
+                        popupAnchor:  [-3, -76]
+                    }
+                });
+
+                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
+
+                $.each(response, function (i, coordinate) {
+                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
+                });
+            }
+        });
+    }
+
+
 
 </script>
 <script>
