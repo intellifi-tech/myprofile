@@ -163,6 +163,37 @@
         }
       }
     },
+    "/user/coordinate/setCoordinates": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Koordinat ekle",
+        "operationId": "setCoordinates",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/UserSetCoordinates"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UserCoordinates"
+            }
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -173,6 +204,17 @@
         "operationId": "allEvent",
         "produces": [
           "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/ApiToken"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -377,6 +419,7 @@
         }
       }
     }
+
   },
   "securityDefinitions": {
     "petstore_auth": {
@@ -395,6 +438,17 @@
     }
   },
   "definitions": {
+    "ApiToken": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
     "User": {
       "type": "object",
       "properties": {
@@ -868,6 +922,43 @@
         },
         "status": {
           "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserCoordinates": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserSetCoordinates": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
         }
       },
       "xml": {

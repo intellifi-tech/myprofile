@@ -19,6 +19,7 @@ Route::post('user/show', 'Api\UserController@show');
 Route::post('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
+Route::post('user/coordinate/setCoordinates', 'Api\UserCoordinateController@setCoordinates');
 // endregion
 
 // region Etkinlikler
