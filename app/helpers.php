@@ -307,9 +307,10 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit)
         } else if ($unit == "M") {
             if ((($miles * 1.609344) * 1000) < 100)
             {
-                return $lat2;
+                $coords["lat"] = $lat2;
+                $coords["lon"] = $lon2;
+                return $coords;
             }
-
             return "Verilen mesafeden uzakta.";
         } else {
             return $miles;
