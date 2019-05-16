@@ -51,7 +51,7 @@ class UserCoordinateController extends Controller
                     $nearbyCoordinates = [];
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
-                        $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M");
+                        $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", 100);
                         array_push($nearbyCoordinates, $distance);
                     }
                     dd(array_filter($nearbyCoordinates));

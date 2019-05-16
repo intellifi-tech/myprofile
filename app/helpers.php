@@ -288,7 +288,7 @@ function getNameSurname()
     return Auth::user()->name . ' ' . Auth::user()->surname;
 }
 
-function distance($lat1, $lon1, $lat2, $lon2, $unit)
+function distance($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit)
 {
     if (($lat1 == $lat2) && ($lon1 == $lon2)) {
         return 0;
@@ -305,7 +305,7 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit)
         } else if ($unit == "N") {
             return ($miles * 0.8684);
         } else if ($unit == "M") {
-            if ((($miles * 1.609344) * 1000) < 100)
+            if ((($miles * 1.609344) * 1000) < $meterLimit)
             {
                 $coords["lat"] = $lat2;
                 $coords["lon"] = $lon2;
