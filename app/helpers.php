@@ -290,7 +290,6 @@ function getNameSurname()
 
 function distance($lat1, $lon1, $lat2, $lon2, $unit)
 {
-    dd("burada");
     if (($lat1 == $lat2) && ($lon1 == $lon2)) {
         return 0;
     } else {

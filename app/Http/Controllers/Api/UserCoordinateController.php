@@ -44,6 +44,7 @@ class UserCoordinateController extends Controller
 
     public function nearbyUsers(Request $request)
     {
+        dd($request->all());
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
