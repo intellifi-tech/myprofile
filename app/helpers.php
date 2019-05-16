@@ -311,7 +311,6 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit)
                 $coords["lon"] = $lon2;
                 return $coords;
             }
-            return "Verilen mesafeden uzakta.";
         } else {
             return $miles;
         }
