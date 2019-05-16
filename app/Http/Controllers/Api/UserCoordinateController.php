@@ -54,7 +54,7 @@ class UserCoordinateController extends Controller
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M");
                         array_push($nearbyCoordinates, $distance);
                     }
-                    dd($nearbyCoordinates);
+                    dd(array_filter($nearbyCoordinates));
 
 
 
