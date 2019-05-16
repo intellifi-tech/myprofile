@@ -151,16 +151,17 @@ class UserController extends Controller
                 if ($request->latitude && $request->longitude) {
 
                     $coordinates = UserCoordinate::all();
-                    for ($i = 0; $coordinates->count() > $i; $i++){
-                        distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
-                        $user = UserCoordinate::where('latitude', $request->latitude)->where('longitude', $request->longitude)->first();
-                    }
+                    return response()->json($coordinates, 200, [], JSON_UNESCAPED_UNICODE);
+//                    for ($i = 0; $coordinates->count() > $i; $i++){
+//                        distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
+//                        $user = UserCoordinate::where('latitude', $request->latitude)->where('longitude', $request->longitude)->first();
+//                    }
 
 
-                    $json['status'] = 1;
-                    $json['message'] = "Success";
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+//                    $json['status'] = 1;
+//                    $json['message'] = "Success";
+//                    $json['api_token'] = $user->api_token;
+//                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Enlem ve boylam boş olamaz.";
