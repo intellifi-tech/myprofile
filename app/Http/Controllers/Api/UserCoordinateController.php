@@ -48,20 +48,18 @@ class UserCoordinateController extends Controller
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
-                    $nearbyCoordinates = [];
+                    $nearbyUserCoordinates = [];
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit);
-                        array_push($nearbyCoordinates, $distance);
+                        array_push($nearbyUserCoordinates, $distance);
                     }
-                    dd(array_filter($nearbyCoordinates));
-
-
-
-//                    $json['status'] = 1;
-//                    $json['message'] = "Success";
-//                    $json['api_token'] = $user->api_token;
-//                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
+                    $json['status'] = 1;
+                    $json['message'] = "Success";
+                    $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Enlem ve boylam boş olamaz.";
