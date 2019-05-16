@@ -307,10 +307,10 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit)
         } else if ($unit == "M") {
             if ((($miles * 1.609344) * 1000) < 100)
             {
-                dd("burada");
                 return $lat2;
             }
-            return ($miles * 1.609344) * 1000;
+
+            return "Verilen mesafeden uzakta.";
         } else {
             return $miles;
         }
