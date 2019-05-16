@@ -48,12 +48,13 @@ class UserCoordinateController extends Controller
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
-
+                    $nearbyCoordinates = [];
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M");
-                        return response()->json($distance, 200, [], JSON_UNESCAPED_UNICODE);
+                        array_push($nearbyCoordinates, $distance);
                     }
+                    dd($nearbyCoordinates;)
 
 
 
