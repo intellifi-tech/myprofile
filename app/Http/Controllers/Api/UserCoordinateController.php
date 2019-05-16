@@ -51,7 +51,6 @@ class UserCoordinateController extends Controller
 
                     $coordinates = UserCoordinate::all();
                     for ($i = 0; $coordinates->count() > $i; $i++){
-                        dd("burada");
                         $distance = distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
                         return response()->json($distance, 200, [], JSON_UNESCAPED_UNICODE);
 //                        $user = UserCoordinate::where('latitude', $request->latitude)->where('longitude', $request->longitude)->first();
