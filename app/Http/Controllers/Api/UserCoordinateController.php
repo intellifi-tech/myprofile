@@ -44,13 +44,13 @@ class UserCoordinateController extends Controller
 
     public function nearbyUsers(Request $request)
     {
-        dd($request->all());
         if ($request->api_token) {
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
 
                     $coordinates = UserCoordinate::all();
+                    dd($coordinates);
                     for ($i = 0; $coordinates->count() > $i; $i++){
                         $distance = distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
                         return response()->json($distance, 200, [], JSON_UNESCAPED_UNICODE);
