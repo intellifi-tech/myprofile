@@ -48,7 +48,7 @@ class UserCoordinateController extends Controller
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
-
+                    dd("burada");
                     $coordinates = UserCoordinate::all();
                     for ($i = 0; $coordinates->count() > $i; $i++){
                         $distance = distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
