@@ -305,7 +305,10 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit)
         } else if ($unit == "N") {
             return ($miles * 0.8684);
         } else if ($unit == "M") {
-            
+            if (($miles * 1.609344) * 1000 < 100)
+            {
+                return $lat2;
+            }
             return ($miles * 1.609344) * 1000;
         } else {
             return $miles;

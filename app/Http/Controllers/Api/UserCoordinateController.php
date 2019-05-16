@@ -50,11 +50,11 @@ class UserCoordinateController extends Controller
                 if ($request->latitude && $request->longitude) {
 
                     $coordinates = UserCoordinate::all();
-                    return response()->json($coordinates, 200, [], JSON_UNESCAPED_UNICODE);
-//                    for ($i = 0; $coordinates->count() > $i; $i++){
-//                        distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
+                    for ($i = 0; $coordinates->count() > $i; $i++){
+                        $distance = distance($request->latitude, $request->longitude, $coordinates->latitude, $coordinates->longitude, "M");
+                        return response()->json($distance, 200, [], JSON_UNESCAPED_UNICODE);
 //                        $user = UserCoordinate::where('latitude', $request->latitude)->where('longitude', $request->longitude)->first();
-//                    }
+                    }
 
 
 //                    $json['status'] = 1;
