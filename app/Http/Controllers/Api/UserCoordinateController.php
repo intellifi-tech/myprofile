@@ -51,7 +51,6 @@ class UserCoordinateController extends Controller
 
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
-                        dd($coordinate->latitude);
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M");
                         return response()->json($distance, 200, [], JSON_UNESCAPED_UNICODE);
                     }
