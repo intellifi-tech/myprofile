@@ -51,11 +51,11 @@ class UserCoordinateController extends Controller
                     $nearbyUserCoordinates = [];
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
-                        dd($coordinate->user);
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit, $coordinate->user);
                         array_push($nearbyUserCoordinates, $distance);
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
+                    dd($nearbyUserCoordinates);
                     $json['status'] = 1;
                     $json['message'] = "Success";
                     $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
