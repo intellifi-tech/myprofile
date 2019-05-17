@@ -15,6 +15,7 @@ class UserCoordinateController extends Controller
             $user = User::where('api_token', $request->api_token)->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
+                    $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
                     $userCoordination = new UserCoordinate();
                     $userCoordination->user_id = $user->id;
                     $userCoordination->latitude = $request->latitude;
