@@ -52,7 +52,7 @@ class UserCoordinateController extends Controller
                     $coordinates = UserCoordinate::all();
                     foreach ($coordinates as $coordinate){
                         dd($coordinate->user);
-                        $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit, );
+                        $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit, $coordinate->user);
                         array_push($nearbyUserCoordinates, $distance);
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
