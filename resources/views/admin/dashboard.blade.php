@@ -173,19 +173,39 @@
                         </div>
                     </div>
                     <!-- endregion -->
-                    <!-- region Online Kullanıcı Sayısı-->
+                    <!-- region Kullanıcı Etkinliği Katılım Listesi -->
                     <div class="portlet light bordered">
-                        <div class="portlet-title">
+                        <div class="portlet-title tabbable-line">
                             <div class="caption">
-                                <i class="icon-bar-chart font-dark hide"></i>
+                                <i class=" icon-social-twitter font-dark hide"></i>
                                 <span class="caption-subject font-dark bold uppercase">Online Kullanıcı Konumları</span>
                             </div>
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#five_seconds" data-toggle="tab" aria-expanded="true"> 5 saniye </a>
+                                </li>
+                                <li class="">
+                                    <a href="#ten_seconds" data-toggle="tab" aria-expanded="false"> 30 saniye </a>
+                                </li>
+                                <li class="">
+                                    <a href="#one_minute" data-toggle="tab" aria-expanded="false"> 1 dakika</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="portlet-body">
-                            <div id="online-user-maps" style="height: 300px;"></div>
+                        <div class="portlet-body" style="height: 307px">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="five_seconds">
+                                    <div id="five_seconds_online_user_maps" style="height: 300px;"></div>
+                                </div>
+                                <div class="tab-pane" id="ten_seconds">
+                                    <div id="thirty_seconds_online_user_maps" style="height: 300px;"></div>
+                                </div>
+                                <div class="tab-pane" id="one_minute">
+                                    <div id="one_minutes_online_user_maps" style="height: 300px;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- region Kullanıcı Edinimi-->
                     <div class="portlet light bordered">
                         <div class="portlet-title">
                             <div class="caption">
@@ -357,9 +377,22 @@
 <script src="{{ admin_asset('global/plugins/leaflet/Leaflet.fullscreen.js') }}" ></script>
 <script>
     $(document).ready(function () {
-        getOnlineUserCoordinates();
+        fiveSecondsGetOnlineUserCoordinates();
     });
-    function getOnlineUserCoordinates() {
+
+    setInterval(function(){
+        fiveSecondsGetOnlineUserCoordinates();
+    }, 5000);
+
+    setInterval(function(){
+        thirtySecondsGetOnlineUserCoordinates();
+    }, 30000);
+
+    setInterval(function(){
+        oneMinutesGetOnlineUserCoordinates();
+    }, 60000);
+
+    function fiveSecondsGetOnlineUserCoordinates() {
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -373,7 +406,97 @@
             data: {obj: 1},
             success: function (response) {
 
-                var map = L.map('online-user-maps', {
+                var map = L.map('five_seconds_online_user_maps', {
+                    fullscreenControl: true,
+                    fullscreenControlOptions: {
+                        position: 'topright',
+                        title: 'Tam Ekran Modu'
+                    }
+                }).setView([41.0448525, 29.0204335], 10);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                map.scrollWheelZoom.disable();
+                var LeafIcon = L.Icon.extend({
+                    options: {
+                        iconSize:     [38, 60],
+                        shadowSize:   [50, 34],
+                        iconAnchor:   [22, 55],
+                        shadowAnchor: [4, 62],
+                        popupAnchor:  [-3, -76]
+                    }
+                });
+
+                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
+
+                $.each(response, function (i, coordinate) {
+                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
+                });
+            }
+        });
+    }
+    function thirtySecondsGetOnlineUserCoordinates() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+            type: "POST",
+            dataType: "JSON",
+            timeout: 10000,
+            data: {obj: 1},
+            success: function (response) {
+
+                var map = L.map('thirty_seconds_online_user_maps', {
+                    fullscreenControl: true,
+                    fullscreenControlOptions: {
+                        position: 'topright',
+                        title: 'Tam Ekran Modu'
+                    }
+                }).setView([41.0448525, 29.0204335], 10);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                map.scrollWheelZoom.disable();
+                var LeafIcon = L.Icon.extend({
+                    options: {
+                        iconSize:     [38, 60],
+                        shadowSize:   [50, 34],
+                        iconAnchor:   [22, 55],
+                        shadowAnchor: [4, 62],
+                        popupAnchor:  [-3, -76]
+                    }
+                });
+
+                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
+
+                $.each(response, function (i, coordinate) {
+                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
+                });
+            }
+        });
+    }
+    function oneMinutesGetOnlineUserCoordinates() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+            type: "POST",
+            dataType: "JSON",
+            timeout: 10000,
+            data: {obj: 1},
+            success: function (response) {
+
+                var map = L.map('one_minutes_online_user_maps', {
                     fullscreenControl: true,
                     fullscreenControlOptions: {
                         position: 'topright',
