@@ -1,10 +1,12 @@
 @extends('admin.parent')
 
 @section('css')
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
     <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.fullscreen/dist/leaflet.fullscreen.css"/>
     <style>
-        .leaflet-fade-anim .leaflet-map-pane .leaflet-popup{
+        .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
             bottom: -28px !important;
         }
     </style>
@@ -43,7 +45,7 @@
                             <div class="number">
                                 <span data-counter="counterup" data-value="{{ $users->count() }}">0</span>
                             </div>
-                            <div class="desc"> Kullanıcı Sayısı </div>
+                            <div class="desc"> Kullanıcı Sayısı</div>
                         </div>
                     </a>
                 </div>
@@ -54,7 +56,7 @@
                         </div>
                         <div class="details">
                             <div class="number">
-                                <span data-counter="counterup" data-value="0">0</span> </div>
+                                <span data-counter="counterup" data-value="0">0</span></div>
                             <div class="desc"> Etkinlik Sayısı</div>
                         </div>
                     </a>
@@ -98,22 +100,24 @@
                             </div>
                             <ul class="nav nav-tabs">
                                 <li class="active">
-                                    <a href="#tab_actions_pending" data-toggle="tab" aria-expanded="true"> Devam Eden </a>
+                                    <a href="#tab_actions_pending" data-toggle="tab" aria-expanded="true"> Devam
+                                        Eden </a>
                                 </li>
                                 <li class="">
-                                    <a href="#tab_actions_completed" data-toggle="tab" aria-expanded="false"> Tamamlanan </a>
+                                    <a href="#tab_actions_completed" data-toggle="tab" aria-expanded="false">
+                                        Tamamlanan </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="portlet-body" style="height: 307px; overflow-y: scroll;">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab_actions_pending">
-                                    @for($i = 0; $i < 50; $i++)
+                                @for($i = 0; $i < 50; $i++)
                                     <!-- BEGIN: Actions -->
                                         <div class="mt-actions" style="width: 99%;">
                                             <div class="mt-action">
                                                 <div class="mt-action-img">
-                                                    <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}" />
+                                                    <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>
                                                 </div>
                                                 <div class="mt-action-body">
                                                     <div class="mt-action-row">
@@ -139,7 +143,7 @@
                                     @endfor
                                 </div>
                                 <div class="tab-pane" id="tab_actions_completed">
-                                    @for($i = 0; $i < 20; $i++)
+                                @for($i = 0; $i < 20; $i++)
                                     <!-- BEGIN:Completed-->
                                         <div class="mt-actions" style="width: 99%;">
                                             <div class="mt-action">
@@ -216,9 +220,9 @@
                         </div>
                         <div class="portlet-body">
                             <div id="site_statistics_loading">
-                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading" /> </div>
+                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading"/></div>
                             <div id="site_statistics_content" class="display-none">
-                                <div id="kullanici_edinimi" class="chart"> </div>
+                                <div id="kullanici_edinimi" class="chart"></div>
                             </div>
                         </div>
                     </div>
@@ -234,9 +238,9 @@
                         </div>
                         <div class="portlet-body">
                             <div id="etkinlik_istatistigi_loading">
-                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading" /> </div>
+                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading"/></div>
                             <div id="etkinlik_istatistigi_content" class="display-none">
-                                <div id="etkinlik_istatistigi" class="chart"> </div>
+                                <div id="etkinlik_istatistigi" class="chart"></div>
                             </div>
                         </div>
                     </div>
@@ -260,20 +264,22 @@
                             </ul>
                         </div>
                         <div class="portlet-body">
-                            <div class="tab-content"  style="height: 300px; overflow-y: scroll;">
+                            <div class="tab-content" style="height: 300px; overflow-y: scroll;">
                                 <div class="tab-pane active" id="portlet_comments_1">
                                 @for($i = 0; $i < 10; $i++)
                                     <!-- BEGIN: Comments -->
                                         <div class="mt-comments" style="width: 99%">
                                             <div class="mt-comment">
                                                 <div class="mt-comment-img">
-                                                    <img src="{{ admin_asset('pages/media/users/avatar1.jpg') }}"> </div>
+                                                    <img src="{{ admin_asset('pages/media/users/avatar1.jpg') }}"></div>
                                                 <div class="mt-comment-body">
                                                     <div class="mt-comment-info">
                                                         <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
                                                         <span class="mt-comment-date">21 Nisan</span>
                                                     </div>
-                                                    <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
+                                                    <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını
+                                                        bekliyoruz.
+                                                    </div>
                                                     <div class="mt-comment-details">
                                                         <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
                                                         <ul class="mt-comment-actions">
@@ -294,13 +300,16 @@
                                         <div class="mt-comments">
                                             <div class="mt-comment">
                                                 <div class="mt-comment-img">
-                                                    <img src="{{ admin_asset('pages/media/users/avatar4.jpg') }}"> </div>
+                                                    <img src="{{ admin_asset('pages/media/users/avatar4.jpg') }}"></div>
                                                 <div class="mt-comment-body">
                                                     <div class="mt-comment-info">
                                                         <span class="mt-comment-author">Michael Baker</span>
                                                         <span class="mt-comment-date">26 Feb, 10:30AM</span>
                                                     </div>
-                                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
+                                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of
+                                                        the printing and typesetting industry. Lorem Ipsum has been the
+                                                        industry's standard dummy.
+                                                    </div>
                                                     <div class="mt-comment-details">
                                                         <span class="mt-comment-status mt-comment-status-approved">Approved</span>
                                                         <ul class="mt-comment-actions">
@@ -336,9 +345,9 @@
                         </div>
                         <div class="portlet-body">
                             <div id="online_user_statistics_loading">
-                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading" /> </div>
+                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading"/></div>
                             <div id="online_user_statistics_content" class="display-none">
-                                <div id="online_user" class="chart"> </div>
+                                <div id="online_user" class="chart"></div>
                             </div>
                         </div>
                     </div>
@@ -355,9 +364,9 @@
                         </div>
                         <div class="portlet-body">
                             <div id="sektor_istatistigi_loading">
-                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading" /> </div>
+                                <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading"/></div>
                             <div id="sektor_istatistigi_content" class="display-none">
-                                <div id="sektor_istatistigi" class="chart"> </div>
+                                <div id="sektor_istatistigi" class="chart"></div>
                             </div>
                         </div>
                     </div>
@@ -373,590 +382,604 @@
 @stop
 
 @section('js')
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
-<script src="{{ admin_asset('global/plugins/leaflet/Leaflet.fullscreen.js') }}" ></script>
-<script>
-    $(document).ready(function () {
-        fiveSecondsGetOnlineUserCoordinates();
-    });
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+    <script src="{{ admin_asset('global/plugins/leaflet/Leaflet.fullscreen.js') }}"></script>
+    <script>
 
-    setInterval(function(){
-        fiveSecondsGetOnlineUserCoordinates();
-    }, 5000);
-
-    setInterval(function(){
-        thirtySecondsGetOnlineUserCoordinates();
-    }, 30000);
-
-    setInterval(function(){
-        oneMinutesGetOnlineUserCoordinates();
-    }, 60000);
-
-    function fiveSecondsGetOnlineUserCoordinates() {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        let map = L.map('five_seconds_online_user_maps', {
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+                position: 'topright',
+                title: 'Tam Ekran Modu'
             }
+        }).setView([41.0448525, 29.0204335], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        map.scrollWheelZoom.disable();
+
+        let markerGroup = L.layerGroup().addTo(map);
+
+        $(document).ready(function () {
+
+            fiveSecondsGetOnlineUserCoordinates();
+
         });
-        $.ajax({
-            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
-            type: "POST",
-            dataType: "JSON",
-            timeout: 10000,
-            data: {obj: 1},
-            success: function (response) {
 
-                var map = L.map('five_seconds_online_user_maps', {
-                    fullscreenControl: true,
-                    fullscreenControlOptions: {
-                        position: 'topright',
-                        title: 'Tam Ekran Modu'
-                    }
-                }).setView([41.0448525, 29.0204335], 10);
+        setInterval(function () {
+            fiveSecondsGetOnlineUserCoordinates();
+        }, 5000);
 
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
+        // setInterval(function(){
+        //     thirtySecondsGetOnlineUserCoordinates();
+        // }, 30000);
+        //
+        // setInterval(function(){
+        //     oneMinutesGetOnlineUserCoordinates();
+        // }, 60000);
 
-                map.scrollWheelZoom.disable();
-                var LeafIcon = L.Icon.extend({
-                    options: {
-                        iconSize:     [38, 60],
-                        shadowSize:   [50, 34],
-                        iconAnchor:   [22, 55],
-                        shadowAnchor: [4, 62],
-                        popupAnchor:  [-3, -76]
-                    }
-                });
-
-                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
-
-                $.each(response, function (i, coordinate) {
-                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
-                });
-            }
-        });
-    }
-    function thirtySecondsGetOnlineUserCoordinates() {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $.ajax({
-            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
-            type: "POST",
-            dataType: "JSON",
-            timeout: 10000,
-            data: {obj: 1},
-            success: function (response) {
-
-                var map = L.map('thirty_seconds_online_user_maps', {
-                    fullscreenControl: true,
-                    fullscreenControlOptions: {
-                        position: 'topright',
-                        title: 'Tam Ekran Modu'
-                    }
-                }).setView([41.0448525, 29.0204335], 10);
-
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-
-                map.scrollWheelZoom.disable();
-                var LeafIcon = L.Icon.extend({
-                    options: {
-                        iconSize:     [38, 60],
-                        shadowSize:   [50, 34],
-                        iconAnchor:   [22, 55],
-                        shadowAnchor: [4, 62],
-                        popupAnchor:  [-3, -76]
-                    }
-                });
-
-                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
-
-                $.each(response, function (i, coordinate) {
-                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
-                });
-            }
-        });
-    }
-    function oneMinutesGetOnlineUserCoordinates() {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $.ajax({
-            url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
-            type: "POST",
-            dataType: "JSON",
-            timeout: 10000,
-            data: {obj: 1},
-            success: function (response) {
-
-                var map = L.map('one_minutes_online_user_maps', {
-                    fullscreenControl: true,
-                    fullscreenControlOptions: {
-                        position: 'topright',
-                        title: 'Tam Ekran Modu'
-                    }
-                }).setView([41.0448525, 29.0204335], 10);
-
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-
-                map.scrollWheelZoom.disable();
-                var LeafIcon = L.Icon.extend({
-                    options: {
-                        iconSize:     [38, 60],
-                        shadowSize:   [50, 34],
-                        iconAnchor:   [22, 55],
-                        shadowAnchor: [4, 62],
-                        popupAnchor:  [-3, -76]
-                    }
-                });
-
-                var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
-
-                $.each(response, function (i, coordinate) {
-                    L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name+' '+coordinate.user.surname).addTo(map);
-                });
-            }
-        });
-    }
-
-
-
-</script>
-<script>
-    var Dashboard = function() {
-
-        return {
-
-            initCharts: function() {
-                if (!jQuery.plot) {
-                    return;
+        function fiveSecondsGetOnlineUserCoordinates() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
+            });
+            $.ajax({
+                url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+                type: "POST",
+                dataType: "JSON",
+                timeout: 10000,
+                data: {obj: 1},
+                success: function (response) {
+                    // Var Olan Markerlar siliniyor
+                    markerGroup.clearLayers();
 
-                function showChartTooltip(x, y, xValue, yValue) {
-                    $('<div id="tooltip" class="chart-tooltip">' + yValue + '<\/div>').css({
-                        position: 'absolute',
-                        display: 'none',
-                        top: y - 40,
-                        left: x - 40,
-                        border: '0px solid #ccc',
-                        padding: '2px 6px',
-                        'background-color': '#fff'
-                    }).appendTo("body").fadeIn(200);
-                }
-
-                var data = [];
-                var totalPoints = 250;
-
-                // random data generator for plot charts
-
-                function getRandomData() {
-                    if (data.length > 0) data = data.slice(1);
-                    // do a random walk
-                    while (data.length < totalPoints) {
-                        var prev = data.length > 0 ? data[data.length - 1] : 50;
-                        var y = prev + Math.random() * 10 - 5;
-                        if (y < 0) y = 0;
-                        if (y > 100) y = 100;
-                        data.push(y);
-                    }
-                    // zip the generated y values with the x values
-                    var res = [];
-                    for (var i = 0; i < data.length; ++i) res.push([i, data[i]])
-                    return res;
-                }
-
-                function randValue() {
-                    return (Math.floor(Math.random() * (1 + 50 - 20))) + 10;
-                }
-
-                var visitors = [
-                    ['02/2013', 1500],
-                    ['03/2013', 2500],
-                    ['04/2013', 1700],
-                    ['05/2013', 800],
-                    ['06/2013', 1500],
-                    ['07/2013', 2350],
-                    ['08/2013', 1500],
-                    ['09/2013', 1300],
-                    ['10/2013', 4600]
-                ];
-
-                var visitors2 = [
-                    ['02/2013', 1500],
-                    ['03/2013', 2500],
-                    ['04/2013', 1700],
-                    ['05/2013', 800],
-                    ['06/2013', 1500],
-                    ['07/2013', 2350],
-                    ['08/2013', 1500],
-                    ['09/2013', 1300],
-                    ['11/2013', 4600]
-                ];
-
-                var visitors3 = [
-                    ['02/2013', 1500],
-                    ['03/2013', 2500],
-                    ['04/2013', 1700],
-                    ['05/2013', 800],
-                    ['06/2013', 1500],
-                    ['07/2013', 2350],
-                    ['08/2013', 1500],
-                    ['09/2013', 1300],
-                    ['11/2013', 4600]
-                ];
-
-                var visitors4 = [
-                    ['02/2013', 1500],
-                    ['03/2013', 2500],
-                    ['04/2013', 1700],
-                    ['05/2013', 800],
-                    ['06/2013', 1500],
-                    ['07/2013', 2350],
-                    ['08/2013', 1500],
-                    ['09/2013', 1300],
-                    ['11/2013', 4600]
-                ];
-
-
-                if ($('#kullanici_edinimi').size() != 0) {
-
-                    $('#site_statistics_loading').hide();
-                    $('#site_statistics_content').show();
-
-                    var plot_statistics = $.plot($("#kullanici_edinimi"), [{
-                            data: visitors,
-                            lines: {
-                                fill: 0.6,
-                                lineWidth: 0
-                            },
-                            color: ['#f89f9f']
-                        }, {
-                            data: visitors,
-                            points: {
-                                show: true,
-                                fill: true,
-                                radius: 5,
-                                fillColor: "#f89f9f",
-                                lineWidth: 3
-                            },
-                            color: '#fff',
-                            shadowSize: 0
-                        }],
-
-                        {
-                            xaxis: {
-                                tickLength: 0,
-                                tickDecimals: 0,
-                                mode: "categories",
-                                min: 0,
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            yaxis: {
-                                ticks: 5,
-                                tickDecimals: 0,
-                                tickColor: "#eee",
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            grid: {
-                                hoverable: true,
-                                clickable: true,
-                                tickColor: "#eee",
-                                borderColor: "#eee",
-                                borderWidth: 1
-                            }
-                        });
-
-                    var previousPoint = null;
-                    $("#kullanici_edinimi").bind("plothover", function(event, pos, item) {
-                        $("#x").text(pos.x.toFixed(2));
-                        $("#y").text(pos.y.toFixed(2));
-                        if (item) {
-                            if (previousPoint != item.dataIndex) {
-                                previousPoint = item.dataIndex;
-
-                                $("#tooltip").remove();
-                                var x = item.datapoint[0].toFixed(2),
-                                    y = item.datapoint[1].toFixed(2);
-
-                                showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                            }
-                        } else {
-                            $("#tooltip").remove();
-                            previousPoint = null;
+                    // Icon Özellikleri
+                    var LeafIcon = L.Icon.extend({
+                        options: {
+                            iconSize: [38, 60],
+                            shadowSize: [50, 34],
+                            iconAnchor: [22, 55],
+                            shadowAnchor: [4, 62],
+                            popupAnchor: [-3, -76]
                         }
                     });
-                }
 
-                if ($('#etkinlik_istatistigi').size() != 0) {
+                    // Marker Görseli
+                    var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
 
-                    $('#etkinlik_istatistigi_loading').hide();
-                    $('#etkinlik_istatistigi_content').show();
-
-                    var plot_statistics2 = $.plot($("#etkinlik_istatistigi"), [{
-                            data: visitors2,
-                            lines: {
-                                fill: 0.6,
-                                lineWidth: 0
-                            },
-                            color: ['#f89f9f']
-                        }, {
-                            data: visitors2,
-                            points: {
-                                show: true,
-                                fill: true,
-                                radius: 5,
-                                fillColor: "#f89f9f",
-                                lineWidth: 3
-                            },
-                            color: '#fff',
-                            shadowSize: 0
-                        }],
-
-                        {
-                            xaxis: {
-                                tickLength: 0,
-                                tickDecimals: 0,
-                                mode: "categories",
-                                min: 0,
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            yaxis: {
-                                ticks: 5,
-                                tickDecimals: 0,
-                                tickColor: "#eee",
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            grid: {
-                                hoverable: true,
-                                clickable: true,
-                                tickColor: "#eee",
-                                borderColor: "#eee",
-                                borderWidth: 1
-                            }
-                        });
-
-                    var previousPoint2 = null;
-                    $("#etkinlik_istatistigi").bind("plothover", function(event, pos, item) {
-                        $("#x").text(pos.x.toFixed(2));
-                        $("#y").text(pos.y.toFixed(2));
-                        if (item) {
-                            if (previousPoint2 != item.dataIndex) {
-                                previousPoint2 = item.dataIndex;
-
-                                $("#tooltip").remove();
-                                var x = item.datapoint[0].toFixed(2),
-                                    y = item.datapoint[1].toFixed(2);
-
-                                showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                            }
-                        } else {
-                            $("#tooltip").remove();
-                            previousPoint2 = null;
-                        }
+                    // Gelen Kordinatlar Marker üretiliyor
+                    $.each(response, function (i, coordinate) {
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(markerGroup);
                     });
                 }
+            });
+        }
 
-                if ($('#sektor_istatistigi').size() != 0) {
+        function thirtySecondsGetOnlineUserCoordinates() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+                type: "POST",
+                dataType: "JSON",
+                timeout: 10000,
+                data: {obj: 1},
+                success: function (response) {
 
-                    $('#sektor_istatistigi_loading').hide();
-                    $('#sektor_istatistigi_content').show();
+                    var map = L.map('thirty_seconds_online_user_maps', {
+                        fullscreenControl: true,
+                        fullscreenControlOptions: {
+                            position: 'topright',
+                            title: 'Tam Ekran Modu'
+                        }
+                    }).setView([41.0448525, 29.0204335], 10);
 
-                    var plot_statistics3 = $.plot($("#sektor_istatistigi"), [{
-                            data: visitors3,
-                            lines: {
-                                fill: 0.6,
-                                lineWidth: 0
-                            },
-                            color: ['#f89f9f']
-                        }, {
-                            data: visitors3,
-                            points: {
-                                show: true,
-                                fill: true,
-                                radius: 5,
-                                fillColor: "#f89f9f",
-                                lineWidth: 3
-                            },
-                            color: '#fff',
-                            shadowSize: 0
-                        }],
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
 
-                        {
-                            xaxis: {
-                                tickLength: 0,
-                                tickDecimals: 0,
-                                mode: "categories",
-                                min: 0,
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            yaxis: {
-                                ticks: 5,
-                                tickDecimals: 0,
-                                tickColor: "#eee",
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            grid: {
-                                hoverable: true,
-                                clickable: true,
-                                tickColor: "#eee",
-                                borderColor: "#eee",
-                                borderWidth: 1
-                            }
-                        });
-
-                    var previousPoint3 = null;
-                    $("#sektor_istatistigi").bind("plothover", function(event, pos, item) {
-                        $("#x").text(pos.x.toFixed(2));
-                        $("#y").text(pos.y.toFixed(2));
-                        if (item) {
-                            if (previousPoint3 != item.dataIndex) {
-                                previousPoint3 = item.dataIndex;
-
-                                $("#tooltip").remove();
-                                var x = item.datapoint[0].toFixed(2),
-                                    y = item.datapoint[1].toFixed(2);
-
-                                showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                            }
-                        } else {
-                            $("#tooltip").remove();
-                            previousPoint3 = null;
+                    map.scrollWheelZoom.disable();
+                    var LeafIcon = L.Icon.extend({
+                        options: {
+                            iconSize: [38, 60],
+                            shadowSize: [50, 34],
+                            iconAnchor: [22, 55],
+                            shadowAnchor: [4, 62],
+                            popupAnchor: [-3, -76]
                         }
                     });
-                }
 
-                if ($('#online_user').size() != 0) {
+                    var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
 
-                    $('#online_user_statistics_loading').hide();
-                    $('#online_user_statistics_content').show();
-
-                    var plot_statistics4 = $.plot($("#online_user"), [{
-                            data: visitors4,
-                            lines: {
-                                fill: 0.6,
-                                lineWidth: 0
-                            },
-                            color: ['#f89f9f']
-                        }, {
-                            data: visitors4,
-                            points: {
-                                show: true,
-                                fill: true,
-                                radius: 5,
-                                fillColor: "#f89f9f",
-                                lineWidth: 3
-                            },
-                            color: '#fff',
-                            shadowSize: 0
-                        }],
-
-                        {
-                            xaxis: {
-                                tickLength: 0,
-                                tickDecimals: 0,
-                                mode: "categories",
-                                min: 0,
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            yaxis: {
-                                ticks: 5,
-                                tickDecimals: 0,
-                                tickColor: "#eee",
-                                font: {
-                                    lineHeight: 14,
-                                    style: "normal",
-                                    variant: "small-caps",
-                                    color: "#6F7B8A"
-                                }
-                            },
-                            grid: {
-                                hoverable: true,
-                                clickable: true,
-                                tickColor: "#eee",
-                                borderColor: "#eee",
-                                borderWidth: 1
-                            }
-                        });
-
-                    var previousPoint4 = null;
-                    $("#online_user").bind("plothover", function(event, pos, item) {
-                        $("#x").text(pos.x.toFixed(2));
-                        $("#y").text(pos.y.toFixed(2));
-                        if (item) {
-                            if (previousPoint4 != item.dataIndex) {
-                                previousPoint4 = item.dataIndex;
-
-                                $("#tooltip").remove();
-                                var x = item.datapoint[0].toFixed(2),
-                                    y = item.datapoint[1].toFixed(2);
-
-                                showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                            }
-                        } else {
-                            $("#tooltip").remove();
-                            previousPoint4 = null;
-                        }
+                    $.each(response, function (i, coordinate) {
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(map);
                     });
                 }
+            });
+        }
+
+        function oneMinutesGetOnlineUserCoordinates() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url: "{{ action('Admin\UserController@getOnlineUserCoordinates')}}",
+                type: "POST",
+                dataType: "JSON",
+                timeout: 10000,
+                data: {obj: 1},
+                success: function (response) {
+
+                    var map = L.map('one_minutes_online_user_maps', {
+                        fullscreenControl: true,
+                        fullscreenControlOptions: {
+                            position: 'topright',
+                            title: 'Tam Ekran Modu'
+                        }
+                    }).setView([41.0448525, 29.0204335], 10);
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map);
+
+                    map.scrollWheelZoom.disable();
+                    var LeafIcon = L.Icon.extend({
+                        options: {
+                            iconSize: [38, 60],
+                            shadowSize: [50, 34],
+                            iconAnchor: [22, 55],
+                            shadowAnchor: [4, 62],
+                            popupAnchor: [-3, -76]
+                        }
+                    });
+
+                    var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
+
+                    $.each(response, function (i, coordinate) {
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(map);
+                    });
+                }
+            });
+        }
 
 
-            },
+    </script>
+    <script>
+        var Dashboard = function () {
 
-            init: function() {
-                this.initCharts();
-            }
-        };
+            return {
 
-    }();
+                initCharts: function () {
+                    if (!jQuery.plot) {
+                        return;
+                    }
 
-    if (App.isAngularJsApp() === false) {
-        jQuery(document).ready(function() {
-            Dashboard.init(); // init metronic core componets
-        });
-    }
-</script>
+                    function showChartTooltip(x, y, xValue, yValue) {
+                        $('<div id="tooltip" class="chart-tooltip">' + yValue + '<\/div>').css({
+                            position: 'absolute',
+                            display: 'none',
+                            top: y - 40,
+                            left: x - 40,
+                            border: '0px solid #ccc',
+                            padding: '2px 6px',
+                            'background-color': '#fff'
+                        }).appendTo("body").fadeIn(200);
+                    }
+
+                    var data = [];
+                    var totalPoints = 250;
+
+                    // random data generator for plot charts
+
+                    function getRandomData() {
+                        if (data.length > 0) data = data.slice(1);
+                        // do a random walk
+                        while (data.length < totalPoints) {
+                            var prev = data.length > 0 ? data[data.length - 1] : 50;
+                            var y = prev + Math.random() * 10 - 5;
+                            if (y < 0) y = 0;
+                            if (y > 100) y = 100;
+                            data.push(y);
+                        }
+                        // zip the generated y values with the x values
+                        var res = [];
+                        for (var i = 0; i < data.length; ++i) res.push([i, data[i]])
+                        return res;
+                    }
+
+                    function randValue() {
+                        return (Math.floor(Math.random() * (1 + 50 - 20))) + 10;
+                    }
+
+                    var visitors = [
+                        ['02/2013', 1500],
+                        ['03/2013', 2500],
+                        ['04/2013', 1700],
+                        ['05/2013', 800],
+                        ['06/2013', 1500],
+                        ['07/2013', 2350],
+                        ['08/2013', 1500],
+                        ['09/2013', 1300],
+                        ['10/2013', 4600]
+                    ];
+
+                    var visitors2 = [
+                        ['02/2013', 1500],
+                        ['03/2013', 2500],
+                        ['04/2013', 1700],
+                        ['05/2013', 800],
+                        ['06/2013', 1500],
+                        ['07/2013', 2350],
+                        ['08/2013', 1500],
+                        ['09/2013', 1300],
+                        ['11/2013', 4600]
+                    ];
+
+                    var visitors3 = [
+                        ['02/2013', 1500],
+                        ['03/2013', 2500],
+                        ['04/2013', 1700],
+                        ['05/2013', 800],
+                        ['06/2013', 1500],
+                        ['07/2013', 2350],
+                        ['08/2013', 1500],
+                        ['09/2013', 1300],
+                        ['11/2013', 4600]
+                    ];
+
+                    var visitors4 = [
+                        ['02/2013', 1500],
+                        ['03/2013', 2500],
+                        ['04/2013', 1700],
+                        ['05/2013', 800],
+                        ['06/2013', 1500],
+                        ['07/2013', 2350],
+                        ['08/2013', 1500],
+                        ['09/2013', 1300],
+                        ['11/2013', 4600]
+                    ];
+
+
+                    if ($('#kullanici_edinimi').size() != 0) {
+
+                        $('#site_statistics_loading').hide();
+                        $('#site_statistics_content').show();
+
+                        var plot_statistics = $.plot($("#kullanici_edinimi"), [{
+                                data: visitors,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f']
+                            }, {
+                                data: visitors,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#f89f9f",
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint = null;
+                        $("#kullanici_edinimi").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint != item.dataIndex) {
+                                    previousPoint = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint = null;
+                            }
+                        });
+                    }
+
+                    if ($('#etkinlik_istatistigi').size() != 0) {
+
+                        $('#etkinlik_istatistigi_loading').hide();
+                        $('#etkinlik_istatistigi_content').show();
+
+                        var plot_statistics2 = $.plot($("#etkinlik_istatistigi"), [{
+                                data: visitors2,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f']
+                            }, {
+                                data: visitors2,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#f89f9f",
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint2 = null;
+                        $("#etkinlik_istatistigi").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint2 != item.dataIndex) {
+                                    previousPoint2 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint2 = null;
+                            }
+                        });
+                    }
+
+                    if ($('#sektor_istatistigi').size() != 0) {
+
+                        $('#sektor_istatistigi_loading').hide();
+                        $('#sektor_istatistigi_content').show();
+
+                        var plot_statistics3 = $.plot($("#sektor_istatistigi"), [{
+                                data: visitors3,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f']
+                            }, {
+                                data: visitors3,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#f89f9f",
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint3 = null;
+                        $("#sektor_istatistigi").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint3 != item.dataIndex) {
+                                    previousPoint3 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint3 = null;
+                            }
+                        });
+                    }
+
+                    if ($('#online_user').size() != 0) {
+
+                        $('#online_user_statistics_loading').hide();
+                        $('#online_user_statistics_content').show();
+
+                        var plot_statistics4 = $.plot($("#online_user"), [{
+                                data: visitors4,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f']
+                            }, {
+                                data: visitors4,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#f89f9f",
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint4 = null;
+                        $("#online_user").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint4 != item.dataIndex) {
+                                    previousPoint4 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint4 = null;
+                            }
+                        });
+                    }
+
+
+                },
+
+                init: function () {
+                    this.initCharts();
+                }
+            };
+
+        }();
+
+        if (App.isAngularJsApp() === false) {
+            jQuery(document).ready(function () {
+                Dashboard.init(); // init metronic core componets
+            });
+        }
+    </script>
 @stop
