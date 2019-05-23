@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eeef3bd-9891-4f71-8355-f838c7cf56a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,51 +13,23 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="438" column="43" selection-start-line="438" selection-start-column="43" selection-end-line="438" selection-end-column="43" />
+            <state relative-caret-position="556">
+              <caret line="418" column="38" lean-forward="true" selection-start-line="418" selection-start-column="38" selection-end-line="418" selection-end-column="38" />
               <folding>
-                <element signature="e#5244#5286#0#HTML" expanded="true" />
-                <element signature="e#5617#5636#0#HTML" expanded="true" />
-                <element signature="e#7991#8010#0#HTML" expanded="true" />
-                <element signature="e#11486#11507#0#HTML" expanded="true" />
-                <element signature="e#11719#11741#0#HTML" expanded="true" />
-                <element signature="e#11938#11960#0#HTML" expanded="true" />
-                <element signature="e#12153#12175#0#HTML" expanded="true" />
-                <element signature="e#15534#15576#0#HTML" expanded="true" />
-                <element signature="e#15850#15868#0#HTML" expanded="true" />
                 <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#25269#27041#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#27092#28861#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#24500#26000#0#HTML" />
+                <element signature="e#27805#29305#0#HTML" />
+                <element signature="e#29392#30904#0#HTML" />
+                <element signature="e#29979#48685#0#HTML" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -72,15 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Zaman T</find>
-      <find>gmap_polygons</find>
-      <find>user-ma</find>
-      <find>user-map</find>
-      <find>Tamamlanan</find>
-      <find>Kullanıcı</find>
-      <find>KATILdı</find>
-      <find>Katıldı</find>
-      <find>definitions</find>
       <find>Login</find>
       <find>user-</find>
       <find>Created</find>
@@ -99,9 +63,18 @@
       <find>Devam ed</find>
       <find>Online Kullanıcı Katılım</find>
       <find>Kullanıcı Etkinlik</find>
-      <find>thirty_seconds_online_user_maps</find>
       <find>one_minutes_online_user_maps</find>
+      <find>5 sanite</find>
+      <find>5 sanie</find>
+      <find>5 sa</find>
+      <find>30 sani</find>
+      <find>5 sani</find>
+      <find>mapFive</find>
       <find>five_seconds_online_user_maps</find>
+      <find>thirtySeconds</find>
+      <find>thirty</find>
+      <find>one()</find>
+      <find>thirty_seconds_online_user_maps</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -267,11 +240,10 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2560" />
+    <option name="height" value="1342" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -286,48 +258,47 @@
         <subPane>
           <expand>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myprofile" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myprofile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -378,7 +349,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9a1efe57-1a1a-4d6d-888d-ef91c3b5593b" name="Default Changelist" comment="" />
+      <changelist id="2eeef3bd-9891-4f71-8355-f838c7cf56a9" name="Default Changelist" comment="" />
       <created>1555339580539</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -429,17 +400,18 @@
       <workItem from="1558008650027" duration="4114000" />
       <workItem from="1558079107010" duration="3706000" />
       <workItem from="1558337391812" duration="6102000" />
+      <workItem from="1558608486403" duration="8445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249739000" />
+    <option name="totallyTimeSpent" value="258778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675852" visible="true" weight="0.2585288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49675852" visible="true" weight="0.1457506" />
       <window_info id="Structure" order="1" sideWeight="0.5032415" side_tool="true" weight="0.14058776" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -885,23 +857,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="438" column="43" selection-start-line="438" selection-start-column="43" selection-end-line="438" selection-end-column="43" />
+        <state relative-caret-position="556">
+          <caret line="418" column="38" lean-forward="true" selection-start-line="418" selection-start-column="38" selection-end-line="418" selection-end-column="38" />
           <folding>
-            <element signature="e#5244#5286#0#HTML" expanded="true" />
-            <element signature="e#5617#5636#0#HTML" expanded="true" />
-            <element signature="e#7991#8010#0#HTML" expanded="true" />
-            <element signature="e#11486#11507#0#HTML" expanded="true" />
-            <element signature="e#11719#11741#0#HTML" expanded="true" />
-            <element signature="e#11938#11960#0#HTML" expanded="true" />
-            <element signature="e#12153#12175#0#HTML" expanded="true" />
-            <element signature="e#15534#15576#0#HTML" expanded="true" />
-            <element signature="e#15850#15868#0#HTML" expanded="true" />
             <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#25269#27041#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#27092#28861#0#HTML" />
             <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#24500#26000#0#HTML" />
+            <element signature="e#27805#29305#0#HTML" />
+            <element signature="e#29392#30904#0#HTML" />
+            <element signature="e#29979#48685#0#HTML" />
           </folding>
         </state>
       </provider>

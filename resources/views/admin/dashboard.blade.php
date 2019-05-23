@@ -185,13 +185,13 @@
                                 <span class="caption-subject font-dark bold uppercase">Online Kullanıcı Konumları</span>
                             </div>
                             <ul class="nav nav-tabs">
-                                <li class="active">
+                                <li class="active" onclick="five()">
                                     <a href="#five_seconds" data-toggle="tab" aria-expanded="true"> 5 saniye </a>
                                 </li>
-                                <li class="">
+                                <li class="" onclick="thirty()">
                                     <a href="#ten_seconds" data-toggle="tab" aria-expanded="false"> 30 saniye </a>
                                 </li>
-                                <li class="">
+                                <li class="" onclick="one()">
                                     <a href="#one_minute" data-toggle="tab" aria-expanded="false"> 1 dakika</a>
                                 </li>
                             </ul>
@@ -388,7 +388,47 @@
     <script src="{{ admin_asset('global/plugins/leaflet/Leaflet.fullscreen.js') }}"></script>
     <script>
 
-        let map = L.map('five_seconds_online_user_maps', {
+        $(document).ready(function () {
+            fiveSeconds;
+        });
+
+        let fiveSeconds = setInterval(function () {
+            fiveSecondsGetOnlineUserCoordinates();
+        }, 5000);
+
+        let thirtySeconds = setInterval(function () {
+            thirtySecondsGetOnlineUserCoordinates();
+        }, 30000);
+
+        let oneMinutes = setInterval(function () {
+            oneMinutesGetOnlineUserCoordinates();
+        }, 60000);
+
+        function five()
+        {
+            fiveSeconds;
+            clearInterval(thirtySeconds);
+            clearInterval(oneMinutes);
+
+        }
+
+        function thirty()
+        {
+            thirtySeconds;
+            clearInterval(fiveSeconds);
+            clearInterval(oneMinutes);
+
+        }
+
+        function one()
+        {
+            oneMinutes;
+            clearInterval(fiveSeconds);
+            clearInterval(thirtySeconds);
+
+        }
+
+        let mapFive = L.map('five_seconds_online_user_maps', {
             fullscreenControl: true,
             fullscreenControlOptions: {
                 position: 'topright',
@@ -398,29 +438,43 @@
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+        }).addTo(mapFive);
 
-        map.scrollWheelZoom.disable();
+        mapFive.scrollWheelZoom.disable();
 
-        let markerGroup = L.layerGroup().addTo(map);
+        let markerGroupFive = L.layerGroup().addTo(mapFive);
 
-        $(document).ready(function () {
+        let mapThirty = L.map('thirty_seconds_online_user_maps', {
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+                position: 'topright',
+                title: 'Tam Ekran Modu'
+            }
+        }).setView([41.0448525, 29.0204335], 10);
 
-            fiveSecondsGetOnlineUserCoordinates();
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mapThirty);
 
-        });
+        mapThirty.scrollWheelZoom.disable();
 
-        setInterval(function () {
-            fiveSecondsGetOnlineUserCoordinates();
-        }, 5000);
+        let markerGroupThirty = L.layerGroup().addTo(mapThirty);
 
-        // setInterval(function(){
-        //     thirtySecondsGetOnlineUserCoordinates();
-        // }, 30000);
-        //
-        // setInterval(function(){
-        //     oneMinutesGetOnlineUserCoordinates();
-        // }, 60000);
+        let mapOne = L.map('one_minutes_online_user_maps', {
+            fullscreenControl: true,
+            fullscreenControlOptions: {
+                position: 'topright',
+                title: 'Tam Ekran Modu'
+            }
+        }).setView([41.0448525, 29.0204335], 10);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mapOne);
+
+        mapOne.scrollWheelZoom.disable();
+
+        let markerGroupOne = L.layerGroup().addTo(mapOne);
 
         function fiveSecondsGetOnlineUserCoordinates() {
             $.ajaxSetup({
@@ -436,7 +490,7 @@
                 data: {obj: 1},
                 success: function (response) {
                     // Var Olan Markerlar siliniyor
-                    markerGroup.clearLayers();
+                    markerGroupFive.clearLayers();
 
                     // Icon Özellikleri
                     var LeafIcon = L.Icon.extend({
@@ -454,7 +508,7 @@
 
                     // Gelen Kordinatlar Marker üretiliyor
                     $.each(response, function (i, coordinate) {
-                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(markerGroup);
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(markerGroupFive);
                     });
                 }
             });
@@ -473,20 +527,10 @@
                 timeout: 10000,
                 data: {obj: 1},
                 success: function (response) {
+                    // Var Olan Markerlar siliniyor
+                    markerGroupThirty.clearLayers();
 
-                    var map = L.map('thirty_seconds_online_user_maps', {
-                        fullscreenControl: true,
-                        fullscreenControlOptions: {
-                            position: 'topright',
-                            title: 'Tam Ekran Modu'
-                        }
-                    }).setView([41.0448525, 29.0204335], 10);
-
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    }).addTo(map);
-
-                    map.scrollWheelZoom.disable();
+                    // Icon Özellikleri
                     var LeafIcon = L.Icon.extend({
                         options: {
                             iconSize: [38, 60],
@@ -497,10 +541,12 @@
                         }
                     });
 
+                    // Marker Görseli
                     var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
 
+                    // Gelen Kordinatlar Marker üretiliyor
                     $.each(response, function (i, coordinate) {
-                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(map);
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(markerGroupThirty);
                     });
                 }
             });
@@ -519,20 +565,10 @@
                 timeout: 10000,
                 data: {obj: 1},
                 success: function (response) {
+                    // Var Olan Markerlar siliniyor
+                    markerGroupOne.clearLayers();
 
-                    var map = L.map('one_minutes_online_user_maps', {
-                        fullscreenControl: true,
-                        fullscreenControlOptions: {
-                            position: 'topright',
-                            title: 'Tam Ekran Modu'
-                        }
-                    }).setView([41.0448525, 29.0204335], 10);
-
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    }).addTo(map);
-
-                    map.scrollWheelZoom.disable();
+                    // Icon Özellikleri
                     var LeafIcon = L.Icon.extend({
                         options: {
                             iconSize: [38, 60],
@@ -543,10 +579,12 @@
                         }
                     });
 
+                    // Marker Görseli
                     var greenIcon = new LeafIcon({iconUrl: '{{ admin_asset('global/img/user-marker.png') }}'});
 
+                    // Gelen Kordinatlar Marker üretiliyor
                     $.each(response, function (i, coordinate) {
-                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(map);
+                        L.marker([coordinate.latitude, coordinate.longitude], {icon: greenIcon}).bindPopup(coordinate.user.name + ' ' + coordinate.user.surname).addTo(markerGroupOne);
                     });
                 }
             });
