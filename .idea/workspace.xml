@@ -379,12 +379,12 @@
       <workItem from="1558079107010" duration="3706000" />
       <workItem from="1558337391812" duration="6102000" />
       <workItem from="1558608486403" duration="8445000" />
-      <workItem from="1559117308502" duration="5360000" />
+      <workItem from="1559117308502" duration="5618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264138000" />
+    <option name="totallyTimeSpent" value="264396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
@@ -440,23 +440,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Widgets/Sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="86" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
-          <folding>
-            <element signature="e#31#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -833,6 +816,20 @@
             <element signature="e#0#6#0" expanded="true" />
             <element signature="e#0#6#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/ParameterBag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="345" column="20" selection-start-line="345" selection-start-column="20" selection-end-line="345" selection-end-column="20" />
         </state>
       </provider>
     </entry>
