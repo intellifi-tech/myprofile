@@ -106,8 +106,8 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
+        dd(User::all());
         $user = User::where('email', $request->email)->first();
-        dd($user);
         if($user->type == 1){
             if ($request->email && $request->password){
                 $user = User::where([
