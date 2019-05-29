@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Sector;
 use App\User;
+use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -26,7 +27,8 @@ class DashboardController extends Controller
     {
         $users = User::all();
         $sectors = Sector::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors]);
+        $onlineUsers = UserCoordinate::all();
+        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers]);
     }
 
     /**
