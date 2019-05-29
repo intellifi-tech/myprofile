@@ -106,8 +106,7 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        dd($request->header('api-token'));
-        $user = User::where('email', $request->email)->first();
+        $user = User::where('api_token', $request->header('api-token'))->first();
         if($user->type == 1){
             if ($request->email && $request->password){
                 $user = User::where([
