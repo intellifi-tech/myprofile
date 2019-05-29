@@ -93,7 +93,7 @@ class UserController extends Controller
             if ($user->save()){
                 return response()->json([
                     'status' => 1,
-                    'message' => 'Kullanıcı oluşturuldu.',
+                    'message' => 'Giriş yapıldı.',
                     'api_token' => $user->api_token,
                     'id' => $user->id,
                     'profile_photo' => $user->profile_photo,
@@ -107,6 +107,7 @@ class UserController extends Controller
                     'date_of_birth' => $user->date_of_birth,
                     'company_id' => $user->company_id,
                     'sector_id' => $user->sector_id,
+                    'email' => $user->email,
                 ], 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
