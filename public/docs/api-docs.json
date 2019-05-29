@@ -668,10 +668,6 @@
         },
         "email": {
           "type": "string"
-        },
-        "status": {
-          "type": "integer",
-          "format": "tinyInteger"
         }
       }
     },

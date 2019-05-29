@@ -148,6 +148,7 @@ class UserController extends Controller
                             'date_of_birth' => $user->date_of_birth,
                             'company_id' => $user->company_id,
                             'sector_id' => $user->sector_id,
+                            'email' => $user->email,
                         ], 200, [], JSON_UNESCAPED_UNICODE);
                     }
                 }else{
