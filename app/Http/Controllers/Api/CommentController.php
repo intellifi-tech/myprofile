@@ -12,7 +12,7 @@ class CommentController extends Controller
     public function index(Request $request)
     {
         if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $comment = Comment::all();
                 $json['status'] = 1;
@@ -34,7 +34,7 @@ class CommentController extends Controller
     public function create(Request $request)
     {
         if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->event_id && $request->comment) {
                     $comment = new Comment();
@@ -68,7 +68,7 @@ class CommentController extends Controller
     public function show(Request $request)
     {
         if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->id) {
                     $comment = Comment::find($request->id);
