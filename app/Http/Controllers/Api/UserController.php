@@ -106,7 +106,7 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        dd($request->input('email'));
+        dd(json_decode($request->all()));
         $user = User::where('email', $request->email)->first();
         if($user->type == 1){
             if ($request->email && $request->password){
