@@ -12,7 +12,7 @@ class MessageController extends Controller
     public function newMessage(Request $request)
     {
         if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
                     $message = new Message();
@@ -47,7 +47,7 @@ class MessageController extends Controller
     public function answerMessage(Request $request)
     {
         if ($request->api_token) {
-            $user = User::where('api_token', $request->api_token)->first();
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
                     $message = new Message();
