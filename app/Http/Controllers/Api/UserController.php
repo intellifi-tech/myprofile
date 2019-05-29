@@ -91,11 +91,22 @@ class UserController extends Controller
             $user->password = Hash::make($request->password);
             $user->api_token = Str::random(60);
             if ($user->save()){
-                $json['status'] = 1;
-                $json['message'] = "Kullanıcı oluşturuldu.";
-                $json['user'] = $user;
-                $json['api_token'] = $user->api_token;
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                return response()->json([
+                    'status' => 1,
+                    'message' => 'Kullanıcı oluşturuldu.',
+                    'api_token' => $user->api_token,
+                    'profile_photo' => $user->profile_photo,
+                    'cover_photo' => $user->cover_photo,
+                    'title' => $user->title,
+                    'name' => $user->name,
+                    'surname' => $user->surname,
+                    'career_history' => $user->career_history,
+                    'short_biography' => $user->short_biography,
+                    'credentials' => $user->credentials,
+                    'date_of_birth' => $user->date_of_birth,
+                    'company_id' => $user->company_id,
+                    'sector_id' => $user->sector_id,
+                ], 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
             $json['status'] = 0;
@@ -120,11 +131,22 @@ class UserController extends Controller
                         $json['message'] = "Giriş başarısız. Şifre yanlış.";
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
-                        $json['status'] = 1;
-                        $json['message'] = "Giriş başarılı.";
-                        $json['user'] = $user;
-                        $json['api_token'] = $user->api_token;
-                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        return response()->json([
+                            'status' => 1,
+                            'message' => 'Giriş yapıldı.',
+                            'api_token' => $user->api_token,
+                            'profile_photo' => $user->profile_photo,
+                            'cover_photo' => $user->cover_photo,
+                            'title' => $user->title,
+                            'name' => $user->name,
+                            'surname' => $user->surname,
+                            'career_history' => $user->career_history,
+                            'short_biography' => $user->short_biography,
+                            'credentials' => $user->credentials,
+                            'date_of_birth' => $user->date_of_birth,
+                            'company_id' => $user->company_id,
+                            'sector_id' => $user->sector_id,
+                        ], 200, [], JSON_UNESCAPED_UNICODE);
                     }
                 }else{
                     $json['status'] = 0;
