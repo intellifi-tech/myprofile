@@ -95,6 +95,7 @@ class UserController extends Controller
                     'status' => 1,
                     'message' => 'Kullanıcı oluşturuldu.',
                     'api_token' => $user->api_token,
+                    'id' => $user->id,
                     'profile_photo' => $user->profile_photo,
                     'cover_photo' => $user->cover_photo,
                     'title' => $user->title,
