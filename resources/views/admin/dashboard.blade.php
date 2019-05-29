@@ -37,7 +37,7 @@
             <!-- BEGIN DASHBOARD STATS 1-->
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
+                    <a class="dashboard-stat dashboard-stat-v2 blue" href="{{ action('Admin\UserController@index') }}">
                         <div class="visual">
                             <i class="fa fa-users"></i>
                         </div>
@@ -50,7 +50,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a class="dashboard-stat dashboard-stat-v2 red" href="{{ action('Admin\SectorController@index') }}">
+                    <a class="dashboard-stat dashboard-stat-v2 red" href="{{ action('Admin\EventController@index') }}">
                         <div class="visual">
                             <i class="fa fa-list"></i>
                         </div>
@@ -62,7 +62,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a class="dashboard-stat dashboard-stat-v2 green" href="#">
+                    <a class="dashboard-stat dashboard-stat-v2 green" href="{{ action('Admin\SectorController@index') }}">
                         <div class="visual">
                             <i class="fa fa-shopping-cart"></i>
                         </div>
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+                    <a class="dashboard-stat dashboard-stat-v2 purple" href="javascript:void(0)">
                         <div class="visual">
                             <i class="fa fa-globe"></i>
                         </div>
