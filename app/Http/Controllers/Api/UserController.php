@@ -106,9 +106,8 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        if ($request->isJson()){
-            return "json";
-        }
+
+        return $request->json()->all();
         $user = User::where('email', $request->email)->first();
         if($user->type == 1){
             if ($request->email && $request->password){
