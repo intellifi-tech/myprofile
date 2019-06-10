@@ -557,7 +557,6 @@
     "UserUpdate": {
       "type": "object",
       "required": [
-        "email",
         "password",
         "api-token",
         "name",
@@ -607,9 +606,6 @@
         "sector_id": {
           "type": "integer",
           "format": "tinyInteger"
-        },
-        "email": {
-          "type": "string"
         },
         "status": {
           "type": "integer",
