@@ -11,7 +11,7 @@ class CommentController extends Controller
 {
     public function index(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $comment = Comment::all();
@@ -33,7 +33,7 @@ class CommentController extends Controller
 
     public function create(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->event_id && $request->comment) {
@@ -67,7 +67,7 @@ class CommentController extends Controller
 
     public function show(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->id) {

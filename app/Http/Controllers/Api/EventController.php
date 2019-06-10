@@ -11,7 +11,7 @@ class EventController extends Controller
 {
     public function index(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $events = Event::all();
@@ -33,7 +33,7 @@ class EventController extends Controller
 
     public function create(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->name && $request->activity_date) {
@@ -66,7 +66,7 @@ class EventController extends Controller
 
     public function show(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->id) {
@@ -96,7 +96,7 @@ class EventController extends Controller
 
     public function update(Request $request)
     {
-        if ($request->api_token) {
+        if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->name && $request->activity_date) {

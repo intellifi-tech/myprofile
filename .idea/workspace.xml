@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="562" column="18" selection-start-line="562" selection-start-column="18" selection-end-line="562" selection-end-column="18" />
+            <state relative-caret-position="886">
+              <caret line="868" column="6" lean-forward="true" selection-start-line="868" selection-start-column="6" selection-end-line="868" selection-end-column="6" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+            <state relative-caret-position="579">
+              <caret line="99" column="56" lean-forward="true" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
               <folding>
                 <element signature="e#44#59#0#PHP" expanded="true" />
               </folding>
@@ -448,12 +448,12 @@
       <workItem from="1558337391812" duration="6102000" />
       <workItem from="1558608486403" duration="8445000" />
       <workItem from="1559117308502" duration="10395000" />
-      <workItem from="1560154800307" duration="11042000" />
+      <workItem from="1560154800307" duration="11222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280215000" />
+    <option name="totallyTimeSpent" value="280395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
@@ -862,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#44#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -881,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="562" column="18" selection-start-line="562" selection-start-column="18" selection-end-line="562" selection-end-column="18" />
+        <state relative-caret-position="886">
+          <caret line="868" column="6" lean-forward="true" selection-start-line="868" selection-start-column="6" selection-end-line="868" selection-end-column="6" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -921,6 +911,16 @@
             <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#externalDocs#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="99" column="56" lean-forward="true" selection-start-line="99" selection-start-column="56" selection-end-line="99" selection-end-column="56" />
+          <folding>
+            <element signature="e#44#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
