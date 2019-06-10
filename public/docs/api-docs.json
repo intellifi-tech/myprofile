@@ -522,6 +522,12 @@
     },
     "UserRegister": {
       "type": "object",
+      "required": [
+        "name",
+        "surname",
+        "email",
+        "password"
+      ],
       "properties": {
         "name": {
           "type": "string"
