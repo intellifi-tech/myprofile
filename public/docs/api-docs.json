@@ -554,7 +554,7 @@
         "email"
       ],
       "properties": {
-        "api_token": {
+        "api_token1": {
           "type": "string"
         },
         "profile_photo": {

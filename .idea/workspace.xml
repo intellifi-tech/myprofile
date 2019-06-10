@@ -12,64 +12,72 @@
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="559" column="30" lean-forward="true" selection-start-line="559" selection-start-column="30" selection-end-line="559" selection-end-column="30" />
-              <folding>
-                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
-                <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#externalDocs#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="5111" column="21" lean-forward="true" selection-start-line="5111" selection-start-column="21" selection-end-line="5111" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="657">
+                  <caret line="555" column="21" lean-forward="true" selection-start-line="555" selection-start-column="21" selection-end-line="555" selection-end-column="21" />
+                  <folding>
+                    <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
+                    <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#externalDocs#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="767">
+                  <caret line="5125" column="30" lean-forward="true" selection-start-line="5125" selection-start-column="30" selection-end-line="5125" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserResponse</find>
       <find>api/authenticate</find>
       <find>Model</find>
       <find>open</find>
@@ -109,6 +116,7 @@
       <find>Etkink</find>
       <find>Online Kula</find>
       <find>memberDataDTO</find>
+      <find>&quot;email&quot;</find>
       <find>email</find>
     </findStrings>
     <replaceStrings>
@@ -409,12 +417,12 @@
       <workItem from="1558337391812" duration="6102000" />
       <workItem from="1558608486403" duration="8445000" />
       <workItem from="1559117308502" duration="10395000" />
-      <workItem from="1560154800307" duration="9809000" />
+      <workItem from="1560154800307" duration="10075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278982000" />
+    <option name="totallyTimeSpent" value="279248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
@@ -833,17 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="5111" column="21" lean-forward="true" selection-start-line="5111" selection-start-column="21" selection-end-line="5111" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="559" column="30" lean-forward="true" selection-start-line="559" selection-start-column="30" selection-end-line="559" selection-end-column="30" />
+        <state relative-caret-position="657">
+          <caret line="555" column="21" lean-forward="true" selection-start-line="555" selection-start-column="21" selection-end-line="555" selection-end-column="21" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -882,6 +883,13 @@
             <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#externalDocs#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="5125" column="30" lean-forward="true" selection-start-line="5125" selection-start-column="30" selection-end-line="5125" selection-end-column="30" />
         </state>
       </provider>
     </entry>
