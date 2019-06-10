@@ -550,7 +550,7 @@
     },
     "UserUpdate": {
       "type": "object",
-      "required":["email"],
+      "required": "email",
       "properties": {
         "api_token": {
           "type": "string"
