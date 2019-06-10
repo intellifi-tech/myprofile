@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Follow;
 use App\User;
-use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
