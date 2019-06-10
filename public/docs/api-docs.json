@@ -551,10 +551,11 @@
     "UserUpdate": {
       "type": "object",
       "required": [
-        "email"
+        "email",
+        "api-token"
       ],
       "properties": {
-        "api_token": {
+        "api-token": {
           "type": "string"
         },
         "profile_photo": {
