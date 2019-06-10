@@ -441,7 +441,7 @@
     "ApiToken": {
       "type": "object",
       "properties": {
-        "api_token": {
+        "api-token": {
           "type": "string"
         }
       },
@@ -469,6 +469,9 @@
           "format": "text"
         },
         "name": {
+          "type": "string"
+        },
+        "surname": {
           "type": "string"
         },
         "career_history": {
@@ -539,8 +542,11 @@
     },
     "UserEdit": {
       "type": "object",
+      "required": [
+        "api-token"
+      ],
       "properties": {
-        "api_token": {
+        "api-token": {
           "type": "string"
         }
       },
@@ -616,6 +622,10 @@
     },
     "UserLogin": {
       "type": "object",
+      "reuired" : [
+        "email",
+        "password"
+      ],
       "properties": {
         "email": {
           "type": "string"
