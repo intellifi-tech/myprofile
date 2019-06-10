@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="622" column="17" selection-start-line="622" selection-start-column="17" selection-end-line="622" selection-end-column="17" />
+            <state relative-caret-position="839">
+              <caret line="610" column="10" lean-forward="true" selection-start-line="610" selection-start-column="10" selection-end-line="610" selection-end-column="10" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -39,7 +39,6 @@
                 <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
@@ -450,12 +449,12 @@
       <workItem from="1558337391812" duration="6102000" />
       <workItem from="1558608486403" duration="8445000" />
       <workItem from="1559117308502" duration="10395000" />
-      <workItem from="1560154800307" duration="10606000" />
+      <workItem from="1560154800307" duration="10882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279779000" />
+    <option name="totallyTimeSpent" value="280055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
@@ -883,8 +882,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="622" column="17" selection-start-line="622" selection-start-column="17" selection-end-line="622" selection-end-column="17" />
+        <state relative-caret-position="839">
+          <caret line="610" column="10" lean-forward="true" selection-start-line="610" selection-start-column="10" selection-end-line="610" selection-end-column="10" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -904,7 +903,6 @@
             <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
