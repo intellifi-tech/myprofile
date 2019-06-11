@@ -222,6 +222,62 @@
         }
       }
     },
+    "/user/follow": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takip Et",
+        "operationId": "follow",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/Follow"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/user/stopFollowing": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takibi bırak",
+        "operationId": "stopFollowing",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/Follow"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -447,7 +503,6 @@
         }
       }
     }
-
   },
   "securityDefinitions": {
     "petstore_auth": {
@@ -1008,6 +1063,20 @@
           "type": "string"
         },
         "activity_id": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Follow": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "to_user_id": {
           "type": "integer"
         }
       },
