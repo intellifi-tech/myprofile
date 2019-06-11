@@ -194,13 +194,13 @@
         }
       }
     },
-    "/user/attendedActivities": {
+    "/user/attendedActivity": {
       "post": {
         "tags": [
           "user"
         ],
         "summary": "Etkinliğe katıldım",
-        "operationId": "userAttendedActivities",
+        "operationId": "userAttendedActivity",
         "produces": [
           "application/json"
         ],
@@ -218,6 +218,37 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/user/attendedActivities": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Kullanıcının katıldığı etkinlikler",
+        "operationId": "attendedActivities",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/ApiToken"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
           }
         }
       }

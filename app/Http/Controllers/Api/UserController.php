@@ -171,7 +171,7 @@ class UserController extends Controller
         }
     }
 
-    public function userAttendedActivities(Request $request)
+    public function userAttendedActivity(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
@@ -190,6 +190,29 @@ class UserController extends Controller
                     $json['message'] = "Etkinlik ID boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function userAttendedActivities(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $activities = UserAttendedActivities::where('user_id', $user->id)->get();
+
+                $json['status'] = 1;
+                $json['message'] = "Success";
+                $json['activities'] = $activities;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Api_token geçersizdir.";
