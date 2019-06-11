@@ -54,7 +54,7 @@ class UserCoordinateController extends Controller
                     foreach ($coordinates as $coordinate){
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit, $coordinate->user);
                         array_push($nearbyUserCoordinates, $distance);
-                        dd($distance);
+                        dd($distance[1]);
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
                     $json['status'] = 1;
