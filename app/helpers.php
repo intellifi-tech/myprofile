@@ -312,7 +312,7 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit, $user)
                 $coords["lon"] = $lon2;
                 return $coords;
             }else{
-                return [""];
+                exit;
             }
         } else {
             return $miles;
