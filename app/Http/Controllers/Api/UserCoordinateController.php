@@ -57,6 +57,7 @@ class UserCoordinateController extends Controller
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
 
+                    dd($nearbyUserCoordinates);
                     $json['status'] = 1;
                     $json['message'] = "Success";
                     $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
