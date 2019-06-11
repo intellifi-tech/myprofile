@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
-    </list>
+    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+            <state relative-caret-position="375">
+              <caret line="209" column="106" selection-start-line="209" selection-start-column="106" selection-end-line="209" selection-end-column="106" />
               <folding>
                 <element signature="e#44#58#0#PHP" expanded="true" />
               </folding>
@@ -479,12 +477,12 @@
       <workItem from="1558608486403" duration="8445000" />
       <workItem from="1559117308502" duration="10395000" />
       <workItem from="1560154800307" duration="11222000" />
-      <workItem from="1560250145559" duration="3596000" />
+      <workItem from="1560250145559" duration="3660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285152000" />
+    <option name="totallyTimeSpent" value="285216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -950,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="210" column="32" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
+        <state relative-caret-position="375">
+          <caret line="209" column="106" selection-start-line="209" selection-start-column="106" selection-end-line="209" selection-end-column="106" />
           <folding>
             <element signature="e#44#58#0#PHP" expanded="true" />
           </folding>

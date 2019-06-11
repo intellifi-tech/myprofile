@@ -208,11 +208,10 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $activities = UserAttendedActivities::where('user_id', $user->id)->with(['event'])->get();
-                dd($activities);
 
                 $json['status'] = 1;
                 $json['message'] = "Success";
-                $json['activities'] = $activities->event;
+                $json['activities'] = $activities;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
