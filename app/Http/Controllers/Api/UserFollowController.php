@@ -23,8 +23,6 @@ class UserFollowController extends Controller
 
                     $json['status'] = 1;
                     $json['message'] = "Success";
-                    $json['object'] = $follow;
-                    $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
@@ -49,12 +47,10 @@ class UserFollowController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->to_user_id) {
-                    $follow = Follow::where('from_user_id' , $user->id)->where('to_user_id', $request->to_user_id)->delete();
+                    Follow::where('from_user_id' , $user->id)->where('to_user_id', $request->to_user_id)->delete();
 
                     $json['status'] = 1;
                     $json['message'] = "Success";
-                    $json['object'] = $follow;
-                    $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
