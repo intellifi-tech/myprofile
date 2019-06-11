@@ -199,7 +199,7 @@
         "tags": [
           "user"
         ],
-        "summary": "Koordinat ekle",
+        "summary": "Etkinliğe katıldım",
         "operationId": "userAttendedActivities",
         "produces": [
           "application/json"
