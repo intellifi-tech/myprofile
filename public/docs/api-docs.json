@@ -194,6 +194,34 @@
         }
       }
     },
+    "/user/coordinate/nearbyUsers": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Yakındaki kullanıcılar",
+        "operationId": "nearbyUsers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/NearbyUsers"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/user/attendedActivity": {
       "post": {
         "tags": [
@@ -1096,6 +1124,23 @@
         },
         "longitude": {
           "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "NearbyUsers": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "meterLimit": {
+          "type": "integer"
         }
       },
       "xml": {
