@@ -127,9 +127,4 @@ class EventController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
-
-    public function destroy($id)
-    {
-        //
-    }
 }

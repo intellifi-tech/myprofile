@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Event;
 use App\Follow;
 use App\User;
+use App\UserAttendedActivities;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -165,6 +167,37 @@ class UserController extends Controller
         }else{
             $json['status'] = 0;
             $json['message'] = "Kullanıcı erişim izni yok.";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function userAttendedActivities(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->activity_id) {
+                    $userAttendedActivitiy = new UserAttendedActivities();
+                    $userAttendedActivitiy->user_id = $user->id;
+                    $userAttendedActivitiy->activity_id = $request->activity_id;
+                    $userAttendedActivitiy->save();
+
+                    $json['status'] = 1;
+                    $json['message'] = "Success";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik ID boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }

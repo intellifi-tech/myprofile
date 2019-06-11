@@ -194,6 +194,34 @@
         }
       }
     },
+    "/user/coordinate/userAttendedActivities": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Koordinat ekle",
+        "operationId": "userAttendedActivities",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/UserAttendedActivities"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -967,6 +995,20 @@
         },
         "longitude": {
           "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserAttendedActivities": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "activity_id": {
+          "type": "integer"
         }
       },
       "xml": {
