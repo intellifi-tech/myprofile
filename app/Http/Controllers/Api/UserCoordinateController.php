@@ -55,7 +55,12 @@ class UserCoordinateController extends Controller
                         $distance = distance($request->latitude, $request->longitude, $coordinate->latitude, $coordinate->longitude, "M", $request->meterLimit, $coordinate->user);
                         array_push($nearbyUserCoordinates, $distance);
                     }
-                    $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
+//                    $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
+                    foreach ($nearbyUserCoordinates as $indis => $value){
+                        if ($value == ""){
+                            unset($nearbyUserCoordinates[$indis]);
+                        }
+                    }
                     $json['status'] = 1;
                     $json['message'] = "Success";
                     $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
