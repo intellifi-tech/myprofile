@@ -470,6 +470,38 @@
         }
       }
     },
+    "/message/getMessages": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "summary": "Kullanıcının tüm mesajlarını getirir.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "getMessages",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/ApiToken"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Message"
+            }
+          }
+        }
+      }
+    },
     "/message/newMessage": {
       "post": {
         "tags": [

@@ -9,6 +9,29 @@ use App\Http\Controllers\Controller;
 
 class MessageController extends Controller
 {
+    public function getMessages(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $messages = Message::where('from_user_id', $user->id)->where('to_user_id', $user->id)->get();
+
+                $json['status'] = 1;
+                $json['message'] = "Success";
+                $json['object'] = $messages;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
     public function newMessage(Request $request)
     {
         if ($request->header('api-token')) {
