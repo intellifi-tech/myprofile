@@ -10,6 +10,35 @@ use App\Http\Controllers\Controller;
 
 class UserFollowController extends Controller
 {
+    public function followers(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->to_user_id) {
+                    $followers = Follow::where('to_user_id', $user->id)->with(['myFollowers'])->get();
+
+                    $json['status'] = 1;
+                    $json['message'] = "Success";
+                    $json['followers'] = $followers;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Takip edilecek kişi ID zorunludur.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
     public function follow(Request $request)
     {
         if ($request->header('api-token')) {

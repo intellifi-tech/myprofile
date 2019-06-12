@@ -40,6 +40,18 @@ class EventController extends Controller
                     $event = new Event();
                     $event->name = $request->name;
                     $event->activity_date = $request->activity_date;
+
+                    //region Profil Fotoğrafı Yükleme
+                    $path = public_path('uploads/events/');
+                    $eventImage = $request->event_image;  // your base64 encoded
+                    $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
+                    $eventImage = str_replace(' ', '+', $eventImage);
+                    $eventImageName = remove_turkish(lower_case_turkish($request->name)).'.'.'png';
+                    \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
+                    // endregion
+
+                    $event->image = $eventImageName;
+
                     $event->save();
 
                     $json['status'] = 1;
