@@ -18,7 +18,7 @@ class MessageController extends Controller
                 if ($messages->count() > 0){
                     $json['status'] = 1;
                     $json['message'] = "Success";
-                    $json['content'] = $messages;
+                    $json['messages'] = $messages;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     $json['status'] = 0;
