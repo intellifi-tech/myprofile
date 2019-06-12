@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="" />
+    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +19,56 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
+        <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            <state relative-caret-position="667">
+              <caret line="1070" column="27" lean-forward="true" selection-start-line="1070" selection-start-column="27" selection-end-line="1070" selection-end-column="27" />
               <folding>
-                <element signature="e#44#60#0#PHP" expanded="true" />
+                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
+                <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#externalDocs#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -132,9 +178,9 @@
         <option value="$PROJECT_DIR$/app/Follow.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_12_075809_update_add_to_image_column_events_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -405,17 +451,18 @@
       <workItem from="1559117308502" duration="10395000" />
       <workItem from="1560154800307" duration="11222000" />
       <workItem from="1560250145559" duration="21058000" />
+      <workItem from="1560343862793" duration="402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302614000" />
+    <option name="totallyTimeSpent" value="303016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49594814" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49594814" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" sideWeight="0.50405186" side_tool="true" weight="0.14813344" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -778,63 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="701" column="6" lean-forward="true" selection-start-line="701" selection-start-column="6" selection-end-line="701" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/follow#1;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
-            <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#externalDocs#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -885,10 +875,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        <state relative-caret-position="238">
+          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="1070" column="27" lean-forward="true" selection-start-line="1070" selection-start-column="27" selection-end-line="1070" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
+            <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#externalDocs#0;n#!!top" />
           </folding>
         </state>
       </provider>
