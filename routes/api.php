@@ -23,6 +23,7 @@ Route::post('user/attendedActivity', 'Api\UserController@userAttendedActivity');
 Route::post('user/attendedActivities', 'Api\UserController@userAttendedActivities');
 Route::post('user/coordinate/setCoordinates', 'Api\UserCoordinateController@setCoordinates');
 Route::post('user/coordinate/nearbyUsers', 'Api\UserCoordinateController@nearbyUsers');
+Route::post('user/followers', 'Api\UserFollowController@followers');
 Route::post('user/follow', 'Api\UserFollowController@follow');
 Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');
 // endregion
