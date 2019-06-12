@@ -281,6 +281,34 @@
         }
       }
     },
+    "/user/followers": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takipçilerim",
+        "operationId": "followers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/Follow"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/user/follow": {
       "post": {
         "tags": [
@@ -1181,10 +1209,7 @@
     "Follow": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
-        "to_user_id": {
+        "from_user_id": {
           "type": "integer"
         }
       },
