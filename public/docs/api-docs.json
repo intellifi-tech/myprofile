@@ -539,7 +539,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Success",
             "schema": {
               "$ref": "#/definitions/Message"
             }
