@@ -16,6 +16,8 @@ class UpdateAddToImageColumnEventsTable extends Migration
         Schema::table('events', function (Blueprint $table) {
             $table->text('image')->after('name');
             $table->text('end_date')->after('activity_date');
+            $table->text('latitude')->after('end_date');
+            $table->text('longitude')->after('latitude');
         });
     }
 
@@ -29,6 +31,8 @@ class UpdateAddToImageColumnEventsTable extends Migration
         Schema::table('events', function (Blueprint $table) {
             $table->dropColumn('image');
             $table->dropColumn('end_date');
+            $table->dropColumn('latitude');
+            $table->dropColumn('longitude');
         });
     }
 }
