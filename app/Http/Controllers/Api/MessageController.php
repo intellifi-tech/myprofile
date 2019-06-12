@@ -15,7 +15,6 @@ class MessageController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $messages = Message::where('from_user_id', $user->id)->orWhere('to_user_id', $user->id)->get();
-                dd($messages);
                 if ($messages){
                     $json['status'] = 1;
                     $json['message'] = "Success";
