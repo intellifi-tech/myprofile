@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="238">
+              <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -407,12 +406,12 @@
       <workItem from="1558608486403" duration="8445000" />
       <workItem from="1559117308502" duration="10395000" />
       <workItem from="1560154800307" duration="11222000" />
-      <workItem from="1560250145559" duration="20027000" />
+      <workItem from="1560250145559" duration="20141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301583000" />
+    <option name="totallyTimeSpent" value="301697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -674,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="1385" column="9" selection-start-line="1385" selection-start-column="9" selection-end-line="1385" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -886,10 +878,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1385" column="9" selection-start-line="1385" selection-start-column="9" selection-end-line="1385" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="238">
+          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
           </folding>
