@@ -15,11 +15,16 @@ class MessageController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $messages = Message::where('from_user_id', $user->id)->orWhere('to_user_id', $user->id)->get();
-
-                $json['status'] = 1;
-                $json['message'] = "Success";
-                $json['object'] = $messages;
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                if ($messages){
+                    $json['status'] = 1;
+                    $json['message'] = "Success";
+                    $json['object'] = $messages;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    $json['status'] = 0;
+                    $json['message'] = "Success";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Api_token geçersizdir.";
