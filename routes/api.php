@@ -26,6 +26,7 @@ Route::post('user/coordinate/nearbyUsers', 'Api\UserCoordinateController@nearbyU
 Route::post('user/followers', 'Api\UserFollowController@followers');
 Route::post('user/follow', 'Api\UserFollowController@follow');
 Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');
+Route::post('user/addPhoto', 'Api\UserPhotoGalleryController@addPhoto');
 // endregion
 
 // region Etkinlikler
