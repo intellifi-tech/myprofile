@@ -20,14 +20,14 @@ class UserPhotoGalleryController extends Controller
 
                 //region Kullanıcı Galeri Fotoğrafı Yükleme
                 $path = public_path('uploads/user-photos/');
-                $userPhoto = $request->photo;  // your base64 encoded
-                $userPhoto = str_replace('data:image/png;base64,', '', $userPhoto);
-                $userPhoto = str_replace(' ', '+', $userPhoto);
-                $userPhotoName = $user->name . Str::random(5) .'.'.'png';
-                \File::put($path. '/' . $userPhotoName, base64_decode($userPhoto));
+                $photo = $request->photo;  // your base64 encoded
+                $photo = str_replace('data:image/png;base64,', '', $photo);
+                $photo = str_replace(' ', '+', $photo);
+                $photoImageName = $user->name . Str::random(5) .'.'.'png';
+                \File::put($path. '/' . $photoImageName, base64_decode($photo));
                 // endregion
 
-                $userPhotoGallery->photo_name = $userPhotoName;
+                $userPhotoGallery->photo_name = $photoImageName;
                 $userPhotoGallery->save();
 
                 $json['status'] = 200;
