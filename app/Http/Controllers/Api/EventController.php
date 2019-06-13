@@ -11,8 +11,8 @@ class EventController extends Controller
 {
     public function index(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $events = Event::all();
                 $json['status'] = 200;
@@ -33,8 +33,8 @@ class EventController extends Controller
 
     public function create(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->name && $request->activity_date) {
                     $event = new Event();
@@ -78,8 +78,8 @@ class EventController extends Controller
 
     public function show(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->id) {
                     $event = Event::with(['comments'])->find($request->id);
@@ -108,8 +108,8 @@ class EventController extends Controller
 
     public function update(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->name && $request->activity_date) {
 

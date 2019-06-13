@@ -32,7 +32,7 @@ class UserController extends Controller
 
     public function show(Request $request)
     {
-        $user = User::where('api_token', $request->header('api_token'))->first();
+        $user = User::where('api_token', $request->header('api-token'))->first();
         return response()->json($user);
     }
 
@@ -43,7 +43,7 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
-        $user = User::where('api_token', $request->header('api_token'))->first();
+        $user = User::where('api_token', $request->header('api-token'))->first();
 
         //region Profil Fotoğrafı Yükleme
         $path = public_path('uploads/profile/');
@@ -173,8 +173,8 @@ class UserController extends Controller
 
     public function userAttendedActivity(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->activity_id) {
                     $userAttendedActivitiy = new UserAttendedActivities();
@@ -204,8 +204,8 @@ class UserController extends Controller
 
     public function userAttendedActivities(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $activities = UserAttendedActivities::where('user_id', $user->id)->with(['event'])->get();
 

@@ -11,9 +11,8 @@ class UserPhotoGalleryController extends Controller
 {
     public function addPhoto(Request $request)
     {
-        dd($request);
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $userPhotoGallery = new UserPhotoGallery();
                 $userPhotoGallery->user_id = $user->id;

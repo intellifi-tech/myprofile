@@ -11,8 +11,8 @@ class UserCoordinateController extends Controller
 {
     public function setCoordinates(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
@@ -45,8 +45,8 @@ class UserCoordinateController extends Controller
 
     public function nearbyUsers(Request $request)
     {
-        if ($request->header('api_token')) {
-            $user = User::where('api_token', $request->header('api_token'))->first();
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $nearbyUserCoordinates = [];
