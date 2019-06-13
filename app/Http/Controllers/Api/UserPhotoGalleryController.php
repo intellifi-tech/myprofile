@@ -6,6 +6,7 @@ use App\User;
 use App\UserPhotoGallery;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 class UserPhotoGalleryController extends Controller
 {
