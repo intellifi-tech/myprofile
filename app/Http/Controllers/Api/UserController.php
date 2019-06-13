@@ -32,7 +32,7 @@ class UserController extends Controller
 
     public function show(Request $request)
     {
-        $user = User::where('api_token', $request->header('api-token'))->first();
+        $user = User::where('api_token', $request->header('api_token'))->first();
         return response()->json($user);
     }
 
@@ -43,7 +43,7 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
-        $user = User::where('api_token', $request->header('api-token'))->first();
+        $user = User::where('api_token', $request->header('api_token'))->first();
 
         //region Profil Fotoğrafı Yükleme
         $path = public_path('uploads/profile/');
@@ -70,7 +70,7 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         if ($user->save()){
-            $json['status'] = 1;
+            $json['status'] = 200;
             $json['message'] = "Kayıt başarılı";
             $json['user'] = $user;
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
@@ -94,7 +94,7 @@ class UserController extends Controller
             $user->api_token = Str::random(60);
             if ($user->save()){
                 return response()->json([
-                    'status' => 1,
+                    'status' => 200,
                     'message' => 'Giriş yapıldı.',
                     'api_token' => $user->api_token,
                     'id' => $user->id,
@@ -136,7 +136,7 @@ class UserController extends Controller
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         return response()->json([
-                            'status' => 1,
+                            'status' => 200,
                             'message' => 'Giriş yapıldı.',
                             'api_token' => $user->api_token,
                             'id' => $user->id,
@@ -173,8 +173,8 @@ class UserController extends Controller
 
     public function userAttendedActivity(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 if ($request->activity_id) {
                     $userAttendedActivitiy = new UserAttendedActivities();
@@ -204,8 +204,8 @@ class UserController extends Controller
 
     public function userAttendedActivities(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 $activities = UserAttendedActivities::where('user_id', $user->id)->with(['event'])->get();
 

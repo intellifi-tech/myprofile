@@ -11,12 +11,12 @@ class MessageController extends Controller
 {
     public function getMessages(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 $messages = Message::where('from_user_id', $user->id)->orWhere('to_user_id', $user->id)->get();
                 if ($messages->count() > 0){
-                    $json['status'] = 1;
+                    $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['messages'] = $messages;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
@@ -39,8 +39,8 @@ class MessageController extends Controller
 
     public function newMessage(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
                     $message = new Message();
@@ -50,7 +50,7 @@ class MessageController extends Controller
                     $message->status = 0;
                     $message->save();
 
-                    $json['status'] = 1;
+                    $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['object'] = $message;
                     $json['api_token'] = $user->api_token;
@@ -74,8 +74,8 @@ class MessageController extends Controller
 
     public function answerMessage(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
                     $message = new Message();
@@ -86,7 +86,7 @@ class MessageController extends Controller
                     $message->status = 0;
                     $message->save();
 
-                    $json['status'] = 1;
+                    $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['message'] = $message;
                     $json['api_token'] = $user->api_token;

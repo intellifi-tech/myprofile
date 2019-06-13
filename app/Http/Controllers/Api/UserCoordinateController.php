@@ -11,8 +11,8 @@ class UserCoordinateController extends Controller
 {
     public function setCoordinates(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
@@ -21,7 +21,7 @@ class UserCoordinateController extends Controller
                     $userCoordination->latitude = $request->latitude;
                     $userCoordination->longitude = $request->longitude;
                     $userCoordination->save();
-                    $json['status'] = 1;
+                    $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['userCoordination'] = $userCoordination;
                     $json['api_token'] = $user->api_token;
@@ -45,8 +45,8 @@ class UserCoordinateController extends Controller
 
     public function nearbyUsers(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+        if ($request->header('api_token')) {
+            $user = User::where('api_token', $request->header('api_token'))->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $nearbyUserCoordinates = [];
@@ -58,7 +58,7 @@ class UserCoordinateController extends Controller
                         }
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
-                    $json['status'] = 1;
+                    $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
                     $json['api_token'] = $user->api_token;
