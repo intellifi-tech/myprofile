@@ -14,7 +14,7 @@ class EventController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $events = Event::all();
+                $events = Event::orderBy('created_at', 'DESC')->limit(100);
                 $json['status'] = 200;
                 $json['events'] = $events;
                 $json['api_token'] = $user->api_token;
@@ -120,6 +120,51 @@ class EventController extends Controller
 
                     $json['status'] = 200;
                     $json['message'] = "Etkinlik oluşturuldu.";
+                    $json['event'] = $event;
+                    $json['api_token'] = $user->api_token;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function userAttendedEvent(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->name && $request->activity_date) {
+                    $event = new Event();
+                    $event->name = $request->name;
+                    $event->activity_date = $request->activity_date;
+
+                    //region Profil Fotoğrafı Yükleme
+                    $path = public_path('uploads/events/');
+                    $eventImage = $request->event_image;  // your base64 encoded
+                    $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
+                    $eventImage = str_replace(' ', '+', $eventImage);
+                    $eventImageName = remove_turkish(lower_case_turkish($request->name)).'.'.'png';
+                    \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
+                    // endregion
+
+                    $event->image = $eventImageName;
+
+                    $event->save();
+
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
                     $json['event'] = $event;
                     $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
