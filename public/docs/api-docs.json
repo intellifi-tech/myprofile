@@ -1020,7 +1020,16 @@
     "EventSearch": {
       "type": "object",
       "properties": {
-        "name": {
+        "title": {
+          "type": "string"
+        },
+        "meterLimit": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
           "type": "string"
         }
       },
