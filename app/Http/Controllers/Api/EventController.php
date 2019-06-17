@@ -203,17 +203,6 @@ class EventController extends Controller
                     }
 
 //                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
-
-                    if ($event->count() > 0){
-                        $json['status'] = 200;
-                        $json['message'] = "Success";
-                        $json['event'] = $event;
-                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
-                        $json['status'] = 204;
-                        $json['message'] = "No content";
-                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Etkinlik adı boş olamaz.";
