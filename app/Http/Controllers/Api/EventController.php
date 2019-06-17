@@ -207,7 +207,7 @@ class EventController extends Controller
                             $json['nearbyEvent'] = $nearbyEvents;
                             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                         }else{
-                            $json['status'] = 203;
+                            $json['status'] = 204;
                             $json['message'] = "No content";
                             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                         }
