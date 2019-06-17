@@ -197,7 +197,7 @@ class EventController extends Controller
                         $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                     }
 
-                    if ($nearbyEvent->count() > 0){
+                    if (count($nearbyEvent) > 0){
                         $json['status'] = 200;
                         $json['message'] = "Success";
                         $json['nearbyEvent'] = $nearbyEvent;
