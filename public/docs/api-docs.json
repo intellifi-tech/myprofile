@@ -382,6 +382,9 @@
             "schema": {
               "$ref": "#/definitions/Events"
             }
+          },
+          "204": {
+            "description": "No content"
           }
         }
       }
