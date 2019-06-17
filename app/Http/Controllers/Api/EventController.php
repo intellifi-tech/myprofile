@@ -196,6 +196,7 @@ class EventController extends Controller
                     $events = Event::all();
                     foreach ($events as $event){
                         $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+                        dd($distance);
                         if ($distance != null){
                             array_push($nearbyEvents, $distance);
                         }
@@ -205,7 +206,7 @@ class EventController extends Controller
 
                     if ($event->count() > 0){
                         $json['status'] = 200;
-                        $json['message'] = "Success1";
+                        $json['message'] = "Success";
                         $json['event'] = $event;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
