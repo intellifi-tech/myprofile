@@ -194,6 +194,7 @@ class EventController extends Controller
 
                     $nearbyEvents = [];
                     $events = Event::all();
+                    dd($events);
                     foreach ($events as $event){
                         $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                         if ($distance != null){
