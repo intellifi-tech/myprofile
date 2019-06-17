@@ -250,7 +250,6 @@ class EventController extends Controller
             } else if ($unit == "M") {
                 if ((($miles * 1.609344) * 1000) < $meterLimit)
                 {
-                    dd("burada");
                     $coords["event"] = $event;
                     $coords["lat"] = $lat2;
                     $coords["lon"] = $lon2;
