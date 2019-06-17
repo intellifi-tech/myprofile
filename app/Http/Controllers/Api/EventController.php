@@ -195,13 +195,12 @@ class EventController extends Controller
                     $nearbyEvents = [];
                     $events = Event::all();
                     foreach ($events as $event){
+                        dd($request->all());
                         $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
-                        dd($distance);
                         if ($distance != null){
                             array_push($nearbyEvents, $distance);
                         }
                     }
-                    dd($nearbyEvents);
 
 //                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
 
