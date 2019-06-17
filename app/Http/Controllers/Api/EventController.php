@@ -200,7 +200,7 @@ class EventController extends Controller
                             array_push($nearbyEvents, $distance);
                         }
                     }
-                    dd(count($nearbyEvents));
+                    dd($nearbyEvents);
 
 //                    $event = Event::where('t  itle', 'LIKE', '%'. $request->title . '%')->get();
                 } else {
