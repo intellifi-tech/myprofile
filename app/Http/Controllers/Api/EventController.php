@@ -193,19 +193,25 @@ class EventController extends Controller
                 if ($request->title) {
 
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
-                    foreach ($events as $event){
-                        $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
-                        dd($nearbyEvent);
-                        if ($nearbyEvent){
-                            $json['status'] = 200;
-                            $json['message'] = "Success";
-                            $json['nearbyEvent'] = $nearbyEvent;
-                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                        }else{
-                            $json['status'] = 203;
-                            $json['message'] = "No content";
-                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    if ($events->count() > 0){
+                        foreach ($events as $event){
+                            $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+                            dd($nearbyEvent);
+                            if ($nearbyEvent){
+                                $json['status'] = 200;
+                                $json['message'] = "Success";
+                                $json['nearbyEvent'] = $nearbyEvent;
+                                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                            }else{
+                                $json['status'] = 203;
+                                $json['message'] = "No content";
+                                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                            }
                         }
+                    }else{
+                        $json['status'] = 203;
+                        $json['message'] = "No content";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
                     $json['status'] = 0;
