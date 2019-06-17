@@ -192,7 +192,7 @@ class EventController extends Controller
             if ($user) {
                 if ($request->title) {
 
-                    $event = Event::where('name', 'LIKE', '%'. $request->title . '%')->get();
+                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
 
                     if ($event->count() > 0){
                         $json['status'] = 200;
