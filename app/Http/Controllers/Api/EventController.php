@@ -193,18 +193,23 @@ class EventController extends Controller
                 if ($request->title && $request->latitude && $request->longitude && $request->meterLimit) {
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
                     if ($events->count() > 0){
+                        $nearbyEvents = [];
                         foreach ($events as $event){
                             $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
-                            if ($nearbyEvent){
-                                $json['status'] = 200;
-                                $json['message'] = "Success";
-                                $json['nearbyEvent'] = $nearbyEvent;
-                                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                            }else{
-                                $json['status'] = 203;
-                                $json['message'] = "No content";
-                                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                            if (!is_null($nearbyEvent)){
+                                array_push($nearbyEvents, $nearbyEvent);
                             }
+                        }
+
+                        if (count($nearbyEvents) > 0){
+                            $json['status'] = 200;
+                            $json['message'] = "Success";
+                            $json['nearbyEvent'] = $nearbyEvents;
+                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        }else{
+                            $json['status'] = 203;
+                            $json['message'] = "No content";
+                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                         }
                     }else{
                         $json['status'] = 203;
