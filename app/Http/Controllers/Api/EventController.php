@@ -192,6 +192,7 @@ class EventController extends Controller
             if ($user) {
                 if ($request->title && $request->latitude && $request->longitude && $request->meterLimit) {
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
+
                     if ($events->count() > 0){
                         $nearbyEvents = [];
                         foreach ($events as $event){
