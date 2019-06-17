@@ -198,9 +198,9 @@ class EventController extends Controller
                         $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                         if ($distance != null){
                             array_push($nearbyEvents, $distance);
+                            dd($nearbyEvents);
                         }
                     }
-                    dd($nearbyEvents);
 
 //                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
 
