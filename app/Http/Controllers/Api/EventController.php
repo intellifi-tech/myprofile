@@ -196,7 +196,6 @@ class EventController extends Controller
                     if ($events->count() > 0){
                         foreach ($events as $event){
                             $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
-                            dd($nearbyEvent);
                             if ($nearbyEvent){
                                 $json['status'] = 200;
                                 $json['message'] = "Success";
