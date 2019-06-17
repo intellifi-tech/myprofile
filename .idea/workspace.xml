@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="" />
+    <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="195" column="31" lean-forward="true" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
+            <state relative-caret-position="219">
+              <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
               <folding>
                 <element signature="e#44#58#0#PHP" expanded="true" />
               </folding>
@@ -418,18 +420,18 @@
       <workItem from="1560343862793" duration="518000" />
       <workItem from="1560509478190" duration="2516000" />
       <workItem from="1560518420324" duration="1418000" />
-      <workItem from="1560756365579" duration="8098000" />
+      <workItem from="1560756365579" duration="8750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319483000" />
+    <option name="totallyTimeSpent" value="320135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.15289913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4943274" visible="true" weight="0.15289913" />
       <window_info id="Structure" order="1" sideWeight="0.50567263" side_tool="true" weight="0.15289913" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -709,16 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="139" column="58" lean-forward="true" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
-          <folding>
-            <element signature="e#44#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_12_075809_update_add_to_image_column_events_table.php" />
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -846,19 +838,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="998">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding>
-            <element signature="e#44#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1453">
+        <state relative-caret-position="813">
           <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
@@ -866,10 +848,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="139" column="58" lean-forward="true" selection-start-line="139" selection-start-column="58" selection-end-line="139" selection-end-column="58" />
+          <folding>
+            <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="54" column="178" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="178" />
+          <folding>
+            <element signature="e#44#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="195" column="31" lean-forward="true" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
+        <state relative-caret-position="219">
+          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
           <folding>
             <element signature="e#44#58#0#PHP" expanded="true" />
           </folding>

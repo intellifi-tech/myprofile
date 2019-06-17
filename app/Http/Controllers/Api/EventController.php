@@ -192,10 +192,11 @@ class EventController extends Controller
             if ($user) {
                 if ($request->title) {
 
-                    $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
-                    foreach ($events as $event){
-                        dd($event);
+                    $eventsTmp = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
+                    foreach ($eventsTmp as $event){
+                        $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                     }
+                    dd($nearbyEvent);
 
                 } else {
                     $json['status'] = 0;
@@ -214,7 +215,7 @@ class EventController extends Controller
         }
     }
 
-    public function distanceEvents($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit, $event)
+    public function distanceEvent($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit, $event)
     {
         if (($lat1 == $lat2) && ($lon1 == $lon2)) {
             return 0;
