@@ -200,9 +200,9 @@ class EventController extends Controller
                             array_push($nearbyEvents, $distance);
                         }
                     }
-                    dd($nearbyEvents->count());
+                    dd(count($nearbyEvents));
 
-//                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
+//                    $event = Event::where('t  itle', 'LIKE', '%'. $request->title . '%')->get();
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Etkinlik adı boş olamaz.";
