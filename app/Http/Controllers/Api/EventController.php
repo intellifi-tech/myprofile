@@ -190,7 +190,7 @@ class EventController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->title && $request->latitude && $request->longitude) {
+                if ($request->title && $request->latitude && $request->longitude && $request->meterLimit) {
 
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
                     if ($events->count() > 0){
@@ -214,7 +214,7 @@ class EventController extends Controller
                     }
                 } else {
                     $json['status'] = 0;
-                    $json['message'] = "Etkinlik adı boş olamaz.";
+                    $json['message'] = "Etkinlik adı, enlem, boylam veya mesafe boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
