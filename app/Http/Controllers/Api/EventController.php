@@ -190,9 +190,20 @@ class EventController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->title) {
+                if ($request->latitude && $request->longitude) {
 
-                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
+                    $nearbyEvents = [];
+                    $events = Event::all();
+                    foreach ($events as $event){
+                        $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+                        if ($distance != null){
+                            array_push($nearbyEvents, $distance);
+                        }
+                    }
+                    $nearbyEvents = array_filter($nearbyEvents);
+                    dd($nearbyEvents);
+
+//                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
 
                     if ($event->count() > 0){
                         $json['status'] = 200;
@@ -218,6 +229,36 @@ class EventController extends Controller
             $json['status'] = 0;
             $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function distanceEvents($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit, $event)
+    {
+        if (($lat1 == $lat2) && ($lon1 == $lon2)) {
+            return 0;
+        } else {
+            $theta = $lon1 - $lon2;
+            $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) + cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+            $dist = acos($dist);
+            $dist = rad2deg($dist);
+            $miles = $dist * 60 * 1.1515;
+            $unit = strtoupper($unit);
+
+            if ($unit == "K") {
+                return ($miles * 1.609344);
+            } else if ($unit == "N") {
+                return ($miles * 0.8684);
+            } else if ($unit == "M") {
+                if ((($miles * 1.609344) * 1000) < $meterLimit)
+                {
+                    $coords["event"] = $event;
+                    $coords["lat"] = $lat2;
+                    $coords["lon"] = $lon2;
+                    return $coords;
+                }
+            } else {
+                return $miles;
+            }
         }
     }
 }
