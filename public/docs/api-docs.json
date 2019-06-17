@@ -354,41 +354,6 @@
         }
       }
     },
-    "/event/search": {
-      "post": {
-        "tags": [
-          "event"
-        ],
-        "summary": "Etkinlik arama",
-        "description": "Gönderilen title keyine göre arama yapar.",
-        "operationId": "searchEvent",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string",
-            "schema": {
-              "$ref": "#/definitions/EventSearch"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Events"
-            }
-          },
-          "204": {
-            "description": "No content"
-          }
-        }
-      }
-    },
     "/event/index": {
       "get": {
         "tags": [
@@ -483,6 +448,41 @@
             "schema": {
               "$ref": "#/definitions/Events"
             }
+          }
+        }
+      }
+    },
+    "/event/search": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Etkinlik arama",
+        "description": "Gönderilen title keyine göre arama yapar.",
+        "operationId": "searchEvent",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/EventSearch"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
+          },
+          "204": {
+            "description": "No content"
           }
         }
       }
