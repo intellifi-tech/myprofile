@@ -191,7 +191,6 @@ class EventController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->title && $request->latitude && $request->longitude && $request->meterLimit) {
-
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
                     if ($events->count() > 0){
                         foreach ($events as $event){
