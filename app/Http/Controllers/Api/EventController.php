@@ -192,7 +192,7 @@ class EventController extends Controller
             if ($user) {
                 if ($request->title) {
 
-                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
+                    $event = Event::where('name', 'LIKE', '%'. $request->title . '%')->get();
 
                     if ($event->count() > 0){
                         $json['status'] = 200;
@@ -200,8 +200,8 @@ class EventController extends Controller
                         $json['event'] = $event;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
-                        $json['status'] = 200;
-                        $json['message'] = "Success";
+                        $json['status'] = 204;
+                        $json['message'] = "No Content";
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
