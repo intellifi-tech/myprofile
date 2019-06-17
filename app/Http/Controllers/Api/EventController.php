@@ -202,7 +202,7 @@ class EventController extends Controller
                     }
 
                     foreach ($nearbyEvents as $event){
-                        dd($event);
+                        dd($event["event"]);
                     }
 
                 } else {
