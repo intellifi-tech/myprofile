@@ -205,7 +205,7 @@ class EventController extends Controller
 
                     if ($event->count() > 0){
                         $json['status'] = 200;
-                        $json['message'] = "Success";
+                        $json['message'] = "Success1";
                         $json['event'] = $event;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
