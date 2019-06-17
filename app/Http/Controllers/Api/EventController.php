@@ -192,12 +192,21 @@ class EventController extends Controller
             if ($user) {
                 if ($request->title) {
 
-                    $eventsTmp = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
-                    foreach ($eventsTmp as $event){
+                    $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
+                    foreach ($events as $event){
                         $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                     }
-                    dd($nearbyEvent);
 
+                    if ($nearbyEvent->count() > 0){
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['nearbyEvent'] = $nearbyEvent;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 204;
+                        $json['message'] = "No content";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Etkinlik adı boş olamaz.";
