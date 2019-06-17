@@ -190,20 +190,23 @@ class EventController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->latitude && $request->longitude) {
+                if ($request->title) {
 
-                    $nearbyEvents = [];
-                    $events = Event::all();
-                    foreach ($events as $event){
-                        $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
-                        if ($distance != null){
-                            array_push($nearbyEvents, $distance);
-                        }
-                    }
+                    $events = Event::where('title', 'LIKE', '%'. $request->title .'%')->get();
+                    dd($events);
 
-                    foreach ($nearbyEvents as $event){
-                        dd($event["event"]);
-                    }
+//                    $nearbyEvents = [];
+//                    $events = Event::all();
+//                    foreach ($events as $event){
+//                        $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+//                        if ($distance != null){
+//                            array_push($nearbyEvents, $distance);
+//                        }
+//                    }
+//
+//                    foreach ($nearbyEvents as $event){
+//                        dd($event["event"]);
+//                    }
 
                 } else {
                     $json['status'] = 0;
