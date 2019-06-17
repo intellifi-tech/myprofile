@@ -195,6 +195,7 @@ class EventController extends Controller
                     $events = Event::where('title', 'LIKE', '%' . $request->title . '%')->get();
                     foreach ($events as $event){
                         $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+                        dd($nearbyEvent);
                         if ($nearbyEvent){
                             $json['status'] = 200;
                             $json['message'] = "Success";
