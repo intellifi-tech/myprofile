@@ -354,6 +354,38 @@
         }
       }
     },
+    "/event/search": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Etkinlik arama",
+        "description": "Gönderilen title keyine göre arama yapar.",
+        "operationId": "searchEvent",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/EventSearch"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -959,12 +991,34 @@
         "name": {
           "type": "string"
         },
+        "image": {
+          "type": "string"
+        },
         "activity_date": {
-          "type": "string",
-          "format": "date"
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
         },
         "comments": {
           "$ref": "#/definitions/Comments"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "EventSearch": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
         }
       },
       "xml": {

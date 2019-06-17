@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="607">
-              <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
+              <caret line="202" column="46" lean-forward="true" selection-start-line="202" selection-start-column="46" selection-end-line="202" selection-end-column="46" />
               <folding>
                 <element signature="e#44#58#0#PHP" expanded="true" />
               </folding>
@@ -28,11 +28,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="635">
+              <caret line="385" column="18" lean-forward="true" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/index#1;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
+                <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#externalDocs#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,7 +175,6 @@
         <option value="$PROJECT_DIR$/app/UserAttendedActivities.php" />
         <option value="$PROJECT_DIR$/app/helpers.php" />
         <option value="$PROJECT_DIR$/app/Follow.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_13_144432_users_photo_gallery_add_displayed_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_12_075809_update_add_to_image_column_events_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_13_144710_update_users_gallery_add_displayed_column_table.php" />
@@ -144,6 +193,7 @@
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/UserAttendedEvent.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -309,6 +359,17 @@
             <path>
               <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -419,12 +480,12 @@
       <workItem from="1560343862793" duration="518000" />
       <workItem from="1560509478190" duration="2516000" />
       <workItem from="1560518420324" duration="1418000" />
-      <workItem from="1560756365579" duration="1679000" />
+      <workItem from="1560756365579" duration="2420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313064000" />
+    <option name="totallyTimeSpent" value="313805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
@@ -630,72 +691,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="5125" column="30" selection-start-line="5125" selection-start-column="30" selection-end-line="5125" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_13_144412_users_photo_gallery_add_displayed.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_13_144432_users_photo_gallery_add_displayed_table.php" />
-    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="355" column="6" lean-forward="true" selection-start-line="355" selection-start-column="6" selection-end-line="355" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
-            <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#externalDocs#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_16_084418_create_user_photo_gallery_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -714,16 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-223">
           <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
           </folding>
@@ -851,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -865,12 +845,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1457">
+          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="5125" column="30" selection-start-line="5125" selection-start-column="30" selection-end-line="5125" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
-          <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
+          <caret line="202" column="46" lean-forward="true" selection-start-line="202" selection-start-column="46" selection-end-line="202" selection-end-column="46" />
           <folding>
             <element signature="e#44#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="385" column="18" lean-forward="true" selection-start-line="385" selection-start-column="18" selection-end-line="385" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/index#1;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#securityDefinitions#0;n#!!top" />
+            <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#externalDocs#0;n#!!top" />
           </folding>
         </state>
       </provider>
