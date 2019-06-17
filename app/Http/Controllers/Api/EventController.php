@@ -184,4 +184,40 @@ class EventController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function searchEvent(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->title) {
+
+                    $event = Event::where('title', 'LIKE', '%'. $request->title . '%')->get();
+
+                    if ($event->count() > 0){
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['event'] = $event;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }

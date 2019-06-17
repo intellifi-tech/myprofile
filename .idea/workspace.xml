@@ -4,12 +4,6 @@
     <list default="true" id="0012c0f8-3c9d-4325-baaa-3c7f242eead2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/UserAttendedActivities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_16_085138_create_user_attended_activities_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_12_075809_update_add_to_image_column_events_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/EventsTableSeeder.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +19,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1132">
-              <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
+            <state relative-caret-position="607">
+              <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
               <folding>
                 <element signature="e#44#58#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -415,18 +418,19 @@
       <workItem from="1560250145559" duration="21058000" />
       <workItem from="1560343862793" duration="518000" />
       <workItem from="1560509478190" duration="2516000" />
-      <workItem from="1560518420324" duration="956000" />
+      <workItem from="1560518420324" duration="1418000" />
+      <workItem from="1560756365579" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310923000" />
+    <option name="totallyTimeSpent" value="313064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49513775" visible="true" weight="0.15170771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49513775" visible="true" weight="0.15289913" />
       <window_info id="Structure" order="1" sideWeight="0.50486225" side_tool="true" weight="0.15170771" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -609,13 +613,6 @@
           <folding>
             <element signature="e#25#61#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -833,24 +830,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/UserAttendedActivities.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -861,10 +844,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1132">
-          <caret line="184" column="9" selection-start-line="184" selection-start-column="9" selection-end-line="184" selection-end-column="9" />
+        <state relative-caret-position="607">
+          <caret line="194" column="60" selection-start-line="194" selection-start-column="60" selection-end-line="194" selection-end-column="60" />
           <folding>
             <element signature="e#44#58#0#PHP" expanded="true" />
           </folding>
