@@ -200,10 +200,9 @@ class EventController extends Controller
                             array_push($nearbyEvents, $distance);
                         }
                     }
-                    dd($nearbyEvents);
 
                     foreach ($nearbyEvents as $event){
-                        dd($event["title"]);
+                        dd($event);
                     }
 
                 } else {
