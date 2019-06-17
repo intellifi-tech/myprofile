@@ -195,7 +195,6 @@ class EventController extends Controller
                     $nearbyEvents = [];
                     $events = Event::all();
                     foreach ($events as $event){
-                        dd($request->all());
                         $distance = $this->distanceEvents($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
                         if ($distance != null){
                             array_push($nearbyEvents, $distance);
@@ -250,6 +249,7 @@ class EventController extends Controller
             } else if ($unit == "M") {
                 if ((($miles * 1.609344) * 1000) < $meterLimit)
                 {
+                    dd("burada");
                     $coords["event"] = $event;
                     $coords["lat"] = $lat2;
                     $coords["lon"] = $lon2;
