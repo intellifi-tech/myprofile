@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserAttendedEventsTable extends Migration
+class CreateUserPrivacySettingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateUserAttendedEventsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_attended_events', function (Blueprint $table) {
+        Schema::create('user_privacy_settings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('event_id');
             $table->bigInteger('user_id');
-            $table->text('event_description');
-            $table->text('event_image');
-            $table->dateTime('date_of_participation');
-            $table->dateTime('end_date');
-            $table->bigInteger('rating');
+            $table->boolean('visibility_on_the_map')->default(false); // Haritada görünmeme
+            $table->boolean('no_message')->default(false); // Mesaj almama
+            $table->boolean('no_follow_up_request')->default(false); // Takip isteği kabul etmeme
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ class CreateUserAttendedEventsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_attended_events');
+        Schema::dropIfExists('user_privacy_settings');
     }
 }
