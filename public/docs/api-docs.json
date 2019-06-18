@@ -286,7 +286,7 @@
         "tags": [
           "user"
         ],
-        "summary": "Kullanıcının katıldığı etkinlikler",
+        "summary": "Kullanıcı gizlilik ayarları",
         "operationId": "userPrivacySettings",
         "produces": [
           "application/json"
