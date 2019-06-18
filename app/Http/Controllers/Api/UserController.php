@@ -6,6 +6,7 @@ use App\Event;
 use App\Follow;
 use App\User;
 use App\UserAttendedActivities;
+use App\UserPrivacySettings;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -192,12 +193,12 @@ class UserController extends Controller
                 }
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Api_token geçersizdir.";
+                $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
             $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
@@ -215,12 +216,40 @@ class UserController extends Controller
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Api_token geçersizdir.";
+                $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
             $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function userPrivacySettings(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+
+                $userPrivacy = UserPrivacySettings::where('user_id', $user->id)->first();
+                $userPrivacy->visibility_on_the_map = $request->visibility_on_the_map;
+                $userPrivacy->no_message = $request->no_message;
+                $userPrivacy->no_follow_up_request = $request->no_follow_up_request;
+                $userPrivacy->save();
+
+                $json['status'] = 1;
+                $json['message'] = "Success";
+                $json['userPrivacy'] = $userPrivacy;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }

@@ -26,7 +26,7 @@ class CommentController extends Controller
             }
         } else {
             $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
@@ -55,12 +55,12 @@ class CommentController extends Controller
                 }
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Api_token geçersizdir.";
+                $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
             $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
@@ -85,12 +85,12 @@ class CommentController extends Controller
                 }
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Api_token geçersizdir.";
+                $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
             $json['status'] = 0;
-            $json['message'] = "Api token boş olamaz";
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
