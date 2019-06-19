@@ -355,7 +355,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Follow"
+            }
+          },
+          "204": {
+            "description": "Takip etmek istediğiniz kullanıcı takip isteği kabul etmiyor."
           }
         }
       }
