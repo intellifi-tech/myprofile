@@ -44,6 +44,6 @@ class User extends Authenticatable
 
     public function userPrivacy()
     {
-        return $this->hasOne('App\UserPrivacySettings', 'id', 'user_id');
+        return $this->hasOne('App\UserPrivacySettings', 'user_id', 'id');
     }
 }
