@@ -12,7 +12,7 @@ class UserCoordinateController extends Controller
     public function setCoordinates(Request $request)
     {
         if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
+            $user = User::where('api_token', $request->header('api-token'))->with(['userPrivacy'])->first();
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
