@@ -190,6 +190,9 @@
             "schema": {
               "$ref": "#/definitions/UserCoordinates"
             }
+          },
+          "204": {
+            "description": "Kullanıcı haritada gösterme izni yok."
           }
         }
       }

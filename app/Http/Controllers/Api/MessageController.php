@@ -43,18 +43,27 @@ class MessageController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
-                    $message = new Message();
-                    $message->from_user_id = $user->id;
-                    $message->to_user_id = $request->to_user_id;
-                    $message->message = $request->message;
-                    $message->status = 0;
-                    $message->save();
 
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['object'] = $message;
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    $toUser = User::find($request->to_user_id);
+                    if ($toUser->userPrivacy->no_message == 0){
+                        $message = new Message();
+                        $message->from_user_id = $user->id;
+                        $message->to_user_id = $request->to_user_id;
+                        $message->message = $request->message;
+                        $message->status = 0;
+                        $message->save();
+
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['object'] = $message;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 204;
+                        $json['message'] = "Mesaj göndermeye çalıştığınız kullanıcı mesaj kabul etmiyor.";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
+
+
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Gönderen, alan ya da mesaj boş olamaz.";
