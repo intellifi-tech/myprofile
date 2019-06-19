@@ -29,7 +29,7 @@ class UserCoordinateController extends Controller
                         $json['api_token'] = $user->api_token;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
-                        $json['status'] = 200;
+                        $json['status'] = 204;
                         $json['message'] = "Kullanıcı harita izni yok.";
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }
