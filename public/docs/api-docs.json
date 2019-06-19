@@ -644,6 +644,9 @@
             "schema": {
               "$ref": "#/definitions/Message"
             }
+          },
+          "204": {
+            "description": "Mesaj göndermeye çalıştığınız kullanıcı mesaj kabul etmiyor."
           }
         }
       }
