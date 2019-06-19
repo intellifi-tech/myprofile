@@ -17,18 +17,24 @@ class UserCoordinateController extends Controller
                 if ($request->latitude && $request->longitude) {
                     $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
 
-                    dd($user->userPrivacy->visibility_on_the_map);
+                    if ($user->userPrivacy->visibility_on_the_map == 0){
+                        $userCoordination = new UserCoordinate();
+                        $userCoordination->user_id = $user->id;
+                        $userCoordination->latitude = $request->latitude;
+                        $userCoordination->longitude = $request->longitude;
+                        $userCoordination->save();
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['userCoordination'] = $userCoordination;
+                        $json['api_token'] = $user->api_token;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 200;
+                        $json['message'] = "Kullanıcı harita izni yok.";
+                        $json['api_token'] = $user->api_token;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
 
-                    $userCoordination = new UserCoordinate();
-                    $userCoordination->user_id = $user->id;
-                    $userCoordination->latitude = $request->latitude;
-                    $userCoordination->longitude = $request->longitude;
-                    $userCoordination->save();
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['userCoordination'] = $userCoordination;
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Enlem ve boylam boş olamaz.";
