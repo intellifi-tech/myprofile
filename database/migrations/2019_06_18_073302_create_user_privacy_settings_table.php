@@ -16,9 +16,9 @@ class CreateUserPrivacySettingsTable extends Migration
         Schema::create('user_privacy_settings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('user_id');
-            $table->boolean('visibility_on_the_map')->default(false); // Haritada görünmeme
-            $table->boolean('no_message')->default(false); // Mesaj almama
-            $table->boolean('no_follow_up_request')->default(false); // Takip isteği kabul etmeme
+            $table->boolean('visibility_on_the_map')->default(0); // Haritada görünmeme
+            $table->boolean('no_message')->default(0); // Mesaj almama
+            $table->boolean('no_follow_up_request')->default(0); // Takip isteği kabul etmeme
             $table->timestamps();
         });
     }

@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $query->where('status', 1);
     }
+
+    public function userPrivacy()
+    {
+        return $this->hasOne('App\UserPrivacySettings', 'user_id', 'id');
+    }
 }

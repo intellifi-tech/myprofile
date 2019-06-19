@@ -1251,9 +1251,6 @@
     "UserSetCoordinates": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
         "latitude": {
           "type": "string"
         },

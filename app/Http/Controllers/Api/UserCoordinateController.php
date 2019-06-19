@@ -16,6 +16,9 @@ class UserCoordinateController extends Controller
             if ($user) {
                 if ($request->latitude && $request->longitude) {
                     $userCoordinate = UserCoordinate::where('user_id',$user->id)->delete();
+
+                    dd($user->userPrivacy());
+
                     $userCoordination = new UserCoordinate();
                     $userCoordination->user_id = $user->id;
                     $userCoordination->latitude = $request->latitude;
