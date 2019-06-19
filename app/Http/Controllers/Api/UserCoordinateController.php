@@ -31,7 +31,6 @@ class UserCoordinateController extends Controller
                     }else{
                         $json['status'] = 200;
                         $json['message'] = "Kullanıcı harita izni yok.";
-                        $json['api_token'] = $user->api_token;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }
 
