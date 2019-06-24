@@ -1,17 +1,13 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-
-use App\Event;
-use App\Follow;
 use App\User;
-use App\UserAttendedActivities;
+use App\UserAttendedEvent;
 use App\UserPrivacySettings;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use Intervention\Image\Facades\Image;
 
 class UserController extends Controller
 {
@@ -21,25 +17,10 @@ class UserController extends Controller
         return response()->json($users);
     }
 
-    public function create()
-    {
-        //
-    }
-
-    public function store(Request $request)
-    {
-
-    }
-
     public function show(Request $request)
     {
         $user = User::where('api_token', $request->header('api-token'))->first();
         return response()->json($user);
-    }
-
-    public function edit($id)
-    {
-        //
     }
 
     public function update(Request $request)
@@ -76,11 +57,6 @@ class UserController extends Controller
             $json['user'] = $user;
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
-    }
-
-    public function destroy($id)
-    {
-        //
     }
 
     public function register(Request $request)
@@ -220,7 +196,7 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $activities = UserAttendedActivities::where('user_id', $user->id)->with(['event'])->get();
+                $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event'])->get();
 
                 $json['status'] = 1;
                 $json['message'] = "Success";
