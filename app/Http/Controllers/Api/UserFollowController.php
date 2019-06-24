@@ -109,7 +109,7 @@ class UserFollowController extends Controller
 
                     $followings = Follow::where('from_user_id', $user->id)->with(['userAttendedEvents'])->get();
 
-
+                    dd($followings);
 
                 } else {
                     $json['status'] = 0;
