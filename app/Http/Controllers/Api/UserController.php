@@ -101,7 +101,6 @@ class UserController extends Controller
             $userPrivacy->no_message = 1;
             $userPrivacy->no_follow_up_request = 1;
             $userPrivacy->save();
-            dd($userPrivacy);
 
             if ($user->save()){
                 return response()->json([
