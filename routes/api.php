@@ -19,8 +19,10 @@ Route::post('user/show', 'Api\UserController@show');
 Route::post('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
-Route::post('user/attendedActivity', 'Api\UserController@userAttendedActivity');
-Route::post('user/attendedActivities', 'Api\UserController@userAttendedActivities');
+
+Route::post('user/attendedActivity', 'Api\UserController@userAttendedActivity'); // TODO Yenilenecek
+Route::post('user/attendedActivities', 'Api\UserController@userAttendedActivities'); // TODO yenilenecek
+
 Route::post('user/userPrivacySettings', 'Api\UserController@userPrivacySettings');
 Route::post('user/coordinate/setCoordinates', 'Api\UserCoordinateController@setCoordinates');
 Route::post('user/coordinate/nearbyUsers', 'Api\UserCoordinateController@nearbyUsers');

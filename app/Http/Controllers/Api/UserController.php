@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Api;
+
 use App\User;
 use App\UserAttendedEvent;
 use App\UserPrivacySettings;
@@ -166,10 +167,8 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->activity_id) {
-                    $userAttendedActivitiy = new UserAttendedActivities();
-                    $userAttendedActivitiy->user_id = $user->id;
-                    $userAttendedActivitiy->activity_id = $request->activity_id;
-                    $userAttendedActivitiy->save();
+
+                    //Yeniden yazılacak
 
                     $json['status'] = 1;
                     $json['message'] = "Success";
