@@ -97,9 +97,6 @@ class UserController extends Controller
 
             $userPrivacy = new UserPrivacySettings();
             $userPrivacy->user_id = $user->id;
-            $userPrivacy->visibility_on_the_map = 0;
-            $userPrivacy->no_message = 0;
-            $userPrivacy->no_follow_up_request = 0;
             $userPrivacy->save();
 
             if ($user->save()){
