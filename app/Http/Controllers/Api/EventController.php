@@ -273,4 +273,53 @@ class EventController extends Controller
             }
         }
     }
+
+    public function nearbyEvents(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->title && $request->latitude && $request->longitude && $request->meterLimit) {
+                    $events = Event::all();
+
+                    if ($events->count() > 0){
+                        $nearbyEvents = [];
+                        foreach ($events as $event){
+                            $nearbyEvent = $this->distanceEvent($request->latitude, $request->longitude, $event->latitude, $event->longitude, "M", $request->meterLimit, $event);
+                            if (!is_null($nearbyEvent)){
+                                array_push($nearbyEvents, $nearbyEvent);
+                            }
+                        }
+
+                        if (count($nearbyEvents) > 0){
+                            $json['status'] = 200;
+                            $json['message'] = "Success";
+                            $json['nearbyEvent'] = $nearbyEvents;
+                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        }else{
+                            $json['status'] = 204;
+                            $json['message'] = "No content";
+                            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        }
+                    }else{
+                        $json['status'] = 204;
+                        $json['message'] = "No content";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
+                } else {
+                    $json['status'] = 0;
+                    $json['message'] = "Etkinlik adı, enlem, boylam veya mesafe boş olamaz.";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
