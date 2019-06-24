@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18c35e58-f52f-4ebc-8eaf-13449fddb9ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" afterDir="false" />
-    </list>
+    <list default="true" id="18c35e58-f52f-4ebc-8eaf-13449fddb9ba" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            <state relative-caret-position="304">
+              <caret line="60" column="84" lean-forward="true" selection-start-line="60" selection-start-column="84" selection-end-line="60" selection-end-column="84" />
               <folding>
                 <element signature="e#44#59#0#PHP" expanded="true" />
               </folding>
@@ -491,12 +489,12 @@
       <workItem from="1560842414679" duration="5771000" />
       <workItem from="1560928075343" duration="5502000" />
       <workItem from="1561014961111" duration="6010000" />
-      <workItem from="1561365600839" duration="11713000" />
+      <workItem from="1561365600839" duration="13013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355713000" />
+    <option name="totallyTimeSpent" value="357013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -517,7 +515,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298217" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6515581" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.30169973" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -917,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        <state relative-caret-position="304">
+          <caret line="60" column="84" lean-forward="true" selection-start-line="60" selection-start-column="84" selection-end-line="60" selection-end-column="84" />
           <folding>
             <element signature="e#44#59#0#PHP" expanded="true" />
           </folding>

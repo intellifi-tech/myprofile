@@ -44,7 +44,7 @@ class MessageController extends Controller
             if ($user) {
                 if ($request->to_user_id && $request->message) {
 
-                    $toUser = User::find($request->to_user_id);
+                    $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
                         $message = new Message();
                         $message->from_user_id = $user->id;
