@@ -93,6 +93,15 @@ class UserController extends Controller
             $user->email = $request->email;
             $user->password = Hash::make($request->password);
             $user->api_token = Str::random(60);
+            $user->save();
+
+            $userPrivacy = new UserPrivacySettings();
+            $userPrivacy->user_id = $user->id;
+            $userPrivacy->visibility_on_the_map = 0;
+            $userPrivacy->no_message = 0;
+            $userPrivacy->no_follow_up_request = 0;
+            $userPrivacy->save();
+
             if ($user->save()){
                 return response()->json([
                     'status' => 200,
