@@ -558,6 +558,37 @@
         }
       }
     },
+    "/event/nearbyEvents": {
+      "post": {
+        "tags": [
+          "event"
+        ],
+        "summary": "Yakınımdaki etkinlikler.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "nearbyEvents",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/NearbyEvents"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
+          }
+        }
+      }
+    },
     "/comment/create": {
       "post": {
         "tags": [
@@ -1313,6 +1344,23 @@
         },
         "no_follow_up_request": {
           "type": "boolean"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "NearbyEvents": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "meterLimit": {
+          "type": "integer"
         }
       },
       "xml": {

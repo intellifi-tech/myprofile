@@ -35,6 +35,7 @@ Route::post('event/index', 'Api\EventController@index');
 Route::post('event/create', 'Api\EventController@create');
 Route::post('event/show', 'Api\EventController@show');
 Route::post('event/search', 'Api\EventController@searchEvent');
+Route::post('event/nearbyEvents', 'Api\EventController@nearbyEvents');
 // endregion
 
 //region Yorumlar
