@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18c35e58-f52f-4ebc-8eaf-13449fddb9ba" name="Default Changelist" comment="" />
+    <list default="true" id="18c35e58-f52f-4ebc-8eaf-13449fddb9ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-              <folding>
-                <element signature="e#44#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+            <state relative-caret-position="221">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
               <folding>
                 <element signature="e#44#59#0#PHP" expanded="true" />
               </folding>
@@ -219,9 +209,9 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Follow.php" />
         <option value="$PROJECT_DIR$/app/UserAttendedEvent.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
         <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
       </list>
     </option>
   </component>
@@ -501,15 +491,16 @@
       <workItem from="1560842414679" duration="5771000" />
       <workItem from="1560928075343" duration="5502000" />
       <workItem from="1561014961111" duration="6010000" />
-      <workItem from="1561365600839" duration="10971000" />
+      <workItem from="1561365600839" duration="11713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354971000" />
+    <option name="totallyTimeSpent" value="355713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493517" weight="0.13087249" />
       <window_info id="Structure" order="1" sideWeight="0.50648296" side_tool="true" weight="0.12867355" />
@@ -526,7 +517,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298217" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.6515581" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6515581" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -855,12 +846,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        <state relative-caret-position="66">
+          <caret line="110" column="60" lean-forward="true" selection-start-line="110" selection-start-column="60" selection-end-line="110" selection-end-column="60" />
           <folding>
-            <element signature="e#44#59#0#PHP" expanded="true" />
+            <element signature="e#44#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -924,12 +915,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
-            <element signature="e#44#58#0#PHP" expanded="true" />
+            <element signature="e#44#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
