@@ -168,7 +168,7 @@ class UserController extends Controller
             if ($user) {
                 if ($request->activity_id) {
 
-                    //Yeniden yazılacak
+                    // TODO Yazılacak
 
                     $json['status'] = 1;
                     $json['message'] = "Success";
