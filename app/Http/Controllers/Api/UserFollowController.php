@@ -41,7 +41,6 @@ class UserFollowController extends Controller
                 if ($request->to_user_id) {
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->get();
-                    dd($toUser);
                     if ($toUser->userPrivacy->no_follow_up_request == 0){
                         $follow = new Follow();
                         $follow->from_user_id = $user->id;
