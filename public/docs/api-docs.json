@@ -964,6 +964,15 @@
         },
         "email": {
           "type": "string"
+        },
+        "visibility_on_the_map": {
+          "type": "integer"
+        },
+        "no_message": {
+          "type": "integer"
+        },
+        "no_follow_up_request": {
+          "type": "integer"
         }
       }
     },

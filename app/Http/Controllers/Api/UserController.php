@@ -117,6 +117,9 @@ class UserController extends Controller
                     'company_id' => $user->company_id,
                     'sector_id' => $user->sector_id,
                     'email' => $user->email,
+                    'visibility_on_the_map' => $userPrivacy->visibility_on_the_map,
+                    'no_message' => $userPrivacy->no_message,
+                    'no_follow_up_request' => $userPrivacy->no_follow_up_request,
                 ], 200, [], JSON_UNESCAPED_UNICODE);
             }
         }else{
