@@ -1322,7 +1322,7 @@
     "Follow": {
       "type": "object",
       "properties": {
-        "from_user_id": {
+        "to_user_id": {
           "type": "integer"
         }
       },
