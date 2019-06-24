@@ -96,7 +96,7 @@ class UserController extends Controller
             if ($user->save()){
                 return response()->json([
                     'status' => 200,
-                    'message' => 'Giriş yapıldı.',
+                    'message' => 'Success',
                     'api_token' => $user->api_token,
                     'id' => $user->id,
                     'profile_photo' => $user->profile_photo,
