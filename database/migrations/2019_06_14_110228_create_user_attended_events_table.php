@@ -15,13 +15,13 @@ class CreateUserAttendedEventsTable extends Migration
     {
         Schema::create('user_attended_events', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('event_id');
-            $table->bigInteger('user_id');
-            $table->text('event_description');
-            $table->text('event_image');
-            $table->dateTime('date_of_participation');
-            $table->dateTime('end_date');
-            $table->bigInteger('rating');
+            $table->bigInteger('event_id'); // Etkinlik ID'si
+            $table->bigInteger('user_id'); // Kullanıcı ID'si
+            $table->text('event_description'); // Etkinlik açıklaması
+            $table->text('event_image'); // Etkinlik resmi
+            $table->dateTime('date_of_participation'); // Katılım tarihi
+            $table->dateTime('end_date')->nullable(); // Bitiş tarihi
+            $table->bigInteger('rating')->default(0); // Beğenilme sayısı
             $table->timestamps();
         });
     }

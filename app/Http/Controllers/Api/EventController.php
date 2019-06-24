@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Event;
 use App\User;
+use App\UserAttendedEvent;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -36,10 +38,18 @@ class EventController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->name && $request->activity_date) {
+                if ($request->event_id && $request->event_description && $request->event_image && date_of_participation) {
+
                     $event = new Event();
-                    $event->name = $request->name;
-                    $event->activity_date = $request->activity_date;
+                    $event->title = $request->title;
+                    $event->latitude = $request->latitude;
+                    $event->longitude = $request->longitude;
+                    $event->save();
+
+                    $userAttendedEvent = new UserAttendedEvent();
+                    $userAttendedEvent->event_id = $event->id;
+                    $userAttendedEvent->user_id = $user->id;
+                    $userAttendedEvent->event_description = $request->event_description;
 
                     //region Profil Fotoğrafı Yükleme
                     $path = public_path('uploads/events/');
@@ -50,18 +60,18 @@ class EventController extends Controller
                     \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
                     // endregion
 
-                    $event->image = $eventImageName;
-
-                    $event->save();
+                    $userAttendedEvent->event_image = $eventImageName;
+                    $userAttendedEvent->date_of_participation = Carbon::now();
+                    $userAttendedEvent->save();
 
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['event'] = $event;
-                    $json['api_token'] = $user->api_token;
+                    $json['userAttendedEvent'] = $userAttendedEvent;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
-                    $json['message'] = "Etkinlik adı veya tarihi boş olamaz.";
+                    $json['message'] = "Etkinlik ID, etkinlik açıklaması, etkinlik resmi, katılım tarihi boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
