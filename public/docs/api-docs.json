@@ -716,6 +716,38 @@
           }
         }
       }
+    },
+    "/activity/likesActivity": {
+      "post": {
+        "tags": [
+          "activity"
+        ],
+        "summary": "Aktiviteyi beğenenler",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "likesActivity",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/LikesActivity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -1374,6 +1406,17 @@
       }
     },
     "LikeActivity": {
+      "type": "object",
+      "properties": {
+        "attended_id": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "LikesActivity": {
       "type": "object",
       "properties": {
         "attended_id": {

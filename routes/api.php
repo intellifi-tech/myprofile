@@ -48,6 +48,10 @@ Route::post('message/newMessage', 'Api\MessageController@newMessage');
 Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
 //endregion
 
+//region Aktiviteler
+Route::post('activity/likesActivity', 'Api\UserActivityController@likesActivity');
+//endregion
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
