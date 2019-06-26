@@ -100,22 +100,19 @@ class UserFollowController extends Controller
         }
     }
 
-    public function followings(Request $request)
+    public function activitiesMyFollowersAttended(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->to_user_id) {
 
-                    $followings = Follow::where('from_user_id', $user->id)->with(['userAttendedEvents'])->get();
+                $activitiesMyFollowersAttended = Follow::where('from_user_id', 3)->with(['myFollowers', 'myFollowers.userAttendedEvents'])->get();
 
-                    dd($followings);
+                $json['status'] = 200;
+                $json['message'] = "Success";
+                $json['activitiesMyFollowersAttended'] = $activitiesMyFollowersAttended;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
 
-                } else {
-                    $json['status'] = 0;
-                    $json['message'] = "Takip edilecek kişi ID zorunludur.";
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                }
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Api_token geçersizdir.";

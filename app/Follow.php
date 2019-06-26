@@ -10,11 +10,11 @@ class Follow extends Model
 
     public function myFollowers()
     {
-        return $this->hasMany('App\User', 'id', 'from_user_id');
+        return $this->hasMany('App\User', 'id', 'to_user_id');
     }
 
     public function userAttendedEvents()
     {
-        return $this->hasMany('App\UserAttendedEvent', 'to_user_id', 'user_id');
+        return $this->hasMany('App\UserAttendedEvent', 'user_id', 'to_user_id');
     }
 }

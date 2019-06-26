@@ -46,4 +46,9 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\UserPrivacySettings', 'user_id', 'id');
     }
+
+    public function userAttendedEvents()
+    {
+        return $this->hasMany('App\UserAttendedEvent', 'user_id', 'id');
+    }
 }
