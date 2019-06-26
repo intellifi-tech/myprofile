@@ -29,13 +29,7 @@ Route::post('user/follow', 'Api\UserFollowController@follow');
 Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');
 Route::post('user/addPhoto', 'Api\UserPhotoGalleryController@addPhoto');
 Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanıcının yaptığı etkinliğe katılma aktivitesini beğen.
-
-
-
-Route::get('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler
-
-
-
+Route::post('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler
 // endregion
 
 // region Etkinlikler
