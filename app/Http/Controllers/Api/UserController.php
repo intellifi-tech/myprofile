@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Event;
 use App\User;
 use App\UserAttendedEvent;
+use App\UserLikeActivity;
 use App\UserPrivacySettings;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -161,21 +164,45 @@ class UserController extends Controller
         }
     }
 
-    public function userAttendedActivity(Request $request)
+    public function userAttendedEvent(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->activity_id) {
+                if ($request->event_id && $request->event_description && $request->event_image) {
 
-                    // TODO Yazılacak
+                    $event = new Event();
+                    $event->title = $request->title;
+                    $event->latitude = $request->latitude;
+                    $event->longitude = $request->longitude;
+                    $event->save();
 
-                    $json['status'] = 1;
+                    $userAttendedEvent = new UserAttendedEvent();
+                    $userAttendedEvent->event_id = $event->id;
+                    $userAttendedEvent->user_id = $user->id;
+                    $userAttendedEvent->event_description = $request->event_description;
+
+                    //region Profil Fotoğrafı Yükleme
+                    $path = public_path('uploads/events/');
+                    $eventImage = $request->event_image;  // your base64 encoded
+                    $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
+                    $eventImage = str_replace(' ', '+', $eventImage);
+                    $eventImageName = remove_turkish(lower_case_turkish($request->name)).'.'.'png';
+                    \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
+                    // endregion
+
+                    $userAttendedEvent->event_image = $eventImageName;
+                    $userAttendedEvent->date_of_participation = Carbon::now();
+                    $userAttendedEvent->save();
+
+                    $json['status'] = 200;
                     $json['message'] = "Success";
+                    $json['event'] = $event;
+                    $json['userAttendedEvent'] = $userAttendedEvent;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
-                    $json['message'] = "Etkinlik ID boş olamaz.";
+                    $json['message'] = "Etkinlik ID, etkinlik açıklaması, etkinlik resmi, katılım tarihi boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
@@ -237,6 +264,37 @@ class UserController extends Controller
         } else {
             $json['status'] = 0;
             $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function likeActivity(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($request->attended_id) {
+                    $likeActivity = new UserLikeActivity();
+                    $likeActivity->user_id = $user->id;
+                    $likeActivity->attended_id = $request->attended_id;
+                    $likeActivity->save();
+
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                } else {
+                    $json['status'] = 204;
+                    $json['message'] = "Etkinlik ID boş olamaz";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }

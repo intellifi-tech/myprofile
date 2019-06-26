@@ -394,6 +394,34 @@
         }
       }
     },
+    "/user/likeActivity": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Kullanıcının etkinliğe katılma aktivitesini beğen",
+        "operationId": "likeActivity",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/LikeActivity"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -429,12 +457,12 @@
         }
       }
     },
-    "/event/create": {
+    "/event/userAttendedEvent": {
       "post": {
         "tags": [
           "event"
         ],
-        "summary": "Yeni etkinlik oluştur.",
+        "summary": "Yeni katılım oluştur.",
         "description": "This can only be done by the logged in user.",
         "operationId": "createEvent",
         "produces": [
@@ -523,37 +551,6 @@
           },
           "204": {
             "description": "No content"
-          }
-        }
-      }
-    },
-    "/event/update": {
-      "put": {
-        "tags": [
-          "event"
-        ],
-        "summary": "Etkinlik güncelle.",
-        "description": "This can only be done by the logged in user.",
-        "operationId": "updateEvent",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/EventUpdate"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Events"
-            }
           }
         }
       }
@@ -1369,6 +1366,17 @@
           "type": "string"
         },
         "meterLimit": {
+          "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "LikeActivity": {
+      "type": "object",
+      "properties": {
+        "attended_id": {
           "type": "integer"
         }
       },
