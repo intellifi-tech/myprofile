@@ -106,7 +106,7 @@ class UserFollowController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
 
-                $activitiesMyFollowersAttended = Follow::where('from_user_id', 3)->with(['myFollowers', 'myFollowers.userAttendedEvents'])->get();
+                $activitiesMyFollowersAttended = Follow::where('from_user_id', $user->id)->with(['myFollowers', 'myFollowers.userAttendedEvents'])->get();
 
                 $json['status'] = 200;
                 $json['message'] = "Success";

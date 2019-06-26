@@ -279,6 +279,10 @@ class UserController extends Controller
                     $likeActivity->attended_id = $request->attended_id;
                     $likeActivity->save();
 
+                    $userAttendedEvents = UserAttendedEvent::find($request->attended_id);
+                    $userAttendedEvents->rating = $userAttendedEvents->rating + 1;
+                    $userAttendedEvents->save();
+
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
