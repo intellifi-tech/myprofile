@@ -422,6 +422,29 @@
         }
       }
     },
+    "/user/activitiesMyFollowersAttended": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takip ettiğim kullanıcıların yaptığı etkinlik katılma aktiviteleri.",
+        "operationId": "activitiesMyFollowersAttended",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ActivitiesMyFollowersAttended"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -1005,6 +1028,71 @@
         }
       }
     },
+    "UserActivities": {
+      "type": "object",
+      "properties": {
+        "api_token": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        },
+        "profile_photo": {
+          "type": "string",
+          "format": "longText"
+        },
+        "cover_photo": {
+          "type": "string",
+          "format": "text"
+        },
+        "title": {
+          "type": "string",
+          "format": "text"
+        },
+        "name": {
+          "type": "string"
+        },
+        "career_history": {
+          "type": "string",
+          "format": "longText"
+        },
+        "short_biography": {
+          "type": "string",
+          "format": "longText"
+        },
+        "credentials": {
+          "type": "string",
+          "format": "longText"
+        },
+        "date_of_birth": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "sector_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "email": {
+          "type": "string"
+        },
+        "visibility_on_the_map": {
+          "type": "integer"
+        },
+        "no_message": {
+          "type": "integer"
+        },
+        "no_follow_up_request": {
+          "type": "integer"
+        },
+        "events": {
+          "$ref": "#/definitions/Events"
+        }
+      }
+    },
     "City": {
       "type": "object",
       "properties": {
@@ -1421,6 +1509,17 @@
       "properties": {
         "attended_id": {
           "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "ActivitiesMyFollowersAttended": {
+      "type": "object",
+      "properties": {
+        "users": {
+          "$ref": "#/definitions/UserActivities"
         }
       },
       "xml": {
