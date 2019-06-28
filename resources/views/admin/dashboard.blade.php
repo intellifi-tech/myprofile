@@ -370,6 +370,111 @@
 @stop
 
 @section('js')
+
+    <script>
+        function hourlyOnlineUserCount() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                url: "{{ route('admin.hourlyOnlineUserCount')}}",
+                type: "POST",
+                timeout: 10000,
+                data: {1: 1},
+                success: function (response) {
+                    var onlineUser = [
+                        ['10', 1500],
+                        ['11', 1600],
+                    ];
+
+                    if ($('#online_user').size() != 0) {
+
+                        $('#online_user_statistics_loading').hide();
+                        $('#online_user_statistics_content').show();
+
+                        $.plot($("#online_user"), [{
+                                data: onlineUser,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f']
+                            }, {
+                                data: onlineUser,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#f89f9f",
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint4 = null;
+
+                        $("#online_user").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint4 != item.dataIndex) {
+                                    previousPoint4 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint4 = null;
+                            }
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+
+    <!-- region Online Kullanıcı Konumları -->
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
             integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
             crossorigin=""></script>
@@ -580,432 +685,172 @@
 
 
     </script>
+    <!-- endregion -->
+
     <script>
-        var Dashboard = function () {
 
-            return {
-
-                initCharts: function () {
-                    if (!jQuery.plot) {
-                        return;
-                    }
-
-                    function showChartTooltip(x, y, xValue, yValue) {
-                        $('<div id="tooltip" class="chart-tooltip">' + yValue + '<\/div>').css({
-                            position: 'absolute',
-                            display: 'none',
-                            top: y - 40,
-                            left: x - 40,
-                            border: '0px solid #ccc',
-                            padding: '2px 6px',
-                            'background-color': '#fff'
-                        }).appendTo("body").fadeIn(200);
-                    }
-
-                    var data = [];
-                    var totalPoints = 250;
-
-                    // random data generator for plot charts
-
-                    function getRandomData() {
-                        if (data.length > 0) data = data.slice(1);
-                        // do a random walk
-                        while (data.length < totalPoints) {
-                            var prev = data.length > 0 ? data[data.length - 1] : 50;
-                            var y = prev + Math.random() * 10 - 5;
-                            if (y < 0) y = 0;
-                            if (y > 100) y = 100;
-                            data.push(y);
-                        }
-                        // zip the generated y values with the x values
-                        var res = [];
-                        for (var i = 0; i < data.length; ++i) res.push([i, data[i]])
-                        return res;
-                    }
-
-                    function randValue() {
-                        return (Math.floor(Math.random() * (1 + 50 - 20))) + 10;
-                    }
-
-                    var visitors = [
-                        ['02/2013', 1500],
-                        ['03/2013', 2500],
-                        ['04/2013', 1700],
-                        ['05/2013', 800],
-                        ['06/2013', 1500],
-                        ['07/2013', 2350],
-                        ['08/2013', 1500],
-                        ['09/2013', 1300],
-                        ['10/2013', 4600]
-                    ];
-
-                    var visitors2 = [
-                        ['02/2013', 1500],
-                        ['03/2013', 2500],
-                        ['04/2013', 1700],
-                        ['05/2013', 800],
-                        ['06/2013', 1500],
-                        ['07/2013', 2350],
-                        ['08/2013', 1500],
-                        ['09/2013', 1300],
-                        ['11/2013', 4600]
-                    ];
-
-                    var visitors3 = [
-                        ['02/2013', 1500],
-                        ['03/2013', 2500],
-                        ['04/2013', 1700],
-                        ['05/2013', 800],
-                        ['06/2013', 1500],
-                        ['07/2013', 2350],
-                        ['08/2013', 1500],
-                        ['09/2013', 1300],
-                        ['11/2013', 4600]
-                    ];
-
-                    var visitors4 = [
-                        ['02/2013', 1500],
-                        ['03/2013', 2500],
-                        ['04/2013', 1700],
-                        ['05/2013', 800],
-                        ['06/2013', 1500],
-                        ['07/2013', 2350],
-                        ['08/2013', 1500],
-                        ['09/2013', 1300],
-                        ['11/2013', 4600]
-                    ];
-
-
-                    if ($('#kullanici_edinimi').size() != 0) {
-
-                        $('#site_statistics_loading').hide();
-                        $('#site_statistics_content').show();
-
-                        var plot_statistics = $.plot($("#kullanici_edinimi"), [{
-                                data: visitors,
-                                lines: {
-                                    fill: 0.6,
-                                    lineWidth: 0
-                                },
-                                color: ['#f89f9f']
-                            }, {
-                                data: visitors,
-                                points: {
-                                    show: true,
-                                    fill: true,
-                                    radius: 5,
-                                    fillColor: "#f89f9f",
-                                    lineWidth: 3
-                                },
-                                color: '#fff',
-                                shadowSize: 0
-                            }],
-
-                            {
-                                xaxis: {
-                                    tickLength: 0,
-                                    tickDecimals: 0,
-                                    mode: "categories",
-                                    min: 0,
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                yaxis: {
-                                    ticks: 5,
-                                    tickDecimals: 0,
-                                    tickColor: "#eee",
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                grid: {
-                                    hoverable: true,
-                                    clickable: true,
-                                    tickColor: "#eee",
-                                    borderColor: "#eee",
-                                    borderWidth: 1
-                                }
-                            });
-
-                        var previousPoint = null;
-                        $("#kullanici_edinimi").bind("plothover", function (event, pos, item) {
-                            $("#x").text(pos.x.toFixed(2));
-                            $("#y").text(pos.y.toFixed(2));
-                            if (item) {
-                                if (previousPoint != item.dataIndex) {
-                                    previousPoint = item.dataIndex;
-
-                                    $("#tooltip").remove();
-                                    var x = item.datapoint[0].toFixed(2),
-                                        y = item.datapoint[1].toFixed(2);
-
-                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                                }
-                            } else {
-                                $("#tooltip").remove();
-                                previousPoint = null;
-                            }
-                        });
-                    }
-
-                    if ($('#etkinlik_istatistigi').size() != 0) {
-
-                        $('#etkinlik_istatistigi_loading').hide();
-                        $('#etkinlik_istatistigi_content').show();
-
-                        var plot_statistics2 = $.plot($("#etkinlik_istatistigi"), [{
-                                data: visitors2,
-                                lines: {
-                                    fill: 0.6,
-                                    lineWidth: 0
-                                },
-                                color: ['#f89f9f']
-                            }, {
-                                data: visitors2,
-                                points: {
-                                    show: true,
-                                    fill: true,
-                                    radius: 5,
-                                    fillColor: "#f89f9f",
-                                    lineWidth: 3
-                                },
-                                color: '#fff',
-                                shadowSize: 0
-                            }],
-
-                            {
-                                xaxis: {
-                                    tickLength: 0,
-                                    tickDecimals: 0,
-                                    mode: "categories",
-                                    min: 0,
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                yaxis: {
-                                    ticks: 5,
-                                    tickDecimals: 0,
-                                    tickColor: "#eee",
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                grid: {
-                                    hoverable: true,
-                                    clickable: true,
-                                    tickColor: "#eee",
-                                    borderColor: "#eee",
-                                    borderWidth: 1
-                                }
-                            });
-
-                        var previousPoint2 = null;
-                        $("#etkinlik_istatistigi").bind("plothover", function (event, pos, item) {
-                            $("#x").text(pos.x.toFixed(2));
-                            $("#y").text(pos.y.toFixed(2));
-                            if (item) {
-                                if (previousPoint2 != item.dataIndex) {
-                                    previousPoint2 = item.dataIndex;
-
-                                    $("#tooltip").remove();
-                                    var x = item.datapoint[0].toFixed(2),
-                                        y = item.datapoint[1].toFixed(2);
-
-                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                                }
-                            } else {
-                                $("#tooltip").remove();
-                                previousPoint2 = null;
-                            }
-                        });
-                    }
-
-                    if ($('#sektor_istatistigi').size() != 0) {
-
-                        $('#sektor_istatistigi_loading').hide();
-                        $('#sektor_istatistigi_content').show();
-
-                        var plot_statistics3 = $.plot($("#sektor_istatistigi"), [{
-                                data: visitors3,
-                                lines: {
-                                    fill: 0.6,
-                                    lineWidth: 0
-                                },
-                                color: ['#f89f9f']
-                            }, {
-                                data: visitors3,
-                                points: {
-                                    show: true,
-                                    fill: true,
-                                    radius: 5,
-                                    fillColor: "#f89f9f",
-                                    lineWidth: 3
-                                },
-                                color: '#fff',
-                                shadowSize: 0
-                            }],
-
-                            {
-                                xaxis: {
-                                    tickLength: 0,
-                                    tickDecimals: 0,
-                                    mode: "categories",
-                                    min: 0,
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                yaxis: {
-                                    ticks: 5,
-                                    tickDecimals: 0,
-                                    tickColor: "#eee",
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                grid: {
-                                    hoverable: true,
-                                    clickable: true,
-                                    tickColor: "#eee",
-                                    borderColor: "#eee",
-                                    borderWidth: 1
-                                }
-                            });
-
-                        var previousPoint3 = null;
-                        $("#sektor_istatistigi").bind("plothover", function (event, pos, item) {
-                            $("#x").text(pos.x.toFixed(2));
-                            $("#y").text(pos.y.toFixed(2));
-                            if (item) {
-                                if (previousPoint3 != item.dataIndex) {
-                                    previousPoint3 = item.dataIndex;
-
-                                    $("#tooltip").remove();
-                                    var x = item.datapoint[0].toFixed(2),
-                                        y = item.datapoint[1].toFixed(2);
-
-                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                                }
-                            } else {
-                                $("#tooltip").remove();
-                                previousPoint3 = null;
-                            }
-                        });
-                    }
-
-                    if ($('#online_user').size() != 0) {
-
-                        $('#online_user_statistics_loading').hide();
-                        $('#online_user_statistics_content').show();
-
-                        var plot_statistics4 = $.plot($("#online_user"), [{
-                                data: visitors4,
-                                lines: {
-                                    fill: 0.6,
-                                    lineWidth: 0
-                                },
-                                color: ['#f89f9f']
-                            }, {
-                                data: visitors4,
-                                points: {
-                                    show: true,
-                                    fill: true,
-                                    radius: 5,
-                                    fillColor: "#f89f9f",
-                                    lineWidth: 3
-                                },
-                                color: '#fff',
-                                shadowSize: 0
-                            }],
-
-                            {
-                                xaxis: {
-                                    tickLength: 0,
-                                    tickDecimals: 0,
-                                    mode: "categories",
-                                    min: 0,
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                yaxis: {
-                                    ticks: 5,
-                                    tickDecimals: 0,
-                                    tickColor: "#eee",
-                                    font: {
-                                        lineHeight: 14,
-                                        style: "normal",
-                                        variant: "small-caps",
-                                        color: "#6F7B8A"
-                                    }
-                                },
-                                grid: {
-                                    hoverable: true,
-                                    clickable: true,
-                                    tickColor: "#eee",
-                                    borderColor: "#eee",
-                                    borderWidth: 1
-                                }
-                            });
-
-                        var previousPoint4 = null;
-                        $("#online_user").bind("plothover", function (event, pos, item) {
-                            $("#x").text(pos.x.toFixed(2));
-                            $("#y").text(pos.y.toFixed(2));
-                            if (item) {
-                                if (previousPoint4 != item.dataIndex) {
-                                    previousPoint4 = item.dataIndex;
-
-                                    $("#tooltip").remove();
-                                    var x = item.datapoint[0].toFixed(2),
-                                        y = item.datapoint[1].toFixed(2);
-
-                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
-                                }
-                            } else {
-                                $("#tooltip").remove();
-                                previousPoint4 = null;
-                            }
-                        });
-                    }
-
-
-                },
-
-                init: function () {
-                    this.initCharts();
-                }
-            };
-
-        }();
-
-        if (App.isAngularJsApp() === false) {
-            jQuery(document).ready(function () {
-                Dashboard.init(); // init metronic core componets
-            });
+        function showChartTooltip(x, y, xValue, yValue) {
+            $('<div id="tooltip" class="chart-tooltip">' + yValue + '<\/div>').css({
+                position: 'absolute',
+                display: 'none',
+                top: y - 40,
+                left: x - 40,
+                border: '0px solid #ccc',
+                padding: '2px 6px',
+                'background-color': '#fff'
+            }).appendTo("body").fadeIn(200);
         }
+
+
+
+        // var Dashboard = function () {
+        //
+        //     return {
+        //
+        //         initCharts: function () {
+        //             if (!jQuery.plot) {
+        //                 return;
+        //             }
+        //
+        //             function showChartTooltip(x, y, xValue, yValue) {
+        //                 $('<div id="tooltip" class="chart-tooltip">' + yValue + '<\/div>').css({
+        //                     position: 'absolute',
+        //                     display: 'none',
+        //                     top: y - 40,
+        //                     left: x - 40,
+        //                     border: '0px solid #ccc',
+        //                     padding: '2px 6px',
+        //                     'background-color': '#fff'
+        //                 }).appendTo("body").fadeIn(200);
+        //             }
+        //
+        //             var data = [];
+        //             var totalPoints = 250;
+        //
+        //             // random data generator for plot charts
+        //
+        //             function getRandomData() {
+        //                 if (data.length > 0) data = data.slice(1);
+        //                 // do a random walk
+        //                 while (data.length < totalPoints) {
+        //                     var prev = data.length > 0 ? data[data.length - 1] : 50;
+        //                     var y = prev + Math.random() * 10 - 5;
+        //                     if (y < 0) y = 0;
+        //                     if (y > 100) y = 100;
+        //                     data.push(y);
+        //                 }
+        //                 // zip the generated y values with the x values
+        //                 var res = [];
+        //                 for (var i = 0; i < data.length; ++i) res.push([i, data[i]])
+        //                 return res;
+        //             }
+        //
+        //             function randValue() {
+        //                 return (Math.floor(Math.random() * (1 + 50 - 20))) + 10;
+        //             }
+        //
+        //
+        //
+        //             var onlineUser = [
+        //                 ['10', 1500],
+        //                 ['11', 2500],
+        //                 ['12', 1700],
+        //                 ['13', 800],
+        //                 ['14', 1500],
+        //                 ['15', 2350],
+        //                 ['16', 1500],
+        //                 ['17', 1300],
+        //                 ['18', 4600]
+        //             ];
+        //
+        //             if ($('#online_user').size() != 0) {
+        //
+        //                 $('#online_user_statistics_loading').hide();
+        //                 $('#online_user_statistics_content').show();
+        //
+        //                 var plot_statistics4 = $.plot($("#online_user"), [{
+        //                         data: onlineUser,
+        //                         lines: {
+        //                             fill: 0.6,
+        //                             lineWidth: 0
+        //                         },
+        //                         color: ['#f89f9f']
+        //                     }, {
+        //                         data: onlineUser,
+        //                         points: {
+        //                             show: true,
+        //                             fill: true,
+        //                             radius: 5,
+        //                             fillColor: "#f89f9f",
+        //                             lineWidth: 3
+        //                         },
+        //                         color: '#fff',
+        //                         shadowSize: 0
+        //                     }],
+        //
+        //                     {
+        //                         xaxis: {
+        //                             tickLength: 0,
+        //                             tickDecimals: 0,
+        //                             mode: "categories",
+        //                             min: 0,
+        //                             font: {
+        //                                 lineHeight: 14,
+        //                                 style: "normal",
+        //                                 variant: "small-caps",
+        //                                 color: "#6F7B8A"
+        //                             }
+        //                         },
+        //                         yaxis: {
+        //                             ticks: 5,
+        //                             tickDecimals: 0,
+        //                             tickColor: "#eee",
+        //                             font: {
+        //                                 lineHeight: 14,
+        //                                 style: "normal",
+        //                                 variant: "small-caps",
+        //                                 color: "#6F7B8A"
+        //                             }
+        //                         },
+        //                         grid: {
+        //                             hoverable: true,
+        //                             clickable: true,
+        //                             tickColor: "#eee",
+        //                             borderColor: "#eee",
+        //                             borderWidth: 1
+        //                         }
+        //                     });
+        //
+        //                 var previousPoint4 = null;
+        //
+        //                 $("#online_user").bind("plothover", function (event, pos, item) {
+        //                     $("#x").text(pos.x.toFixed(2));
+        //                     $("#y").text(pos.y.toFixed(2));
+        //                     if (item) {
+        //                         if (previousPoint4 != item.dataIndex) {
+        //                             previousPoint4 = item.dataIndex;
+        //
+        //                             $("#tooltip").remove();
+        //                             var x = item.datapoint[0].toFixed(2),
+        //                                 y = item.datapoint[1].toFixed(2);
+        //
+        //                             showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+        //                         }
+        //                     } else {
+        //                         $("#tooltip").remove();
+        //                         previousPoint4 = null;
+        //                     }
+        //                 });
+        //             }
+        //
+        //         },
+        //
+        //         init: function () {
+        //             this.initCharts();
+        //         }
+        //     };
+        //
+        // }();
+        //
     </script>
 @stop

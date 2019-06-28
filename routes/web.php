@@ -29,6 +29,12 @@ Route::middleware('auth')->prefix('yonetim')->as('admin.')->group(function () {
     Route::resource('city', 'Admin\CityController');
 
     Route::resource('town', 'Admin\TownController');
+
+
+    //region Dashboard Ajax Routes
+    Route::get('hourlyOnlineUserCount', 'Admin\AjaxController@hourlyOnlineUserCount')->name('hourlyOnlineUserCount');
+    //endregion
+
 });
 //endregion
 
