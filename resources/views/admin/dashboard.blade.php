@@ -207,9 +207,9 @@
                             </div>
                         </div>
                         <div class="portlet-body">
-                            <div id="site_statistics_loading">
+                            <div id="kullanici_edinimi_loading">
                                 <img src="{{ admin_asset('global/img/loading.gif') }}" alt="loading"/></div>
-                            <div id="site_statistics_content" class="display-none">
+                            <div id="kullanici_edinimi_content" class="display-none">
                                 <div id="kullanici_edinimi" class="chart"></div>
                             </div>
                         </div>
@@ -394,7 +394,6 @@
                         a1 = [];
                     });
 
-
                     if ($('#online_user').size() != 0) {
 
                         $('#online_user_statistics_loading').hide();
@@ -406,14 +405,14 @@
                                     fill: 0.6,
                                     lineWidth: 0
                                 },
-                                color: ['#f89f9f']
+                                color: ['#f89f9f'] // Çizginin oluşturduğu alanın resmi
                             }, {
                                 data: onlineUser,
                                 points: {
                                     show: true,
                                     fill: true,
                                     radius: 5,
-                                    fillColor: "#f89f9f",
+                                    fillColor: "#FF0000", // Noktaların rengi
                                     lineWidth: 3
                                 },
                                 color: '#fff',
@@ -465,7 +464,7 @@
                                     var x = item.datapoint[0].toFixed(2),
                                         y = item.datapoint[1].toFixed(2);
 
-                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' visits');
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' kişi');
                                 }
                             } else {
                                 $("#tooltip").remove();
@@ -476,6 +475,320 @@
                 }
             });
         }
+
+        function monthlyUserAcquisition() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                url: "{{ route('admin.monthlyUserAcquisition')}}",
+                type: "POST",
+                timeout: 10000,
+                data: {1: 1},
+                success: function (response) {
+                    var a1 = [];
+
+                    var mounthUserCounts = [];
+                    Object.keys(response).sort().forEach(function(key) {
+                        a1.push(key, response[key]);
+                        mounthUserCounts.push(a1);
+                        a1 = [];
+                    });
+
+                    if ($('#kullanici_edinimi').size() != 0) {
+
+                        $('#kullanici_edinimi_loading').hide();
+                        $('#kullanici_edinimi_content').show();
+
+                        $.plot($("#kullanici_edinimi"), [{
+                                data: mounthUserCounts,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f'] // Çizginin oluşturduğu alanın resmi
+                            }, {
+                                data: mounthUserCounts,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#FF0000", // Noktaların rengi
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint4 = null;
+
+                        $("#kullanici_edinimi").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint4 != item.dataIndex) {
+                                    previousPoint4 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' kişi');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint4 = null;
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        function sectorStatistics() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                url: "{{ route('admin.hourlyOnlineUserCount')}}",
+                type: "POST",
+                timeout: 10000,
+                data: {1: 1},
+                success: function (response) {
+                    var a1 = [];
+
+                    var onlineUser = [];
+                    Object.keys(response).sort().forEach(function(key) {
+                        a1.push(key, response[key]);
+                        onlineUser.push(a1);
+                        a1 = [];
+                    });
+
+                    if ($('#sektor_istatistigi').size() != 0) {
+
+                        $('#sektor_istatistigi_loading').hide();
+                        $('#sektor_istatistigi_content').show();
+
+                        $.plot($("#sektor_istatistigi"), [{
+                                data: onlineUser,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f'] // Çizginin oluşturduğu alanın resmi
+                            }, {
+                                data: onlineUser,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#FF0000", // Noktaların rengi
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint4 = null;
+
+                        $("#online_user").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint4 != item.dataIndex) {
+                                    previousPoint4 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' kişi');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint4 = null;
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        function eventStatistics() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                url: "{{ route('admin.hourlyOnlineUserCount')}}",
+                type: "POST",
+                timeout: 10000,
+                data: {1: 1},
+                success: function (response) {
+                    var a1 = [];
+
+                    var onlineUser = [];
+                    Object.keys(response).sort().forEach(function(key) {
+                        a1.push(key, response[key]);
+                        onlineUser.push(a1);
+                        a1 = [];
+                    });
+
+                    if ($('#etkinlik_istatistigi').size() != 0) {
+
+                        $('#etkinlik_istatistigi_loading').hide();
+                        $('#etkinlik_istatistigi_content').show();
+
+                        $.plot($("#etkinlik_istatistigi"), [{
+                                data: onlineUser,
+                                lines: {
+                                    fill: 0.6,
+                                    lineWidth: 0
+                                },
+                                color: ['#f89f9f'] // Çizginin oluşturduğu alanın resmi
+                            }, {
+                                data: onlineUser,
+                                points: {
+                                    show: true,
+                                    fill: true,
+                                    radius: 5,
+                                    fillColor: "#FF0000", // Noktaların rengi
+                                    lineWidth: 3
+                                },
+                                color: '#fff',
+                                shadowSize: 0
+                            }],
+                            {
+                                xaxis: {
+                                    tickLength: 0,
+                                    tickDecimals: 0,
+                                    mode: "categories",
+                                    min: 0,
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                yaxis: {
+                                    ticks: 5,
+                                    tickDecimals: 0,
+                                    tickColor: "#eee",
+                                    font: {
+                                        lineHeight: 14,
+                                        style: "normal",
+                                        variant: "small-caps",
+                                        color: "#6F7B8A"
+                                    }
+                                },
+                                grid: {
+                                    hoverable: true,
+                                    clickable: true,
+                                    tickColor: "#eee",
+                                    borderColor: "#eee",
+                                    borderWidth: 1
+                                }
+                            });
+
+                        var previousPoint4 = null;
+
+                        $("#online_user").bind("plothover", function (event, pos, item) {
+                            $("#x").text(pos.x.toFixed(2));
+                            $("#y").text(pos.y.toFixed(2));
+                            if (item) {
+                                if (previousPoint4 != item.dataIndex) {
+                                    previousPoint4 = item.dataIndex;
+
+                                    $("#tooltip").remove();
+                                    var x = item.datapoint[0].toFixed(2),
+                                        y = item.datapoint[1].toFixed(2);
+
+                                    showChartTooltip(item.pageX, item.pageY, item.datapoint[0], item.datapoint[1] + ' kişi');
+                                }
+                            } else {
+                                $("#tooltip").remove();
+                                previousPoint4 = null;
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+
     </script>
 
     <!-- region Online Kullanıcı Konumları -->
@@ -486,7 +799,10 @@
     <script>
 
         $(document).ready(function () {
-            fiveSeconds;
+            hourlyOnlineUserCount();
+            monthlyUserAcquisition();
+            sectorStatistics();
+            eventStatistics();
         });
 
         let fiveSeconds = setInterval(function () {
@@ -501,29 +817,9 @@
             oneMinutesGetOnlineUserCoordinates();
         }, 60000);
 
-        function five()
-        {
-            fiveSeconds;
-            clearInterval(thirtySeconds);
-            clearInterval(oneMinutes);
-
-        }
-
-        function thirty()
-        {
-            thirtySeconds;
-            clearInterval(fiveSeconds);
-            clearInterval(oneMinutes);
-
-        }
-
-        function one()
-        {
-            oneMinutes;
-            clearInterval(fiveSeconds);
-            clearInterval(thirtySeconds);
-
-        }
+        let oneHour = setInterval(function () {
+            hourlyOnlineUserCount();
+        }, 3600000);
 
         let mapFive = L.map('five_seconds_online_user_maps', {
             fullscreenControl: true,
