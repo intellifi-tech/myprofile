@@ -32,7 +32,7 @@ Route::middleware('auth')->prefix('yonetim')->as('admin.')->group(function () {
 
 
     //region Dashboard Ajax Routes
-    Route::get('hourlyOnlineUserCount', 'Admin\AjaxController@hourlyOnlineUserCount')->name('hourlyOnlineUserCount');
+    Route::post('hourlyOnlineUserCount', 'Admin\AjaxController@hourlyOnlineUserCount')->name('hourlyOnlineUserCount');
     //endregion
 
 });

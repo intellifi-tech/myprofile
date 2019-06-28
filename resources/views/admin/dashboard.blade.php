@@ -385,10 +385,15 @@
                 timeout: 10000,
                 data: {1: 1},
                 success: function (response) {
-                    var onlineUser = [
-                        ['10', 1500],
-                        ['11', 1600],
-                    ];
+                    var a1 = [];
+
+                    var onlineUser = [];
+                    Object.keys(response).sort().forEach(function(key) {
+                        a1.push(key, response[key]);
+                        onlineUser.push(a1);
+                        a1 = [];
+                    });
+
 
                     if ($('#online_user').size() != 0) {
 
@@ -414,7 +419,6 @@
                                 color: '#fff',
                                 shadowSize: 0
                             }],
-
                             {
                                 xaxis: {
                                     tickLength: 0,
