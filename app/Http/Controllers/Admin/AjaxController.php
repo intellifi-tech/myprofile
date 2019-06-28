@@ -74,7 +74,7 @@ class AjaxController extends Controller
 
     public function sectorStatistics(Request $request)
     {
-
+        $nowMonth = Carbon::now();
     }
 
     public function eventStatistics(Request $request)
