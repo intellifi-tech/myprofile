@@ -45,7 +45,7 @@ Route::post('comment/create', 'Api\CommentController@create');
 //endregion
 
 //region Mesajlar
-Route::post('message/getMessages', 'Api\MessageController@getMessages');
+Route::get('message/getMessages', 'Api\MessageController@getMessages');
 Route::post('message/newMessage', 'Api\MessageController@newMessage');
 Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
 //endregion

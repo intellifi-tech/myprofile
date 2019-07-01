@@ -642,7 +642,7 @@
       }
     },
     "/message/getMessages": {
-      "post": {
+      "get": {
         "tags": [
           "message"
         ],
