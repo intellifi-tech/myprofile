@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Sector;
 use App\User;
 use App\UserCoordinate;
 use Carbon\Carbon;
+use function foo\func;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -74,7 +76,23 @@ class AjaxController extends Controller
 
     public function sectorStatistics(Request $request)
     {
+
         $nowMonth = Carbon::now();
+
+        $nowMonthSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->format('m'))->get()->count();
+            $nowMonthSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($nowMonthSectorUserCountsTmp);
+
+//        echo array_key_first($nowMonthSectorCountsTmp);
+//        echo $nowMonthSectorCountsTmp[array_key_first($nowMonthSectorCountsTmp)];
+
+        $nowMonthSectorUserCounts[array_key_first($nowMonthSectorUserCountsTmp)] = $nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
+
+        return $nowMonthSectorUserCounts;
     }
 
     public function eventStatistics(Request $request)
