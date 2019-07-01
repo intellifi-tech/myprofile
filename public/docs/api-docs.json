@@ -657,7 +657,10 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Message"
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Message"
+              }
             }
           }
         }
