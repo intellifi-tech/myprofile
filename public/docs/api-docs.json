@@ -52,6 +52,14 @@
         ],
         "parameters": [
           {
+            "in": "header",
+            "name": "header",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiToken"
+            }
+          },
+          {
             "in": "body",
             "name": "body",
             "required": true,

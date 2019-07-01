@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +30,69 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="167">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>New</find>
-      <find>followe</find>
       <find>distanceEvent</find>
       <find>nearbyEvents</find>
       <find>follow</find>
@@ -77,6 +136,8 @@
       <find>Sektör İste</find>
       <find>Etkinlik İstat</find>
       <find>etkinlik_istatistigi_content</find>
+      <find>getMessages</find>
+      <find>user/index</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -133,7 +194,6 @@
         <option value="$PROJECT_DIR$/app/Follow.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -143,6 +203,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AjaxController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -255,6 +316,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,27 +345,23 @@
             <path>
               <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,17 +476,18 @@
       <workItem from="1561810192150" duration="40000" />
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
+      <workItem from="1561976144536" duration="591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412203000" />
+    <option name="totallyTimeSpent" value="413593000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1342" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1364" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.1302621" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.1310564" />
       <window_info id="Structure" order="1" sideWeight="0.50729334" side_tool="true" weight="0.12946783" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -478,7 +537,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_12_075809_update_add_to_image_column_events_table.php" />
     <entry file="file://$PROJECT_DIR$/app/UserAttendedActivities.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="5111" column="12" selection-start-line="5111" selection-start-column="12" selection-end-line="5111" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -612,16 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="46" column="102" selection-start-line="46" selection-start-column="102" selection-end-line="46" selection-end-column="102" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,28 +755,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="1375" column="27" lean-forward="true" selection-start-line="1375" selection-start-column="27" selection-end-line="1375" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -884,10 +903,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="5127" column="31" lean-forward="true" selection-start-line="5127" selection-start-column="31" selection-end-line="5127" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Plugins/MessageLogger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="190">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#ApiToken#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
