@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 */
 
 // region Kullanıcılar
-Route::post('user/index', 'Api\UserController@index');
+Route::get('user/index', 'Api\UserController@index');
 Route::post('user/show', 'Api\UserController@show');
 Route::post('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
