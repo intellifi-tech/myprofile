@@ -21,7 +21,7 @@
   ],
   "paths": {
     "/user/index": {
-      "post": {
+      "get": {
         "tags": [
           "user"
         ],
