@@ -65,10 +65,16 @@ class UserCoordinateController extends Controller
                         }
                     }
                     $nearbyUserCoordinates = array_filter($nearbyUserCoordinates);
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    if(count($nearbyUserCoordinates) > 0){
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        $json['status'] = 204;
+                        $json['message'] = "No Content";
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Enlem ve boylam boş olamaz.";
