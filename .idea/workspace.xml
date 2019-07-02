@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="1547" column="37" selection-start-line="1547" selection-start-column="37" selection-end-line="1547" selection-end-column="37" />
+            <state relative-caret-position="497">
+              <caret line="1354" column="21" selection-start-line="1354" selection-start-column="21" selection-end-line="1354" selection-end-column="21" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -48,6 +48,7 @@
                 <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
@@ -56,7 +57,6 @@
                 <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -82,7 +82,6 @@
                 <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
@@ -92,33 +91,13 @@
                 <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserPrivacySettings#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="e#745#944#0#PHP" />
-                <element signature="e#955#1136#0#PHP" />
-                <element signature="e#1148#2930#0#PHP" />
-                <element signature="e#2936#4148#0#PHP" />
-                <element signature="e#2998#4142#0#PHP" />
-                <element signature="e#3133#3950#0#PHP" />
-                <element signature="e#3162#3736#0#PHP" />
-                <element signature="e#3503#3736#0#PHP" />
-                <element signature="e#3751#3950#0#PHP" />
-                <element signature="e#3961#4142#0#PHP" />
-                <element signature="e#4154#5204#0#PHP" />
+                <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -127,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="417">
+              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -144,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>online_user</find>
       <find>Kullanıcı Edinimi</find>
       <find>kullanici_edinimi_loading</find>
       <find>kullanici_edinimi</find>
@@ -174,6 +152,7 @@
       <find>UserPrivacySettings</find>
       <find>user/followers</find>
       <find>followers</find>
+      <find>CommentCreate</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -527,12 +506,12 @@
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
-      <workItem from="1562056149250" duration="11689000" />
+      <workItem from="1562056149250" duration="13048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429726000" />
+    <option name="totallyTimeSpent" value="431085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -623,9 +602,6 @@
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserPhotoGalleryController.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,20 +912,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserActivityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#44#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserActivityController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserPhotoGalleryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="102">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
           <folding>
             <element signature="e#44#57#0#PHP" expanded="true" />
           </folding>
@@ -990,18 +973,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="170">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding>
+            <element signature="e#210#1142#0#PHP" />
             <element signature="e#745#944#0#PHP" />
             <element signature="e#955#1136#0#PHP" />
             <element signature="e#1148#2930#0#PHP" />
@@ -1017,10 +994,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="1547" column="37" selection-start-line="1547" selection-start-column="37" selection-end-line="1547" selection-end-column="37" />
+        <state relative-caret-position="497">
+          <caret line="1354" column="21" selection-start-line="1354" selection-start-column="21" selection-end-line="1354" selection-end-column="21" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -1032,6 +1016,7 @@
             <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
@@ -1040,7 +1025,6 @@
             <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -1066,7 +1050,6 @@
             <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1076,11 +1059,13 @@
             <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserPrivacySettings#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
           </folding>
         </state>
       </provider>

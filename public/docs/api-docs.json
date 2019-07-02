@@ -604,7 +604,7 @@
         "tags": [
           "comment"
         ],
-        "summary": "Yeni yorum oluştur.",
+        "summary": "Etkinliğe yorum yap.",
         "description": "This can only be done by the logged in user.",
         "operationId": "createComment",
         "produces": [
@@ -1353,9 +1353,6 @@
     "CommentCreate": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
         "event_id": {
           "type": "integer"
         },
