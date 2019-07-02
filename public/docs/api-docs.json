@@ -1558,8 +1558,8 @@
         "no_follow_up_request": {
           "type": "boolean"
         },
-        "users": {
-          "$ref": "#/definitions/UserActivities"
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
