@@ -343,7 +343,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/FollowersResponse"
+              }
+            }
           }
         }
       }
@@ -1523,6 +1529,23 @@
       "properties": {
         "to_user_id": {
           "type": "integer"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "FollowersResponse": {
+      "type": "object",
+      "properties": {
+        "from_user_id": {
+          "type": "integer"
+        },
+        "to_user_id": {
+          "type": "integer"
+        },
+        "my_followers": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
