@@ -188,7 +188,7 @@ class UserController extends Controller
                     $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                     $eventImage = str_replace(' ', '+', $eventImage);
                     $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
-                    \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
+                    \File::put($path . $eventImageName, base64_decode($eventImage));
                     // endregion
 
                     $userAttendedEvent->event_image = $eventImageName;
