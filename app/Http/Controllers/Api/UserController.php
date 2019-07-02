@@ -223,7 +223,7 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $activities = UserAttendedEvent::where('user_id', $user->id)->with(['events'])->get();
-                dd($activities);
+                dd($activities->events);
 
                 $json['status'] = 1;
                 $json['message'] = "Success";
