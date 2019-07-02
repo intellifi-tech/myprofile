@@ -310,7 +310,7 @@ function distance($lat1, $lon1, $lat2, $lon2, $unit, $meterLimit, $user)
                 $coords["user"] = $user;
                 $coords["lat"] = $lat2;
                 $coords["lon"] = $lon2;
-                $coords["userDistance"] = (($miles * 1.609344) * 1000);
+                $coords["userDistance"] = round((($miles * 1.609344) * 1000));
                 return $coords;
             }
         } else {
