@@ -275,7 +275,7 @@
         }
       }
     },
-    "/user/attendedActivities": {
+    "/user/userAttendedEvents": {
       "post": {
         "tags": [
           "user"
@@ -285,22 +285,14 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string",
-            "schema": {
-              "$ref": "#/definitions/ApiToken"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Events"
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Events"
+              }
             }
           }
         }

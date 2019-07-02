@@ -217,12 +217,13 @@ class UserController extends Controller
         }
     }
 
-    public function userAttendedActivities(Request $request)
+    public function userAttendedEvents(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event'])->get();
+                dd($activities);
 
                 $json['status'] = 1;
                 $json['message'] = "Success";

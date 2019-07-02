@@ -20,7 +20,7 @@ Route::post('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
 Route::post('user/userAttendedEvent', 'Api\UserController@userAttendedEvent');
-Route::post('user/attendedActivities', 'Api\UserController@userAttendedActivities');
+Route::post('user/userAttendedEvents', 'Api\UserController@userAttendedEvents');
 Route::post('user/userPrivacySettings', 'Api\UserController@userPrivacySettings');
 Route::post('user/coordinate/setCoordinates', 'Api\UserCoordinateController@setCoordinates');
 Route::post('user/coordinate/nearbyUsers', 'Api\UserCoordinateController@nearbyUsers');
