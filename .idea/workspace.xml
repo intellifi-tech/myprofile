@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/UserPrivacySettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/UserPrivacySettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +38,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1024">
-                  <caret line="1220" column="22" selection-start-line="1220" selection-start-column="22" selection-end-line="1220" selection-end-column="22" />
+                <state relative-caret-position="548">
+                  <caret line="1560" column="18" lean-forward="true" selection-start-line="1560" selection-start-column="18" selection-end-line="1560" selection-end-column="18" />
                   <folding>
                     <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -48,7 +49,7 @@
                     <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
-                    <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                    <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
@@ -98,7 +99,6 @@
                     <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
-                    <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
@@ -107,8 +107,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/api.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="36" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="36" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -120,8 +120,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
+                <state relative-caret-position="409">
+                  <caret line="228" column="50" lean-forward="true" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
                   <folding>
                     <element signature="e#352#458#0#PHP" />
                     <element signature="e#464#636#0#PHP" />
@@ -149,11 +149,6 @@
                     <element signature="e#6580#6790#0#PHP" />
                     <element signature="e#6800#6986#0#PHP" />
                     <element signature="e#6998#9596#0#PHP" />
-                    <element signature="e#10572#11783#0#PHP" />
-                    <element signature="e#10640#11777#0#PHP" />
-                    <element signature="e#10775#11585#0#PHP" />
-                    <element signature="e#11386#11585#0#PHP" />
-                    <element signature="e#11596#11777#0#PHP" />
                     <element signature="e#11789#13323#0#PHP" />
                     <element signature="e#11850#13317#0#PHP" />
                     <element signature="e#11985#13125#0#PHP" />
@@ -162,6 +157,15 @@
                     <element signature="e#12926#13125#0#PHP" />
                     <element signature="e#13136#13317#0#PHP" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/UserPrivacySettings.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -179,8 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>documen</find>
-      <find>Kullanıcı Edini</find>
       <find>site_statistics_content</find>
       <find>site_statistics_loading</find>
       <find>online_user</find>
@@ -209,6 +211,8 @@
       <find>/user/userAttendedEvents</find>
       <find>AttendedEvents</find>
       <find>required</find>
+      <find>/user/userPrivacySettings</find>
+      <find>UserPrivacySettings</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -248,7 +252,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserPhotoGalleryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_18_073302_create_user_privacy_settings_table.php" />
-        <option value="$PROJECT_DIR$/app/UserPrivacySettings.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
@@ -272,9 +275,10 @@
         <option value="$PROJECT_DIR$/app/helpers.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/UserAttendedEvent.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/app/UserPrivacySettings.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -562,12 +566,12 @@
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
-      <workItem from="1562056149250" duration="8655000" />
+      <workItem from="1562056149250" duration="9240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426692000" />
+    <option name="totallyTimeSpent" value="427277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -656,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserPrivacySettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1007,22 +1004,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="391">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/UserPrivacySettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="228" column="50" lean-forward="true" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+          <folding>
+            <element signature="e#352#458#0#PHP" />
+            <element signature="e#464#636#0#PHP" />
+            <element signature="e#642#2314#0#PHP" />
+            <element signature="e#780#813#0#PHP" />
+            <element signature="e#1304#1336#0#PHP" />
+            <element signature="e#2083#2308#0#PHP" />
+            <element signature="e#2320#4488#0#PHP" />
+            <element signature="e#2377#4482#0#PHP" />
+            <element signature="e#3089#4272#0#PHP" />
+            <element signature="e#3132#4257#0#PHP" />
+            <element signature="e#3149#4223#0#PHP" />
+            <element signature="e#4282#4482#0#PHP" />
+            <element signature="e#4494#6992#0#PHP" />
+            <element signature="e#4612#6986#0#PHP" />
+            <element signature="e#4646#6790#0#PHP" />
+            <element signature="e#4714#4823#0#PHP" />
+            <element signature="e#4726#4822#1#PHP" />
+            <element signature="e#4850#6566#0#PHP" />
+            <element signature="e#4961#6315#0#PHP" />
+            <element signature="e#5215#6315#0#PHP" />
+            <element signature="e#5252#6292#0#PHP" />
+            <element signature="e#5269#6258#0#PHP" />
+            <element signature="e#6333#6566#0#PHP" />
+            <element signature="e#6580#6790#0#PHP" />
+            <element signature="e#6800#6986#0#PHP" />
+            <element signature="e#6998#9596#0#PHP" />
+            <element signature="e#11789#13323#0#PHP" />
+            <element signature="e#11850#13317#0#PHP" />
+            <element signature="e#11985#13125#0#PHP" />
+            <element signature="e#12014#12911#0#PHP" />
+            <element signature="e#12694#12911#0#PHP" />
+            <element signature="e#12926#13125#0#PHP" />
+            <element signature="e#13136#13317#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="1220" column="22" selection-start-line="1220" selection-start-column="22" selection-end-line="1220" selection-end-column="22" />
+        <state relative-caret-position="548">
+          <caret line="1560" column="18" lean-forward="true" selection-start-line="1560" selection-start-column="18" selection-end-line="1560" selection-end-column="18" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -1032,7 +1078,7 @@
             <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/attendedActivities#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
@@ -1082,54 +1128,6 @@
             <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
-          <folding>
-            <element signature="e#352#458#0#PHP" />
-            <element signature="e#464#636#0#PHP" />
-            <element signature="e#642#2314#0#PHP" />
-            <element signature="e#780#813#0#PHP" />
-            <element signature="e#1304#1336#0#PHP" />
-            <element signature="e#2083#2308#0#PHP" />
-            <element signature="e#2320#4488#0#PHP" />
-            <element signature="e#2377#4482#0#PHP" />
-            <element signature="e#3089#4272#0#PHP" />
-            <element signature="e#3132#4257#0#PHP" />
-            <element signature="e#3149#4223#0#PHP" />
-            <element signature="e#4282#4482#0#PHP" />
-            <element signature="e#4494#6992#0#PHP" />
-            <element signature="e#4612#6986#0#PHP" />
-            <element signature="e#4646#6790#0#PHP" />
-            <element signature="e#4714#4823#0#PHP" />
-            <element signature="e#4726#4822#1#PHP" />
-            <element signature="e#4850#6566#0#PHP" />
-            <element signature="e#4961#6315#0#PHP" />
-            <element signature="e#5215#6315#0#PHP" />
-            <element signature="e#5252#6292#0#PHP" />
-            <element signature="e#5269#6258#0#PHP" />
-            <element signature="e#6333#6566#0#PHP" />
-            <element signature="e#6580#6790#0#PHP" />
-            <element signature="e#6800#6986#0#PHP" />
-            <element signature="e#6998#9596#0#PHP" />
-            <element signature="e#10572#11783#0#PHP" />
-            <element signature="e#10640#11777#0#PHP" />
-            <element signature="e#10775#11585#0#PHP" />
-            <element signature="e#11386#11585#0#PHP" />
-            <element signature="e#11596#11777#0#PHP" />
-            <element signature="e#11789#13323#0#PHP" />
-            <element signature="e#11850#13317#0#PHP" />
-            <element signature="e#11985#13125#0#PHP" />
-            <element signature="e#12014#12911#0#PHP" />
-            <element signature="e#12694#12911#0#PHP" />
-            <element signature="e#12926#13125#0#PHP" />
-            <element signature="e#13136#13317#0#PHP" />
           </folding>
         </state>
       </provider>

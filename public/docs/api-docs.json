@@ -315,8 +315,7 @@
           {
             "name": "body",
             "in": "body",
-            "required": true,
-            "type": "string",
+            "type": "boolean",
             "schema": {
               "$ref": "#/definitions/UserPrivacySettings"
             }
@@ -326,7 +325,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/UserPrivacySettings"
+              "$ref": "#/definitions/UserPrivacySettingsResponse"
             }
           }
         }
@@ -1533,9 +1532,6 @@
     "UserPrivacySettings": {
       "type": "object",
       "properties": {
-        "user_id": {
-          "type": "integer"
-        },
         "visibility_on_the_map": {
           "type": "boolean"
         },
@@ -1544,6 +1540,26 @@
         },
         "no_follow_up_request": {
           "type": "boolean"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserPrivacySettingsResponse": {
+      "type": "object",
+      "properties": {
+        "visibility_on_the_map": {
+          "type": "boolean"
+        },
+        "no_message": {
+          "type": "boolean"
+        },
+        "no_follow_up_request": {
+          "type": "boolean"
+        },
+        "users": {
+          "$ref": "#/definitions/UserActivities"
         }
       },
       "xml": {
