@@ -478,17 +478,6 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string",
-            "schema": {
-              "$ref": "#/definitions/ApiToken"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Success",
@@ -642,17 +631,6 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string",
-            "schema": {
-              "$ref": "#/definitions/ApiToken"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "Success",
@@ -759,7 +737,10 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/User"
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/User"
+              }
             }
           }
         }
@@ -1419,9 +1400,6 @@
     "NewMessage": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
         "to_user_id": {
           "type": "integer"
         },
@@ -1439,9 +1417,6 @@
     "AnswerMessage": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
         "parent_id": {
           "type": "integer"
         },
