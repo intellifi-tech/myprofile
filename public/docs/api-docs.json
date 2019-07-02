@@ -29,12 +29,20 @@
         "description": "This can only be done by the logged in user.",
         "operationId": "createUser",
         "produces": [
-          "application/xml",
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/User"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -215,13 +223,14 @@
         }
       }
     },
-    "/user/attendedActivity": {
+    "/user/userAttendedEvent": {
       "post": {
         "tags": [
           "user"
         ],
-        "summary": "Etkinliğe katıldım",
-        "operationId": "userAttendedActivity",
+        "summary": "Yeni katılım oluştur.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "createEvent",
         "produces": [
           "application/json"
         ],
@@ -232,13 +241,16 @@
             "required": true,
             "type": "string",
             "schema": {
-              "$ref": "#/definitions/UserAttendedActivities"
+              "$ref": "#/definitions/EventCreate"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Events"
+            }
           }
         }
       }
@@ -466,38 +478,6 @@
           },
           "400": {
             "description": "Invalid username/password supplied"
-          }
-        }
-      }
-    },
-    "/event/userAttendedEvent": {
-      "post": {
-        "tags": [
-          "event"
-        ],
-        "summary": "Yeni katılım oluştur.",
-        "description": "This can only be done by the logged in user.",
-        "operationId": "createEvent",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "required": true,
-            "type": "string",
-            "schema": {
-              "$ref": "#/definitions/EventCreate"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/Events"
-            }
           }
         }
       }
