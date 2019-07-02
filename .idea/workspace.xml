@@ -37,8 +37,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="1252" column="38" lean-forward="true" selection-start-line="1252" selection-start-column="38" selection-end-line="1252" selection-end-column="38" />
+                <state relative-caret-position="1024">
+                  <caret line="1220" column="22" selection-start-line="1220" selection-start-column="22" selection-end-line="1220" selection-end-column="22" />
                   <folding>
                     <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -79,6 +79,7 @@
                     <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                    <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
                     <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
@@ -119,8 +120,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+                <state relative-caret-position="697">
+                  <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
                   <folding>
                     <element signature="e#352#458#0#PHP" />
                     <element signature="e#464#636#0#PHP" />
@@ -148,8 +149,6 @@
                     <element signature="e#6580#6790#0#PHP" />
                     <element signature="e#6800#6986#0#PHP" />
                     <element signature="e#6998#9596#0#PHP" />
-                    <element signature="e#10169#10368#0#PHP" />
-                    <element signature="e#10379#10560#0#PHP" />
                     <element signature="e#10572#11783#0#PHP" />
                     <element signature="e#10640#11777#0#PHP" />
                     <element signature="e#10775#11585#0#PHP" />
@@ -163,15 +162,6 @@
                     <element signature="e#12926#13125#0#PHP" />
                     <element signature="e#13136#13317#0#PHP" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -572,12 +562,12 @@
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
-      <workItem from="1562056149250" duration="8389000" />
+      <workItem from="1562056149250" duration="8655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426426000" />
+    <option name="totallyTimeSpent" value="426692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -598,7 +588,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298217" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.43086818" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.43086818" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1022,10 +1012,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="1252" column="38" lean-forward="true" selection-start-line="1252" selection-start-column="38" selection-end-line="1252" selection-end-column="38" />
+        <state relative-caret-position="1024">
+          <caret line="1220" column="22" selection-start-line="1220" selection-start-column="22" selection-end-line="1220" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -1066,6 +1063,7 @@
             <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1089,17 +1087,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="228" column="50" selection-start-line="228" selection-start-column="50" selection-end-line="228" selection-end-column="50" />
+        <state relative-caret-position="697">
+          <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
           <folding>
             <element signature="e#352#458#0#PHP" />
             <element signature="e#464#636#0#PHP" />
@@ -1127,8 +1118,6 @@
             <element signature="e#6580#6790#0#PHP" />
             <element signature="e#6800#6986#0#PHP" />
             <element signature="e#6998#9596#0#PHP" />
-            <element signature="e#10169#10368#0#PHP" />
-            <element signature="e#10379#10560#0#PHP" />
             <element signature="e#10572#11783#0#PHP" />
             <element signature="e#10640#11777#0#PHP" />
             <element signature="e#10775#11585#0#PHP" />

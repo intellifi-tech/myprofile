@@ -224,17 +224,17 @@ class UserController extends Controller
             if ($user) {
                 $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event', 'user'])->get();
 
-                $json['status'] = 1;
+                $json['status'] = 200;
                 $json['message'] = "Success";
                 $json['activities'] = $activities;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
-                $json['status'] = 0;
+                $json['status'] = 204;
                 $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
-            $json['status'] = 0;
+            $json['status'] = 204;
             $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
