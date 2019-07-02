@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +37,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="272" column="104" selection-start-line="272" selection-start-column="104" selection-end-line="272" selection-end-column="104" />
+                <state relative-caret-position="661">
+                  <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
                   <folding>
                     <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                     <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -119,7 +118,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
+                <state relative-caret-position="463">
                   <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
                   <folding>
                     <element signature="e#352#458#0#PHP" />
@@ -182,8 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserResponse</find>
-      <find>event/create</find>
       <find>userAttendedActivities</find>
       <find>activitiesMyFollowersAttended</find>
       <find>/event/show</find>
@@ -212,6 +209,8 @@
       <find>UserUpdate</find>
       <find>nearbyUsers</find>
       <find>EventCreate</find>
+      <find>Event</find>
+      <find>AttendedEvent</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -276,8 +275,8 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/helpers.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -565,12 +564,12 @@
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
-      <workItem from="1562056149250" duration="4777000" />
+      <workItem from="1562056149250" duration="5788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="422814000" />
+    <option name="totallyTimeSpent" value="423825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1008,10 +1007,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="767" column="9" selection-start-line="767" selection-start-column="9" selection-end-line="767" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
+          <folding>
+            <element signature="e#352#458#0#PHP" />
+            <element signature="e#464#636#0#PHP" />
+            <element signature="e#642#2314#0#PHP" />
+            <element signature="e#780#813#0#PHP" />
+            <element signature="e#1304#1336#0#PHP" />
+            <element signature="e#2083#2308#0#PHP" />
+            <element signature="e#2320#4488#0#PHP" />
+            <element signature="e#2377#4482#0#PHP" />
+            <element signature="e#3089#4272#0#PHP" />
+            <element signature="e#3132#4257#0#PHP" />
+            <element signature="e#3149#4223#0#PHP" />
+            <element signature="e#4282#4482#0#PHP" />
+            <element signature="e#4494#6992#0#PHP" />
+            <element signature="e#4612#6986#0#PHP" />
+            <element signature="e#4646#6790#0#PHP" />
+            <element signature="e#4714#4823#0#PHP" />
+            <element signature="e#4726#4822#1#PHP" />
+            <element signature="e#4850#6566#0#PHP" />
+            <element signature="e#4961#6315#0#PHP" />
+            <element signature="e#5215#6315#0#PHP" />
+            <element signature="e#5252#6292#0#PHP" />
+            <element signature="e#5269#6258#0#PHP" />
+            <element signature="e#6333#6566#0#PHP" />
+            <element signature="e#6580#6790#0#PHP" />
+            <element signature="e#6800#6986#0#PHP" />
+            <element signature="e#9618#10566#0#PHP" />
+            <element signature="e#9689#10560#0#PHP" />
+            <element signature="e#9824#10368#0#PHP" />
+            <element signature="e#10169#10368#0#PHP" />
+            <element signature="e#10379#10560#0#PHP" />
+            <element signature="e#10572#11783#0#PHP" />
+            <element signature="e#10640#11777#0#PHP" />
+            <element signature="e#10775#11585#0#PHP" />
+            <element signature="e#11386#11585#0#PHP" />
+            <element signature="e#11596#11777#0#PHP" />
+            <element signature="e#11789#13323#0#PHP" />
+            <element signature="e#11850#13317#0#PHP" />
+            <element signature="e#11985#13125#0#PHP" />
+            <element signature="e#12014#12911#0#PHP" />
+            <element signature="e#12694#12911#0#PHP" />
+            <element signature="e#12926#13125#0#PHP" />
+            <element signature="e#13136#13317#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="272" column="104" selection-start-line="272" selection-start-column="104" selection-end-line="272" selection-end-column="104" />
+        <state relative-caret-position="661">
+          <caret line="1249" column="14" selection-start-line="1249" selection-start-column="14" selection-end-line="1249" selection-end-column="14" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -1070,71 +1134,6 @@
             <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="767" column="9" selection-start-line="767" selection-start-column="9" selection-end-line="767" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
-          <folding>
-            <element signature="e#352#458#0#PHP" />
-            <element signature="e#464#636#0#PHP" />
-            <element signature="e#642#2314#0#PHP" />
-            <element signature="e#780#813#0#PHP" />
-            <element signature="e#1304#1336#0#PHP" />
-            <element signature="e#2083#2308#0#PHP" />
-            <element signature="e#2320#4488#0#PHP" />
-            <element signature="e#2377#4482#0#PHP" />
-            <element signature="e#3089#4272#0#PHP" />
-            <element signature="e#3132#4257#0#PHP" />
-            <element signature="e#3149#4223#0#PHP" />
-            <element signature="e#4282#4482#0#PHP" />
-            <element signature="e#4494#6992#0#PHP" />
-            <element signature="e#4612#6986#0#PHP" />
-            <element signature="e#4646#6790#0#PHP" />
-            <element signature="e#4714#4823#0#PHP" />
-            <element signature="e#4726#4822#1#PHP" />
-            <element signature="e#4850#6566#0#PHP" />
-            <element signature="e#4961#6315#0#PHP" />
-            <element signature="e#5215#6315#0#PHP" />
-            <element signature="e#5252#6292#0#PHP" />
-            <element signature="e#5269#6258#0#PHP" />
-            <element signature="e#6333#6566#0#PHP" />
-            <element signature="e#6580#6790#0#PHP" />
-            <element signature="e#6800#6986#0#PHP" />
-            <element signature="e#9618#10566#0#PHP" />
-            <element signature="e#9689#10560#0#PHP" />
-            <element signature="e#9824#10368#0#PHP" />
-            <element signature="e#10169#10368#0#PHP" />
-            <element signature="e#10379#10560#0#PHP" />
-            <element signature="e#10572#11783#0#PHP" />
-            <element signature="e#10640#11777#0#PHP" />
-            <element signature="e#10775#11585#0#PHP" />
-            <element signature="e#11386#11585#0#PHP" />
-            <element signature="e#11596#11777#0#PHP" />
-            <element signature="e#11789#13323#0#PHP" />
-            <element signature="e#11850#13317#0#PHP" />
-            <element signature="e#11985#13125#0#PHP" />
-            <element signature="e#12014#12911#0#PHP" />
-            <element signature="e#12694#12911#0#PHP" />
-            <element signature="e#12926#13125#0#PHP" />
-            <element signature="e#13136#13317#0#PHP" />
           </folding>
         </state>
       </provider>
