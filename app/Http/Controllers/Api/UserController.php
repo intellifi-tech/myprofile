@@ -182,12 +182,12 @@ class UserController extends Controller
                     $userAttendedEvent->user_id = $user->id;
                     $userAttendedEvent->event_description = $request->event_description;
 
-                    //region Profil Fotoğrafı Yükleme
+                    //region Etkinlik Fotoğrafı Yükleme
                     $path = public_path('uploads/events/');
                     $eventImage = $request->event_image;  // your base64 encoded
                     $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                     $eventImage = str_replace(' ', '+', $eventImage);
-                    $eventImageName = remove_turkish(lower_case_turkish($request->title)).'.'.'png';
+                    $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
                     \File::put($path. '/' . $eventImageName, base64_decode($eventImage));
                     // endregion
 
