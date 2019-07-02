@@ -222,11 +222,13 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event'])->get();
+                $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event', 'user'])->get();
 
                 $json['status'] = 1;
                 $json['message'] = "Success";
                 $json['activities'] = $activities;
+                $json['activities']['event'] = $activities->event;
+                $json['activities']['user'] = $activities->user;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;

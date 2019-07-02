@@ -12,4 +12,9 @@ class UserAttendedEvent extends Model
     {
         return $this->hasOne('App\Event', 'id', 'event_id');
     }
+
+    public function user()
+    {
+        return $this->hasOne('App\Event', 'id', 'user_id');
+    }
 }
