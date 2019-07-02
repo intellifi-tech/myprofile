@@ -169,7 +169,7 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->event_id && $request->event_description && $request->event_image) {
+                if ($request->title && $request->latitude && $request->latitude && $request->event_image) {
 
                     $event = new Event();
                     $event->title = $request->title;
