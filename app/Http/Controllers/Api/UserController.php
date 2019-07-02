@@ -252,7 +252,7 @@ class UserController extends Controller
                 $userPrivacy->no_follow_up_request = $request->no_follow_up_request;
                 $userPrivacy->save();
 
-                $json['status'] = 1;
+                $json['status'] = 200;
                 $json['message'] = "Success";
                 $json['userPrivacy'] = $userPrivacy;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
