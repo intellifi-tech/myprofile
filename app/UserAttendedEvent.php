@@ -8,8 +8,8 @@ class UserAttendedEvent extends Model
 {
     protected $table = "user_attended_events";
 
-    public function events()
+    public function event()
     {
-        return $this->hasMany('App\Event', 'id', 'event_id');
+        return $this->hasOne('App\Event', 'id', 'event_id');
     }
 }
