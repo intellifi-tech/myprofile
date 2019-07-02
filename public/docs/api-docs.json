@@ -64,6 +64,9 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -73,7 +76,7 @@
         "tags": [
           "user"
         ],
-        "summary": "Kulanıcı günceller",
+        "summary": "Kulanıcı bilgilerini günceller.",
         "operationId": "updateUser",
         "produces": [
           "application/json"
@@ -82,7 +85,6 @@
           {
             "in": "body",
             "name": "body",
-            "required": true,
             "schema": {
               "$ref": "#/definitions/UserUpdate"
             }
@@ -94,6 +96,9 @@
             "schema": {
               "$ref": "#/definitions/User"
             }
+          },
+          "204": {
+            "description": "Böyle bir kullanıcı yok."
           }
         }
       }
@@ -125,6 +130,9 @@
             "schema": {
               "$ref": "#/definitions/UserResponse"
             }
+          },
+          "204": {
+            "description": "Tüm alanlar zorunludur."
           }
         }
       }
@@ -218,7 +226,13 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/User"
+              }
+            }
           }
         }
       }
@@ -867,14 +881,10 @@
       "type": "object",
       "required": [
         "password",
-        "api-token",
         "name",
         "surname"
       ],
       "properties": {
-        "api-token": {
-          "type": "string"
-        },
         "profile_photo": {
           "type": "string",
           "format": "longText"

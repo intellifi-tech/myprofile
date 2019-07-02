@@ -68,7 +68,6 @@ class UserCoordinateController extends Controller
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['nearbyUserCoordinates'] = $nearbyUserCoordinates;
-                    $json['api_token'] = $user->api_token;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
