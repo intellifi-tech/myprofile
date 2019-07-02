@@ -201,7 +201,7 @@ class UserController extends Controller
                     $json['userAttendedEvent'] = $userAttendedEvent;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
-                    $json['status'] = 0;
+                    $json['status'] = 204;
                     $json['message'] = "Etkinlik ID, etkinlik açıklaması, etkinlik resmi, katılım tarihi boş olamaz.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
