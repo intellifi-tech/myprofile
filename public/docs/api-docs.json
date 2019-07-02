@@ -281,7 +281,7 @@
           "user"
         ],
         "summary": "Kullanıcının katıldığı etkinlikler",
-        "operationId": "attendedActivities",
+        "operationId": "userAttendedEvents",
         "produces": [
           "application/json"
         ],
@@ -291,9 +291,12 @@
             "schema": {
               "type" : "array",
               "items" : {
-                "$ref": "#/definitions/Events"
+                "$ref": "#/definitions/AttendedEvents"
               }
             }
+          },
+          "204": {
+            "description": "No Content"
           }
         }
       }
@@ -1149,7 +1152,7 @@
         "name": "User"
       }
     },
-    "Event": {
+    "Events": {
       "type": "object",
       "properties": {
         "title": {
@@ -1190,6 +1193,32 @@
       }
     },
     "AttendedEvent": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "event_description": {
+          "type": "string"
+        },
+        "event_image": {
+          "type": "string"
+        },
+        "date_of_participation": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AttendedEvents": {
       "type": "object",
       "properties": {
         "title": {
