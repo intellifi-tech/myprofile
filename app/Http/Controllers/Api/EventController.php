@@ -134,6 +134,7 @@ class EventController extends Controller
                     $coords["event"] = $event;
                     $coords["lat"] = $lat2;
                     $coords["lon"] = $lon2;
+                    $coords["eventDistance"] = round((($miles * 1.609344) * 1000));
                     return $coords;
                 }
             } else {

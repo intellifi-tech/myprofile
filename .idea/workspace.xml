@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="1354" column="21" selection-start-line="1354" selection-start-column="21" selection-end-line="1354" selection-end-column="21" />
+            <state relative-caret-position="734">
+              <caret line="1191" column="22" selection-start-line="1191" selection-start-column="22" selection-end-line="1191" selection-end-column="22" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -56,7 +58,7 @@
                 <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -82,6 +84,7 @@
                 <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
@@ -98,6 +101,41 @@
                 <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="e#44#60#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="669">
+              <caret line="136" column="42" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="42" />
+              <folding>
+                <element signature="e#233#1164#0#PHP" />
+                <element signature="e#287#1158#0#PHP" />
+                <element signature="e#422#966#0#PHP" />
+                <element signature="e#743#966#0#PHP" />
+                <element signature="e#977#1158#0#PHP" />
+                <element signature="e#1170#2412#0#PHP" />
+                <element signature="e#1223#2406#0#PHP" />
+                <element signature="e#1358#2214#0#PHP" />
+                <element signature="e#1387#2000#0#PHP" />
+                <element signature="e#1784#2000#0#PHP" />
+                <element signature="e#2015#2214#0#PHP" />
+                <element signature="e#2225#2406#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -189,13 +227,11 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_22_111308_create_events_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_16_084418_create_user_photo_gallery_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserPhotoGalleryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_18_073302_create_user_privacy_settings_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_14_110228_create_user_attended_events_table.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
         <option value="$PROJECT_DIR$/app/UserLikeAktivity.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_26_130733_create_user_like_aktivity_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_26_131614_create_user_like_activity_table.php" />
@@ -218,6 +254,8 @@
         <option value="$PROJECT_DIR$/app/UserAttendedEvent.php" />
         <option value="$PROJECT_DIR$/app/UserPrivacySettings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
         <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
@@ -506,12 +544,12 @@
       <workItem from="1561810908057" duration="689000" />
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
-      <workItem from="1562056149250" duration="13048000" />
+      <workItem from="1562056149250" duration="13994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431085000" />
+    <option name="totallyTimeSpent" value="432031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -787,16 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_26_131614_create_user_like_activity_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -808,27 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2898">
-          <caret line="191" column="5" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
-          <folding>
-            <element signature="e#233#1164#0#PHP" />
-            <element signature="e#287#1158#0#PHP" />
-            <element signature="e#422#966#0#PHP" />
-            <element signature="e#743#966#0#PHP" />
-            <element signature="e#977#1158#0#PHP" />
-            <element signature="e#1170#2412#0#PHP" />
-            <element signature="e#1223#2406#0#PHP" />
-            <element signature="e#1358#2214#0#PHP" />
-            <element signature="e#1387#2000#0#PHP" />
-            <element signature="e#1784#2000#0#PHP" />
-            <element signature="e#2015#2214#0#PHP" />
-            <element signature="e#2225#2406#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,34 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="96" column="1" lean-forward="true" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding>
-            <element signature="e#191#1088#0#PHP" />
-            <element signature="e#245#1082#0#PHP" />
-            <element signature="e#380#890#0#PHP" />
-            <element signature="e#670#890#0#PHP" />
-            <element signature="e#901#1082#0#PHP" />
-            <element signature="e#1094#2569#0#PHP" />
-            <element signature="e#1149#2563#0#PHP" />
-            <element signature="e#1284#2371#0#PHP" />
-            <element signature="e#1313#2157#0#PHP" />
-            <element signature="e#1930#2157#0#PHP" />
-            <element signature="e#2172#2371#0#PHP" />
-            <element signature="e#2382#2563#0#PHP" />
-            <element signature="e#2575#3807#0#PHP" />
-            <element signature="e#2628#3801#0#PHP" />
-            <element signature="e#2763#3609#0#PHP" />
-            <element signature="e#2792#3395#0#PHP" />
-            <element signature="e#3182#3395#0#PHP" />
-            <element signature="e#3410#3609#0#PHP" />
-            <element signature="e#3620#3801#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,10 +980,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding>
+            <element signature="e#191#1088#0#PHP" />
+            <element signature="e#245#1082#0#PHP" />
+            <element signature="e#380#890#0#PHP" />
+            <element signature="e#670#890#0#PHP" />
+            <element signature="e#901#1082#0#PHP" />
+            <element signature="e#1930#2157#0#PHP" />
+            <element signature="e#2172#2371#0#PHP" />
+            <element signature="e#2382#2563#0#PHP" />
+            <element signature="e#2575#3807#0#PHP" />
+            <element signature="e#2628#3801#0#PHP" />
+            <element signature="e#2763#3609#0#PHP" />
+            <element signature="e#2792#3395#0#PHP" />
+            <element signature="e#3182#3395#0#PHP" />
+            <element signature="e#3410#3609#0#PHP" />
+            <element signature="e#3620#3801#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="136" column="42" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="42" />
+          <folding>
+            <element signature="e#233#1164#0#PHP" />
+            <element signature="e#287#1158#0#PHP" />
+            <element signature="e#422#966#0#PHP" />
+            <element signature="e#743#966#0#PHP" />
+            <element signature="e#977#1158#0#PHP" />
+            <element signature="e#1170#2412#0#PHP" />
+            <element signature="e#1223#2406#0#PHP" />
+            <element signature="e#1358#2214#0#PHP" />
+            <element signature="e#1387#2000#0#PHP" />
+            <element signature="e#1784#2000#0#PHP" />
+            <element signature="e#2015#2214#0#PHP" />
+            <element signature="e#2225#2406#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="1354" column="21" selection-start-line="1354" selection-start-column="21" selection-end-line="1354" selection-end-column="21" />
+        <state relative-caret-position="734">
+          <caret line="1191" column="22" selection-start-line="1191" selection-start-column="22" selection-end-line="1191" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
@@ -1024,7 +1058,7 @@
             <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/show#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -1050,6 +1084,7 @@
             <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />

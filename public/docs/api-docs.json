@@ -593,7 +593,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Events"
+              "$ref": "#/definitions/NearbyEventsResponse"
             }
           }
         }
@@ -1167,6 +1167,29 @@
           "type": "string"
         },
         "longitude": {
+          "type": "string"
+        },
+        "comments": {
+          "$ref": "#/definitions/Comments"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "NearbyEventsResponse": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "eventDistance": {
           "type": "string"
         },
         "comments": {
