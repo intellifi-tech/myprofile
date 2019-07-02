@@ -246,7 +246,7 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
 
-                $userPrivacy = UserPrivacySettings::where('user_id', $user->id)->first();
+                $userPrivacy = UserPrivacySettings::where('user_id', $user->id)->with(['user'])->first();
                 $userPrivacy->visibility_on_the_map = $request->visibility_on_the_map;
                 $userPrivacy->no_message = $request->no_message;
                 $userPrivacy->no_follow_up_request = $request->no_follow_up_request;
