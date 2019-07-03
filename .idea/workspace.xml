@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/api-docs.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,17 +35,597 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="1255" column="17" lean-forward="true" selection-start-line="1255" selection-start-column="17" selection-end-line="1255" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="678">
+              <caret line="1839" column="51" selection-start-line="1839" selection-start-column="51" selection-end-line="1839" selection-end-column="51" />
+              <folding>
+                <element signature="n#!!block;n#info#0;n#!!top" />
+                <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
+                <element signature="n#!!block;n#license#0;n#!!block;n#info#0;n#!!top" />
+                <element signature="e#708#737#0" />
+                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#804#832#0" />
+                <element signature="e#1001#1041#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#1441#1469#0" />
+                <element signature="e#1593#1633#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#1958#1986#0" />
+                <element signature="e#2099#2139#0" />
+                <element signature="e#2163#2339#0" />
+                <element signature="e#2175#2329#0" />
+                <element signature="e#2253#2317#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#2681#2709#0" />
+                <element signature="e#2808#2848#0" />
+                <element signature="e#2872#3110#0" />
+                <element signature="e#2884#3100#0" />
+                <element signature="e#3022#3088#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#3456#3484#0" />
+                <element signature="e#3608#3648#0" />
+                <element signature="e#3672#3907#0" />
+                <element signature="e#3684#3897#0" />
+                <element signature="e#3822#3885#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#4188#4216#0" />
+                <element signature="e#4316#4356#0" />
+                <element signature="e#4380#4624#0" />
+                <element signature="e#4392#4614#0" />
+                <element signature="e#4530#4602#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#5004#5032#0" />
+                <element signature="e#5137#5177#0" />
+                <element signature="e#5201#5438#0" />
+                <element signature="e#5213#5428#0" />
+                <element signature="e#5351#5416#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#5866#5894#0" />
+                <element signature="e#6069#6109#0" />
+                <element signature="e#6133#6372#0" />
+                <element signature="e#6145#6362#0" />
+                <element signature="e#6283#6350#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#6793#6821#0" />
+                <element signature="e#6945#6985#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#7410#7438#0" />
+                <element signature="e#7556#7596#0" />
+                <element signature="e#7620#7836#0" />
+                <element signature="e#7632#7826#0" />
+                <element signature="e#7741#7814#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#8117#8145#0" />
+                <element signature="e#8243#8283#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#8703#8731#0" />
+                <element signature="e#8824#8864#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#9208#9236#0" />
+                <element signature="e#9322#9362#0" />
+                <element signature="e#9386#9618#0" />
+                <element signature="e#9398#9608#0" />
+                <element signature="e#9536#9596#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#10004#10032#0" />
+                <element signature="e#10129#10169#0" />
+                <element signature="e#10193#10425#0" />
+                <element signature="e#10205#10415#0" />
+                <element signature="e#10343#10403#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#10603#10631#0" />
+                <element signature="e#10764#10804#0" />
+                <element signature="e#10828#11066#0" />
+                <element signature="e#10840#11056#0" />
+                <element signature="e#10978#11044#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#11261#11289#0" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#11856#11884#0" />
+                <element signature="e#12010#12050#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#12463#12492#0" />
+                <element signature="e#12658#12698#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#13111#13140#0" />
+                <element signature="e#13307#13347#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#13677#13706#0" />
+                <element signature="e#13871#13911#0" />
+                <element signature="e#13935#14172#0" />
+                <element signature="e#13947#14162#0" />
+                <element signature="e#14085#14150#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#14507#14536#0" />
+                <element signature="e#14715#14755#0" />
+                <element signature="e#14779#14987#0" />
+                <element signature="e#14791#14977#0" />
+                <element signature="e#14899#14965#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#15260#15291#0" />
+                <element signature="e#15467#15507#0" />
+                <element signature="e#15531#15770#0" />
+                <element signature="e#15543#15760#0" />
+                <element signature="e#15681#15748#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#16035#16066#0" />
+                <element signature="e#16257#16297#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#16710#16741#0" />
+                <element signature="e#16915#16955#0" />
+                <element signature="e#16979#17215#0" />
+                <element signature="e#16991#17205#0" />
+                <element signature="e#17129#17193#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#17604#17635#0" />
+                <element signature="e#17804#17844#0" />
+                <element signature="e#17868#18107#0" />
+                <element signature="e#17880#18097#0" />
+                <element signature="e#18018#18085#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#18375#18407#0" />
+                <element signature="e#18584#18624#0" />
+                <element signature="e#18648#18887#0" />
+                <element signature="e#18660#18877#0" />
+                <element signature="e#18798#18865#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#19218#19249#0" />
+                <element signature="e#19426#19466#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#19885#19916#0" />
+                <element signature="e#20102#20142#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#20472#20502#0" />
+                <element signature="e#20679#20719#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="e#21135#21165#0" />
+                <element signature="e#21350#21390#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#password#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="e#23597#23626#0" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api-token#0;n#!!block;n#properties#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="e#23834#23897#0" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="e#24983#25028#0" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#password#0;n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#events#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#plate_no#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#phone_code#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#city_id#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#eventDistance#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="e#31068#31200#0" />
+                <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#activity_date#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#type#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#users#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#userDistance#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#followings#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,11 +641,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>etkinlik_istatistigi_content</find>
-      <find>getMessages</find>
-      <find>user/index</find>
-      <find>userAttendedEvent</find>
-      <find>type</find>
       <find>UserUpdate</find>
       <find>nearbyUsers</find>
       <find>EventCreate</find>
@@ -89,6 +666,11 @@
       <find>UserAtte</find>
       <find>NearbyEvents</find>
       <find>Events</find>
+      <find>Api-</find>
+      <find>api</find>
+      <find>/user/activitiesMyFollowersAttended</find>
+      <find>ActivitiesMyFollowersAttended</find>
+      <find>UserActivities</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -143,7 +725,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserCoordinateController.php" />
         <option value="$PROJECT_DIR$/app/UserPrivacySettings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
         <option value="$PROJECT_DIR$/app/Follow.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ApiCompanyController.php" />
@@ -154,6 +735,7 @@
         <option value="$PROJECT_DIR$/app/Event.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
         <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
@@ -302,6 +884,17 @@
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyProfile" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -427,7 +1020,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448526000" />
+    <option name="totallyTimeSpent" value="450653000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,7 +1035,7 @@
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49203822" visible="true" weight="0.13185067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49203822" visible="true" weight="0.13185067" />
       <window_info id="Structure" order="1" sideWeight="0.5079618" side_tool="true" visible="true" weight="0.13185067" />
       <window_info id="Favorites" order="2" sideWeight="0.5079618" side_tool="true" weight="0.13185067" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -492,7 +1085,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/UserLikeAktivity.php" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -518,16 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-          <folding>
-            <element signature="e#23#63#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,13 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Follow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/ResponseFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -808,16 +1383,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserActivityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#44#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -825,79 +1390,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="131" column="43" selection-start-line="131" selection-start-column="43" selection-end-line="131" selection-end-column="43" />
-          <folding>
-            <element signature="e#352#458#0#PHP" />
-            <element signature="e#464#636#0#PHP" />
-            <element signature="e#681#2496#0#PHP" />
-            <element signature="e#2320#4488#0#PHP" />
-            <element signature="e#2377#4482#0#PHP" />
-            <element signature="e#3089#4272#0#PHP" />
-            <element signature="e#3132#4257#0#PHP" />
-            <element signature="e#3149#4223#0#PHP" />
-            <element signature="e#4282#4482#0#PHP" />
-            <element signature="e#4494#6992#0#PHP" />
-            <element signature="e#6333#6566#0#PHP" />
-            <element signature="e#6580#6790#0#PHP" />
-            <element signature="e#6800#6986#0#PHP" />
-            <element signature="e#6998#9666#0#PHP" />
-            <element signature="e#7064#9660#0#PHP" />
-            <element signature="e#7199#9468#0#PHP" />
-            <element signature="e#7228#9254#0#PHP" />
-            <element signature="e#7873#7908#0#PHP" />
-            <element signature="e#8983#9254#0#PHP" />
-            <element signature="e#9269#9468#0#PHP" />
-            <element signature="e#9479#9660#0#PHP" />
-            <element signature="e#9672#10630#0#PHP" />
-            <element signature="e#10229#10430#0#PHP" />
-            <element signature="e#10441#10624#0#PHP" />
-            <element signature="e#10636#11865#0#PHP" />
-            <element signature="e#10704#11859#0#PHP" />
-            <element signature="e#10839#11667#0#PHP" />
-            <element signature="e#11468#11667#0#PHP" />
-            <element signature="e#11678#11859#0#PHP" />
-            <element signature="e#11871#13405#0#PHP" />
-            <element signature="e#11932#13399#0#PHP" />
-            <element signature="e#12067#13207#0#PHP" />
-            <element signature="e#12096#12993#0#PHP" />
-            <element signature="e#12776#12993#0#PHP" />
-            <element signature="e#13008#13207#0#PHP" />
-            <element signature="e#13218#13399#0#PHP" />
-            <element signature="e#13411#14875#0#PHP" />
-            <element signature="e#14478#14677#0#PHP" />
-            <element signature="e#14688#14869#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="e#210#1425#0#PHP" />
-            <element signature="e#1431#3213#0#PHP" />
-            <element signature="e#3219#4431#0#PHP" />
-            <element signature="e#4437#5487#0#PHP" />
-            <element signature="e#5493#6714#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -911,24 +1428,652 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserActivityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#44#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3359">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
+    <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="971">
+          <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Follow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="113" column="51" lean-forward="true" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
+          <folding>
+            <element signature="e#210#1425#0#PHP" />
+            <element signature="e#1431#3213#0#PHP" />
+            <element signature="e#3219#4431#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="1255" column="17" lean-forward="true" selection-start-line="1255" selection-start-column="17" selection-end-line="1255" selection-end-column="17" />
+        <state relative-caret-position="678">
+          <caret line="1839" column="51" selection-start-line="1839" selection-start-column="51" selection-end-line="1839" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!block;n#info#0;n#!!top" />
+            <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
+            <element signature="n#!!block;n#license#0;n#!!block;n#info#0;n#!!top" />
+            <element signature="e#708#737#0" />
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#804#832#0" />
+            <element signature="e#1001#1041#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#1441#1469#0" />
+            <element signature="e#1593#1633#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#1958#1986#0" />
+            <element signature="e#2099#2139#0" />
+            <element signature="e#2163#2339#0" />
+            <element signature="e#2175#2329#0" />
+            <element signature="e#2253#2317#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#put#0;n#!!block;n#/user/update#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#2681#2709#0" />
+            <element signature="e#2808#2848#0" />
+            <element signature="e#2872#3110#0" />
+            <element signature="e#2884#3100#0" />
+            <element signature="e#3022#3088#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/register#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#3456#3484#0" />
+            <element signature="e#3608#3648#0" />
+            <element signature="e#3672#3907#0" />
+            <element signature="e#3684#3897#0" />
+            <element signature="e#3822#3885#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/login#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#4188#4216#0" />
+            <element signature="e#4316#4356#0" />
+            <element signature="e#4380#4624#0" />
+            <element signature="e#4392#4614#0" />
+            <element signature="e#4530#4602#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/setCoordinates#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#5004#5032#0" />
+            <element signature="e#5137#5177#0" />
+            <element signature="e#5201#5438#0" />
+            <element signature="e#5213#5428#0" />
+            <element signature="e#5351#5416#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/coordinate/nearbyUsers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#5866#5894#0" />
+            <element signature="e#6069#6109#0" />
+            <element signature="e#6133#6372#0" />
+            <element signature="e#6145#6362#0" />
+            <element signature="e#6283#6350#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvent#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#6793#6821#0" />
+            <element signature="e#6945#6985#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userAttendedEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#7410#7438#0" />
+            <element signature="e#7556#7596#0" />
+            <element signature="e#7620#7836#0" />
+            <element signature="e#7632#7826#0" />
+            <element signature="e#7741#7814#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/userPrivacySettings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#8117#8145#0" />
+            <element signature="e#8243#8283#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followings#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#8703#8731#0" />
+            <element signature="e#8824#8864#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/followers#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#9208#9236#0" />
+            <element signature="e#9322#9362#0" />
+            <element signature="e#9386#9618#0" />
+            <element signature="e#9398#9608#0" />
+            <element signature="e#9536#9596#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/follow#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#10004#10032#0" />
+            <element signature="e#10129#10169#0" />
+            <element signature="e#10193#10425#0" />
+            <element signature="e#10205#10415#0" />
+            <element signature="e#10343#10403#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/stopFollowing#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#10603#10631#0" />
+            <element signature="e#10764#10804#0" />
+            <element signature="e#10828#11066#0" />
+            <element signature="e#10840#11056#0" />
+            <element signature="e#10978#11044#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#11261#11289#0" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#11856#11884#0" />
+            <element signature="e#12010#12050#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#12463#12492#0" />
+            <element signature="e#12658#12698#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#13111#13140#0" />
+            <element signature="e#13307#13347#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/event/{event_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#13677#13706#0" />
+            <element signature="e#13871#13911#0" />
+            <element signature="e#13935#14172#0" />
+            <element signature="e#13947#14162#0" />
+            <element signature="e#14085#14150#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/search#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#14507#14536#0" />
+            <element signature="e#14715#14755#0" />
+            <element signature="e#14779#14987#0" />
+            <element signature="e#14791#14977#0" />
+            <element signature="e#14899#14965#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/event/nearbyEvents#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#15260#15291#0" />
+            <element signature="e#15467#15507#0" />
+            <element signature="e#15531#15770#0" />
+            <element signature="e#15543#15760#0" />
+            <element signature="e#15681#15748#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#16035#16066#0" />
+            <element signature="e#16257#16297#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#16710#16741#0" />
+            <element signature="e#16915#16955#0" />
+            <element signature="e#16979#17215#0" />
+            <element signature="e#16991#17205#0" />
+            <element signature="e#17129#17193#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#204#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#17604#17635#0" />
+            <element signature="e#17804#17844#0" />
+            <element signature="e#17868#18107#0" />
+            <element signature="e#17880#18097#0" />
+            <element signature="e#18018#18085#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/message/answerMessage#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#18375#18407#0" />
+            <element signature="e#18584#18624#0" />
+            <element signature="e#18648#18887#0" />
+            <element signature="e#18660#18877#0" />
+            <element signature="e#18798#18865#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/activity/likesActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#19218#19249#0" />
+            <element signature="e#19426#19466#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#19885#19916#0" />
+            <element signature="e#20102#20142#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/company/{company_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#20472#20502#0" />
+            <element signature="e#20679#20719#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="e#21135#21165#0" />
+            <element signature="e#21350#21390#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/sector/{sector_id}/show#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#User#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#password#0;n#!!block;n#properties#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserRegister#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="e#23597#23626#0" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api-token#0;n#!!block;n#properties#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserEdit#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="e#23834#23897#0" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="e#24983#25028#0" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#password#0;n#!!block;n#properties#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserLogin#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#events#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#plate_no#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#phone_code#0;n#!!block;n#properties#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#City#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#city_id#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#eventDistance#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="e#31068#31200#0" />
+            <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEventResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#EventShow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#activity_date#0;n#!!block;n#properties#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#EventUpdate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Comments#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#type#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#AnswerMessage#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyUsers#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#users#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#userDistance#0;n#!!block;n#properties#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyUsersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#followings#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#meterLimit#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#surname#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#career_history#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#short_biography#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#credentials#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_birth#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#company_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
