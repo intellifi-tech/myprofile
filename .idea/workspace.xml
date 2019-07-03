@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -664,8 +665,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+            <state relative-caret-position="306">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -676,8 +677,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Message.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -1070,7 +1071,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="453344000" />
+    <option name="totallyTimeSpent" value="454306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2145,15 +2146,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="210">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+        <state relative-caret-position="306">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding>
             <element signature="e#44#60#0#PHP" expanded="true" />
           </folding>
