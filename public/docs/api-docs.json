@@ -1868,12 +1868,29 @@
         "rating" : {
           "type" : "string"
         },
-        "user": {
-          "$ref": "#/definitions/User"
-        },
         "event": {
-          "$ref": "#/definitions/Events"
+          "$ref": "#/definitions/UserEvents"
         }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserEvents": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "comments": {
+          "$ref": "#/definitions/Comments"
+        },
       },
       "xml": {
         "name": "User"

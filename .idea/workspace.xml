@@ -32,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="1839" column="51" selection-start-line="1839" selection-start-column="51" selection-end-line="1839" selection-end-column="51" />
+            <state relative-caret-position="-533">
+              <caret line="1255" column="14" selection-start-line="1255" selection-start-column="14" selection-end-line="1255" selection-end-column="14" />
               <folding>
                 <element signature="n#!!block;n#info#0;n#!!top" />
                 <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
@@ -431,14 +431,12 @@
                 <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -463,6 +461,7 @@
                 <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="e#31068#31200#0" />
                 <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -630,6 +629,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="83" />
+              <folding>
+                <element signature="e#210#1425#0#PHP" />
+                <element signature="e#1431#3213#0#PHP" />
+                <element signature="e#3219#4431#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -641,7 +654,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UserUpdate</find>
       <find>nearbyUsers</find>
       <find>EventCreate</find>
       <find>Event</find>
@@ -665,12 +677,13 @@
       <find>USerAtte</find>
       <find>UserAtte</find>
       <find>NearbyEvents</find>
-      <find>Events</find>
       <find>Api-</find>
       <find>api</find>
       <find>/user/activitiesMyFollowersAttended</find>
       <find>ActivitiesMyFollowersAttended</find>
       <find>UserActivities</find>
+      <find>Events</find>
+      <find>&quot;Events</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -1020,7 +1033,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450653000" />
+    <option name="totallyTimeSpent" value="451180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1397,13 +1410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -1445,7 +1451,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
+    <entry file="file://$PROJECT_DIR$/app/Follow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
@@ -1454,7 +1460,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
+        <state relative-caret-position="987">
           <caret line="49" column="40" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
             <element signature="e#23#63#0#PHP" expanded="true" />
@@ -1462,29 +1468,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Follow.php">
+    <entry file="file://$PROJECT_DIR$/app/UserAttendedEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="113" column="51" lean-forward="true" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
-          <folding>
-            <element signature="e#210#1425#0#PHP" />
-            <element signature="e#1431#3213#0#PHP" />
-            <element signature="e#3219#4431#0#PHP" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="1839" column="51" selection-start-line="1839" selection-start-column="51" selection-end-line="1839" selection-end-column="51" />
+        <state relative-caret-position="-533">
+          <caret line="1255" column="14" selection-start-line="1255" selection-start-column="14" selection-end-line="1255" selection-end-column="14" />
           <folding>
             <element signature="n#!!block;n#info#0;n#!!top" />
             <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
@@ -1879,14 +1873,12 @@
             <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1911,6 +1903,7 @@
             <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="e#31068#31200#0" />
             <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -2073,6 +2066,25 @@
             <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#Sector#0;n#!!block;n#definitions#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="83" />
+          <folding>
+            <element signature="e#210#1425#0#PHP" />
+            <element signature="e#1431#3213#0#PHP" />
+            <element signature="e#3219#4431#0#PHP" />
           </folding>
         </state>
       </provider>
