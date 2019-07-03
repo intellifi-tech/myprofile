@@ -17,7 +17,7 @@ class EventController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $events = Event::orderBy('created_at', 'DESC')->limit(100);
-                if (count($events) > 0){
+                if ($events->count() > 0){
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['events'] = $events;
