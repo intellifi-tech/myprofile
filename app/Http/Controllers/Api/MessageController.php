@@ -60,8 +60,6 @@ class MessageController extends Controller
                         $json['message'] = "Mesaj göndermeye çalıştığınız kullanıcı mesaj kabul etmiyor.";
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }
-
-
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Gönderen, alan ya da mesaj boş olamaz.";
