@@ -303,12 +303,12 @@ class UserController extends Controller
         }
     }
 
-    public function idEvents(Request $request, $id){
+    public function idEvents(Request $request, $user_id){
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($id) {
-                    $userAttendedEvents = UserAttendedEvent::where('user_id', $id)->with(['event'])->get();
+                if ($user_id) {
+                    $userAttendedEvents = UserAttendedEvent::where('user_id', $user_id)->with(['event'])->get();
                     dd($userAttendedEvents);
                     $json['status'] = 200;
                     $json['message'] = "Success";
