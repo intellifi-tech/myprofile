@@ -20,6 +20,6 @@ class Follow extends Model
 
     public function followings()
     {
-        return $this->hasOne('App\User', 'user_id', 'from_user_id');
+        return $this->hasOne('App\User', 'id', 'from_user_id');
     }
 }
