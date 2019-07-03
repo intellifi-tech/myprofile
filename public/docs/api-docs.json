@@ -831,7 +831,7 @@
         }
       }
     },
-    "/company/show": {
+    "/company/{company_id}/show": {
       "get": {
         "tags": [
           "company"
@@ -882,7 +882,7 @@
         }
       }
     },
-    "/sector/show": {
+    "/sector/{sector_id}/show": {
       "get": {
         "tags": [
           "sector"
