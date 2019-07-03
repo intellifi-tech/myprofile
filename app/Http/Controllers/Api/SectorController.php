@@ -3,29 +3,30 @@
 namespace App\Http\Controllers\Api;
 
 use App\Company;
-use App\Http\Controllers\Controller;
+use App\Sector;
 use App\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class CompanyController extends Controller
+class SectorController extends Controller
 {
     public function index(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $companies = Company::get();
-                if ($companies->count() > 0){
+                $sectors = Sector::get();
+                if ($sectors->count() > 0){
                     $json['status'] = 200;
                     $json['message'] = "Success";
-                    $json['companies'] = $companies;
+                    $json['sectors'] = $sectors;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Etkinlikler çekilemedi. Api_token geçersizdir.";
+                $json['message'] = "Sektörler çekilemedi. Api_token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {
@@ -35,23 +36,23 @@ class CompanyController extends Controller
         }
     }
 
-    public function show(Request $request, $company_id)
+    public function show(Request $request, $sector_id)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $company = Company::find($company_id);
-                if ($company->count() > 0){
+                $sector = Company::find($sector_id);
+                if ($sector->count() > 0){
                     $json['status'] = 200;
                     $json['message'] = "Success";
-                    $json['company'] = $company;
+                    $json['sector'] = $sector;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
                 $json['status'] = 0;
-                $json['message'] = "Etkinlikler çekilemedi. Api_token geçersizdir.";
+                $json['message'] = "Sektör çekilemedi. Api_token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
         } else {

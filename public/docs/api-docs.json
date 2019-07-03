@@ -804,14 +804,14 @@
         }
       }
     },
-    "/company/getCompanies": {
+    "/company/index": {
       "get": {
         "tags": [
           "company"
         ],
-        "summary": "Tüm firmalar",
+        "summary": "Tüm firmaları listeler",
         "description": "This can only be done by the logged in user.",
-        "operationId": "getCompanies",
+        "operationId": "companyIndex",
         "produces": [
           "application/json"
         ],
@@ -823,6 +823,81 @@
               "items" : {
                 "$ref": "#/definitions/Company"
               }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/company/show": {
+      "get": {
+        "tags": [
+          "company"
+        ],
+        "summary": "ID'si gönderilen firmayı getirir",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "companyShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Company"
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/sector/index": {
+      "get": {
+        "tags": [
+          "sector"
+        ],
+        "summary": "Tüm sektörleri listeler",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "sectorIndex",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Sector"
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/sector/show": {
+      "get": {
+        "tags": [
+          "sector1"
+        ],
+        "summary": "ID'si gönderilen sektörü getirir",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "sectorShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Company"
             }
           },
           "404" : {
@@ -1184,21 +1259,6 @@
         },
         "slug": {
           "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "xml": {
-        "name": "User"
-      }
-    },
-    "Sector": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer",
-          "format": "bigInteger"
         },
         "name": {
           "type": "string"
@@ -1722,6 +1782,21 @@
       }
     },
     "Company": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Sector": {
       "type": "object",
       "properties": {
         "id": {

@@ -57,7 +57,13 @@ Route::post('activity/likesActivity', 'Api\UserActivityController@likesActivity'
 //endregion
 
 //region Firmalar
-Route::get('company/getCompanies', 'Api\CompanyController@getCompanies');
+Route::get('company/getCompanies', 'Api\CompanyController@index');
+Route::get('company/{company_id}/show', 'Api\CompanyController@getCompany');
+//endregion
+
+//region Sektörler
+Route::get('company/getSectors', 'Api\CompanyController@index');
+Route::get('company/{sector_id}/show', 'Api\CompanyController@getCompany');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
