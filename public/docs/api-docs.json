@@ -1305,8 +1305,14 @@
         "eventDistance": {
           "type": "string"
         },
+        "attended_event": {
+          "$ref": "#/definitions/AttendedEvent"
+        },
         "comments": {
           "$ref": "#/definitions/Comments"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
