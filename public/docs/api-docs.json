@@ -885,7 +885,7 @@
     "/sector/show": {
       "get": {
         "tags": [
-          "sector1"
+          "sector"
         ],
         "summary": "ID'si gönderilen sektörü getirir",
         "description": "This can only be done by the logged in user.",
