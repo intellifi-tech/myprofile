@@ -487,8 +487,8 @@
               "$ref": "#/definitions/ActivitiesMyFollowersAttended"
             }
           },
-          "204": {
-            "description": "No Content"
+          "404": {
+            "description": "Not Found"
           }
         }
       }
@@ -901,17 +901,6 @@
     }
   },
   "definitions": {
-    "ApiToken": {
-      "type": "object",
-      "properties": {
-        "api-token": {
-          "type": "string"
-        }
-      },
-      "xml": {
-        "name": "User"
-      }
-    },
     "User": {
       "type": "object",
       "properties": {

@@ -112,11 +112,16 @@ class UserFollowController extends Controller
             if ($user) {
 
                 $activitiesMyFollowersAttended = Follow::where('from_user_id', $user->id)->with(['myFollowers', 'myFollowers.userAttendedEvents'])->get();
+                if ($activitiesMyFollowersAttended->count() > 0){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['activitiesMyFollowersAttended'] = $activitiesMyFollowersAttended;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
 
-                $json['status'] = 200;
-                $json['message'] = "Success";
-                $json['activitiesMyFollowersAttended'] = $activitiesMyFollowersAttended;
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+
 
             } else {
                 $json['status'] = 0;
