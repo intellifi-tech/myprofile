@@ -63,7 +63,7 @@ class UserController extends Controller
             $user->surname = $request->surname;
             if ($user->save()){
                 $json['status'] = 200;
-                $json['message'] = "Kayıt başarılı";
+                $json['message'] = "Güncelleme başarılı";
                 $json['user'] = $user;
                 $json['user']['profile_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/".$user->profile_photo;
                 $json['user']['cover_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/".$user->cover_photo;
