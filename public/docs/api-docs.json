@@ -1585,7 +1585,7 @@
         "to_user_id": {
           "type": "integer"
         },
-        "my_followers": {
+        "followings": {
           "$ref": "#/definitions/User"
         }
       },
