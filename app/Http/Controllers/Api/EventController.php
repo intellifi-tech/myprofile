@@ -17,10 +17,16 @@ class EventController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $events = Event::orderBy('created_at', 'DESC')->limit(100);
-                $json['status'] = 200;
-                $json['events'] = $events;
-                $json['api_token'] = $user->api_token;
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                if (count($events) > 0){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['events'] = $events;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    $json['status'] = 204;
+                    $json['message'] = "No Content";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Etkinlikler çekilemedi. Api_token geçersizdir.";
