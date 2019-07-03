@@ -1515,6 +1515,9 @@
         },
         "status": {
           "type": "integer"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
