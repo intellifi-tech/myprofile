@@ -493,6 +493,32 @@
         }
       }
     },
+    "/user/{user_id}/events": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "ID'si gönderilen kullanıcının etkinlikleri",
+        "operationId": "userIDEvents",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/AttendedEvents"
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -774,6 +800,33 @@
                 "$ref": "#/definitions/User"
               }
             }
+          }
+        }
+      }
+    },
+    "/company/getCompanies": {
+      "get": {
+        "tags": [
+          "company"
+        ],
+        "summary": "Tüm firmalar",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "getCompanies",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Company"
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
           }
         }
       }
@@ -1131,21 +1184,6 @@
         },
         "slug": {
           "type": "string"
-        },
-        "name": {
-          "type": "string"
-        }
-      },
-      "xml": {
-        "name": "User"
-      }
-    },
-    "Company": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "integer",
-          "format": "bigInteger"
         },
         "name": {
           "type": "string"
@@ -1677,6 +1715,21 @@
       "properties": {
         "users": {
           "$ref": "#/definitions/UserActivities"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Company": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        },
+        "name": {
+          "type": "string"
         }
       },
       "xml": {
