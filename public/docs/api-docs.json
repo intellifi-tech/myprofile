@@ -331,6 +331,32 @@
         }
       }
     },
+    "/user/followings": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takip ettiklerim",
+        "operationId": "followings",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/FollowingResponse"
+              }
+            }
+          },
+          "204" : {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/user/followers": {
       "post": {
         "tags": [
@@ -1534,6 +1560,23 @@
       }
     },
     "FollowersResponse": {
+      "type": "object",
+      "properties": {
+        "from_user_id": {
+          "type": "integer"
+        },
+        "to_user_id": {
+          "type": "integer"
+        },
+        "my_followers": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "FollowingResponse": {
       "type": "object",
       "properties": {
         "from_user_id": {

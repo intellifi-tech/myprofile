@@ -24,6 +24,7 @@ Route::post('user/userAttendedEvents', 'Api\UserController@userAttendedEvents');
 Route::post('user/userPrivacySettings', 'Api\UserController@userPrivacySettings');
 Route::post('user/coordinate/setCoordinates', 'Api\UserCoordinateController@setCoordinates');
 Route::post('user/coordinate/nearbyUsers', 'Api\UserCoordinateController@nearbyUsers');
+Route::post('user/followings', 'Api\UserFollowController@followings');
 Route::post('user/followers', 'Api\UserFollowController@followers');
 Route::post('user/follow', 'Api\UserFollowController@follow');
 Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');

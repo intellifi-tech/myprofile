@@ -129,4 +129,32 @@ class UserFollowController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function followings(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $followings = Follow::where('from_user_id', $user->id)->with(['followings'])->get();
+                if ($followings->count() > 0){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['followings'] = $followings;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    $json['status'] = 204;
+                    $json['message'] = "No Content";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
