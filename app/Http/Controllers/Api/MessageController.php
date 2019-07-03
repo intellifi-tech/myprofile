@@ -18,9 +18,9 @@ class MessageController extends Controller
 
                 foreach ($messages as $message){
                     if ($message->to_user_id == $user->id){
-                        $user = $message->from_user_id;
+                        $user = $message->fromUser;
                     }else{
-                        $user = $message->to_user_id;
+                        $user = $message->toUser;
                     }
                 }
 
