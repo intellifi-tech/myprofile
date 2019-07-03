@@ -55,8 +55,6 @@ class UserController extends Controller
         $user->cover_photo = $coverImageName;
         $user->name = $request->name;
         $user->surname = $request->surname;
-        $user->email = $request->email;
-        $user->password = Hash::make($request->password);
         if ($user->save()){
             $json['status'] = 200;
             $json['message'] = "Kayıt başarılı";
