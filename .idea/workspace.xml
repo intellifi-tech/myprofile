@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +39,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="135" column="49" lean-forward="true" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
+            <state relative-caret-position="615">
+              <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
               <folding>
                 <element signature="e#352#458#0#PHP" />
                 <element signature="e#464#636#0#PHP" />
-                <element signature="e#681#2496#0#PHP" />
                 <element signature="e#2320#4488#0#PHP" />
                 <element signature="e#2377#4482#0#PHP" />
                 <element signature="e#3089#4272#0#PHP" />
                 <element signature="e#3132#4257#0#PHP" />
                 <element signature="e#3149#4223#0#PHP" />
                 <element signature="e#4282#4482#0#PHP" />
+                <element signature="e#4494#6992#0#PHP" />
                 <element signature="e#6333#6566#0#PHP" />
                 <element signature="e#6580#6790#0#PHP" />
                 <element signature="e#6800#6986#0#PHP" />
@@ -488,7 +486,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443433000" />
+    <option name="totallyTimeSpent" value="444046000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,8 +499,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4909091" visible="true" weight="0.13185067" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4909091" visible="true" weight="0.13185067" />
       <window_info id="Structure" order="1" sideWeight="0.5090909" side_tool="true" weight="0.13185067" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -1492,18 +1491,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="135" column="49" lean-forward="true" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
+        <state relative-caret-position="615">
+          <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
           <folding>
             <element signature="e#352#458#0#PHP" />
             <element signature="e#464#636#0#PHP" />
-            <element signature="e#681#2496#0#PHP" />
             <element signature="e#2320#4488#0#PHP" />
             <element signature="e#2377#4482#0#PHP" />
             <element signature="e#3089#4272#0#PHP" />
             <element signature="e#3132#4257#0#PHP" />
             <element signature="e#3149#4223#0#PHP" />
             <element signature="e#4282#4482#0#PHP" />
+            <element signature="e#4494#6992#0#PHP" />
             <element signature="e#6333#6566#0#PHP" />
             <element signature="e#6580#6790#0#PHP" />
             <element signature="e#6800#6986#0#PHP" />

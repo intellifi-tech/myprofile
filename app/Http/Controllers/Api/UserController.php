@@ -33,26 +33,32 @@ class UserController extends Controller
     {
         $user = User::where('api_token', $request->header('api-token'))->first();
 
-        //region Profil Fotoğrafı Yükleme
-        $pathProfile = public_path('uploads/profile/');
-        $profileImage = $request->profile_image;  // your base64 encoded
-        $profileImage = str_replace('data:image/png;base64,', '', $profileImage);
-        $profileImage = str_replace(' ', '+', $profileImage);
-        $profileImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
-        \File::put($pathProfile. '/' . $profileImageName, base64_decode($profileImage));
-        // endregion
+        if ($request->profile_image){
+            //region Profil Fotoğrafı Yükleme
+            $pathProfile = public_path('uploads/profile/');
+            $profileImage = $request->profile_image;  // your base64 encoded
+            $profileImage = str_replace('data:image/png;base64,', '', $profileImage);
+            $profileImage = str_replace(' ', '+', $profileImage);
+            $profileImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+            \File::put($pathProfile. '/' . $profileImageName, base64_decode($profileImage));
+            // endregion
 
-        //region Kapak Fotoğrafı Yükleme
-        $pathCover = public_path('uploads/cover/');
-        $coverImage = $request->cover_image;  // your base64 encoded
-        $coverImage = str_replace('data:image/png;base64,', '', $coverImage);
-        $coverImage = str_replace(' ', '+', $coverImage);
-        $coverImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
-        \File::put($pathCover. '/' . $coverImageName, base64_decode($coverImage));
-        // endregion
+            $user->profile_photo = $profileImageName;
+        }
 
-        $user->profile_photo = $profileImageName;
-        $user->cover_photo = $coverImageName;
+        if ($request->cover_image){
+            //region Kapak Fotoğrafı Yükleme
+            $pathCover = public_path('uploads/cover/');
+            $coverImage = $request->cover_image;  // your base64 encoded
+            $coverImage = str_replace('data:image/png;base64,', '', $coverImage);
+            $coverImage = str_replace(' ', '+', $coverImage);
+            $coverImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+            \File::put($pathCover. '/' . $coverImageName, base64_decode($coverImage));
+            // endregion
+
+            $user->cover_photo = $coverImageName;
+        }
+
         $user->name = $request->name;
         $user->surname = $request->surname;
         if ($user->save()){
@@ -60,7 +66,7 @@ class UserController extends Controller
             $json['message'] = "Kayıt başarılı";
             $json['user'] = $user;
             $json['user']['profile_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/".$profileImageName;
-            $json['user']['cover_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/".$profileImageName;
+            $json['user']['cover_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/".$coverImageName;
 
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
