@@ -563,6 +563,9 @@
             "schema": {
               "$ref": "#/definitions/Events"
             }
+          },
+          "404" : {
+            "description" : "Not Found"
           }
         }
       }
@@ -1208,6 +1211,9 @@
         "no_follow_up_request": {
           "type": "integer"
         },
+        "attended_event": {
+          "$ref": "#/definitions/AttendedEvent"
+        },
         "events": {
           "$ref": "#/definitions/Events"
         }
@@ -1270,8 +1276,14 @@
         "longitude": {
           "type": "string"
         },
+        "attended_event": {
+          "$ref": "#/definitions/AttendedEvent"
+        },
         "comments": {
           "$ref": "#/definitions/Comments"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {

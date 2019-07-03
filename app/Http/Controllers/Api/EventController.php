@@ -46,12 +46,14 @@ class EventController extends Controller
             if ($user) {
                 if ($event_id) {
                     $event = Event::with(['comments'])->find($event_id)->with(['userAttendedEvent', 'userAttendedEvent.user'])->get();
-
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['event'] = $event;
-                    $json['api_token'] = $user->api_token;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    if ($event->count() > 0){
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['event'] = $event;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                    }
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Etkinlik id boş olamaz.";
