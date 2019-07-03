@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" afterDir="false" />
-    </list>
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +28,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="1097" column="27" lean-forward="true" selection-start-line="1097" selection-start-column="27" selection-end-line="1097" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="273">
+              <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
               <folding>
                 <element signature="e#977#1158#0#PHP" />
                 <element signature="e#1170#2412#0#PHP" />
@@ -55,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="21" column="57" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="57" />
+            <state relative-caret-position="769">
+              <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -460,12 +473,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433162000" />
+    <option name="totallyTimeSpent" value="433411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.13185067" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.13185067" />
       <window_info id="Structure" order="1" sideWeight="0.50729334" side_tool="true" weight="0.12946783" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -479,8 +493,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32901135" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298217" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4307325" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" weight="0.4307325" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" weight="0.4307325" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -756,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="5127" column="31" lean-forward="true" selection-start-line="5127" selection-start-column="31" selection-end-line="5127" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
@@ -866,27 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22058">
-          <caret line="1124" column="6" lean-forward="true" selection-start-line="1124" selection-start-column="6" selection-end-line="1124" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="21" column="57" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -901,10 +887,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="753">
+          <caret line="5127" column="31" lean-forward="true" selection-start-line="5127" selection-start-column="31" selection-end-line="5127" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="273">
+          <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
           <folding>
             <element signature="e#977#1158#0#PHP" />
             <element signature="e#1170#2412#0#PHP" />
@@ -917,6 +917,20 @@
             <element signature="e#2418#4842#0#PHP" />
             <element signature="e#4848#5896#0#PHP" />
             <element signature="e#5902#8255#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="1097" column="27" lean-forward="true" selection-start-line="1097" selection-start-column="27" selection-end-line="1097" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
           </folding>
         </state>
       </provider>

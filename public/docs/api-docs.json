@@ -482,11 +482,14 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Events"
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Events"
+              }
             }
           },
-          "400": {
-            "description": "Invalid username/password supplied"
+          "204": {
+            "description": "No Content"
           }
         }
       }
