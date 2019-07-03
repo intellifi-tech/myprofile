@@ -309,7 +309,6 @@ class UserController extends Controller
             if ($user) {
                 if ($user_id) {
                     $userAttendedEvents = UserAttendedEvent::where('user_id', $user_id)->with(['event'])->get();
-                    dd($userAttendedEvents);
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['userAttendedEvents'] = $userAttendedEvents;
