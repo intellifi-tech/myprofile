@@ -16,11 +16,16 @@ class UserFollowController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $followers = Follow::where('to_user_id', $user->id)->with(['myFollowers'])->get();
-
-                $json['status'] = 200;
-                $json['message'] = "Success";
-                $json['followers'] = $followers;
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                if ($followers->count() > 0){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['followers'] = $followers;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    $json['status'] = 204;
+                    $json['message'] = "No Content";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
             } else {
                 $json['status'] = 0;
                 $json['message'] = "Api_token geçersizdir.";

@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="1097" column="27" lean-forward="true" selection-start-line="1097" selection-start-column="27" selection-end-line="1097" selection-end-column="27" />
+            <state relative-caret-position="218">
+              <caret line="491" column="38" selection-start-line="491" selection-start-column="38" selection-end-line="491" selection-end-column="38" />
               <folding>
                 <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -85,7 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>kullanici_edinimi_loading</find>
       <find>kullanici_edinimi</find>
       <find>Sektör İsta</find>
       <find>sektor_istatistigi_content</find>
@@ -115,6 +114,7 @@
       <find>followers</find>
       <find>CommentCreate</find>
       <find>NewMessage</find>
+      <find>event/inde</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -179,8 +179,8 @@
         <option value="$PROJECT_DIR$/app/UserPrivacySettings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommentController.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
       </list>
     </option>
   </component>
@@ -473,13 +473,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433411000" />
+    <option name="totallyTimeSpent" value="433692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.13185067" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49270666" visible="true" weight="0.13185067" />
       <window_info id="Structure" order="1" sideWeight="0.50729334" side_tool="true" weight="0.12946783" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -923,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="1097" column="27" lean-forward="true" selection-start-line="1097" selection-start-column="27" selection-end-line="1097" selection-end-column="27" />
+        <state relative-caret-position="218">
+          <caret line="491" column="38" selection-start-line="491" selection-start-column="38" selection-end-line="491" selection-end-column="38" />
           <folding>
             <element signature="n#!!block;n#/user/index#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
