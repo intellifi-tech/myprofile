@@ -669,6 +669,9 @@
                 "$ref": "#/definitions/Message"
               }
             }
+          },
+          "204" : {
+            "description" : "No Content"
           }
         }
       }
