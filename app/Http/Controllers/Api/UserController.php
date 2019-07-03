@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use PharIo\Manifest\Url;
 
 class UserController extends Controller
 {
@@ -36,7 +37,7 @@ class UserController extends Controller
         $profileImage = $request->profile_image;  // your base64 encoded
         $profileImage = str_replace('data:image/png;base64,', '', $profileImage);
         $profileImage = str_replace(' ', '+', $profileImage);
-        $profileImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+        $profileImageName = Url::to(). $path . remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
         \File::put($path. '/' . $profileImageName, base64_decode($profileImage));
         // endregion
 
@@ -45,7 +46,7 @@ class UserController extends Controller
         $coverImage = $request->cover_image;  // your base64 encoded
         $coverImage = str_replace('data:image/png;base64,', '', $coverImage);
         $coverImage = str_replace(' ', '+', $coverImage);
-        $coverImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+        $coverImageName = Url::to() . $path . remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
         \File::put($path. '/' . $coverImageName, base64_decode($coverImage));
         // endregion
 
