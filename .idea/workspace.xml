@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Message.php" afterDir="false" />
     </list>
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="1844" column="7" lean-forward="true" selection-start-line="1844" selection-start-column="7" selection-end-line="1844" selection-end-column="7" />
+            <state relative-caret-position="426">
+              <caret line="1518" column="16" lean-forward="true" selection-start-line="1518" selection-start-column="16" selection-end-line="1518" selection-end-column="16" />
               <folding>
                 <element signature="n#!!block;n#info#0;n#!!top" />
                 <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
@@ -191,7 +192,13 @@
                 <element signature="e#10978#11044#0" />
                 <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="e#11261#11289#0" />
+                <element signature="e#11457#11497#0" />
+                <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
@@ -250,14 +257,8 @@
                 <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="e#16035#16066#0" />
                 <element signature="e#16257#16297#0" />
-                <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-                <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
                 <element signature="n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -398,6 +399,7 @@
                 <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
@@ -431,12 +433,14 @@
                 <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -455,14 +459,17 @@
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="e#31068#31200#0" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -506,8 +513,6 @@
                 <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#type#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
@@ -515,7 +520,6 @@
                 <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-                <element signature="n#!!block;n#xml#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
@@ -555,14 +559,20 @@
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#activity_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -576,10 +586,12 @@
                 <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -591,7 +603,17 @@
                 <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#from_user_id#1;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
@@ -606,7 +628,10 @@
                 <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#user_attended_events#0;n#!!block;n#properties#0;n#!!block;n#Followers#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#xml#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -614,10 +639,15 @@
                 <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
+                <element signature="n#!!block;n#xml#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
                 <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
@@ -633,11 +663,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="16" column="151" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
+              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#44#60#0#PHP" expanded="true" />
               </folding>
@@ -645,11 +675,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Message.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="168">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -674,8 +704,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nearbyUsers</find>
-      <find>EventCreate</find>
       <find>Event</find>
       <find>AttendedEvent</find>
       <find>attendedActivities</find>
@@ -704,6 +732,8 @@
       <find>UserActivities</find>
       <find>Events</find>
       <find>&quot;Events</find>
+      <find>Message</find>
+      <find>&quot;Message</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -766,10 +796,10 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/EventController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php" />
-        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/Follow.php" />
-        <option value="$PROJECT_DIR$/app/Message.php" />
+        <option value="$PROJECT_DIR$/public/docs/api-docs.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php" />
+        <option value="$PROJECT_DIR$/app/Message.php" />
       </list>
     </option>
   </component>
@@ -1042,7 +1072,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452672000" />
+    <option name="totallyTimeSpent" value="453088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1055,6 +1085,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4909091" visible="true" weight="0.13185067" />
       <window_info id="Structure" order="1" sideWeight="0.5090909" side_tool="true" visible="true" weight="0.13185067" />
@@ -1466,10 +1497,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Sector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/docs/api-docs.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="1844" column="7" lean-forward="true" selection-start-line="1844" selection-start-column="7" selection-end-line="1844" selection-end-column="7" />
+        <state relative-caret-position="426">
+          <caret line="1518" column="16" lean-forward="true" selection-start-line="1518" selection-start-column="16" selection-end-line="1518" selection-end-column="16" />
           <folding>
             <element signature="n#!!block;n#info#0;n#!!top" />
             <element signature="n#!!block;n#contact#0;n#!!block;n#info#0;n#!!top" />
@@ -1623,7 +1675,13 @@
             <element signature="e#10978#11044#0" />
             <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/likeActivity#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="e#11261#11289#0" />
+            <element signature="e#11457#11497#0" />
+            <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
+            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/user/activitiesMyFollowersAttended#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#get#0;n#!!block;n#/user/{user_id}/events#0;n#!!block;n#paths#0;n#!!top" />
@@ -1682,14 +1740,8 @@
             <element signature="n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#post#0;n#!!block;n#/comment/create#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="e#16035#16066#0" />
             <element signature="e#16257#16297#0" />
-            <element signature="n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
-            <element signature="n#!!block;n#items#0;n#!!block;n#schema#0;n#!!block;n#200#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#404#0;n#!!block;n#responses#0;n#!!block;n#get#0;n#!!block;n#/message/getMessages#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
             <element signature="n#!!block;n#post#0;n#!!block;n#/message/newMessage#0;n#!!block;n#paths#0;n#!!top" />
@@ -1830,6 +1882,7 @@
             <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#UserActivities#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1863,12 +1916,14 @@
             <element signature="n#!!block;n#slug#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#name#0;n#!!block;n#properties#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#Town#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#attended_event#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Events#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#NearbyEventsResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1887,14 +1942,17 @@
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#EventSearch#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_image#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#AttendedEvent#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="e#31068#31200#0" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#AttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1938,8 +1996,6 @@
             <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#comment#0;n#!!block;n#properties#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#CommentCreate#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#type#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#parent_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1947,7 +2003,6 @@
             <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#message#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
-            <element signature="n#!!block;n#xml#0;n#!!block;n#Message#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#NewMessage#0;n#!!block;n#definitions#0;n#!!top" />
@@ -1987,14 +2042,20 @@
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#UserSetCoordinates#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#api_token#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#activity_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserAttendedActivities#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#Follow#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#to_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#FollowersResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#FollowingResponse#0;n#!!block;n#definitions#0;n#!!top" />
@@ -2008,10 +2069,12 @@
             <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettings#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#visibility_on_the_map#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#no_message#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#no_follow_up_request#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user#0;n#!!block;n#properties#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserPrivacySettingsResponse#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#NearbyEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -2023,7 +2086,17 @@
             <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#LikeActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#attended_id#0;n#!!block;n#properties#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#LikesActivity#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#from_user_id#0;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#from_user_id#1;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#my_followers#0;n#!!block;n#properties#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#ActivitiesMyFollowersAttended#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#profile_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#cover_photo#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
@@ -2038,7 +2111,10 @@
             <element signature="n#!!block;n#sector_id#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#email#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#status#0;n#!!block;n#properties#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#user_attended_events#0;n#!!block;n#properties#0;n#!!block;n#Followers#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#xml#0;n#!!block;n#User#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#user_id#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#event_description#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
@@ -2046,10 +2122,15 @@
             <element signature="n#!!block;n#date_of_participation#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#end_date#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#rating#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#event#0;n#!!block;n#properties#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#UserAttendedEvents#0;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#title#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#latitude#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#longitude#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#comments#0;n#!!block;n#properties#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
+            <element signature="n#!!block;n#xml#0;n#!!block;n#Events#1;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
             <element signature="n#!!block;n#id#0;n#!!block;n#properties#0;n#!!block;n#Company#0;n#!!block;n#definitions#0;n#!!top" />
@@ -2064,41 +2145,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Sector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="264">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#44#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="16" column="151" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
-          <folding>
-            <element signature="e#44#60#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
