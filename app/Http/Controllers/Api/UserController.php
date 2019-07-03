@@ -65,8 +65,8 @@ class UserController extends Controller
                 $json['status'] = 200;
                 $json['message'] = "Kayıt başarılı";
                 $json['user'] = $user;
-                $json['user']['profile_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/".$profileImageName;
-                $json['user']['cover_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/".$coverImageName;
+                $json['user']['profile_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/".$user->profile_photo;
+                $json['user']['cover_photo'] = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/".$user->cover_photo;
 
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
