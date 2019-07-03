@@ -14,7 +14,7 @@ class CompanyController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $companies = Company::all();
+                $companies = Company::get();
                 if ($companies->count() > 0){
                     $json['status'] = 200;
                     $json['message'] = "Success";
