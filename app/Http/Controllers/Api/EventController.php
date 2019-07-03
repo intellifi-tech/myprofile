@@ -45,7 +45,7 @@ class EventController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($event_id) {
-                    $event = Event::with(['comments'])->find($event_id);
+                    $event = Event::with(['comments'])->find($event_id)->with(['userAttendedEvent'])->get();
 
                     $json['status'] = 200;
                     $json['message'] = "Success";
