@@ -56,6 +56,10 @@ Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
 Route::post('activity/likesActivity', 'Api\UserActivityController@likesActivity');
 //endregion
 
+//region Firmalar
+Route::get('company/getCompanies', 'Api\CompanyController@getCompanies');
+//endregion
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
