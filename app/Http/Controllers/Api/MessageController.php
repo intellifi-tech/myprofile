@@ -28,7 +28,7 @@ class MessageController extends Controller
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['messages'] = $messages;
-                    $json['user'] = $user;
+                    $json['messages']['user'] = $user;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
