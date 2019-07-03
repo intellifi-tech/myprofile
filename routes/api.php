@@ -37,7 +37,7 @@ Route::get('user/{user_id}/events','Api\UserController@idEvents');
 
 // region Etkinlikler
 Route::get('event/index', 'Api\EventController@index');
-Route::post('event/show', 'Api\EventController@show');
+Route::get('event/{event_id}/show', 'Api\EventController@show');
 Route::post('event/search', 'Api\EventController@searchEvent');
 Route::post('event/nearbyEvents', 'Api\EventController@nearbyEvents');
 // endregion

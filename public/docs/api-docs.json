@@ -546,8 +546,8 @@
         }
       }
     },
-    "/event/show": {
-      "post": {
+    "/event/{event_id}/show": {
+      "get": {
         "tags": [
           "event"
         ],
@@ -556,16 +556,6 @@
         "operationId": "showEvent",
         "produces": [
           "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/EventShow"
-            }
-          }
         ],
         "responses": {
           "200": {
@@ -1434,9 +1424,6 @@
     "EventShow": {
       "type": "object",
       "properties": {
-        "api_token": {
-          "type": "string"
-        },
         "id": {
           "type": "integer",
           "format": "bigInteger"
