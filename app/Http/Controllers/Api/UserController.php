@@ -360,7 +360,7 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $userExperiences = $user->userExperiences;
+                $userExperiences = $user->userExperiences->company;
 
                 if ($userExperiences->count() > 0){
                     $json['status'] = 200;
