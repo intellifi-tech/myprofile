@@ -61,7 +61,7 @@ class UserController extends Controller
 //            $query->where('end_date', null);
 //        })->first();
 
-        $userEvents = UserAttendedEvent::where('user_id', $id)->with(['event'])->get()
+        $userEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', 0)->with(['event'])->get()
 ;
         dd($userEvents);
         $this->page['sub_title'] = $user->name.' düzenle';
