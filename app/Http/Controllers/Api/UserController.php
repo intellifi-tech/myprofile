@@ -239,7 +239,7 @@ class UserController extends Controller
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['userAttendedEvent'] = $userAttendedEvent;
-                    $json['userAttendedEvent']['event'] = event_image_path() . $userAttendedEvent->event_image;
+                    $json['userAttendedEvent']['event_image'] = event_image_path() . $userAttendedEvent->event_image;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 204;
