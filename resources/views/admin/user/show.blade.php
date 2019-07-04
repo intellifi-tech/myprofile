@@ -71,9 +71,9 @@
                                                         <!-- BEGIN: Actions -->
                                                             <div class="mt-actions" style="width: 99%;">
                                                                 <div class="mt-action">
-                                                                    <div class="mt-action-img">
-                                                                        <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>
-                                                                    </div>
+{{--                                                                    <div class="mt-action-img">--}}
+{{--                                                                        <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>--}}
+{{--                                                                    </div>--}}
                                                                     <div class="mt-action-body">
                                                                         <div class="mt-action-row">
                                                                             <div class="mt-action-info ">
@@ -81,8 +81,7 @@
                                                                                     <i class="fa fa-calendar-o"></i>
                                                                                 </div>
                                                                                 <div class="mt-action-details ">
-                                                                                    <span class="mt-action-author">{!! $userOngoingsEvent->user->name .' '. $userOngoingsEvent->user->surname !!}</span>
-                                                                                    <p class="mt-action-desc">{!! $userOngoingsEvent->event->title !!}</p>
+                                                                                    <span class="mt-action-author">{!! $userOngoingsEvent->event->title !!}</span>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mt-action-datetime ">

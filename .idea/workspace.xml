@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="83" column="176" selection-start-line="83" selection-start-column="176" selection-end-line="83" selection-end-column="176" />
+            <state relative-caret-position="693">
+              <caret line="90" column="190" selection-start-line="90" selection-start-column="190" selection-end-line="90" selection-end-column="190" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
@@ -454,12 +454,12 @@
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
       <workItem from="1562056149250" duration="14444000" />
-      <workItem from="1562220889432" duration="6935000" />
+      <workItem from="1562220889432" duration="7347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="462823000" />
+    <option name="totallyTimeSpent" value="463235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1529,8 +1529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="83" column="176" selection-start-line="83" selection-start-column="176" selection-end-line="83" selection-end-column="176" />
+        <state relative-caret-position="693">
+          <caret line="90" column="190" selection-start-line="90" selection-start-column="190" selection-end-line="90" selection-end-column="190" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
           </folding>
