@@ -38,6 +38,11 @@ function user_cover_image_path()
     return "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/";
 }
 
+function event_image_path()
+{
+    return "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/events/";
+}
+
 function admin_asset($file)
 {
     return asset('admin' . '/' . $file);
