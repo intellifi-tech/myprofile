@@ -82,11 +82,11 @@
                                                                                 </div>
                                                                                 <div class="mt-action-details ">
                                                                                     <span class="mt-action-author">{!! $userOngoingsEvent->user->name .' '. $userOngoingsEvent->user->surname !!}</span>
-                                                                                    <p class="mt-action-desc">Android 101</p>
+                                                                                    <p class="mt-action-desc">{!! $userOngoingsEvent->event->title !!}</p>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="mt-action-datetime ">
-                                                                                <span class="mt-action-date">20 Ekim</span>
+                                                                                <span class="mt-action-date">{!! \Carbon\Carbon::parse($userOngoingsEvent->date_of_participation)->format('Y-d-m') !!}</span>
                                                                                 <span class="mt-action-dot bg-green"></span>
                                                                                 <span class="mt=action-time">9:30-13:00</span>
                                                                             </div>
