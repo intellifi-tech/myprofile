@@ -67,7 +67,6 @@ class UserController extends Controller
 
             if (!is_null($request->company_title)){
                 $company = Company::where('name', $request->company_title)->first();
-                dd($company);
                 if ($company){
                     $user->company_id = $company->id;
                 }else{
