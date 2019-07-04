@@ -876,7 +876,7 @@
         }
       }
     },
-    "/company/getSectors": {
+    "/company/getCompanies": {
       "get": {
         "tags": [
           "company"
