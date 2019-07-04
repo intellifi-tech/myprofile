@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Event;
 use App\User;
 use App\UserAttendedEvent;
+use App\UserExperiences;
 use App\UserLikeActivity;
 use App\UserPrivacySettings;
 use Carbon\Carbon;
@@ -360,7 +361,7 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $userExperiences = $user->userExperiences->company;
+                $userExperiences = UserExperiences::where('user_id', $user->id)->with(['company'])->get();
 
                 if ($userExperiences->count() > 0){
                     $json['status'] = 200;
