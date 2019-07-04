@@ -2011,6 +2011,32 @@
         },
         "description": {
           "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserExperiencesResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         },
         "company": {
           "$ref": "#/definitions/Company"
