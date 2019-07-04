@@ -267,7 +267,7 @@ class UserController extends Controller
 
                 $json['status'] = 200;
                 $json['message'] = "Success";
-                $json['activities'] = $activities;
+                $json['activityy'] = $activities;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 204;
