@@ -51,4 +51,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\UserAttendedEvent', 'user_id', 'id');
     }
+
+    public function userExperiences()
+    {
+        return $this->hasMany('App\UserExperiences', 'user_id', 'id');
+    }
 }

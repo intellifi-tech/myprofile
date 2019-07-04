@@ -79,6 +79,7 @@ class AjaxController extends Controller
 
         $nowMonth = Carbon::now();
 
+        $sectorUserCounts = [];
         $nowMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
         foreach ($sectors as $sector){
@@ -87,12 +88,21 @@ class AjaxController extends Controller
         }
         arsort($nowMonthSectorUserCountsTmp);
 
-//        echo array_key_first($nowMonthSectorCountsTmp);
-//        echo $nowMonthSectorCountsTmp[array_key_first($nowMonthSectorCountsTmp)];
+        $sectorUserCounts[array_key_first($nowMonthSectorUserCountsTmp)] = $nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
 
-        $nowMonthSectorUserCounts[array_key_first($nowMonthSectorUserCountsTmp)] = $nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
 
-        return $nowMonthSectorUserCounts;
+        $oneMonthSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->subMonth()->format('m'))->get()->count();
+            $oneMonthSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($oneMonthSectorUserCountsTmp);
+
+
+        $sectorUserCounts[array_key_first($oneMonthSectorUserCountsTmp)] = $oneMonthSectorUserCountsTmp[array_key_first($oneMonthSectorUserCountsTmp)];
+
+        return $sectorUserCounts;
     }
 
     public function eventStatistics(Request $request)

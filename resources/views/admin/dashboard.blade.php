@@ -556,11 +556,12 @@
             });
 
             $.ajax({
-                url: "{{ route('admin.hourlyOnlineUserCount')}}",
+                url: "{{ route('admin.sectorStatistics')}}",
                 type: "POST",
                 timeout: 10000,
                 data: {1: 1},
                 success: function (response) {
+                    debugger
                     var a1 = [];
 
                     var onlineUser = [];
@@ -629,7 +630,7 @@
 
                         var previousPoint4 = null;
 
-                        $("#online_user").bind("plothover", function (event, pos, item) {
+                        $("#sektor_istatistigi").bind("plothover", function (event, pos, item) {
                             $("#x").text(pos.x.toFixed(2));
                             $("#y").text(pos.y.toFixed(2));
                             if (item) {
