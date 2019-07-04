@@ -42,10 +42,7 @@ class SectorController extends Controller
                 $sector = Sector::where('id', $sector_id)->first();
 
                 if (!is_null($sector)){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['sector'] = $sector;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($sector, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
