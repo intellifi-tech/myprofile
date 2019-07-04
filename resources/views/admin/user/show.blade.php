@@ -368,9 +368,9 @@
                                             <span class="caption-subject font-dark bold uppercase">Yorumlar</span>
                                         </div>
                                         <ul class="nav nav-tabs">
-                                            <li class="active">
-                                                <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>
-                                            </li>
+{{--                                            <li class="active">--}}
+{{--                                                <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>--}}
+{{--                                            </li>--}}
 {{--                                            <li>--}}
 {{--                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>--}}
 {{--                                            </li>--}}
