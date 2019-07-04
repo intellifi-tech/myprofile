@@ -383,7 +383,7 @@
             "schema" : {
               "type" : "array",
               "items" : {
-                "$ref": "#/definitions/UserExperiences"
+                "$ref": "#/definitions/UserExperiencesResponse"
               }
             }
           },
