@@ -40,10 +40,7 @@ class CompanyController extends Controller
                 $company = Company::where('id', $company_id)->first();
 
                 if(!is_null($company)){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['company'] = $company;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($company, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
