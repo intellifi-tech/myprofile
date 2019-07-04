@@ -65,17 +65,23 @@ class UserController extends Controller
                 }
             }
 
-            if (!is_null($request->company_name)){
+            if (!is_null($request->company_title)){
                 $company = Company::where('name', $request->company_name)->first();
                 if ($company){
                     $user->company_id = $company->id;
                 }else{
                     $company = new Company();
-                    $company->name = $request->company_name;
+                    $company->name = $request->company_title;
                     $company->save();
                     $user->company_id = $company->id;
                 }
             }
+
+            $user->title = $request->title;
+            $user->short_biography = $request->short_biography;
+            $user->credentials = $request->credentials;
+            $user->date_of_birth = $request->date_of_birth;
+            $user->sector_id = $request->sector_id;
 
             $user->name = $request->name;
             $user->surname = $request->surname;
