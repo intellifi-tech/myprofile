@@ -28,6 +28,16 @@ function upload_path($folder = null, $file = null)
     return $path;
 }
 
+function user_profile_image_path()
+{
+    return "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/";
+}
+
+function user_cover_image_path()
+{
+    return "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/";
+}
+
 function admin_asset($file)
 {
     return asset('admin' . '/' . $file);
