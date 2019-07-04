@@ -373,7 +373,7 @@
             "in": "body",
             "type": "boolean",
             "schema": {
-              "$ref": "#/definitions/UserPrivacySettings"
+              "$ref": "#/definitions/UserExperiences"
             }
           }
         ],
