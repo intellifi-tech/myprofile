@@ -20,6 +20,8 @@ Route::put('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
 Route::get('user/indexExperiences', 'Api\UserController@indexExperiences');
+Route::post('user/storeExperiences', 'Api\UserController@storeExperiences');
+Route::get('user/{experiences_id}/destroyExperiences', 'Api\UserController@destroyExperiences');
 Route::post('user/userAttendedEvent', 'Api\UserController@userAttendedEvent');
 Route::post('user/userAttendedEvents', 'Api\UserController@userAttendedEvents');
 Route::post('user/userPrivacySettings', 'Api\UserController@userPrivacySettings');

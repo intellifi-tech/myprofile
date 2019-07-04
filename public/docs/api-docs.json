@@ -393,6 +393,23 @@
         }
       }
     },
+    "/user/{experiences_id}/destroyExperiences": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Deneyim sil",
+        "operationId": "destroyExperiences",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/user/followings": {
       "post": {
         "tags": [
