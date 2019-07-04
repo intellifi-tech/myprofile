@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Comment;
+use App\Event;
 use App\Sector;
 use App\User;
 use App\UserAttendedEvent;
@@ -30,10 +31,11 @@ class DashboardController extends Controller
         $userOngoingsEvents = UserAttendedEvent::where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
         $completedOngoingsEvents = UserAttendedEvent::where('end_date', '!=', null)->with(['event', 'user'])->get(); //Tamamlanan katılımlar
         $comments = Comment::get(); // Kullanıcının yaptığı yorumlar
+        $events = Event::all();
         $users = User::all();
         $sectors = Sector::all();
         $onlineUsers = UserCoordinate::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents, 'comments' => $comments]);
+        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents, 'comments' => $comments, 'events' => $events]);
     }
 
     /**

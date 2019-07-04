@@ -56,7 +56,7 @@
                         </div>
                         <div class="details">
                             <div class="number">
-                                <span data-counter="counterup" data-value="0">0</span></div>
+                                <span data-counter="counterup" data-value="0">{{ $events->count() }}</span></div>
                             <div class="desc"> Etkinlik Sayısı</div>
                         </div>
                     </a>
