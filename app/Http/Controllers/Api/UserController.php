@@ -383,10 +383,7 @@ class UserController extends Controller
                 $userExperiences = UserExperiences::where('user_id', $user->id)->with(['company'])->get();
 
                 if ($userExperiences->count() > 0){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['userExperiences'] = $userExperiences;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
@@ -416,10 +413,7 @@ class UserController extends Controller
                 $userExperiences->end_time = $request->end_time;
                 $userExperiences->description = $request->description;
                 if ($userExperiences->save()){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['userExperiences'] = $userExperiences;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
@@ -441,9 +435,7 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 UserExperiences::where('id', $experiences_id)->where('user_id', $user->id)->delete();
-                $json['status'] = 200;
-                $json['message'] = "Success";
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                return response()->json(null, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "api-token geçersizdir.";
