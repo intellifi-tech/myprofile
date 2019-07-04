@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Company;
 use App\Event;
 use App\User;
 use App\UserAttendedEvent;
@@ -62,6 +63,16 @@ class UserController extends Controller
 
                     $user->cover_photo = $coverImageName;
                 }
+            }
+
+            $company = Company::where('name', $request->company_name)->first();
+            if ($company){
+                $user->company_id = $company->id;
+            }else{
+                $company = new Company();
+                $company->name = $request->company_name;
+                $company->save();
+                $user->company_id = $company->id;
             }
 
             $user->name = $request->name;
