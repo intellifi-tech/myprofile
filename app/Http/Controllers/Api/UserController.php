@@ -148,7 +148,6 @@ class UserController extends Controller
     public function login(Request $request)
     {
         $user = User::where('email', $request->email)->with(['company'])->get();
-        dd($user);
         if($user->type == 1){
             if ($request->email && $request->password){
                 $user = User::where([
@@ -177,7 +176,7 @@ class UserController extends Controller
                             'credentials' => $user->credentials,
                             'date_of_birth' => $user->date_of_birth,
                             'company_id' => $user->company_id,
-                            'company_title' => $user->company->title,
+                            'company_title' => $user->company->title ?? null,
                             'sector_id' => $user->sector_id,
                             'email' => $user->email,
                         ], 200, [], JSON_UNESCAPED_UNICODE);
