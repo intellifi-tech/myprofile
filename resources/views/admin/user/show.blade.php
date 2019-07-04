@@ -63,7 +63,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="portlet-body" style="height: 469px; overflow-y: scroll;">
+                                    <div class="portlet-body" style="height: 410px; overflow-y: scroll;">
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab_actions_pending">
                                                 @if($userOngoingsEvents->count() > 0)
@@ -247,7 +247,7 @@
                                         </ul>
                                     </div>
                                     <div class="portlet-body">
-                                        <div class="tab-content" style="height: 300px; overflow-y: scroll;">
+                                        <div class="tab-content" style="height: 410px; overflow-y: scroll;">
                                             <div class="tab-pane active" id="portlet_comments_1">
                                                 @if($comments->count() > 0)
                                                     @foreach($comments as $comment)
