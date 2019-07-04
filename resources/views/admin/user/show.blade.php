@@ -371,14 +371,15 @@
                                             <li class="active">
                                                 <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>
                                             </li>
-                                            <li>
-                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>
-                                            </li>
+{{--                                            <li>--}}
+{{--                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>--}}
+{{--                                            </li>--}}
                                         </ul>
                                     </div>
                                     <div class="portlet-body">
                                         <div class="tab-content" style="height: 300px; overflow-y: scroll;">
                                             <div class="tab-pane active" id="portlet_comments_1">
+
                                                 <!-- BEGIN: Comments -->
                                                 <div class="mt-comments" style="width: 99%">
                                                     <div class="mt-comment">
@@ -402,506 +403,300 @@
                                                     </div>
                                                 </div>
                                                 <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments" style="width: 99%">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                                <span class="mt-comment-date">21 Nisan</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını bekliyoruz. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Arşivle</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
+
                                             </div>
-                                            <div class="tab-pane" id="portlet_comments_2">
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                                <!-- BEGIN: Comments -->
-                                                <div class="mt-comments">
-                                                    <div class="mt-comment">
-                                                        <div class="mt-comment-img">
-                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>
-                                                        <div class="mt-comment-body">
-                                                            <div class="mt-comment-info">
-                                                                <span class="mt-comment-author">Michael Baker</span>
-                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                            </div>
-                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>
-                                                            <div class="mt-comment-details">
-                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                                <ul class="mt-comment-actions">
-                                                                    <li>
-                                                                        <a href="#">Quick Edit</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">View</a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="#">Delete</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END: Comments -->
-                                            </div>
+{{--                                            <div class="tab-pane" id="portlet_comments_2">--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+{{--                                            </div>--}}
                                         </div>
                                     </div>
                                 </div>
