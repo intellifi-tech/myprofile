@@ -230,7 +230,83 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
+                                <!-- BEGIN PORTLET -->
+                                <div class="portlet light bordered">
+                                    <div class="portlet-title tabbable-line">
+                                        <div class="caption">
+                                            <i class="icon-bubbles font-dark hide"></i>
+                                            <span class="caption-subject font-dark bold uppercase">Yorumlar</span>
+                                        </div>
+                                        <ul class="nav nav-tabs">
+{{--                                            <li class="active">--}}
+{{--                                                <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>--}}
+{{--                                            </li>--}}
+{{--                                            <li>--}}
+{{--                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>--}}
+{{--                                            </li>--}}
+                                        </ul>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="tab-content" style="height: 300px; overflow-y: scroll;">
+                                            <div class="tab-pane active" id="portlet_comments_1">
+                                                @if($comments->count() > 0)
+                                                    @foreach($comments as $comment)
+                                                    <!-- BEGIN: Comments -->
+                                                    <div class="mt-comments" style="width: 99%">
+                                                        <div class="mt-comment">
+                                                            <div class="mt-comment-img">
+                                                                <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
+                                                            <div class="mt-comment-body">
+                                                                <div class="mt-comment-info">
+                                                                    <span class="mt-comment-author">{!! $comment->event->title !!}</span>
+                                                                    <span class="mt-comment-date">{!! \Carbon\Carbon::parse($comment->created_at)->format('d-M') !!}</span>
+                                                                </div>
+                                                                <div class="mt-comment-text"> {!! $comment->comment !!} </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END: Comments -->
+                                                    @endforeach
+                                                @else
+                                                    Bu kullanıcı henüz bir yorum yapmamış.
+                                                @endif
 
+                                            </div>
+                                            <div class="tab-pane" id="portlet_comments_2">
+{{--                                                <!-- BEGIN: Comments -->--}}
+{{--                                                <div class="mt-comments">--}}
+{{--                                                    <div class="mt-comment">--}}
+{{--                                                        <div class="mt-comment-img">--}}
+{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+{{--                                                        <div class="mt-comment-body">--}}
+{{--                                                            <div class="mt-comment-info">--}}
+{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+{{--                                                            </div>--}}
+{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+{{--                                                            <div class="mt-comment-details">--}}
+{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+{{--                                                                <ul class="mt-comment-actions">--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Quick Edit</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">View</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                    <li>--}}
+{{--                                                                        <a href="#">Delete</a>--}}
+{{--                                                                    </li>--}}
+{{--                                                                </ul>--}}
+{{--                                                            </div>--}}
+{{--                                                        </div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                                <!-- END: Comments -->--}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END PORTLET -->
                                 <!-- BEGIN PORTLET -->
                                 <div class="portlet light bordered">
                                     <div class="portlet-title">
@@ -354,83 +430,6 @@
                                             </div>
                                         </div>
 
-                                    </div>
-                                </div>
-                                <!-- END PORTLET -->
-                                <!-- BEGIN PORTLET -->
-                                <div class="portlet light bordered">
-                                    <div class="portlet-title tabbable-line">
-                                        <div class="caption">
-                                            <i class="icon-bubbles font-dark hide"></i>
-                                            <span class="caption-subject font-dark bold uppercase">Yorumlar</span>
-                                        </div>
-                                        <ul class="nav nav-tabs">
-{{--                                            <li class="active">--}}
-{{--                                                <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>--}}
-{{--                                            </li>--}}
-{{--                                            <li>--}}
-{{--                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>--}}
-{{--                                            </li>--}}
-                                        </ul>
-                                    </div>
-                                    <div class="portlet-body">
-                                        <div class="tab-content" style="height: 300px; overflow-y: scroll;">
-                                            <div class="tab-pane active" id="portlet_comments_1">
-                                                @if($comments->count() > 0)
-                                                    @foreach($comments as $comment)
-                                                    <!-- BEGIN: Comments -->
-                                                    <div class="mt-comments" style="width: 99%">
-                                                        <div class="mt-comment">
-                                                            <div class="mt-comment-img">
-                                                                <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
-                                                            <div class="mt-comment-body">
-                                                                <div class="mt-comment-info">
-                                                                    <span class="mt-comment-author">{!! $comment->event->title !!}</span>
-                                                                    <span class="mt-comment-date">{!! \Carbon\Carbon::parse($comment->created_at)->format('d-M') !!}</span>
-                                                                </div>
-                                                                <div class="mt-comment-text"> {!! $comment->comment !!} </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END: Comments -->
-                                                    @endforeach
-                                                @else
-                                                    Bu kullanıcı henüz bir yorum yapmamış.
-                                                @endif
-
-                                            </div>
-                                            <div class="tab-pane" id="portlet_comments_2">
-{{--                                                <!-- BEGIN: Comments -->--}}
-{{--                                                <div class="mt-comments">--}}
-{{--                                                    <div class="mt-comment">--}}
-{{--                                                        <div class="mt-comment-img">--}}
-{{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
-{{--                                                        <div class="mt-comment-body">--}}
-{{--                                                            <div class="mt-comment-info">--}}
-{{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
-{{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
-{{--                                                            </div>--}}
-{{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
-{{--                                                            <div class="mt-comment-details">--}}
-{{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
-{{--                                                                <ul class="mt-comment-actions">--}}
-{{--                                                                    <li>--}}
-{{--                                                                        <a href="#">Quick Edit</a>--}}
-{{--                                                                    </li>--}}
-{{--                                                                    <li>--}}
-{{--                                                                        <a href="#">View</a>--}}
-{{--                                                                    </li>--}}
-{{--                                                                    <li>--}}
-{{--                                                                        <a href="#">Delete</a>--}}
-{{--                                                                    </li>--}}
-{{--                                                                </ul>--}}
-{{--                                                            </div>--}}
-{{--                                                        </div>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                                <!-- END: Comments -->--}}
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <!-- END PORTLET -->
