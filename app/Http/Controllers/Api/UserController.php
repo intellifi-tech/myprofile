@@ -33,7 +33,7 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
-        $user = User::where('api_token', $request->header('api-token'))->with(['company'])->first();
+        $user = User::where('api_token', $request->header('api-token'))->first();
         if ($user){
             if ($request->profile_photo){
                 if(user_profile_image_path() . $user->profile_photo != $request->profile_photo){
@@ -82,7 +82,6 @@ class UserController extends Controller
             $user->credentials = $request->credentials;
             $user->date_of_birth = $request->date_of_birth;
             $user->sector_id = $request->sector_id;
-
             $user->name = $request->name;
             $user->surname = $request->surname;
             if ($user->save()){
