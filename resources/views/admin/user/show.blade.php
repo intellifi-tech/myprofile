@@ -100,36 +100,38 @@
                                                 @endif
                                             </div>
                                             <div class="tab-pane" id="tab_actions_completed">
-                                            @for($i = 0; $i < 20; $i++)
-                                                <!-- BEGIN:Completed-->
-                                                    <div class="mt-actions" style="width: 99%;">
-                                                        <div class="mt-action">
-                                                            <div class="mt-action-img">
-                                                                <img src="{{ admin_asset('pages/media/users/avatar1.jpg') }}">
-                                                            </div>
-                                                            <div class="mt-action-body">
-                                                                <div class="mt-action-row">
-                                                                    <div class="mt-action-info ">
-                                                                        <div class="mt-action-icon ">
-                                                                            <i class="icon-action-redo"></i>
+                                            @if($completedOngoingsEvents->count() > 0)
+                                                @foreach($completedOngoingsEvents as $completedOngoingsEvent)
+                                                    <!-- BEGIN: Actions -->
+                                                        <div class="mt-actions" style="width: 99%;">
+                                                            <div class="mt-action">
+                                                                {{--                                                                    <div class="mt-action-img">--}}
+                                                                {{--                                                                        <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>--}}
+                                                                {{--                                                                    </div>--}}
+                                                                <div class="mt-action-body">
+                                                                    <div class="mt-action-row">
+                                                                        <div class="mt-action-info ">
+                                                                            <div class="mt-action-icon ">
+                                                                                <i class="fa fa-calendar-o"></i>
+                                                                            </div>
+                                                                            <div class="mt-action-details ">
+                                                                                <span class="mt-action-author">{!! $completedOngoingsEvent->event->title !!}</span>
+                                                                            </div>
                                                                         </div>
-                                                                        <div class="mt-action-details ">
-                                                                            <span class="mt-action-author">Muharrem Özdemir</span>
-                                                                            <p class="mt-action-desc">Android 101</p>
+                                                                        <div class="mt-action-datetime ">
+                                                                            <span class="mt-action-date">{!! \Carbon\Carbon::parse($completedOngoingsEvent->date_of_participation)->format('Y-d-m') !!}</span>
+                                                                            <span class="mt-action-dot bg-red"></span>
+                                                                            <span class="mt=action-time">{!! \Carbon\Carbon::parse($completedOngoingsEvent->date_of_participation)->format('H:i') !!}</span>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="mt-action-datetime ">
-                                                                        <span class="mt-action-date">20 Ekim</span>
-                                                                        <span class="mt-action-dot bg-red"></span>
-                                                                        <span class="mt=action-time">9:30-13:00</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- END: Completed -->
-                                                    </div>
-                                                @endfor
-                                            </div>
+                                                        <!-- END: Actions -->
+                                                    @endforeach
+                                                @else
+                                                    <p>Şu an devam eden herhangi bir etkinlik bulunmuyor.</p>
+                                                @endif
                                         </div>
                                     </div>
                                 </div>
