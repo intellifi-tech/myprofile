@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\User;
+use App\UserAttendedEvent;
 use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -56,10 +57,13 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::where('id', $id)->whereHas('userAttendedEvents', function ($query){
-            $query->where('end_date', null);
-        })->first();
-        dd($user);
+//        $user = User::where('id', $id)->whereHas('userAttendedEvents', function ($query){
+//            $query->where('end_date', null);
+//        })->first();
+
+        $userEvents = UserAttendedEvent::where('user_id', $id)->get()
+;
+        dd($userEvents);
         $this->page['sub_title'] = $user->name.' düzenle';
         return view('admin.user.show', ['page' => $this->page, 'user' => $user]);
     }
