@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +38,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="64" column="32" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="32" />
+            <state relative-caret-position="518">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="17" />
+              <folding>
+                <element signature="e#46#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -42,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="134" column="50" selection-start-line="134" selection-start-column="50" selection-end-line="134" selection-end-column="50" />
+            <state relative-caret-position="438">
+              <caret line="390" column="126" selection-start-line="390" selection-start-column="126" selection-end-line="390" selection-end-column="126" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
@@ -62,8 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>attendedActivities</find>
-      <find>userAttendedActivities</find>
       <find>Activi</find>
       <find>/user/attendedActivities</find>
       <find>/user/userAttendedEvents</find>
@@ -92,6 +107,8 @@
       <find>&quot;Message</find>
       <find>name</find>
       <find>tab_actions_pending</find>
+      <find>Yorumlar</find>
+      <find>2019-07-02 12:50:42</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/public/docs/api-json.json" />
         <option value="$PROJECT_DIR$/app/UserAttendedActivities.php" />
@@ -156,6 +172,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
       </list>
@@ -452,12 +469,12 @@
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
       <workItem from="1562056149250" duration="14444000" />
-      <workItem from="1562220889432" duration="7881000" />
+      <workItem from="1562220889432" duration="8392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463769000" />
+    <option name="totallyTimeSpent" value="464280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,8 +487,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66164" visible="true" weight="0.13264495" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.66164" visible="true" weight="0.13264495" />
       <window_info id="Structure" order="1" sideWeight="0.33836004" side_tool="true" visible="true" weight="0.13264495" />
       <window_info id="Favorites" order="2" sideWeight="0.5079618" side_tool="true" weight="0.13185067" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -487,7 +505,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882166" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" weight="0.4307325" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.15525478" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.15525478" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -522,19 +540,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/admin/global/plugins/flot/jquery.flot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="3143" column="4" selection-start-line="3143" selection-start-column="4" selection-end-line="3143" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1652">
@@ -1520,15 +1525,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="32" />
+        <state relative-caret-position="518">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="17" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="134" column="50" selection-start-line="134" selection-start-column="50" selection-end-line="134" selection-end-column="50" />
+        <state relative-caret-position="438">
+          <caret line="390" column="126" selection-start-line="390" selection-start-column="126" selection-end-line="390" selection-end-column="126" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
           </folding>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Comment;
 use App\User;
 use App\UserAttendedEvent;
 use App\UserCoordinate;
@@ -63,10 +64,10 @@ class UserController extends Controller
 
         $userOngoingsEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
         $completedOngoingsEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', '!=', null)->with(['event', 'user'])->get(); //Tamamlanan katılımlar
-
+        $comments = Comment::where('user_id', $id)->with(['event'])->get();
         $user = User::find($id);
         $this->page['sub_title'] = $user->name.' düzenle';
-        return view('admin.user.show', ['page' => $this->page, 'user' => $user, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents]);
+        return view('admin.user.show', ['page' => $this->page, 'user' => $user, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents, 'comments' => $comments]);
     }
 
     /**
