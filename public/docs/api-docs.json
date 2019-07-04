@@ -357,6 +357,42 @@
         }
       }
     },
+    "/user/storeExperiences": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Deneyim ekle",
+        "operationId": "storeExperiences",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "type": "boolean",
+            "schema": {
+              "$ref": "#/definitions/UserPrivacySettings"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/UserExperiences"
+              }
+            }
+          },
+          "404" : {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/user/followings": {
       "post": {
         "tags": [

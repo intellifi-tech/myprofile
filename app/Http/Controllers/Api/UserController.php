@@ -382,4 +382,37 @@ class UserController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function storeExperiences(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+
+                $userExperiences = new UserExperiences();
+                $userExperiences->user_id = $user->id;
+                $userExperiences->title = $request->title;
+                $userExperiences->company_id = $request->company_id;
+                $userExperiences->start_time = $request->start_time;
+                $userExperiences->end_time = $request->end_time;
+                $userExperiences->description = $request->description;
+                if ($userExperiences->save()){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['userExperiences'] = $userExperiences;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
