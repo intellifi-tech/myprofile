@@ -56,4 +56,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\UserExperiences', 'user_id', 'id');
     }
+
+    public function company()
+    {
+        return $this->hasOne('App\Company', 'company_id', 'id');
+    }
 }

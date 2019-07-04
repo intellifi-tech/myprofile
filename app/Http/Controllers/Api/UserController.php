@@ -20,19 +20,19 @@ class UserController extends Controller
 {
     public function index()
     {
-        $users = User::all();
+        $users = User::with(['company'])->get();
         return response()->json($users);
     }
 
     public function show(Request $request)
     {
-        $user = User::where('api_token', $request->header('api-token'))->first();
+        $user = User::where('api_token', $request->header('api-token'))->with(['company'])->first();
         return response()->json($user);
     }
 
     public function update(Request $request)
     {
-        $user = User::where('api_token', $request->header('api-token'))->first();
+        $user = User::where('api_token', $request->header('api-token'))->with(['company'])->first();
         if ($user){
             if ($request->profile_photo){
                 if(user_profile_image_path() . $user->profile_photo != $request->profile_photo){
@@ -136,7 +136,7 @@ class UserController extends Controller
 
     public function login(Request $request)
     {
-        $user = User::where('email', $request->email)->first();
+        $user = User::where('email', $request->email)->with(['company'])->first();
         if($user->type == 1){
             if ($request->email && $request->password){
                 $user = User::where([
@@ -165,6 +165,7 @@ class UserController extends Controller
                             'credentials' => $user->credentials,
                             'date_of_birth' => $user->date_of_birth,
                             'company_id' => $user->company_id,
+                            'company_title' => $user->companpany->title,
                             'sector_id' => $user->sector_id,
                             'email' => $user->email,
                         ], 200, [], JSON_UNESCAPED_UNICODE);
