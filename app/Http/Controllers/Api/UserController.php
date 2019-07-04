@@ -33,7 +33,7 @@ class UserController extends Controller
     {
         $user = User::where('api_token', $request->header('api-token'))->first();
         if ($user){
-            if ($request->profile_image){
+            if ($request->profile_photo){
                 //region Profil Fotoğrafı Yükleme
                 $pathProfile = public_path('uploads/profile/');
                 $profileImage = $request->profile_photo;  // your base64 encoded
@@ -46,7 +46,7 @@ class UserController extends Controller
                 $user->profile_photo = $profileImageName;
             }
 
-            if ($request->cover_image){
+            if ($request->cover_photo){
                 //region Kapak Fotoğrafı Yükleme
                 $pathCover = public_path('uploads/cover/');
                 $coverImage = $request->cover_photo;  // your base64 encoded
