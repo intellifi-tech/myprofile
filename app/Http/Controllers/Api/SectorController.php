@@ -15,7 +15,7 @@ class SectorController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $sectors = Sector::get();
+                $sectors = Sector::all();
                 if ($sectors->count() > 0){
                     $json['sectors'] = $sectors;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
