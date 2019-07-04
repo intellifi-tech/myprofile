@@ -56,7 +56,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::where('id', $id)->whereHas('userAttendedEvents', function ($query){
+        $user = User::where('id', $id)->where('userAttendedEvents', function ($query){
             $query->where('end_date', '!=', null);
         })->first();
         dd($user);
