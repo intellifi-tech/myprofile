@@ -256,7 +256,7 @@
                             </div>
                         </div>
                         <div class="portlet-body">
-                            <div class="tab-content" style="height: 350px; overflow-y: scroll;">
+                            <div class="tab-content" style="height: 344px; overflow-y: scroll;">
                                 <div class="tab-pane active" id="portlet_comments_1">
                                 @if($comments->count() > 0)
                                     @foreach($comments as $comment)
