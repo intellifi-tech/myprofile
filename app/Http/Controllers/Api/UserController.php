@@ -176,7 +176,7 @@ class UserController extends Controller
                             'credentials' => $user->credentials,
                             'date_of_birth' => $user->date_of_birth,
                             'company_id' => $user->company_id,
-                            'company_title' => $user->companpany->title,
+                            'company_title' => $user->company->title,
                             'sector_id' => $user->sector_id,
                             'email' => $user->email,
                         ], 200, [], JSON_UNESCAPED_UNICODE);
