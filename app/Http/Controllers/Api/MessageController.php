@@ -45,11 +45,14 @@ class MessageController extends Controller
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
+                        Message::where('from_user_id', $user->id)->where('to_user_id', $request->to_user_id)->update('end_message', 0);
+                        Message::where('from_user_id', $request->to_user_id)->where('to_user_id', $user->id)->update('end_message', 0);
                         $message = new Message();
                         $message->from_user_id = $user->id;
                         $message->to_user_id = $request->to_user_id;
                         $message->message = $request->message;
                         $message->status = 0;
+                        $message->end_message = 1;
                         $message->save();
 
                         $json['status'] = 200;
@@ -84,12 +87,15 @@ class MessageController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($request->to_user_id && $request->message) {
+                    Message::where('from_user_id', $user->id)->where('to_user_id', $request->to_user_id)->update('end_message', 0);
+                    Message::where('from_user_id', $request->to_user_id)->where('to_user_id', $user->id)->update('end_message', 0);
                     $message = new Message();
                     $message->parent_id = $request->parent_id;
                     $message->from_user_id = $user->id;
                     $message->to_user_id = $request->to_user_id;
                     $message->message = $request->message;
                     $message->status = 0;
+                    $message->end_message = 1;
                     $message->save();
 
                     $json['status'] = 200;
