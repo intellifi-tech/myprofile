@@ -1335,6 +1335,9 @@
     "Events": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "integer"
+        },
         "title": {
           "type": "string"
         },
@@ -1342,6 +1345,12 @@
           "type": "string"
         },
         "longitude": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
           "type": "string"
         }
       },
@@ -1434,6 +1443,9 @@
         "date_of_participation"
       ],
       "properties": {
+        "id" : {
+          "type" : "integer"
+        },
         "event_id" : {
           "type" : "integer"
         },
@@ -1453,6 +1465,12 @@
           "type" : "string"
         },
         "rating" : {
+          "type" : "string"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "updated_at" : {
           "type" : "string"
         },
         "event": {
