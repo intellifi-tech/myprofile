@@ -355,7 +355,7 @@ class UserController extends Controller
         }
     }
 
-    public function experiences(Request $request)
+    public function indexExperiences(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();

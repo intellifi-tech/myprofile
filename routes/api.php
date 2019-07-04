@@ -19,7 +19,7 @@ Route::post('user/show', 'Api\UserController@show');
 Route::put('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
-Route::get('user/experiences', 'Api\UserController@experiences');
+Route::get('user/indexExperiences', 'Api\UserController@indexExperiences');
 Route::post('user/userAttendedEvent', 'Api\UserController@userAttendedEvent');
 Route::post('user/userAttendedEvents', 'Api\UserController@userAttendedEvents');
 Route::post('user/userPrivacySettings', 'Api\UserController@userPrivacySettings');

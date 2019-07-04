@@ -331,7 +331,7 @@
         }
       }
     },
-    "/user/experiences": {
+    "/user/indexExperiences": {
       "post": {
         "tags": [
           "user"
