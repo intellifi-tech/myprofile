@@ -161,7 +161,7 @@
                                                             </div>
                                                             <div class="mt-action-datetime ">
                                                                 <span class="mt-action-date">{!! \Carbon\Carbon::parse($completedOngoingsEvent->date_of_participation)->format('Y-d-m') !!}</span>
-                                                                <span class="mt-action-dot bg-green"></span>
+                                                                <span class="mt-action-dot bg-red"></span>
                                                                 <span class="mt=action-time">{!! \Carbon\Carbon::parse($completedOngoingsEvent->date_of_participation)->format('H:i') !!}</span>
                                                             </div>
                                                         </div>
