@@ -66,35 +66,39 @@
                                     <div class="portlet-body" style="height: 469px; overflow-y: scroll;">
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab_actions_pending">
-                                            @for($i = 0; $i < 50; $i++)
-                                                <!-- BEGIN: Actions -->
-                                                    <div class="mt-actions" style="width: 99%;">
-                                                        <div class="mt-action">
-                                                            <div class="mt-action-img">
-                                                                <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>
-                                                            </div>
-                                                            <div class="mt-action-body">
-                                                                <div class="mt-action-row">
-                                                                    <div class="mt-action-info ">
-                                                                        <div class="mt-action-icon ">
-                                                                            <i class="fa fa-calendar-o"></i>
-                                                                        </div>
-                                                                        <div class="mt-action-details ">
-                                                                            <span class="mt-action-author">Mesut Polat</span>
-                                                                            <p class="mt-action-desc">Android 101</p>
-                                                                        </div>
+                                                @if($userOngoingsEvents->count() > 0)
+                                                    @foreach($userOngoingsEvents as $userOngoingsEvent)
+                                                        <!-- BEGIN: Actions -->
+                                                            <div class="mt-actions" style="width: 99%;">
+                                                                <div class="mt-action">
+                                                                    <div class="mt-action-img">
+                                                                        <img src="{{ admin_asset('pages/media/users/avatar1.jpg')  }}"/>
                                                                     </div>
-                                                                    <div class="mt-action-datetime ">
-                                                                        <span class="mt-action-date">20 Ekim</span>
-                                                                        <span class="mt-action-dot bg-green"></span>
-                                                                        <span class="mt=action-time">9:30-13:00</span>
+                                                                    <div class="mt-action-body">
+                                                                        <div class="mt-action-row">
+                                                                            <div class="mt-action-info ">
+                                                                                <div class="mt-action-icon ">
+                                                                                    <i class="fa fa-calendar-o"></i>
+                                                                                </div>
+                                                                                <div class="mt-action-details ">
+                                                                                    <span class="mt-action-author">Mesut Polat</span>
+                                                                                    <p class="mt-action-desc">Android 101</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="mt-action-datetime ">
+                                                                                <span class="mt-action-date">20 Ekim</span>
+                                                                                <span class="mt-action-dot bg-green"></span>
+                                                                                <span class="mt=action-time">9:30-13:00</span>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- END: Actions -->
-                                                @endfor
+                                                            <!-- END: Actions -->
+                                                    @endforeach
+                                                @else
+                                                    <p>Şu an devam eden herhangi bir etkinlik bulunmuyor.</p>
+                                                @endif
                                             </div>
                                             <div class="tab-pane" id="tab_actions_completed">
                                             @for($i = 0; $i < 20; $i++)
