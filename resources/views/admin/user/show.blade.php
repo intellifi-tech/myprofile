@@ -254,8 +254,6 @@
                                                     <!-- BEGIN: Comments -->
                                                     <div class="mt-comments" style="width: 99%">
                                                         <div class="mt-comment">
-                                                            <div class="mt-comment-img">
-                                                                <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar1.jpg"> </div>
                                                             <div class="mt-comment-body">
                                                                 <div class="mt-comment-info">
                                                                     <span class="mt-comment-author">{!! $comment->event->title !!}</span>
