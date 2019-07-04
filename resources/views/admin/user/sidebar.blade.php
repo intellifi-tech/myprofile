@@ -41,8 +41,6 @@
                         <i class="icon-bubbles"></i> {{ $comments->count() }} </a>
                     <a href="javascript:;" class="btn font-green">
                         <i class="icon-social-twitter"></i> {{ $follow->followings->count() }} </a>
-                    <a href="javascript:;" class="btn font-yellow">
-                        <i class="icon-emoticon-smile"></i> 3,7k </a>
                 </div>
             </div>
         </div>
