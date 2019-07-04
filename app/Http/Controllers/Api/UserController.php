@@ -232,7 +232,7 @@ class UserController extends Controller
                     \File::put($path . $eventImageName, base64_decode($eventImage));
                     // endregion
 
-                    $userAttendedEvent->event_image = $eventImageName;
+                    $userAttendedEvent->event_image = event_image_path() . $eventImageName;
                     $userAttendedEvent->date_of_participation = Carbon::now();
                     $userAttendedEvent->save();
 
@@ -267,7 +267,6 @@ class UserController extends Controller
                 $json['status'] = 200;
                 $json['message'] = "Success";
                 $json['activityy'] = $activities;
-                $json['activityy']['event_image'] = event_image_path() . $activities->event_image;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 204;
