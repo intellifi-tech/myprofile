@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="67" column="23" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="23" />
+            <state relative-caret-position="879">
+              <caret line="87" column="125" selection-start-line="87" selection-start-column="125" selection-end-line="87" selection-end-column="125" />
               <folding>
                 <element signature="e#46#62#0#PHP" expanded="true" />
               </folding>
@@ -46,19 +45,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Follow.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+            <state relative-caret-position="730">
+              <caret line="255" column="80" selection-start-line="255" selection-start-column="80" selection-end-line="255" selection-end-column="80" />
+              <folding>
+                <element signature="e#3302#3344#0#HTML" expanded="true" />
+                <element signature="e#19216#19258#0#HTML" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/user/userAttendedEvents</find>
       <find>required</find>
       <find>/user/userPrivacySettings</find>
       <find>UserPrivacySettings</find>
@@ -100,10 +94,11 @@
       <find>&quot;Message</find>
       <find>name</find>
       <find>tab_actions_pending</find>
-      <find>Yorumlar</find>
       <find>2019-07-02 12:50:42</find>
       <find>Destek</find>
       <find>1.7</find>
+      <find>Kullanıcı Etkin</find>
+      <find>Yorumlar</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -166,10 +161,10 @@
         <option value="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Comment.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Follow.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
       </list>
     </option>
   </component>
@@ -438,12 +433,12 @@
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
       <workItem from="1562056149250" duration="14444000" />
-      <workItem from="1562220889432" duration="9690000" />
+      <workItem from="1562220889432" duration="9939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465578000" />
+    <option name="totallyTimeSpent" value="465827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1470,17 +1465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="257" column="140" selection-start-line="257" selection-start-column="140" selection-end-line="257" selection-end-column="140" />
-          <folding>
-            <element signature="e#24530#36303#0#HTML" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UserFollowController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1493,6 +1477,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Follow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1500,20 +1491,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="23" />
+        <state relative-caret-position="730">
+          <caret line="255" column="80" selection-start-line="255" selection-start-column="80" selection-end-line="255" selection-end-column="80" />
           <folding>
-            <element signature="e#46#62#0#PHP" expanded="true" />
+            <element signature="e#3302#3344#0#HTML" expanded="true" />
+            <element signature="e#19216#19258#0#HTML" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="54" column="86" selection-start-line="54" selection-start-column="86" selection-end-line="54" selection-end-column="86" />
+        <state relative-caret-position="879">
+          <caret line="87" column="125" selection-start-line="87" selection-start-column="125" selection-end-line="87" selection-end-column="125" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
