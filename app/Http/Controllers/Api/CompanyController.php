@@ -16,10 +16,7 @@ class CompanyController extends Controller
             if ($user) {
                 $companies = Company::get();
                 if ($companies->count() > 0){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['companies'] = $companies;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($companies, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
