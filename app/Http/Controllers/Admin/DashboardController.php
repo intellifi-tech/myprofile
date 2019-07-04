@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Sector;
 use App\User;
+use App\UserAttendedEvent;
 use App\UserCoordinate;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -25,10 +26,11 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        $userOngoingsEvents = UserAttendedEvent::where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
         $users = User::all();
         $sectors = Sector::all();
         $onlineUsers = UserCoordinate::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers]);
+        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers, 'userOngoingsEvents' => $userOngoingsEvents]);
     }
 
     /**
