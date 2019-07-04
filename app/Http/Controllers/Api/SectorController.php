@@ -41,7 +41,7 @@ class SectorController extends Controller
             if ($user) {
                 $sector = Sector::where('id', $sector_id)->first();
 
-                if ($sector->count() > 0){
+                if (!is_null($sector)){
                     $json['status'] = 200;
                     $json['message'] = "Success";
                     $json['sector'] = $sector;
