@@ -60,12 +60,12 @@ Route::post('activity/likesActivity', 'Api\UserActivityController@likesActivity'
 //endregion
 
 //region Firmalar
-Route::get('company/getCompanies', 'Api\CompanyController@index');
-Route::get('company/{company_id}/show', 'Api\CompanyController@getCompany');
+Route::get('company/index', 'Api\CompanyController@index');
+Route::get('company/{company_id}/show', 'Api\CompanyController@show');
 //endregion
 
 //region Sektörler
-Route::get('sector/getSectors', 'Api\SectorController@index');
+Route::get('sector/index', 'Api\SectorController@index');
 Route::get('sector/{sector_id}/show', 'Api\SectorController@show');
 //endregion
 
