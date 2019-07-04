@@ -27,10 +27,11 @@ class DashboardController extends Controller
     public function index()
     {
         $userOngoingsEvents = UserAttendedEvent::where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
+        $completedOngoingsEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', '!=', null)->with(['event', 'user'])->get(); //Tamamlanan katılımlar
         $users = User::all();
         $sectors = Sector::all();
         $onlineUsers = UserCoordinate::all();
-        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers, 'userOngoingsEvents' => $userOngoingsEvents]);
+        return view('admin.dashboard', ['page' => $this->page, 'users' => $users, 'sectors' => $sectors, 'onlineUsers' => $onlineUsers, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents]);
     }
 
     /**
