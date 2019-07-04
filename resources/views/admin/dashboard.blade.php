@@ -255,80 +255,75 @@
                                 <span class="caption-subject font-dark bold uppercase">Yorumlar</span>
                             </div>
                             <ul class="nav nav-tabs">
-                                <li class="active">
-                                    <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>
-                                </li>
-                                <li>
-                                    <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>
-                                </li>
+                                {{--                                            <li class="active">--}}
+                                {{--                                                <a href="#portlet_comments_1" data-toggle="tab"> Onay Bekleyen </a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="#portlet_comments_2" data-toggle="tab"> Onaylanan </a>--}}
+                                {{--                                            </li>--}}
                             </ul>
                         </div>
                         <div class="portlet-body">
-                            <div class="tab-content" style="height: 300px; overflow-y: scroll;">
+                            <div class="tab-content" style="height: 410px; overflow-y: scroll;">
                                 <div class="tab-pane active" id="portlet_comments_1">
-                                @for($i = 0; $i < 10; $i++)
-                                    <!-- BEGIN: Comments -->
-                                        <div class="mt-comments" style="width: 99%">
-                                            <div class="mt-comment">
-                                                <div class="mt-comment-img">
-                                                    <img src="{{ admin_asset('pages/media/users/avatar1.jpg') }}"></div>
-                                                <div class="mt-comment-body">
-                                                    <div class="mt-comment-info">
-                                                        <span class="mt-comment-author">Muharrem Özdemir - Android 101</span>
-                                                        <span class="mt-comment-date">21 Nisan</span>
+                                @if($comments->count() > 0)
+                                    @foreach($comments as $comment)
+                                        <!-- BEGIN: Comments -->
+                                            <div class="mt-comments" style="width: 99%">
+                                                <div class="mt-comment">
+                                                    <div class="mt-comment-img">
+                                                        @if(is_null($comment->user->profile_photo))
+                                                            <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                        @else
+                                                            <img src="{{ user_profile_image_path() . $comment->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                        @endif
                                                     </div>
-                                                    <div class="mt-comment-text"> Eğitim çok güzeldi. Tekrarlarını
-                                                        bekliyoruz.
-                                                    </div>
-                                                    <div class="mt-comment-details">
-                                                        <span class="mt-comment-status mt-comment-status-pending">Onay Bekliyor</span>
-                                                        <ul class="mt-comment-actions">
-                                                            <li>
-                                                                <a href="#">Arşivle</a>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="mt-comment-body">
+                                                        <div class="mt-comment-info">
+                                                            <span class="mt-comment-author">{!! $comment->event->title !!}</span>
+                                                            <span class="mt-comment-date">{!! \Carbon\Carbon::parse($comment->created_at)->format('d-M') !!}</span>
+                                                        </div>
+                                                        <div class="mt-comment-text"> {!! $comment->comment !!} </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- END: Comments -->
-                                    @endfor
+                                            <!-- END: Comments -->
+                                        @endforeach
+                                    @else
+                                        Bu kullanıcı henüz bir yorum yapmamış.
+                                    @endif
+
                                 </div>
                                 <div class="tab-pane" id="portlet_comments_2">
-                                @for($i = 0; $i < 10; $i++)
-                                    <!-- BEGIN: Comments -->
-                                        <div class="mt-comments">
-                                            <div class="mt-comment">
-                                                <div class="mt-comment-img">
-                                                    <img src="{{ admin_asset('pages/media/users/avatar4.jpg') }}"></div>
-                                                <div class="mt-comment-body">
-                                                    <div class="mt-comment-info">
-                                                        <span class="mt-comment-author">Michael Baker</span>
-                                                        <span class="mt-comment-date">26 Feb, 10:30AM</span>
-                                                    </div>
-                                                    <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of
-                                                        the printing and typesetting industry. Lorem Ipsum has been the
-                                                        industry's standard dummy.
-                                                    </div>
-                                                    <div class="mt-comment-details">
-                                                        <span class="mt-comment-status mt-comment-status-approved">Approved</span>
-                                                        <ul class="mt-comment-actions">
-                                                            <li>
-                                                                <a href="#">Quick Edit</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">View</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#">Delete</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END: Comments -->
-                                    @endfor
+                                    {{--                                                <!-- BEGIN: Comments -->--}}
+                                    {{--                                                <div class="mt-comments">--}}
+                                    {{--                                                    <div class="mt-comment">--}}
+                                    {{--                                                        <div class="mt-comment-img">--}}
+                                    {{--                                                            <img src="http://localhost/myprofile/public/admin/pages/media/users/avatar4.jpg"> </div>--}}
+                                    {{--                                                        <div class="mt-comment-body">--}}
+                                    {{--                                                            <div class="mt-comment-info">--}}
+                                    {{--                                                                <span class="mt-comment-author">Michael Baker</span>--}}
+                                    {{--                                                                <span class="mt-comment-date">26 Feb, 10:30AM</span>--}}
+                                    {{--                                                            </div>--}}
+                                    {{--                                                            <div class="mt-comment-text"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. </div>--}}
+                                    {{--                                                            <div class="mt-comment-details">--}}
+                                    {{--                                                                <span class="mt-comment-status mt-comment-status-approved">Approved</span>--}}
+                                    {{--                                                                <ul class="mt-comment-actions">--}}
+                                    {{--                                                                    <li>--}}
+                                    {{--                                                                        <a href="#">Quick Edit</a>--}}
+                                    {{--                                                                    </li>--}}
+                                    {{--                                                                    <li>--}}
+                                    {{--                                                                        <a href="#">View</a>--}}
+                                    {{--                                                                    </li>--}}
+                                    {{--                                                                    <li>--}}
+                                    {{--                                                                        <a href="#">Delete</a>--}}
+                                    {{--                                                                    </li>--}}
+                                    {{--                                                                </ul>--}}
+                                    {{--                                                            </div>--}}
+                                    {{--                                                        </div>--}}
+                                    {{--                                                    </div>--}}
+                                    {{--                                                </div>--}}
+                                    {{--                                                <!-- END: Comments -->--}}
                                 </div>
                             </div>
                         </div>
