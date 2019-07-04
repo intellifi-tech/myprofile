@@ -75,7 +75,7 @@
                                     <tbody>
                                     @forelse($users as $user)
                                         <tr>
-                                            <td><img src="{{ upload_asset('profile/' . $user->profile_photo)  }}" style="width: 50px; height: 50px" class="img-circle" /></td>
+                                            <td><img src="{{ user_profile_image_path() . $user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" /></td>
                                             <td>{{ $user->name .' '. $user->surname}}</td>
                                             <td>Yazılım Geliştirici</td>
                                             <td>CEO</td>
