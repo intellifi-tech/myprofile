@@ -65,8 +65,8 @@ Route::get('company/{company_id}/show', 'Api\CompanyController@getCompany');
 //endregion
 
 //region Sektörler
-Route::get('company/getSectors', 'Api\CompanyController@index');
-Route::get('company/{sector_id}/show', 'Api\CompanyController@getCompany');
+Route::get('sector/getSectors', 'Api\SectorController@index');
+Route::get('sector/{sector_id}/show', 'Api\SectorController@show');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
