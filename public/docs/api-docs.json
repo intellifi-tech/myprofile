@@ -331,32 +331,6 @@
         }
       }
     },
-    "/user/followings": {
-      "post": {
-        "tags": [
-          "user"
-        ],
-        "summary": "Takip ettiklerim",
-        "operationId": "followings",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref": "#/definitions/FollowingResponse"
-              }
-            }
-          },
-          "204" : {
-            "description": "No Content"
-          }
-        }
-      }
-    },
     "/user/experiences": {
       "post": {
         "tags": [
@@ -374,6 +348,32 @@
               "type" : "array",
               "items" : {
                 "$ref": "#/definitions/UserExperiences"
+              }
+            }
+          },
+          "204" : {
+            "description": "No Content"
+          }
+        }
+      }
+    },
+    "/user/followings": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Takip ettiklerim",
+        "operationId": "followings",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/FollowingResponse"
               }
             }
           },
