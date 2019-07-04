@@ -132,6 +132,7 @@
                                                 @else
                                                     <p>Şu an devam eden herhangi bir etkinlik bulunmuyor.</p>
                                                 @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
