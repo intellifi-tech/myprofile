@@ -14,11 +14,6 @@
             <div class="profile-usertitle-job"> {{ $user->title }} </div>
         </div>
         <!-- END SIDEBAR USER TITLE -->
-        <!-- SIDEBAR BUTTONS -->
-        <div class="profile-userbuttons">
-            <button type="button" class="btn btn-circle red btn-sm">Mesaj At</button>
-        </div>
-        <!-- END SIDEBAR BUTTONS -->
         <!-- SIDEBAR MENU -->
         <div class="profile-usermenu">
             <ul class="nav">

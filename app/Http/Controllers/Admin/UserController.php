@@ -12,6 +12,8 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
+
+
     public function __construct()
     {
         $this->page['index'] = 1;
