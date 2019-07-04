@@ -357,6 +357,32 @@
         }
       }
     },
+    "/user/experiences": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Deneyimlerim",
+        "operationId": "experiences",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/UserExperiences"
+              }
+            }
+          },
+          "204" : {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/user/followers": {
       "post": {
         "tags": [
@@ -1893,7 +1919,7 @@
         },
         "comments": {
           "$ref": "#/definitions/Comments"
-        },
+        }
       },
       "xml": {
         "name": "User"
@@ -1922,6 +1948,32 @@
           "format": "bigInteger"
         },
         "name": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserExperiences": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        },
+        "description": {
           "type": "string"
         }
       },
