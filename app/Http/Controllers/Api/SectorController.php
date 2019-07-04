@@ -17,8 +17,6 @@ class SectorController extends Controller
             if ($user) {
                 $sectors = Sector::get();
                 if ($sectors->count() > 0){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
                     $json['sectors'] = $sectors;
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
