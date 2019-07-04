@@ -52,12 +52,8 @@
         <!-- STAT -->
         <div class="row list-separated profile-stat">
             <div class="col-md-4 col-sm-4 col-xs-6">
-                <div class="uppercase profile-stat-title"> 37 </div>
+                <div class="uppercase profile-stat-title"> {{ $eventsAttended->count() }} </div>
                 <div class="uppercase profile-stat-text"> Katıldığı Etkinlik Sayısı </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
-                <div class="uppercase profile-stat-title"> 51 </div>
-                <div class="uppercase profile-stat-text"> Katılmadığı Etkinlik Sayısı </div>
             </div>
         </div>
         <!-- END STAT -->
