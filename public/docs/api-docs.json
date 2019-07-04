@@ -1464,9 +1464,6 @@
         "rating" : {
           "type" : "string"
         },
-        "user": {
-          "$ref": "#/definitions/User"
-        },
         "event": {
           "$ref": "#/definitions/Events"
         }

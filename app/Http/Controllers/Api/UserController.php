@@ -263,7 +263,7 @@ class UserController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event', 'user'])->get();
+                $activities = UserAttendedEvent::where('user_id', $user->id)->with(['event'])->get();
 
                 $json['status'] = 200;
                 $json['message'] = "Success";
