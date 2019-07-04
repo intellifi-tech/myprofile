@@ -56,7 +56,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::where('id', $id)->with(['userAttendedEvents'])->get();
+        $user = User::where('id', $id)->with(['userAttendedEvents'])->first();
         $this->page['sub_title'] = $user->name.' düzenle';
         return view('admin.user.show', ['page' => $this->page, 'user' => $user]);
     }
