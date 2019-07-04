@@ -88,7 +88,7 @@
                                                                             <div class="mt-action-datetime ">
                                                                                 <span class="mt-action-date">{!! \Carbon\Carbon::parse($userOngoingsEvent->date_of_participation)->format('Y-d-m') !!}</span>
                                                                                 <span class="mt-action-dot bg-green"></span>
-                                                                                <span class="mt=action-time">9:30-13:00</span>
+                                                                                <span class="mt=action-time">{!! \Carbon\Carbon::parse($userOngoingsEvent->date_of_participation)->format('H:i') !!}</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>
