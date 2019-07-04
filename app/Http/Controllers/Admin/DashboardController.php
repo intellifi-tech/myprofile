@@ -31,7 +31,7 @@ class DashboardController extends Controller
         $userOngoingsEvents = UserAttendedEvent::where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
         $completedOngoingsEvents = UserAttendedEvent::where('end_date', '!=', null)->with(['event', 'user'])->get(); //Tamamlanan katılımlar
         $comments = Comment::all(); // Kullanıcının yaptığı yorumlar
-        dd($comments);
+        dd($comments->count());
         $events = Event::get();
         $users = User::get();
         $sectors = Sector::get();
