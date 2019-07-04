@@ -65,14 +65,16 @@ class UserController extends Controller
                 }
             }
 
-            $company = Company::where('name', $request->company_name)->first();
-            if ($company){
-                $user->company_id = $company->id;
-            }else{
-                $company = new Company();
-                $company->name = $request->company_name;
-                $company->save();
-                $user->company_id = $company->id;
+            if (!is_null($request->company_name)){
+                $company = Company::where('name', $request->company_name)->first();
+                if ($company){
+                    $user->company_id = $company->id;
+                }else{
+                    $company = new Company();
+                    $company->name = $request->company_name;
+                    $company->save();
+                    $user->company_id = $company->id;
+                }
             }
 
             $user->name = $request->name;
