@@ -30,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
@@ -42,21 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Comment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="406" column="63" selection-start-line="406" selection-start-column="63" selection-end-line="406" selection-end-column="63" />
+            <state relative-caret-position="959">
+              <caret line="434" column="52" selection-start-line="434" selection-start-column="52" selection-end-line="434" selection-end-column="52" />
               <folding>
+                <element signature="e#29153#77427#0#HTML" />
+                <element signature="e#24530#36303#0#HTML" />
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
@@ -74,7 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Activi</find>
       <find>/user/attendedActivities</find>
       <find>/user/userAttendedEvents</find>
       <find>required</find>
@@ -104,6 +96,7 @@
       <find>tab_actions_pending</find>
       <find>Yorumlar</find>
       <find>2019-07-02 12:50:42</find>
+      <find>Destek</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -167,8 +160,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/index.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
+        <option value="$PROJECT_DIR$/app/Comment.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/show.blade.php" />
       </list>
     </option>
@@ -464,12 +457,12 @@
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
       <workItem from="1562056149250" duration="14444000" />
-      <workItem from="1562220889432" duration="8643000" />
+      <workItem from="1562220889432" duration="8889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464531000" />
+    <option name="totallyTimeSpent" value="464777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,8 +477,8 @@
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66164" visible="true" weight="0.13264495" />
-      <window_info id="Structure" order="1" sideWeight="0.33836004" side_tool="true" visible="true" weight="0.13264495" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6624204" visible="true" weight="0.13264495" />
+      <window_info id="Structure" order="1" sideWeight="0.3375796" side_tool="true" visible="true" weight="0.13264495" />
       <window_info id="Favorites" order="2" sideWeight="0.5079618" side_tool="true" weight="0.13185067" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -500,7 +493,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32882166" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039715" side_tool="true" weight="0.4307325" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" visible="true" weight="0.15525478" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960285" weight="0.15525478" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1518,20 +1511,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="406" column="63" selection-start-line="406" selection-start-column="63" selection-end-line="406" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="252">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1541,6 +1524,18 @@
           <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
           <folding>
             <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="959">
+          <caret line="434" column="52" selection-start-line="434" selection-start-column="52" selection-end-line="434" selection-end-column="52" />
+          <folding>
+            <element signature="e#29153#77427#0#HTML" />
+            <element signature="e#24530#36303#0#HTML" />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>

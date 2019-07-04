@@ -38,7 +38,7 @@
             <div class="mt-stats">
                 <div class="btn-group btn-group btn-group-justified">
                     <a href="javascript:;" class="btn font-red">
-                        <i class="icon-bubbles"></i> 1,7k </a>
+                        <i class="icon-bubbles"></i> {{ $comments->count() }} </a>
                     <a href="javascript:;" class="btn font-green">
                         <i class="icon-social-twitter"></i> 2,6k </a>
                     <a href="javascript:;" class="btn font-yellow">
