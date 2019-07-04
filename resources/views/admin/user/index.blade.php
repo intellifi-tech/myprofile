@@ -75,7 +75,13 @@
                                     <tbody>
                                     @forelse($users as $user)
                                         <tr>
-                                            <td><img src="{{ user_profile_image_path() . $user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" /></td>
+                                            <td>
+                                                @if(is_null($user->profile_photo))
+                                                    <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                @else
+                                                    <img src="{{ user_profile_image_path() . $user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                @endif
+                                            </td>
                                             <td>{{ $user->name .' '. $user->surname}}</td>
                                             <td>Yazılım Geliştirici</td>
                                             <td>CEO</td>
