@@ -40,7 +40,7 @@
                     <a href="javascript:;" class="btn font-red">
                         <i class="icon-bubbles"></i> {{ $comments->count() }} </a>
                     <a href="javascript:;" class="btn font-green">
-                        <i class="icon-social-twitter"></i> 2,6k </a>
+                        <i class="icon-social-twitter"></i> {{ $followings }} </a>
                     <a href="javascript:;" class="btn font-yellow">
                         <i class="icon-emoticon-smile"></i> 3,7k </a>
                 </div>
