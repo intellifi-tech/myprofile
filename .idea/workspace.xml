@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="" />
+    <list default="true" id="c8f0bf71-7a49-4ff2-b35e-d7e0a1ac8e83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="35" column="259" selection-start-line="35" selection-start-column="259" selection-end-line="35" selection-end-column="259" />
+            <state relative-caret-position="523">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding>
                 <element signature="e#46#62#0#PHP" expanded="true" />
               </folding>
@@ -54,29 +56,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="249" column="40" selection-start-line="249" selection-start-column="32" selection-end-line="249" selection-end-column="40" />
+            <state relative-caret-position="583">
+              <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
               <folding>
-                <element signature="e#4810#4852#0#HTML" expanded="true" />
-                <element signature="e#17469#17511#0#HTML" expanded="true" />
-                <element signature="e#17925#17943#0#HTML" expanded="true" />
+                <element signature="e#16772#16814#0#HTML" expanded="true" />
                 <element signature="e#0#6#0" expanded="true" />
                 <element signature="e#0#6#0" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/user/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1327">
-              <caret line="289" column="80" selection-start-line="289" selection-start-column="80" selection-end-line="289" selection-end-column="80" />
-              <folding>
                 <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
@@ -94,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user/followers</find>
       <find>followers</find>
       <find>CommentCreate</find>
       <find>NewMessage</find>
@@ -124,6 +111,7 @@
       <find>Yorum</find>
       <find>Kullanıcı Etkin</find>
       <find>Yorumlar</find>
+      <find>Etkinlik Sayıs</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -188,8 +176,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/user/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Comment.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -463,12 +451,12 @@
       <workItem from="1561836277210" duration="4695000" />
       <workItem from="1561976144536" duration="2154000" />
       <workItem from="1562056149250" duration="14444000" />
-      <workItem from="1562220889432" duration="11306000" />
+      <workItem from="1562220889432" duration="11550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467194000" />
+    <option name="totallyTimeSpent" value="467438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,7 +469,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1364" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66164" visible="true" weight="0.13264495" />
       <window_info id="Structure" order="1" sideWeight="0.33836004" side_tool="true" visible="true" weight="0.13264495" />
@@ -1511,27 +1498,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="35" column="259" selection-start-line="35" selection-start-column="259" selection-end-line="35" selection-end-column="259" />
+        <state relative-caret-position="583">
+          <caret line="70" column="101" selection-start-line="70" selection-start-column="101" selection-end-line="70" selection-end-column="101" />
           <folding>
-            <element signature="e#46#62#0#PHP" expanded="true" />
+            <element signature="e#16772#16814#0#HTML" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/dashboard.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="249" column="40" selection-start-line="249" selection-start-column="32" selection-end-line="249" selection-end-column="40" />
+        <state relative-caret-position="523">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding>
-            <element signature="e#4810#4852#0#HTML" expanded="true" />
-            <element signature="e#17469#17511#0#HTML" expanded="true" />
-            <element signature="e#17925#17943#0#HTML" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#46#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
