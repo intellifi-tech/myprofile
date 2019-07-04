@@ -68,7 +68,7 @@
                         </div>
                         <div class="details">
                             <div class="number">
-                                <span data-counter="counterup" data-value="0">{{ $sectors->count() }}</span>
+                                <span data-counter="counterup" data-value="{{ $sectors->count() }}">0</span>
                             </div>
                             <div class="desc"> Sektörler</div>
                         </div>
