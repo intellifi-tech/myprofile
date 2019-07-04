@@ -81,7 +81,7 @@
                                                                                     <i class="fa fa-calendar-o"></i>
                                                                                 </div>
                                                                                 <div class="mt-action-details ">
-                                                                                    <span class="mt-action-author">Mesut Polat</span>
+                                                                                    <span class="mt-action-author">{!! $userOngoingsEvents->user->name .' '. $userOngoingsEvents->user->name !!}</span>
                                                                                     <p class="mt-action-desc">Android 101</p>
                                                                                 </div>
                                                                             </div>
