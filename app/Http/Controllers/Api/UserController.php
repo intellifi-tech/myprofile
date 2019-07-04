@@ -43,15 +43,6 @@ class UserController extends Controller
                 \File::put($pathProfile. '/' . $profileImageName, base64_decode($profileImage));
                 // endregion
 
-
-//                $image = $request->profile_image;  // your base64 encoded
-//                $image = str_replace('data:image/png;base64,', '', $image);
-//                $image = str_replace(' ', '+', $image);
-//                $imageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
-//                \File::put(public_path('uploads/profile/') . $imageName, base64_decode($image));
-
-
-
                 $user->profile_photo = $profileImageName;
             }
 
