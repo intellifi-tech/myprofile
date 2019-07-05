@@ -2143,6 +2143,9 @@
         },
         "description": {
           "type": "string"
+        },
+        "company": {
+          "$ref": "#/definitions/Comments"
         }
       },
       "xml": {
