@@ -88,7 +88,6 @@ class AjaxController extends Controller
         arsort($nowMonthSectorUserCountsTmp);
 
         //dd($nowMonthSectorUserCountsTmp);
-
         $ak = array_key_first($nowMonthSectorUserCountsTmp);
         echo $ak;
         exit;
