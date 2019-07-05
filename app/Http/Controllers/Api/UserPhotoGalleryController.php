@@ -46,7 +46,7 @@ class UserPhotoGalleryController extends Controller
                 $photo = $request->photo;  // your base64 encoded
                 $photo = str_replace('data:image/png;base64,', '', $photo);
                 $photo = str_replace(' ', '+', $photo);
-                $photoImageName = lower_case_turkish($user->name) . chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+                $photoImageName = lower_case_turkish(trim($user->name)) . chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
                 \File::put($path. '/' . $photoImageName, base64_decode($photo));
                 // endregion
 
