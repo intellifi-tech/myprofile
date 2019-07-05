@@ -88,7 +88,7 @@ class AjaxController extends Controller
         }
         arsort($nowMonthSectorUserCountsTmp);
 
-        return array_key_first($nowMonthSectorUserCountsTmp);
+        return key($nowMonthSectorUserCountsTmp);
 //        $sectorUserCounts[$nowMonth->format('m')] = array_key_first($nowMonthSectorUserCountsTmp) .' : '.$nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
 //
 //        // Buraya kadar sorun yok.
