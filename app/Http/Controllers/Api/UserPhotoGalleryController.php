@@ -52,10 +52,7 @@ class UserPhotoGalleryController extends Controller
 
                 $userPhotoGallery->photo_name = user_photo_image_path() . $photoImageName;
                 $userPhotoGallery->save();
-
-                $json['status'] = 200;
-                $json['message'] = "Success";
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                return response()->json($userPhotoGallery, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "api-token geçersizdir.";
