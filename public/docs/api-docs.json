@@ -2142,6 +2142,15 @@
         },
         "photo_name": {
           "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
         }
       },
       "xml": {
