@@ -78,8 +78,8 @@ class AjaxController extends Controller
     {
 
         $nowMonth = Carbon::now();
-
         $sectorUserCounts = [];
+
         $nowMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
         foreach ($sectors as $sector){
@@ -88,8 +88,9 @@ class AjaxController extends Controller
         }
         arsort($nowMonthSectorUserCountsTmp);
 
-        $sectorUserCounts[array_key_first($nowMonthSectorUserCountsTmp)] = $nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
+        $sectorUserCounts[$nowMonth->format('m')] = array_key_first($nowMonthSectorUserCountsTmp) .' : '.$nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
 
+        // Buraya kadar sorun yok.
 
         $oneMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
@@ -99,8 +100,7 @@ class AjaxController extends Controller
         }
         arsort($oneMonthSectorUserCountsTmp);
 
-
-        $sectorUserCounts[array_key_first($oneMonthSectorUserCountsTmp)] = $oneMonthSectorUserCountsTmp[array_key_first($oneMonthSectorUserCountsTmp)];
+        $sectorUserCounts[$nowMonth->format('m')] = array_key_first($oneMonthSectorUserCountsTmp) .' : '.$oneMonthSectorUserCountsTmp[array_key_first($oneMonthSectorUserCountsTmp)];
 
         return $sectorUserCounts;
     }
