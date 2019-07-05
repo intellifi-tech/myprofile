@@ -6,7 +6,6 @@ use App\Sector;
 use App\User;
 use App\UserCoordinate;
 use Carbon\Carbon;
-use function foo\func;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
