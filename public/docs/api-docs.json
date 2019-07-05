@@ -2126,6 +2126,9 @@
     "UserExperiences": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "integer"
+        },
         "user_id": {
           "type": "integer"
         },
@@ -2142,6 +2145,12 @@
           "type": "string"
         },
         "description": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
           "type": "string"
         },
         "company": {
