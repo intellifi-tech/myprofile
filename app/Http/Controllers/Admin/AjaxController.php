@@ -90,8 +90,6 @@ class AjaxController extends Controller
 //        dd($nowMonthSectorUserCountsTmp);
         reset($nowMonthSectorUserCountsTmp);
         $ak = key($nowMonthSectorUserCountsTmp);
-        echo $ak;
-        exit;
         $sectorUserCounts[$nowMonth->format('m') .'-'. $ak] = $nowMonthSectorUserCountsTmp[$ak];
 
 
@@ -103,9 +101,9 @@ class AjaxController extends Controller
         }
         arsort($oneMonthSectorUserCountsTmp);
 
-        return $sectorUserCounts;
-
-        $sectorUserCounts[$nowMonth->format('m') .'-'. array_key_first($oneMonthSectorUserCountsTmp)] = $oneMonthSectorUserCountsTmp[array_key_first($oneMonthSectorUserCountsTmp)];
+        reset($oneMonthSectorUserCountsTmp);
+        $ak1 = key($oneMonthSectorUserCountsTmp);
+        $sectorUserCounts[$nowMonth->format('m') .'-'. $ak1] = $oneMonthSectorUserCountsTmp[$ak1];
 
         return $sectorUserCounts;
     }
