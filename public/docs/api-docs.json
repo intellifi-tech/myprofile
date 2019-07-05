@@ -373,7 +373,7 @@
             "in": "body",
             "type": "boolean",
             "schema": {
-              "$ref": "#/definitions/StoreUserExperiences"
+              "$ref": "#/definitions/AddUserExperiencesRequest"
             }
           }
         ],
@@ -2155,6 +2155,29 @@
         },
         "company": {
           "$ref": "#/definitions/Company"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddUserExperiencesRequest": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         }
       },
       "xml": {
