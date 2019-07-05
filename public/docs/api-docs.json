@@ -2145,7 +2145,7 @@
           "type": "string"
         },
         "company": {
-          "$ref": "#/definitions/Comments"
+          "$ref": "#/definitions/Company"
         }
       },
       "xml": {
