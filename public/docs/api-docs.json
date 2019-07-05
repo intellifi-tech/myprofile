@@ -332,7 +332,7 @@
       }
     },
     "/user/indexExperiences": {
-      "post": {
+      "get": {
         "tags": [
           "user"
         ],
