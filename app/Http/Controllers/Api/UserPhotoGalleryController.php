@@ -10,6 +10,29 @@ use Illuminate\Support\Str;
 
 class UserPhotoGalleryController extends Controller
 {
+    public function indexPhotos(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $userPhotos = UserPhotoGallery::get();
+                if ($userPhotos->count() > 0){
+                    return response()->json($userPhotos, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
     public function addPhoto(Request $request)
     {
         if ($request->header('api-token')) {
@@ -27,7 +50,7 @@ class UserPhotoGalleryController extends Controller
                 \File::put($path. '/' . $photoImageName, base64_decode($photo));
                 // endregion
 
-                $userPhotoGallery->photo_name = $photoImageName;
+                $userPhotoGallery->photo_name = user_photo_image_path() . $photoImageName;
                 $userPhotoGallery->save();
 
                 $json['status'] = 200;

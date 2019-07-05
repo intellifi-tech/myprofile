@@ -521,6 +521,68 @@
         }
       }
     },
+    "/user/indexPhotos": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Kullanıcıya ait resimleri getirir",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "sectorShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/Photos"
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
+    "/user/addPhoto": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Kullanıcıya ait resim ekler",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "addPhoto",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/AddPhotoRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+                "$ref": "#/definitions/Photos"
+            }
+          },
+          "404" : {
+            "description" : "Not Found"
+          }
+        }
+      }
+    },
     "/user/likeActivity": {
       "post": {
         "tags": [
@@ -2063,6 +2125,34 @@
         },
         "company": {
           "$ref": "#/definitions/Company"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "Photos": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "photo_name": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddPhotoRequest": {
+      "type": "object",
+      "properties": {
+        "photo": {
+          "type": "string"
         }
       },
       "xml": {

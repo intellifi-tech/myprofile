@@ -31,6 +31,7 @@ Route::post('user/followings', 'Api\UserFollowController@followings');
 Route::post('user/followers', 'Api\UserFollowController@followers');
 Route::post('user/follow', 'Api\UserFollowController@follow');
 Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');
+Route::get('user/indexPhotos', 'Api\UserPhotoGalleryController@indexPhotos');
 Route::post('user/addPhoto', 'Api\UserPhotoGalleryController@addPhoto');
 Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanıcının yaptığı etkinliğe katılma aktivitesini beğen.
 Route::post('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler

@@ -17,7 +17,6 @@ class CreateUserPhotoGalleryTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->text('photo_name');
-            $table->bigInteger('displayed')->default(0);
             $table->timestamps();
         });
     }
