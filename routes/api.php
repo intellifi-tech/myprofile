@@ -70,6 +70,10 @@ Route::get('sector/index', 'Api\SectorController@index');
 Route::get('sector/{sector_id}/show', 'Api\SectorController@show');
 //endregion
 
+//region Kullanıcı Fotoğrafları
+Route::get('photo/{photo_id}/likePhoto', 'Api\UserPhotoGalleryController@likePhoto');
+//endregion
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

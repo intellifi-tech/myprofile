@@ -1039,6 +1039,24 @@
           }
         }
       }
+    },
+    "/photo/{photo_id}/likePhoto": {
+      "get": {
+        "tags": [
+          "photo"
+        ],
+        "summary": "ID'si gönderilen fotoğrafı beğenme",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "sectorShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "definitions": {
