@@ -99,8 +99,8 @@ class AjaxController extends Controller
         }
         arsort($oneMonthSectorUserCountsTmp);
 
-        $sectorUserCounts[$nowMonth->format('m') .'-'. key($oneMonthSectorUserCountsTmp)] = .$oneMonthSectorUserCountsTmp[key($oneMonthSectorUserCountsTmp)];
-//
+        $sectorUserCounts[$nowMonth->format('m') .'-'. key($oneMonthSectorUserCountsTmp)] = $oneMonthSectorUserCountsTmp[key($oneMonthSectorUserCountsTmp)];
+
         return $sectorUserCounts;
     }
 
