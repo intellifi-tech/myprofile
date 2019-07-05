@@ -86,9 +86,9 @@ class AjaxController extends Controller
             $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->format('m'))->get()->count();
             $nowMonthSectorUserCountsTmp[$sector->name] = $users;
         }
-        return arsort($nowMonthSectorUserCountsTmp);
+        arsort($nowMonthSectorUserCountsTmp);
 
-//        $sectorUserCounts[$nowMonth->format('m')] = array_key_first($nowMonthSectorUserCountsTmp) .' : '.$nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
+        $sectorUserCounts[$nowMonth->format('m')] = array_key_first($nowMonthSectorUserCountsTmp) .' : '.$nowMonthSectorUserCountsTmp[array_key_first($nowMonthSectorUserCountsTmp)];
 //
 //        // Buraya kadar sorun yok.
 //
