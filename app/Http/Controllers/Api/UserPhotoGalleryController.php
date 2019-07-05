@@ -38,7 +38,7 @@ class UserPhotoGalleryController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                dd(trim($user->name));
+                dd(str_replace(" ", "", $user->name));
                 $userPhotoGallery = new UserPhotoGallery();
                 $userPhotoGallery->user_id = $user->id;
 
