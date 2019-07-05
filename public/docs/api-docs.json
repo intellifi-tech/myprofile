@@ -410,6 +410,29 @@
         }
       }
     },
+    "/user/{user_id}/showUserExperiences": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "ID'si gönderilen kullanıcının deneyimleri",
+        "operationId": "showUserExperiences",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/UserExperiencesResponse"
+              }
+            }
+          }
+        }
+      }
+    },
     "/user/followings": {
       "post": {
         "tags": [

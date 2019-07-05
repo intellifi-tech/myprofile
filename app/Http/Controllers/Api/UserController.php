@@ -446,4 +446,27 @@ class UserController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function showUserExperiences(Request $request, $user_id)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $userExperiences = UserExperiences::where('user_id', $user_id)->with(['company'])->get();
+                if ($userExperiences->count() > 0){
+                    return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
