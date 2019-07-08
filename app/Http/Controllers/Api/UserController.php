@@ -38,13 +38,12 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $user = User::where('id', $userId)->first();
-
-
                 if (is_null($user->profile_photo)){
                     $user->profile_photo = "";
                 }
-
-
+                if (is_null($user->cover_photo)){
+                    $user->cover_photo = "";
+                }
                 if (!is_null($user)){
                     return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
