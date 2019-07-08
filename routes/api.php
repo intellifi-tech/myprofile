@@ -20,6 +20,7 @@ Route::put('user/update', 'Api\UserController@update');
 Route::post('user/login', 'Api\UserController@login');
 Route::post('user/register', 'Api\UserController@register');
 Route::get('user/indexExperiences', 'Api\UserController@indexExperiences');
+Route::get('user/{user_id}/show', 'Api\UserController@userIdShow'); //ID'si gelen kullanıcının deneyimleri, token ile giren kullanıcının değil.
 Route::get('user/{user_id}/showUserExperiences', 'Api\UserController@showUserExperiences'); //ID'si gelen kullanıcının deneyimleri, token ile giren kullanıcının değil.
 Route::post('user/storeExperiences', 'Api\UserController@storeExperiences');
 Route::get('user/{experiences_id}/destroyExperiences', 'Api\UserController@destroyExperiences');

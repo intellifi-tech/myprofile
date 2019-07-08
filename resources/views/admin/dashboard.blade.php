@@ -561,6 +561,7 @@
                 timeout: 10000,
                 data: {1: 1},
                 success: function (response) {
+                    debugger
                     var a1 = [];
 
                     var onlineUser = [];

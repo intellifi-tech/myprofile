@@ -31,6 +31,29 @@ class UserController extends Controller
         return response()->json($user);
     }
 
+    public function userIdShow(Request $request, $userId)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $user = User::where('id', $userId)->first();
+                if (!is_null($user)){
+                    return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 204;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 204;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
     public function update(Request $request)
     {
         $user = User::where('api_token', $request->header('api-token'))->first();

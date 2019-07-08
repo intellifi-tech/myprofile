@@ -79,6 +79,10 @@ class AjaxController extends Controller
         $nowMonth = Carbon::now();
         $sectorUserCounts = [];
 
+        // TODO önceki 6 ay değişkenlere manuel atanacak
+
+
+
         $nowMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
         foreach ($sectors as $sector){
@@ -87,7 +91,6 @@ class AjaxController extends Controller
         }
         arsort($nowMonthSectorUserCountsTmp);
 
-//        dd($nowMonthSectorUserCountsTmp);
         reset($nowMonthSectorUserCountsTmp);
         $ak = key($nowMonthSectorUserCountsTmp);
         $sectorUserCounts[$nowMonth->format('m') .'-'. $ak] = $nowMonthSectorUserCountsTmp[$ak];
@@ -95,11 +98,15 @@ class AjaxController extends Controller
 
         $oneMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
+
         foreach ($sectors as $sector){
             $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->subMonth()->format('m'))->get()->count();
             $oneMonthSectorUserCountsTmp[$sector->name] = $users;
         }
         arsort($oneMonthSectorUserCountsTmp);
+
+        return $nowMonth->format('m');
+
 
         reset($oneMonthSectorUserCountsTmp);
         $ak1 = key($oneMonthSectorUserCountsTmp);
