@@ -117,9 +117,9 @@ class UserFollowController extends Controller
 
                 $event = UserAttendedEvent::where('user_id', $users->followings[0]->id)->first();
 
-                $user = $users[0];
-                $user['event'] = $event;
-                return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
+                $json['user'] = $users[0];
+                $json['user']['event'] = $event;
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
 
 
 //                if ($activitiesMyFollowersAttended->count() > 0){
