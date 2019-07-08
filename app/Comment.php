@@ -10,7 +10,7 @@ class Comment extends Model
 
     public function event()
     {
-        return $this->belongsTo('App\UserAttendedEvent', 'id', 'id');
+        return $this->belongsTo('App\UserAttendedEvent', 'attended_id', 'id');
     }
 
     public function user()
