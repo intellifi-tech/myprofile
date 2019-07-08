@@ -55,6 +55,7 @@ Route::post('comment/create', 'Api\CommentController@create');
 Route::get('message/getMessages', 'Api\MessageController@getMessages');
 Route::post('message/newMessage', 'Api\MessageController@newMessage');
 Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
+Route::get('message/{user_id}/userIndexMessages', 'Api\MessageController@userIndexMessages');
 //endregion
 
 //region Aktiviteler
