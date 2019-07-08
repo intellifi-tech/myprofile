@@ -20,6 +20,6 @@ class UserAttendedEvent extends Model
 
     public function comments()
     {
-        return $this->hasMany('App\Comment', 'id', 'attended_id');
+        return $this->hasMany('App\Comment', 'attended_id', 'id');
     }
 }
