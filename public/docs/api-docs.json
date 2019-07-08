@@ -87,6 +87,9 @@
             "schema" : {
               "$ref": "#/definitions/UserIdShowResponse"
             }
+          },
+          "404" : {
+            "description": "Not Found"
           }
         }
       }
@@ -1184,7 +1187,7 @@
           "format": "bigInteger"
         },
         "type": {
-          "type": "integer",
+          "type": "integer"
         },
         "profile_photo": {
           "type": "string",
