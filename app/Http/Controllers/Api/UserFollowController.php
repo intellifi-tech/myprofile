@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Follow;
 use App\Message;
 use App\User;
+use App\UserAttendedEvent;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -112,7 +113,10 @@ class UserFollowController extends Controller
 //            if ($user) {
 //                $activitiesMyFollowersAttended = Follow::where('from_user_id', $user->id)->with(['myFollowers', 'myFollowers.userAttendedEvents', 'myFollowers.userAttendedEvents.event', 'myFollowers.userAttendedEvents.event.comments'])->get();
                 $users = Follow::where('from_user_id', 13)->with(['followings'])->first();
-                dd($users->followings);
+//                dd($users->followings);
+
+                $events = UserAttendedEvent::where('user_id', $users->followings[0]->id)->get();
+                dd($events);
 
 
                 if ($activitiesMyFollowersAttended->count() > 0){
