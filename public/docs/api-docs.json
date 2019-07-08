@@ -433,6 +433,26 @@
         }
       }
     },
+    "/user/{user_id}/userIdShow": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "ID'si gönderilen kullanıcının detayları",
+        "operationId": "userIdShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    },
     "/user/followings": {
       "post": {
         "tags": [
