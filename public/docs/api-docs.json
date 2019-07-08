@@ -1564,9 +1564,6 @@
         },
         "attended_event": {
           "$ref": "#/definitions/AttendedEvent"
-        },
-        "user": {
-          "$ref": "#/definitions/User"
         }
       },
       "xml": {
@@ -1642,6 +1639,9 @@
         },
         "date_of_participation": {
           "type": "string"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
