@@ -477,7 +477,6 @@ class UserController extends Controller
 
                 $userExperiences->user_id = $user->id;
                 $userExperiences->title = $request->title;
-                $userExperiences->company_id = $request->company_id;
                 $userExperiences->start_time = $request->start_time;
                 $userExperiences->end_time = $request->end_time;
                 $userExperiences->description = $request->description;
