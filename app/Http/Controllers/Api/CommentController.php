@@ -36,17 +36,15 @@ class CommentController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->event_id && $request->comment) {
+                if ($request->attended_id && $request->comment) {
                     $comment = new Comment();
                     $comment->user_id = $user->id;
-                    $comment->event_id = $request->attended_id;
+                    $comment->attended_id = $request->attended_id;
                     $comment->comment = $request->comment;
                     $comment->save();
 
-                    $json['status'] = 200;
-                    $json['message'] = "Yorum gönderildi.";
-                    $json['comment'] = $comment;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    $comments = Comment::where('event_id', $comment->attended_id)->get();
+                    return response()->json($comments, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
                     $json['message'] = "Etkinlik id veya yorum boş olamaz.";

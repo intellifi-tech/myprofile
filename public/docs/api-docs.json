@@ -826,7 +826,10 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Comments"
+              "type" : "array",
+              "item" : {
+                "$ref": "#/definitions/Comments"
+              }
             }
           }
         }
@@ -1791,7 +1794,7 @@
         "user_id": {
           "type": "integer"
         },
-        "event_id": {
+        "attended_id": {
           "type": "integer"
         },
         "comment": {
