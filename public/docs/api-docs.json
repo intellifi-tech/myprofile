@@ -1788,7 +1788,7 @@
         "id": {
           "type": "integer"
         },
-        "user_": {
+        "user_id": {
           "type": "integer"
         },
         "event_id": {
