@@ -745,7 +745,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Events"
+              "$ref": "#/definitions/IdEventShow"
             }
           },
           "404" : {
@@ -1516,6 +1516,32 @@
       }
     },
     "Events": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "IdEventShow": {
       "type": "object",
       "properties": {
         "id": {
