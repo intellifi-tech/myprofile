@@ -119,7 +119,7 @@ class UserFollowController extends Controller
 
                 $followings = [];
 
-                for ($i = 0; $i > $usersCount->followings->count(); $i++){
+                for ($i = 0; $i == $usersCount->followings->count(); $i++){
                     $followings['user'] = $users->followings[$i];
                     $followings['user']['event'] = $event;
                     array_push($followings, $followings['user']);
