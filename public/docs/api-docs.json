@@ -1111,7 +1111,7 @@
           "format": "bigInteger"
         },
         "type": {
-          "type": "integer",
+          "type": "integer"
         },
         "profile_photo": {
           "type": "string",
