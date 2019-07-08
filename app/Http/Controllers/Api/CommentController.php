@@ -43,7 +43,7 @@ class CommentController extends Controller
                     $comment->comment = $request->comment;
                     $comment->save();
 
-                    $comments = Comment::where('event_id', $comment->attended_id)->get();
+                    $comments = Comment::where('attended_id', $comment->attended_id)->get();
                     return response()->json($comments, 200, [], JSON_UNESCAPED_UNICODE);
                 } else {
                     $json['status'] = 0;
