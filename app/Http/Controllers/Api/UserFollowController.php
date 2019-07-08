@@ -126,11 +126,11 @@ class UserFollowController extends Controller
 
 
 
-            } else {
-                $json['status'] = 0;
-                $json['message'] = "api-token geçersizdir.";
-                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-            }
+//            } else {
+//                $json['status'] = 0;
+//                $json['message'] = "api-token geçersizdir.";
+//                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+//            }
 //        } else {
 //            $json['status'] = 0;
 //            $json['message'] = "api-token boş olamaz";
