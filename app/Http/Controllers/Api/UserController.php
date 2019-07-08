@@ -44,6 +44,9 @@ class UserController extends Controller
                 if (is_null($user->cover_photo)){
                     $user->cover_photo = "";
                 }
+                if (is_null($user->title)){
+                    $user->title = "";
+                }
                 if (!is_null($user)){
                     return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
