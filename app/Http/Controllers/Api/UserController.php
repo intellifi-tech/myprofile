@@ -103,7 +103,7 @@ class UserController extends Controller
                     \File::put($pathProfile. '/' . $profileImageName, base64_decode($profileImage));
                     // endregion
 
-                    $user->profile_photo = $profileImageName;
+                    $user->profile_photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/" . $profileImageName;
                 }
             }
 
@@ -118,7 +118,7 @@ class UserController extends Controller
                     \File::put($pathCover. '/' . $coverImageName, base64_decode($coverImage));
                     // endregion
 
-                    $user->cover_photo = $coverImageName;
+                    $user->cover_photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/" . $coverImageName;
                 }
             }
 
