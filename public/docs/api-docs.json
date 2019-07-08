@@ -1788,10 +1788,19 @@
         "id": {
           "type": "integer"
         },
+        "user_": {
+          "type": "integer"
+        },
         "event_id": {
           "type": "integer"
         },
         "comment": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
           "type": "string"
         }
       },
