@@ -71,6 +71,26 @@
         }
       }
     },
+    "/user/{user_id}/show": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "ID'si gönderilen kullanıcının detayları",
+        "operationId": "userIdShow",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema" : {
+              "$ref": "#/definitions/UserIdShowResponse"
+            }
+          }
+        }
+      }
+    },
     "/user/update": {
       "put": {
         "tags": [
@@ -428,26 +448,6 @@
               "items" : {
                 "$ref": "#/definitions/UserExperiencesResponse"
               }
-            }
-          }
-        }
-      }
-    },
-    "/user/{user_id}/show": {
-      "get": {
-        "tags": [
-          "user"
-        ],
-        "summary": "ID'si gönderilen kullanıcının detayları",
-        "operationId": "userIdShow",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema" : {
-              "$ref": "#/definitions/UserIdShowResponse"
             }
           }
         }
