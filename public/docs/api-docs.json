@@ -1572,12 +1572,7 @@
           "$ref": "#/definitions/AttendedEvent"
         },
         "comments": {
-          "schema" : {
-            "type" : "array",
-            "item" : {
-              "$ref": "#/definitions/Comments"
-            }
-          }
+          "$ref": "#/definitions/Comments"
         }
       },
       "xml": {
