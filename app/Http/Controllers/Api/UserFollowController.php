@@ -116,10 +116,10 @@ class UserFollowController extends Controller
 //                dd($users->followings);
 
                 $event = UserAttendedEvent::where('user_id', $users->followings[0]->id)->first();
-                dd($event);
 
-//                $user = $users[0];
-//                $user['event'] =
+                $user = $users[0];
+                $user['event'] = $event;
+                dd($user);
 
 
 //                if ($activitiesMyFollowersAttended->count() > 0){
