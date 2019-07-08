@@ -433,7 +433,7 @@
         }
       }
     },
-    "/user/{user_id}/userIdShow": {
+    "/user/{user_id}/show": {
       "get": {
         "tags": [
           "user"
