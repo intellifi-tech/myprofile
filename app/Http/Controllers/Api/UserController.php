@@ -462,6 +462,19 @@ class UserController extends Controller
             if ($user) {
 
                 $userExperiences = new UserExperiences();
+
+                if (!is_null($request->company_title)){
+                    $company = Company::where('name', $request->company_title)->first();
+                    if ($company){
+                        $userExperiences->company_id = $company->id;
+                    }else{
+                        $company = new Company();
+                        $company->name = $request->company_title;
+                        $company->save();
+                        $userExperiences->company_id = $company->id;
+                    }
+                }
+
                 $userExperiences->user_id = $user->id;
                 $userExperiences->title = $request->title;
                 $userExperiences->company_id = $request->company_id;
