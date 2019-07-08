@@ -123,8 +123,8 @@ class UserFollowController extends Controller
                     $followings['user'] = $users->followings[0];
                     $followings['user']['event'] = $event;
                     array_push($followingUsers, $followings['user'] = $users->followings[$i]);
-                    dd($followingUsers);
                 }
+                dd($followingUsers);
 
 
 
