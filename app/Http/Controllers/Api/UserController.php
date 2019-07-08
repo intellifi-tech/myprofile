@@ -47,6 +47,33 @@ class UserController extends Controller
                 if (is_null($user->title)){
                     $user->title = "";
                 }
+                if (is_null($user->career_history)){
+                    $user->career_history = "";
+                }
+                if (is_null($user->short_biography)){
+                    $user->short_biography = "";
+                }
+                if (is_null($user->credentials)){
+                    $user->credentials = "";
+                }
+                if (is_null($user->date_of_birth)){
+                    $user->date_of_birth = "";
+                }
+                if (is_null($user->company_id)){
+                    $user->company_id = "";
+                }
+                if (is_null($user->sector_id)){
+                    $user->sector_id = "";
+                }
+                if (is_null($user->email_verified_at)){
+                    $user->email_verified_at = "";
+                }
+                if (is_null($user->status)){
+                    $user->status = "";
+                }
+                if (is_null($user->package)){
+                    $user->package = "";
+                }
                 if (!is_null($user)){
                     return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
