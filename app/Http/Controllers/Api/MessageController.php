@@ -120,4 +120,30 @@ class MessageController extends Controller
         }
     }
 
+    public function userIdIndexMessages(Request $request, $userId)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $messages = Message::where('from_user_id', $userId)->orWhere('to_user_id', $userId)->get();
+
+                if ($messages->count() > 0){
+                    $json['status'] = 200;
+                    $json['message'] = "Success";
+                    $json['messages'] = $messages;
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }else{
+                    return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
