@@ -113,14 +113,13 @@ class UserFollowController extends Controller
 //            if ($user) {
 //                $activitiesMyFollowersAttended = Follow::where('from_user_id', $user->id)->with(['myFollowers', 'myFollowers.userAttendedEvents', 'myFollowers.userAttendedEvents.event', 'myFollowers.userAttendedEvents.event.comments'])->get();
                 $usersCount = Follow::where('from_user_id', 13)->with(['followings'])->first();
-                dd($usersCount->followings->count());
                 $users = Follow::where('from_user_id', 13)->with(['followings'])->first();
 
                 $event = UserAttendedEvent::where('user_id', $users->followings[0]->id)->first();
 
                 $followingUsers = [];
 
-                for ($i = 0; $i < $usersCount->followings->count(); $i++){
+                for ($i = 0; $i < 2; $i++){
                     $followings['user'] = $users->followings[$i];
                     $followings['user']['event'] = $event;
                     array_push($followingUsers, $followings['user'] = $users->followings[$i]);
