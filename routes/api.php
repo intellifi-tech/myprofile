@@ -39,7 +39,7 @@ Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanı
 
 
 
-Route::post('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler
+Route::get('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler TODO get isteği posta çevirilecek
 
 
 
