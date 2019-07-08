@@ -46,7 +46,7 @@ class EventController extends Controller
             if ($user) {
                 if ($event_id) {
                     $event = Event::where('id', $event_id)->with(['userAttendedEvent', 'userAttendedEvent.user', 'comments'])->first();
-                    if ($event->count() > 0){
+                    if (!is_null($event)){
                         return response()->json($event, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
