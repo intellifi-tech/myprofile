@@ -447,7 +447,7 @@
           "200": {
             "description": "Success",
             "schema" : {
-              "$ref": "#/definitions/User"
+              "$ref": "#/definitions/UserIdShowResponse"
             }
           }
         }
@@ -1104,6 +1104,66 @@
   },
   "definitions": {
     "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "bigInteger"
+        },
+        "profile_photo": {
+          "type": "string",
+          "format": "longText"
+        },
+        "cover_photo": {
+          "type": "string",
+          "format": "text"
+        },
+        "title": {
+          "type": "string",
+          "format": "text"
+        },
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        },
+        "career_history": {
+          "type": "string",
+          "format": "longText"
+        },
+        "short_biography": {
+          "type": "string",
+          "format": "longText"
+        },
+        "credentials": {
+          "type": "string",
+          "format": "longText"
+        },
+        "date_of_birth": {
+          "type": "string"
+        },
+        "company_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "sector_id": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer",
+          "format": "tinyInteger"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserIdShowResponse": {
       "type": "object",
       "properties": {
         "id": {
