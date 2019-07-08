@@ -657,29 +657,6 @@
         }
       }
     },
-    "/user/activitiesMyFollowersAttended": {
-      "post": {
-        "tags": [
-          "user"
-        ],
-        "summary": "Takip ettiğim kullanıcıların yaptığı etkinlik katılma aktiviteleri.",
-        "operationId": "activitiesMyFollowersAttended",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/ActivitiesMyFollowersAttended"
-            }
-          },
-          "404": {
-            "description": "Not Found"
-          }
-        }
-      }
-    },
     "/user/{user_id}/events": {
       "get": {
         "tags": [
