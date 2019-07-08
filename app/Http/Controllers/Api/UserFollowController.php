@@ -119,10 +119,12 @@ class UserFollowController extends Controller
 
                 $followingUsers = [];
 
+                for ($i = 0; $i > $usersCount->followings->count(); $i++){
+                    $followings['user'] = $users->followings[0];
+                    $followings['user']['event'] = $event;
+                    array_push($followingUsers, $followings['user'] = $users->followings[$i]);
+                }
 
-                $followings['user'] = $users->followings[0];
-                $followings['user']['event'] = $event;
-                array_push($followingUsers, $followings['user'] = $users->followings[0]);
 
 
                 return response()->json($followings, 200, [], JSON_UNESCAPED_UNICODE);
