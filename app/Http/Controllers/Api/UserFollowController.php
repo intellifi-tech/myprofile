@@ -117,8 +117,8 @@ class UserFollowController extends Controller
 
                 $event = UserAttendedEvent::where('user_id', $users->followings[0]->id)->first();
 
-
-
+                $followingUsers = [$followings['user'] = $users->followings[0]];
+                dd($followingUsers);
 
                 $followings['user'] = $users->followings[0];
                 $followings['user']['event'] = $event;
