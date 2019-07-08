@@ -1631,12 +1631,6 @@
         "user_id": {
           "type": "integer"
         },
-        "latitude": {
-          "type": "string"
-        },
-        "longitude": {
-          "type": "string"
-        },
         "event_description": {
           "type": "string"
         },
