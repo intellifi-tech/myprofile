@@ -1568,7 +1568,7 @@
         "updated_at": {
           "type": "string"
         },
-        "attended_event": {
+        "user_attended_event": {
           "$ref": "#/definitions/AttendedEvent"
         },
         "comments": {
