@@ -39,7 +39,7 @@ class CommentController extends Controller
                 if ($request->event_id && $request->comment) {
                     $comment = new Comment();
                     $comment->user_id = $user->id;
-                    $comment->event_id = $request->event_id;
+                    $comment->event_id = $request->attended_id;
                     $comment->comment = $request->comment;
                     $comment->save();
 

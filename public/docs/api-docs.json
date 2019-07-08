@@ -1811,7 +1811,7 @@
     "CommentCreate": {
       "type": "object",
       "properties": {
-        "event_id": {
+        "attended_id": {
           "type": "integer"
         },
         "comment": {
