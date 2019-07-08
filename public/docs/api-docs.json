@@ -1622,8 +1622,8 @@
     "AttendedEvent": {
       "type": "object",
       "properties": {
-        "title": {
-          "type": "string"
+        "id": {
+          "type": "integer"
         },
         "latitude": {
           "type": "string"
