@@ -117,7 +117,7 @@ class UserFollowController extends Controller
 
                 $event = UserAttendedEvent::where('user_id', $users->followings[0]->id)->first();
 
-                $json['user'] = $users->followings[0]->id;
+                $json['user'] = $users->followings[0];
                 $json['user']['event'] = $event;
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
 
