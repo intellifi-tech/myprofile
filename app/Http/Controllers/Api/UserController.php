@@ -93,7 +93,7 @@ class UserController extends Controller
         $user = User::where('api_token', $request->header('api-token'))->first();
         if ($user){
             if ($request->profile_photo){
-                if(user_profile_image_path() . $user->profile_photo != $request->profile_photo){
+                if($user->profile_photo != $request->profile_photo){
                     //region Profil Fotoğrafı Yükleme
                     $pathProfile = public_path('uploads/profile/');
                     $profileImage = $request->profile_photo;  // your base64 encoded
@@ -108,7 +108,7 @@ class UserController extends Controller
             }
 
             if ($request->cover_photo){
-                if (user_cover_image_path() . $user->cover_photo != $request->cover_photo){
+                if ($user->cover_photo != $request->cover_photo){
                     //region Kapak Fotoğrafı Yükleme
                     $pathCover = public_path('uploads/cover/');
                     $coverImage = $request->cover_photo;  // your base64 encoded
@@ -145,8 +145,8 @@ class UserController extends Controller
                 $json['status'] = 200;
                 $json['message'] = "Güncelleme başarılı";
                 $json['user'] = $user;
-                $json['user']['profile_photo'] = user_profile_image_path() . $user->profile_photo;
-                $json['user']['cover_photo'] = user_cover_image_path() . $user->cover_photo;
+                $json['user']['profile_photo'] = $user->profile_photo;
+                $json['user']['cover_photo'] = $user->cover_photo;
 
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
