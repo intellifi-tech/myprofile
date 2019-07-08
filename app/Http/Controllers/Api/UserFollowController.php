@@ -107,11 +107,11 @@ class UserFollowController extends Controller
 
     public function activitiesMyFollowersAttended(Request $request)
     {
-        if ($request->header('api-token')) {
-            $user = User::where('api_token', $request->header('api-token'))->first();
-            if ($user) {
+//        if ($request->header('api-token')) {
+//            $user = User::where('api_token', $request->header('api-token'))->first();
+//            if ($user) {
 //                $activitiesMyFollowersAttended = Follow::where('from_user_id', $user->id)->with(['myFollowers', 'myFollowers.userAttendedEvents', 'myFollowers.userAttendedEvents.event', 'myFollowers.userAttendedEvents.event.comments'])->get();
-                $users = Follow::where('from_user_id', $user->id)->with(['followings'])->get();
+                $users = Follow::where('from_user_id', 13)->with(['followings'])->get();
                 dd($users);
 
 
@@ -131,11 +131,11 @@ class UserFollowController extends Controller
                 $json['message'] = "api-token geçersizdir.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
-        } else {
-            $json['status'] = 0;
-            $json['message'] = "api-token boş olamaz";
-            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-        }
+//        } else {
+//            $json['status'] = 0;
+//            $json['message'] = "api-token boş olamaz";
+//            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+//        }
     }
 
     public function followings(Request $request)
