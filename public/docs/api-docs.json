@@ -1625,6 +1625,12 @@
         "id": {
           "type": "integer"
         },
+        "event_id": {
+          "type": "integer"
+        },
+        "user_id": {
+          "type": "integer"
+        },
         "latitude": {
           "type": "string"
         },
@@ -1638,6 +1644,18 @@
           "type": "string"
         },
         "date_of_participation": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
           "type": "string"
         },
         "user": {
