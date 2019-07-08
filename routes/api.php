@@ -36,7 +36,13 @@ Route::post('user/stopFollowing', 'Api\UserFollowController@stopFollowing');
 Route::get('user/indexPhotos', 'Api\UserPhotoGalleryController@indexPhotos');
 Route::post('user/addPhoto', 'Api\UserPhotoGalleryController@addPhoto');
 Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanıcının yaptığı etkinliğe katılma aktivitesini beğen.
-Route::post('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler
+
+
+
+Route::get('user/activitiesMyFollowersAttended', 'Api\UserFollowController@activitiesMyFollowersAttended'); // Takipçilerimin katıldığı etkinlikler TODO en son post isteğine çevrilecek
+
+
+
 Route::get('user/{user_id}/events','Api\UserController@idEvents');
 // endregion
 
