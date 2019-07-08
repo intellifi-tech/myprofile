@@ -161,10 +161,7 @@ class UserFollowController extends Controller
             if ($user) {
                 $followings = Follow::where('from_user_id', $user->id)->with(['followings'])->get();
                 if ($followings->count() > 0){
-                    $json['status'] = 200;
-                    $json['message'] = "Success";
-                    $json['followings'] = $followings;
-                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    return response()->json($followings, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
                     $json['status'] = 204;
                     $json['message'] = "No Content";
