@@ -1110,6 +1110,9 @@
           "type": "integer",
           "format": "bigInteger"
         },
+        "type": {
+          "type": "integer",
+        },
         "profile_photo": {
           "type": "string",
           "format": "longText"
@@ -1157,6 +1160,16 @@
         "status": {
           "type": "integer",
           "format": "tinyInteger"
+        },
+        "package": {
+          "type": "integer",
+          "format": "tinyInteger"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
         }
       },
       "xml": {
