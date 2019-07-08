@@ -65,9 +65,6 @@ class UserController extends Controller
                 if (is_null($user->sector_id)){
                     $user->sector_id = "";
                 }
-                if (is_null($user->email_verified_at)){
-                    $user->email_verified_at = "";
-                }
                 if (is_null($user->status)){
                     $user->status = "";
                 }
