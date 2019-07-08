@@ -725,7 +725,6 @@
           "200": {
             "description": "Success",
             "schema": {
-              "type" : "array",
               "$ref": "#/definitions/IdEventShow"
             }
           },
