@@ -41,7 +41,7 @@ class UserController extends Controller
 
 
                 if (is_null($user->profile_photo)){
-                    $user->profile_photo = " ";
+                    $user->profile_photo = "";
                 }
 
 
