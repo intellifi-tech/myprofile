@@ -1564,6 +1564,9 @@
         },
         "attended_event": {
           "$ref": "#/definitions/AttendedEvent"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
         }
       },
       "xml": {
