@@ -128,7 +128,7 @@ class UserFollowController extends Controller
 
 
 
-                return response()->json($followings, 200, [], JSON_UNESCAPED_UNICODE);
+                return response()->json($followingUsers, 200, [], JSON_UNESCAPED_UNICODE);
 
 
 //                if ($activitiesMyFollowersAttended->count() > 0){
