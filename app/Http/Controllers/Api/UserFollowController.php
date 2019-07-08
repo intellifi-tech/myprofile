@@ -119,7 +119,7 @@ class UserFollowController extends Controller
 
                 $user = $users[0];
                 $user['event'] = $event;
-                dd($user);
+                return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
 
 
 //                if ($activitiesMyFollowersAttended->count() > 0){
