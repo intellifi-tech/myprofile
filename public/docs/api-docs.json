@@ -827,7 +827,7 @@
             "description": "Success",
             "schema": {
               "type" : "array",
-              "item" : {
+              "items" : {
                 "$ref": "#/definitions/Comments"
               }
             }
