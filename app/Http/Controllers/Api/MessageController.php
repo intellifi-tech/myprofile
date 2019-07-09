@@ -104,17 +104,17 @@ class MessageController extends Controller
         }
     } // Swagger'da yok.
 
-    public function readMessage(Request $request)
+    public function readMessage(Request $request, $to_user_id)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($request->to_user_id && $request->message) {
+                if ($to_user_id && $request->message) {
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
-                        Message::where('from_user_id', $user->id)->where('to_user_id', $request->to_user_id)->update(['status' => 1]);
-                        Message::where('from_user_id', $request->to_user_id)->where('to_user_id', $user->id)->update(['status' => 1]);
+                        Message::where('from_user_id', $user->id)->where('to_user_id', $to_user_id)->update(['status' => 1]);
+                        Message::where('from_user_id', $to_user_id)->where('to_user_id', $user->id)->update(['status' => 1]);
                         return response()->json(null, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         $json['status'] = 204;
