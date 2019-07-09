@@ -82,7 +82,7 @@ class MessageController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $messages = Message::where('from_user_id', $userId)->orWhere('to_user_id', $userId)->get();
+                $messages = Message::where('end_message', 1)->where('from_user_id', $userId)->orWhere('to_user_id', $userId)->get();
 
                 if ($messages->count() > 0){
                     $json['status'] = 200;
