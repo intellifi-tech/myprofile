@@ -867,7 +867,7 @@
         "tags": [
           "message"
         ],
-        "summary": "Yeni mesaj gönderir.",
+        "summary": "Mesaj gönderir.",
         "description": "This can only be done by the logged in user.",
         "operationId": "SendMessage",
         "produces": [
