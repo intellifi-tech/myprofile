@@ -897,6 +897,24 @@
         }
       }
     },
+    "/message/{to_user_id}/readMessage": {
+      "post": {
+        "tags": [
+          "message"
+        ],
+        "summary": "Yeni mesaj gönderir.",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "SendMessage",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/activity/likesActivity": {
       "post": {
         "tags": [
