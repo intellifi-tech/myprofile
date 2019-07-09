@@ -145,7 +145,7 @@
                                                         @if(is_null($completedOngoingsEvent->user->profile_photo))
                                                             <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @else
-                                                            <img src="{{ user_profile_image_path() . $completedOngoingsEvent->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                            <img src="{{ $completedOngoingsEvent->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @endif
                                                     </div>
                                                     <div class="mt-action-body">
@@ -267,7 +267,7 @@
                                                         @if(is_null($comment->user->profile_photo))
                                                             <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @else
-                                                            <img src="{{ user_profile_image_path() . $comment->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                            <img src="{{ $comment->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @endif
                                                     </div>
                                                     <div class="mt-comment-body">
