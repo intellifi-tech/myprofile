@@ -84,6 +84,7 @@ class AjaxController extends Controller
         $threeMonthAgo = $nowMonth->subMonth(1)->format('m');
         $fourMonthAgo = $nowMonth->subMonth(1)->format('m');
         $fiveMonthAgo = $nowMonth->subMonth(1)->format('m');
+        $sixMonthAgo = $nowMonth->subMonth(1)->format('m');
 
         $sectorUserCounts = [];
 
@@ -175,6 +176,21 @@ class AjaxController extends Controller
         $ak5 = key($fiveMonthAgoSectorUserCountsTmp);
         $sectorUserCounts[$fiveMonthAgo .'-'. $ak4] = $fiveMonthAgoSectorUserCountsTmp[$ak5];
         /* ##5 ay önce */
+
+
+        /* 6 ay önce */
+        $sixMonthAgoSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $sixMonthAgo)->get()->count();
+            $sixMonthAgoSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($sixMonthAgoSectorUserCountsTmp);
+        reset($sixMonthAgoSectorUserCountsTmp);
+        $ak5 = key($fiveMonthAgoSectorUserCountsTmp);
+        $sectorUserCounts[$sixMonthAgo .'-'. $ak4] = $fiveMonthAgoSectorUserCountsTmp[$ak5];
+        /* ##6 ay önce */
 
         return $sectorUserCounts;
     }
