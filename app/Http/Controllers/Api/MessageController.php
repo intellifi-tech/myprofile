@@ -113,7 +113,8 @@ class MessageController extends Controller
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
-                        Message::where('from_user_id', $user->id)->where('to_user_id', $to_user_id)->update(['status' => 1]);
+                        $message = Message::where('from_user_id', $user->id)->where('to_user_id', $to_user_id)->update(['status' => 1]);
+                        dd($message);
                         Message::where('from_user_id', $to_user_id)->where('to_user_id', $user->id)->update(['status' => 1]);
                         return response()->json(null, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
