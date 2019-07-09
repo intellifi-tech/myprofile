@@ -315,7 +315,7 @@
                             <div class="caption">
                                 <i class="icon-bar-chart font-dark hide"></i>
                                 <span class="caption-subject font-dark bold uppercase">Sektör İstatistiği</span>
-                                <span class="caption-helper">aylık bazda...</span>
+                                <span class="caption-helper">aylık bazda popüler olan sektör...</span>
                             </div>
                         </div>
                         <div class="portlet-body">
