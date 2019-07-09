@@ -53,10 +53,8 @@ Route::post('comment/create', 'Api\CommentController@create');
 
 //region Mesajlar
 Route::get('message/getMessages', 'Api\MessageController@getMessages');
-
 Route::post('message/sendMessage', 'Api\MessageController@sendMessage');
-
-Route::post('message/answerMessage', 'Api\MessageController@answerMessage');
+Route::get('message/readMessage', 'Api\MessageController@readMessage');
 Route::get('message/{user_id}/userIndexMessages', 'Api\MessageController@userIndexMessages');
 //endregion
 
