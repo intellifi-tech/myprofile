@@ -898,7 +898,7 @@
       }
     },
     "/message/{to_user_id}/readMessage": {
-      "post": {
+      "get": {
         "tags": [
           "message"
         ],
