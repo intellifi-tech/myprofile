@@ -109,7 +109,7 @@ class MessageController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                if ($to_user_id && $request->message) {
+                if ($to_user_id) {
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
