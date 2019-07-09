@@ -54,11 +54,7 @@ class MessageController extends Controller
                         $message->status = 0;
                         $message->end_message = 1;
                         $message->save();
-
-                        $json['status'] = 200;
-                        $json['message'] = "Success";
-                        $json['object'] = $message;
-                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        return response()->json($message, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         $json['status'] = 204;
                         $json['message'] = "Mesaj göndermeye çalıştığınız kullanıcı mesaj kabul etmiyor.";
