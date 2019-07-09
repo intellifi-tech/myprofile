@@ -1525,9 +1525,6 @@
         "longitude": {
           "type": "string"
         },
-        "meterLimit": {
-          "type": "string"
-        },
         "created_at": {
           "type": "string"
         },
