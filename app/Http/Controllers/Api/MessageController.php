@@ -36,7 +36,7 @@ class MessageController extends Controller
         }
     }
 
-    public function newMessage(Request $request)
+    public function sendMessage(Request $request)
     {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
