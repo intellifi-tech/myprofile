@@ -108,7 +108,7 @@
                                                         @if(is_null($userOngoingsEvent->user->profile_photo))
                                                             <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @else
-                                                            <img src="{{ user_profile_image_path() . $userOngoingsEvent->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
+                                                            <img src="{{ $userOngoingsEvent->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                         @endif
                                                     </div>
                                                     <div class="mt-action-body">
