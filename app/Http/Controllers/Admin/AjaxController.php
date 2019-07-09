@@ -77,40 +77,104 @@ class AjaxController extends Controller
     {
 
         $nowMonth = Carbon::now();
+
+        $thisMonth = $nowMonth->format('m');
+        $lastMonth = $nowMonth->subMonth()->format('m');
+        $twoMonthAgo = $nowMonth->subMonth(1)->format('m');
+        $threeMonthAgo = $nowMonth->subMonth(1)->format('m');
+        $fourMonthAgo = $nowMonth->subMonth(1)->format('m');
+        $fiveMonthAgo = $nowMonth->subMonth(1)->format('m');
+
         $sectorUserCounts = [];
 
-        // TODO önceki 6 ay değişkenlere manuel atanacak
-
-
-
-        $nowMonthSectorUserCountsTmp = [];
+        /* Bu ay */
+        $thisMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
         foreach ($sectors as $sector){
-            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->format('m'))->get()->count();
-            $nowMonthSectorUserCountsTmp[$sector->name] = $users;
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $thisMonth)->get()->count();
+
+            $thisMonthSectorUserCountsTmp[$sector->name] = $users;
         }
-        arsort($nowMonthSectorUserCountsTmp);
+        arsort($thisMonthSectorUserCountsTmp);
+        reset($thisMonthSectorUserCountsTmp);
+        $ak = key($thisMonthSectorUserCountsTmp);
+        $sectorUserCounts[$thisMonth .'-'. $ak] = $thisMonthSectorUserCountsTmp[$ak];
+        /* ##Bu ay */
 
-        reset($nowMonthSectorUserCountsTmp);
-        $ak = key($nowMonthSectorUserCountsTmp);
-        $sectorUserCounts[$nowMonth->format('m') .'-'. $ak] = $nowMonthSectorUserCountsTmp[$ak];
 
-
-        $oneMonthSectorUserCountsTmp = [];
+        /* Geçen ay */
+        $lastMonthSectorUserCountsTmp = [];
         $sectors = Sector::all();
 
         foreach ($sectors as $sector){
-            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $nowMonth->subMonth()->format('m'))->get()->count();
-            $oneMonthSectorUserCountsTmp[$sector->name] = $users;
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $lastMonth)->get()->count();
+            $lastMonthSectorUserCountsTmp[$sector->name] = $users;
         }
-        arsort($oneMonthSectorUserCountsTmp);
+        arsort($lastMonthSectorUserCountsTmp);
+        reset($lastMonthSectorUserCountsTmp);
+        $ak1 = key($lastMonthSectorUserCountsTmp);
+        $sectorUserCounts[$lastMonth .'-'. $ak1] = $lastMonthSectorUserCountsTmp[$ak1];
+        /* ##Geçen ay */
 
-        return $nowMonth->format('m');
+
+        /* 2 ay önce */
+        $twoMonthAgoSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $twoMonthAgo)->get()->count();
+            $twoMonthAgoSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($twoMonthAgoSectorUserCountsTmp);
+        reset($twoMonthAgoSectorUserCountsTmp);
+        $ak2 = key($twoMonthAgoSectorUserCountsTmp);
+        $sectorUserCounts[$twoMonthAgo .'-'. $ak2] = $twoMonthAgoSectorUserCountsTmp[$ak2];
+        /* ##2 ay önce */
 
 
-        reset($oneMonthSectorUserCountsTmp);
-        $ak1 = key($oneMonthSectorUserCountsTmp);
-        $sectorUserCounts[$nowMonth->format('m') .'-'. $ak1] = $oneMonthSectorUserCountsTmp[$ak1];
+        /* 3 ay önce */
+        $threeMonthAgoSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $threeMonthAgo)->get()->count();
+            $threeMonthAgoSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($threeMonthAgoSectorUserCountsTmp);
+        reset($threeMonthAgoSectorUserCountsTmp);
+        $ak3 = key($threeMonthAgoSectorUserCountsTmp);
+        $sectorUserCounts[$threeMonthAgo .'-'. $ak3] = $threeMonthAgoSectorUserCountsTmp[$ak3];
+        /* ##3 ay önce */
+
+
+        /* 4 ay önce */
+        $fourMonthAgoSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $fourMonthAgo)->get()->count();
+            $fourMonthAgoSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($fourMonthAgoSectorUserCountsTmp);
+        reset($fourMonthAgoSectorUserCountsTmp);
+        $ak4 = key($fourMonthAgoSectorUserCountsTmp);
+        $sectorUserCounts[$fourMonthAgo .'-'. $ak4] = $fourMonthAgoSectorUserCountsTmp[$ak4];
+        /* ##4 ay önce */
+
+
+        /* 5 ay önce */
+        $fiveMonthAgoSectorUserCountsTmp = [];
+        $sectors = Sector::all();
+
+        foreach ($sectors as $sector){
+            $users = User::where("type", 1)->where('sector_id', $sector->id)->whereMonth('created_at', $fiveMonthAgo)->get()->count();
+            $fiveMonthAgoSectorUserCountsTmp[$sector->name] = $users;
+        }
+        arsort($fiveMonthAgoSectorUserCountsTmp);
+        reset($fiveMonthAgoSectorUserCountsTmp);
+        $ak5 = key($fiveMonthAgoSectorUserCountsTmp);
+        $sectorUserCounts[$fiveMonthAgo .'-'. $ak4] = $fiveMonthAgoSectorUserCountsTmp[$ak5];
+        /* ##5 ay önce */
 
         return $sectorUserCounts;
     }
