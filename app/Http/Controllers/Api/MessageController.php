@@ -45,8 +45,8 @@ class MessageController extends Controller
 
                     $toUser = User::where('id', $request->to_user_id)->with(['userPrivacy'])->first();
                     if ($toUser->userPrivacy->no_message == 0){
-                        Message::where('from_user_id', $user->id)->where('to_user_id', $request->to_user_id)->update('end_message', 0);
-                        Message::where('from_user_id', $request->to_user_id)->where('to_user_id', $user->id)->update('end_message', 0);
+                        Message::where('from_user_id', $user->id)->where('to_user_id', $request->to_user_id)->update(['end_message', 0]);
+                        Message::where('from_user_id', $request->to_user_id)->where('to_user_id', $user->id)->update(['end_message', 0]);
                         $message = new Message();
                         $message->from_user_id = $user->id;
                         $message->to_user_id = $request->to_user_id;
