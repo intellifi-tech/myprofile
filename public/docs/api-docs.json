@@ -902,9 +902,9 @@
         "tags": [
           "message"
         ],
-        "summary": "Yeni mesaj gönderir.",
+        "summary": "token ve to_user_id'ye ait mesajların tümünü okundu yapar.",
         "description": "This can only be done by the logged in user.",
-        "operationId": "SendMessage",
+        "operationId": "readMessage",
         "produces": [
           "application/json"
         ],
