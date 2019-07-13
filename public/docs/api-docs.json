@@ -281,7 +281,7 @@
             "required": true,
             "type": "string",
             "schema": {
-              "$ref": "#/definitions/AttendedEvent"
+              "$ref": "#/definitions/AttendedEventRequest"
             }
           }
         ],
@@ -1652,6 +1652,35 @@
         },
         "user": {
           "$ref": "#/definitions/User"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AttendedEventRequest": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "integer"
+        },
+        "event_description": {
+          "type": "string"
+        },
+        "event_image": {
+          "type": "string"
+        },
+        "date_of_participation": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
         }
       },
       "xml": {
