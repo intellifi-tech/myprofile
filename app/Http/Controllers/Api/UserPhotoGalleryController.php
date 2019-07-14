@@ -15,7 +15,7 @@ class UserPhotoGalleryController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $userPhotos = UserPhotoGallery::get();
+                $userPhotos = UserPhotoGallery::where('user_id', $user->id)->get();
                 if ($userPhotos->count() > 0){
                     return response()->json($userPhotos, 200, [], JSON_UNESCAPED_UNICODE);
                 }else{
