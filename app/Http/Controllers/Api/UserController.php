@@ -269,29 +269,53 @@ class UserController extends Controller
             if ($user) {
                 if ($request->title && $request->latitude && $request->latitude && $request->event_image) {
 
-                    $event = new Event();
-                    $event->title = $request->title;
-                    $event->latitude = $request->latitude;
-                    $event->longitude = $request->longitude;
-                    $event->save();
+                    if ($request->event_id){
+                        $userAttendedEvent = new UserAttendedEvent();
+                        $userAttendedEvent->event_id = $request->event_id;
+                        $userAttendedEvent->user_id = $user->id;
+                        $userAttendedEvent->event_description = $request->event_description;
 
-                    $userAttendedEvent = new UserAttendedEvent();
-                    $userAttendedEvent->event_id = $event->id;
-                    $userAttendedEvent->user_id = $user->id;
-                    $userAttendedEvent->event_description = $request->event_description;
+                        //region Etkinlik Fotoğrafı Yükleme
+                        $path = public_path('uploads/events/');
+                        $eventImage = $request->event_image;  // your base64 encoded
+                        $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
+                        $eventImage = str_replace(' ', '+', $eventImage);
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
+                        \File::put($path . $eventImageName, base64_decode($eventImage));
+                        // endregion
 
-                    //region Etkinlik Fotoğrafı Yükleme
-                    $path = public_path('uploads/events/');
-                    $eventImage = $request->event_image;  // your base64 encoded
-                    $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
-                    $eventImage = str_replace(' ', '+', $eventImage);
-                    $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
-                    \File::put($path . $eventImageName, base64_decode($eventImage));
-                    // endregion
+                        $userAttendedEvent->event_image = event_image_path() . $eventImageName;
+                        $userAttendedEvent->date_of_participation = Carbon::now();
+                        $userAttendedEvent->save();
+                    }else{
+                        $event = new Event();
+                        $event->title = $request->title;
+                        $event->latitude = $request->latitude;
+                        $event->longitude = $request->longitude;
+                        $event->save();
 
-                    $userAttendedEvent->event_image = event_image_path() . $eventImageName;
-                    $userAttendedEvent->date_of_participation = Carbon::now();
-                    $userAttendedEvent->save();
+                        $userAttendedEvent = new UserAttendedEvent();
+                        $userAttendedEvent->event_id = $event->id;
+                        $userAttendedEvent->user_id = $user->id;
+                        $userAttendedEvent->event_description = $request->event_description;
+
+                        //region Etkinlik Fotoğrafı Yükleme
+                        $path = public_path('uploads/events/');
+                        $eventImage = $request->event_image;  // your base64 encoded
+                        $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
+                        $eventImage = str_replace(' ', '+', $eventImage);
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
+                        \File::put($path . $eventImageName, base64_decode($eventImage));
+                        // endregion
+
+                        $userAttendedEvent->event_image = event_image_path() . $eventImageName;
+                        $userAttendedEvent->date_of_participation = Carbon::now();
+                        $userAttendedEvent->save();
+                    }
+
+
+
+
 
                     $json['status'] = 200;
                     $json['message'] = "Success";
