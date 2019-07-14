@@ -50,7 +50,7 @@ class UserPhotoGalleryController extends Controller
                 \File::put($path. '/' . $photoImageName, base64_decode($photo));
                 // endregion
 
-                $userPhotoGallery->photo_name = user_photo_image_path() . $photoImageName;
+                $userPhotoGallery->photo_name = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/user-photos/" . $photoImageName;
                 $userPhotoGallery->save();
                 return response()->json($userPhotoGallery, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
