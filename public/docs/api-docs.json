@@ -752,8 +752,7 @@
             "required": true,
             "type": "string",
             "schema": {
-              "type" : "array",
-              "items": "#/definitions/EventSearch"
+              "$ref": "#/definitions/EventSearch"
             }
           }
         ],
@@ -761,7 +760,8 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/Events"
+              "type" : "array",
+              "items": "#/definitions/Events"
             }
           },
           "204": {
