@@ -1675,6 +1675,9 @@
         },
         "date_of_participation": {
           "type": "string"
+        },
+        "end_date": {
+          "type": "string"
         }
       },
       "xml": {

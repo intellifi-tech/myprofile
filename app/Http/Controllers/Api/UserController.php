@@ -286,6 +286,7 @@ class UserController extends Controller
 
                         $userAttendedEvent->event_image = event_image_path() . $eventImageName;
                         $userAttendedEvent->date_of_participation = Carbon::now();
+                        $userAttendedEvent->end_date = $request->end_date;
                         $userAttendedEvent->save();
                     }else{
                         $event = new Event();
@@ -310,12 +311,9 @@ class UserController extends Controller
 
                         $userAttendedEvent->event_image = event_image_path() . $eventImageName;
                         $userAttendedEvent->date_of_participation = Carbon::now();
+                        $userAttendedEvent->end_date = $request->end_date;
                         $userAttendedEvent->save();
                     }
-
-
-
-
 
                     $json['status'] = 200;
                     $json['message'] = "Success";
