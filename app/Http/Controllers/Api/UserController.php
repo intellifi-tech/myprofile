@@ -269,7 +269,7 @@ class UserController extends Controller
             if ($user) {
                 if ($request->title && $request->latitude && $request->latitude && $request->event_image) {
 
-                    if ($request->event_id){
+                    if ($request->event_id != 0){
                         $userAttendedEvent = new UserAttendedEvent();
                         $userAttendedEvent->event_id = $request->event_id;
                         $userAttendedEvent->user_id = $user->id;
