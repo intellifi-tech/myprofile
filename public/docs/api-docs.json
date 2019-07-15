@@ -761,7 +761,9 @@
             "description": "Success",
             "schema": {
               "type" : "array",
-              "items": "#/definitions/Events"
+              "items": {
+                "$ref": "#/definitions/Events"
+              }
             }
           },
           "204": {
