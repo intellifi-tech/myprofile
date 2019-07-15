@@ -1560,6 +1560,9 @@
         "updated_at": {
           "type": "string"
         },
+        "user_attended_events_count": {
+          "type": "integer"
+        },
         "user_attended_event": {
           "$ref": "#/definitions/EventSearchAttendedEventResponse"
         }
