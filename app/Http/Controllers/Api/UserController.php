@@ -280,7 +280,7 @@ class UserController extends Controller
                         $eventImage = $request->event_image;  // your base64 encoded
                         $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                         $eventImage = str_replace(' ', '+', $eventImage);
-                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
                         \File::put($path . $eventImageName, base64_decode($eventImage));
                         // endregion
 
@@ -305,7 +305,7 @@ class UserController extends Controller
                         $eventImage = $request->event_image;  // your base64 encoded
                         $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                         $eventImage = str_replace(' ', '+', $eventImage);
-                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).'.'.'png';
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
                         \File::put($path . $eventImageName, base64_decode($eventImage));
                         // endregion
 
