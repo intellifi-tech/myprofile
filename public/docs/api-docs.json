@@ -752,6 +752,7 @@
             "required": true,
             "type": "string",
             "schema": {
+              "type" : "array",
               "$ref": "#/definitions/EventSearch"
             }
           }
