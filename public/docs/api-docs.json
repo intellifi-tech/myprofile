@@ -762,7 +762,7 @@
             "schema": {
               "type" : "array",
               "items": {
-                "$ref": "#/definitions/Events"
+                "$ref": "#/definitions/SearchEventResponse"
               }
             }
           },
@@ -1539,6 +1539,35 @@
         "name": "User"
       }
     },
+    "SearchEventResponse": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "user_attended_event": {
+          "$ref": "#/definitions/EventSearchAttendedEventResponse"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
     "IdEventShow": {
       "type": "object",
       "properties": {
@@ -1765,8 +1794,61 @@
         "date_of_participation": {
           "type": "string"
         },
+        "end_date": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
         "event": {
           "$ref": "#/definitions/Event"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "EventSearchAttendedEventResponse": {
+      "type": "object",
+      "properties": {
+        "event_id": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "event_description": {
+          "type": "string"
+        },
+        "event_image": {
+          "type": "string"
+        },
+        "date_of_participation": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
         }
       },
       "xml": {
