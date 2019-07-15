@@ -15,7 +15,7 @@ class Event extends Model
 
     public function userAttendedEvent()
     {
-        return $this->hasOne('App\UserAttendedEvent', 'event_id', 'id');
+        return $this->hasMany('App\UserAttendedEvent', 'event_id', 'id');
     }
 
     public function userAttendedEvents()
