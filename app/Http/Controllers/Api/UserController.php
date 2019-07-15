@@ -271,7 +271,7 @@ class UserController extends Controller
 
                     if ($request->event_id != 0){
                         $attendedEvent = UserAttendedEvent::where(['user_id', $user->id], ['event_id', $request->event_id])->first();
-                        if (!is_null($attendedEvent)){
+                        if ($attendedEvent){
                             return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                         }
                         $userAttendedEvent = new UserAttendedEvent();
