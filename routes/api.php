@@ -74,6 +74,7 @@ Route::get('sector/{sector_id}/show', 'Api\SectorController@show');
 
 //region Kullanıcı Fotoğrafları
 Route::get('photo/{photo_id}/likePhoto', 'Api\UserPhotoGalleryController@likePhoto');
+Route::get('photo/{photo_id}/deletePhoto', 'Api\UserPhotoGalleryController@deletePhoto');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
