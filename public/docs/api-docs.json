@@ -1062,7 +1062,25 @@
         ],
         "summary": "ID'si gönderilen fotoğrafı beğenme",
         "description": "This can only be done by the logged in user.",
-        "operationId": "sectorShow",
+        "operationId": "likePhoto",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/photo/{photo_id}/deletePhoto": {
+      "get": {
+        "tags": [
+          "photo"
+        ],
+        "summary": "ID'si gönderilen fotoğrafı siler",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "deletePhoto",
         "produces": [
           "application/json"
         ],
