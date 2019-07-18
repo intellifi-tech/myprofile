@@ -70,6 +70,7 @@ class UserController extends Controller
         $eventsAttended = UserAttendedEvent::where('user_id', $id)->get(); // Katıldığı etkinlikler
         $comments = Comment::where('user_id', $id)->with(['event'])->get(); // Kullanıcının yaptığı yorumlar
         $follow = Follow::where('from_user_id', $id)->withCount('myFollowers')->with(['myFollowers'])->first(); // Kullanıcının takipçileri
+        dd($follow);
         $user = User::find($id);
         $this->page['sub_title'] = $user->name.' düzenle';
         return view('admin.user.show', ['page' => $this->page, 'user' => $user, 'userOngoingsEvents' => $userOngoingsEvents, 'completedOngoingsEvents' => $completedOngoingsEvents, 'comments' => $comments, 'follow' => $follow, 'eventsAttended' => $eventsAttended]);
