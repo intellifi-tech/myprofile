@@ -58,9 +58,9 @@
                                             <li class="active">
                                                 <a href="#tab_1_1" data-toggle="tab">Kişisel Bilgiler</a>
                                             </li>
-                                            <li>
-                                                <a href="#tab_1_2" data-toggle="tab">Erişim Ayarları</a>
-                                            </li>
+{{--                                            <li>--}}
+{{--                                                <a href="#tab_1_2" data-toggle="tab">Erişim Ayarları</a>--}}
+{{--                                            </li>--}}
 {{--                                            <li>--}}
 {{--                                                <a href="#tab_1_3" data-toggle="tab">Abonelik Ayarı</a>--}}
 {{--                                            </li>--}}
@@ -103,32 +103,32 @@
                                             </div>
                                             <!-- END PERSONAL INFO TAB -->
                                             <!-- PRIVACY SETTINGS TAB -->
-                                            <div class="tab-pane" id="tab_1_2">
-                                                <form action="#">
-                                                    <table class="table table-light table-hover">
-                                                        <tbody><tr>
-                                                            <td> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus.. </td>
-                                                            <td>
-                                                                <div class="mt-radio-inline">
-                                                                    <label class="mt-radio">
-                                                                        <input type="radio" name="optionsRadios1" value="option1"> Yes
-                                                                        <span></span>
-                                                                    </label>
-                                                                    <label class="mt-radio">
-                                                                        <input type="radio" name="optionsRadios1" value="option2" checked=""> No
-                                                                        <span></span>
-                                                                    </label>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <!--end profile-settings-->
-                                                    <div class="margin-top-10">
-                                                        <a href="javascript:;" class="btn red"> Kaydet </a>
-                                                    </div>
-                                                </form>
-                                            </div>
+{{--                                            <div class="tab-pane" id="tab_1_2">--}}
+{{--                                                <form action="#">--}}
+{{--                                                    <table class="table table-light table-hover">--}}
+{{--                                                        <tbody><tr>--}}
+{{--                                                            <td> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus.. </td>--}}
+{{--                                                            <td>--}}
+{{--                                                                <div class="mt-radio-inline">--}}
+{{--                                                                    <label class="mt-radio">--}}
+{{--                                                                        <input type="radio" name="optionsRadios1" value="option1"> Yes--}}
+{{--                                                                        <span></span>--}}
+{{--                                                                    </label>--}}
+{{--                                                                    <label class="mt-radio">--}}
+{{--                                                                        <input type="radio" name="optionsRadios1" value="option2" checked=""> No--}}
+{{--                                                                        <span></span>--}}
+{{--                                                                    </label>--}}
+{{--                                                                </div>--}}
+{{--                                                            </td>--}}
+{{--                                                        </tr>--}}
+{{--                                                        </tbody>--}}
+{{--                                                    </table>--}}
+{{--                                                    <!--end profile-settings-->--}}
+{{--                                                    <div class="margin-top-10">--}}
+{{--                                                        <a href="javascript:;" class="btn red"> Kaydet </a>--}}
+{{--                                                    </div>--}}
+{{--                                                </form>--}}
+{{--                                            </div>--}}
                                             <!-- END PRIVACY SETTINGS TAB -->
 {{--                                            <!-- PRIVACY SETTINGS TAB -->--}}
 {{--                                            <div class="tab-pane" id="tab_1_3">--}}
