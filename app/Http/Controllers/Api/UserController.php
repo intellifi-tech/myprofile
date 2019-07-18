@@ -8,6 +8,7 @@ use App\User;
 use App\UserAttendedEvent;
 use App\UserExperiences;
 use App\UserLikeActivity;
+use App\UserPhotoGallery;
 use App\UserPrivacySettings;
 use Carbon\Carbon;
 use http\Env;
@@ -561,6 +562,37 @@ class UserController extends Controller
         } else {
             $json['status'] = 0;
             $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function gallery(Request $request, $user_id){
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                if ($user_id) {
+                    $userGallery = UserPhotoGallery::where('user_id', $user_id)->get();
+                    if ($userGallery->count() > 0){
+                        $json['status'] = 200;
+                        $json['message'] = "Success";
+                        $json['userGallery'] = $userGallery;
+                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                    }else{
+                        return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
+                    }
+                } else {
+                    $json['status'] = 204;
+                    $json['message'] = "Kullanıcı ID boş olamaz";
+                    return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                }
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "Api_token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "Api token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
