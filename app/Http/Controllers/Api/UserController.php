@@ -602,7 +602,7 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
-                    $userExperiences = UserExperiences::where('user_id', $user_id)->get();
+                    $userExperiences = UserExperiences::where('user_id', $user_id)->with(['company'])->get();
                     if ($userExperiences->count() > 0){
                         $json['status'] = 200;
                         $json['message'] = "Success";
