@@ -43,7 +43,7 @@
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-users"></i>{{ $page['title'] }} <span style="font-size: 12px">(10 kişi)</span>
+                                <i class="fa fa-users"></i>{{ $page['title'] }} <span style="font-size: 12px">({{$users->count()}} kişi)</span>
                             </div>
                         </div>
                         <div class="portlet-body">
