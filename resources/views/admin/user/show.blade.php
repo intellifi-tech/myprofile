@@ -146,7 +146,7 @@
                                             <!-- TIMELINE ITEM -->
                                             <div class="timeline-item">
                                                 <div class="timeline-badge">
-                                                    <img class="timeline-badge-userpic" src="{{ $row->user->profile_photo  }}"></div>
+                                                    <img class="timeline-badge-userpic" src="{{ $row->user->profile_photo  }}" style="max-width: 80px; max-height: 80px"></div>
                                                 <div class="timeline-body">
                                                     <div class="timeline-body-arrow"></div>
                                                     <div class="timeline-body-head">
