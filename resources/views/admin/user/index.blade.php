@@ -47,16 +47,16 @@
                             </div>
                         </div>
                         <div class="portlet-body">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label class="col-md-1 control-label">Arama</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control input-inline input-medium" autocomplete="off">
-                                        <span class="help-inline"> Adı - Soyadı alanında arama yapar. </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
+{{--                            <div class="row">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label class="col-md-1 control-label">Arama</label>--}}
+{{--                                    <div class="col-md-9">--}}
+{{--                                        <input type="text" class="form-control input-inline input-medium" autocomplete="off">--}}
+{{--                                        <span class="help-inline"> Adı - Soyadı alanında arama yapar. </span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <br>--}}
                             <div class="table-responsive" style="overflow: hidden">
                                 <table class="table table-striped table-bordered table-hover" id="user_data">
                                     <thead>
