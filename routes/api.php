@@ -38,6 +38,7 @@ Route::post('user/addPhoto', 'Api\UserPhotoGalleryController@addPhoto');
 Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanıcının yaptığı etkinliğe katılma aktivitesini beğen.
 Route::get('user/{user_id}/events','Api\UserController@idEvents');
 Route::get('user/{user_id}/gallery','Api\UserController@gallery');
+Route::get('user/{user_id}/userExperiences','Api\UserController@userExperiences');
 // endregion
 
 
