@@ -35,7 +35,7 @@
                     <a href="javascript:;" class="btn font-red">
                         <i class="icon-bubbles"></i> {{ $comments->count() }} </a>
                     <a href="javascript:;" class="btn font-green">
-                        <i class="icon-social-twitter"></i> {{ $follow->myFollowers->count() ?? '0' }} </a>
+                        <i class="icon-social-twitter"></i> {{ $follow->myFollowers()->count() ?? '0' }} </a>
                 </div>
             </div>
         </div>
