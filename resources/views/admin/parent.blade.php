@@ -69,7 +69,11 @@
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <span class="username username-hide-on-mobile"> {{ getNameSurname() }} </span>
                             <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                            <img alt="" class="img-circle" src="../assets/layouts/layout4/img/avatar9.jpg" /> </a>
+                            @if(is_null($user->profile_photo))
+                                <img src="{{ user_profile_image_path() . "no-profile.png"  }}" class="img-circle" alt="">
+                            @else
+                                <img src="{{ $user->profile_photo  }}" class="img-circle" alt="" style="max-width: 150px; max-height: 150px">
+                            @endif
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
                                 <a href="{{ route('logout') }}"
