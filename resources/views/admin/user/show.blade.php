@@ -244,130 +244,130 @@
                                 </div>
                                 <!-- END PORTLET -->
                                 <!-- BEGIN PORTLET -->
-                                <div class="portlet light bordered">
-                                    <div class="portlet-title">
-                                        <div class="caption">
-                                            <i class="icon-bubble font-hide hide"></i>
-                                            <span class="caption-subject font-hide bold uppercase">Destek</span>
-                                        </div>
-                                        <div class="actions">
-                                            <div class="portlet-input input-inline">
-                                                <div class="input-icon right">
-                                                    <i class="icon-magnifier"></i>
-                                                    <input type="text" class="form-control input-circle" placeholder="Ara..."></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="chat-form" style="margin-top: 0 !important;">
-                                        <div class="input-cont">
-                                            <input class="form-control" type="text" placeholder="Cevap yazın..."></div>
-                                        <div class="btn-cont">
-                                            <span class="arrow"> </span>
-                                            <a href="" class="btn blue icn-only">
-                                                <i class="fa fa-check icon-white"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="portlet-body" id="chats">
-                                        <div>
-                                            <div class="scroller" style="height: 400px; overflow-y: scroll; width: auto;" data-always-visible="1" data-rail-visible1="1" data-initialized="1">
-                                                <ul class="chats">
-                                                    <li class="in">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="out">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="in">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="out">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="in">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="out">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="in">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="out">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="in">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="out">
-                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">
-                                                        <div class="message">
-                                                            <span class="arrow"> </span>
-                                                            <a href="javascript:;" class="name"> Lisa Wong </a>
-                                                            <span class="datetime"> at 20:11 </span>
-                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+{{--                                <div class="portlet light bordered">--}}
+{{--                                    <div class="portlet-title">--}}
+{{--                                        <div class="caption">--}}
+{{--                                            <i class="icon-bubble font-hide hide"></i>--}}
+{{--                                            <span class="caption-subject font-hide bold uppercase">Destek</span>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="actions">--}}
+{{--                                            <div class="portlet-input input-inline">--}}
+{{--                                                <div class="input-icon right">--}}
+{{--                                                    <i class="icon-magnifier"></i>--}}
+{{--                                                    <input type="text" class="form-control input-circle" placeholder="Ara..."></div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="chat-form" style="margin-top: 0 !important;">--}}
+{{--                                        <div class="input-cont">--}}
+{{--                                            <input class="form-control" type="text" placeholder="Cevap yazın..."></div>--}}
+{{--                                        <div class="btn-cont">--}}
+{{--                                            <span class="arrow"> </span>--}}
+{{--                                            <a href="" class="btn blue icn-only">--}}
+{{--                                                <i class="fa fa-check icon-white"></i>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="portlet-body" id="chats">--}}
+{{--                                        <div>--}}
+{{--                                            <div class="scroller" style="height: 400px; overflow-y: scroll; width: auto;" data-always-visible="1" data-rail-visible1="1" data-initialized="1">--}}
+{{--                                                <ul class="chats">--}}
+{{--                                                    <li class="in">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="out">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="in">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="out">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="in">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="out">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="in">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="out">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="in">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                    <li class="out">--}}
+{{--                                                        <img class="avatar" alt="" src="{{ admin_asset('layouts/layout/img/avatar2.jpg') }}">--}}
+{{--                                                        <div class="message">--}}
+{{--                                                            <span class="arrow"> </span>--}}
+{{--                                                            <a href="javascript:;" class="name"> Lisa Wong </a>--}}
+{{--                                                            <span class="datetime"> at 20:11 </span>--}}
+{{--                                                            <span class="body"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>--}}
+{{--                                                        </div>--}}
+{{--                                                    </li>--}}
+{{--                                                </ul>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
 
-                                    </div>
-                                </div>
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <!-- END PORTLET -->
                             </div>
                         </div>
