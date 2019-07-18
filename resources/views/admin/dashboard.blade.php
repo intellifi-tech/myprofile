@@ -889,6 +889,7 @@
                 timeout: 10000,
                 data: {obj: 1},
                 success: function (response) {
+                    debugger
                     // Var Olan Markerlar siliniyor
                     markerGroupThirty.clearLayers();
 
