@@ -8,7 +8,7 @@
             @if(is_null($user->profile_photo))
                 <img src="{{ user_profile_image_path() . "no-profile.png"  }}" class="img-responsive" alt="">
             @else
-                <img src="{{ $user->profile_photo  }}" class="img-responsive" alt="" style="max-width: 150px; max-height: 150px">
+                <img src="{{ $user->profile_photo  }}" class="img-responsive center-cropped" alt="">
             @endif
         </div>
         <!-- END SIDEBAR USERPIC -->
