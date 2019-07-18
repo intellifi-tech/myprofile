@@ -34,9 +34,7 @@ Route::middleware('auth')->prefix('yonetim')->as('admin.')->group(function () {
     //region Dashboard Ajax Routes
     Route::post('hourlyOnlineUserCount', 'Admin\AjaxController@hourlyOnlineUserCount')->name('hourlyOnlineUserCount');
     Route::post('monthlyUserAcquisition', 'Admin\AjaxController@monthlyUserAcquisition')->name('monthlyUserAcquisition');
-
     Route::post('sectorStatistics', 'Admin\AjaxController@sectorStatistics')->name('sectorStatistics');
-
     Route::post('eventStatistics', 'Admin\AjaxController@eventStatistics')->name('eventStatistics');
     //endregion
 
