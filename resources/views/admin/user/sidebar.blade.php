@@ -5,7 +5,11 @@
 
         <!-- SIDEBAR USERPIC -->
         <div class="profile-userpic">
-            <img src="{!! $user->profile_photo !!}" class="img-responsive" alt="">
+            @if(is_null($user->profile_photo))
+            <img src="{{ upload_asset('profile/' . $user->profile_photo)  }}" class="img-responsive" alt="">
+                @else
+                <img src="{{ $user->profile_photo  }}" class="img-responsive" alt="">
+            @endif
         </div>
         <!-- END SIDEBAR USERPIC -->
         <!-- SIDEBAR USER TITLE -->
