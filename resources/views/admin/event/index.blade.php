@@ -47,40 +47,29 @@
                             </div>
                         </div>
                         <div class="portlet-body">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label class="col-md-1 control-label">Arama</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control input-inline input-medium" autocomplete="off">
-                                        <span class="help-inline"> Adı alanında arama yapar. </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
+{{--                            <div class="row">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <label class="col-md-1 control-label">Arama</label>--}}
+{{--                                    <div class="col-md-9">--}}
+{{--                                        <input type="text" class="form-control input-inline input-medium" autocomplete="off">--}}
+{{--                                        <span class="help-inline"> Adı alanında arama yapar. </span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <br>--}}
                             <div class="table-responsive" style="overflow: hidden">
                                 <table class="table table-striped table-bordered table-hover datatable">
                                     <thead>
                                         <tr>
                                             <th>Adı</th>
-                                            <th>Tarih ve Saat</th>
                                             <th>Katılımcı Sayısı</th>
-                                            <th>Durumu</th>
-                                            <th width="10%">İşlemler</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     @forelse($events as $event)
                                         <tr>
-                                            <td>{{ $event->name  }}</td>
-                                            <td>{{ $event->activity_date }}</td>
-                                            <td>20</td>
-                                            <td>
-                                                <span class="label label-success">Yakında</span>
-                                            </td>
-                                            <td>
-                                                <a href="{{ action('Admin\EventController@edit', $event->id) }}" class="btn grey"><i class="fa fa-edit fa-fw"></i>Düzenle</a>
-{{--                                                <a href="{{ action('Admin\EventController@destroy', $event->id) }}" class="btn red" onclick="return confirm('Silmek istediğiniz Emin misiniz?');"><i class="fa fa-trash fa-fw"></i> Sil</a>--}}
-                                            </td>
+                                            <td>{{ $event->title  }}</td>
+                                            <td>{{ $event->user_attended_events_count }}</td>
                                         </tr>
                                     @empty
                                         <tr>
