@@ -84,7 +84,7 @@
                                             <td>{{ $user->name .' '. $user->surname}}</td>
                                             <td>{{ $user->title ?? '-' }}</td>
                                             <td>{{ $user->userExperiences()->first()->title ?? '-' }}</td>
-                                            <td>{{ $user->company()->name }}</td>
+                                            <td>{{ $user->company()->name ?? '-' }}</td>
                                             <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                                             <td>
                                                 @if($user->status == 1)
