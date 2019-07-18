@@ -66,7 +66,6 @@
                                             <th>Meslek</th>
                                             <th>Ünvan</th>
                                             <th>Şirket</th>
-                                            <th>Telefon</th>
                                             <th>E-Posta</th>
                                             <th>Durum</th>
                                             <th width="17%">İşlemler</th>
@@ -83,11 +82,10 @@
                                                 @endif
                                             </td>
                                             <td>{{ $user->name .' '. $user->surname}}</td>
-                                            <td>Yazılım Geliştirici</td>
-                                            <td>CEO</td>
-                                            <td>Intelli Fi</td>
-                                            <td><a href="tel:555 555 55 55">555 555 55 55</a></td>
-                                            <td><a href="mailto:mesut@intellifi.tech">mesut@intellifi.tech</a></td>
+                                            <td>{{ $user->title ?? '-' }}</td>
+                                            <td>{{ $user->userExperiences()->first()->title ?? '-' }}</td>
+                                            <td>{{ $user->company()->name }}</td>
+                                            <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                                             <td>
                                                 @if($user->status == 1)
                                                     <span class="label label-success">Aktif</span>
