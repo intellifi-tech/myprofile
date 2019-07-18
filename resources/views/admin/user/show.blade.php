@@ -142,89 +142,27 @@
                                     </div>
                                     <div class="portlet-body">
                                         <div class="timeline">
+                                            @foreach($eventsAttended as $row)
                                             <!-- TIMELINE ITEM -->
                                             <div class="timeline-item">
                                                 <div class="timeline-badge">
-                                                    <img class="timeline-badge-userpic" src="{{ admin_asset('pages/media/users/avatar80_2.jpg') }}"></div>
+                                                    <img class="timeline-badge-userpic" src="{{ $row->user->profile_photo  }}"></div>
                                                 <div class="timeline-body">
                                                     <div class="timeline-body-arrow"></div>
                                                     <div class="timeline-body-head">
                                                         <div class="timeline-body-head-caption">
-                                                            <a href="javascript:;" class="timeline-body-title font-blue-madison">Lisa Strong</a>
-                                                            <span class="timeline-body-time font-grey-cascade">Replied at 17:45 PM</span>
+                                                            <a href="javascript:;" class="timeline-body-title font-blue-madison">{{ $row->event->title }}</a>
+                                                            <span class="timeline-body-time font-grey-cascade">{{ \Carbon\Carbon::parse($row->created_at)->format('d-m-Y') }}</span>
                                                         </div>
                                                     </div>
                                                     <div class="timeline-body-content">
-                                                                <span class="font-grey-cascade"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-                                                                    ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </span>
+                                                        <span class="font-grey-cascade"> {{ $row->event_description }}</span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <!-- END TIMELINE ITEM -->
-                                            <!-- TIMELINE ITEM WITH GOOGLE MAP -->
-                                            <div class="timeline-item">
-                                                <div class="timeline-badge">
-                                                    <img class="timeline-badge-userpic" src="{{ admin_asset('pages/media/users/avatar80_7.jpg') }}"></div>
-                                                <div class="timeline-body">
-                                                    <div class="timeline-body-arrow"></div>
-                                                    <div class="timeline-body-head">
-                                                        <div class="timeline-body-head-caption">
-                                                            <a href="javascript:;" class="timeline-body-title font-blue-madison">Paul Kiton</a>
-                                                            <span class="timeline-body-time font-grey-cascade">Added office location at 2:50 PM</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="timeline-body-content">
-                                                        <div id="user-map" style="height:500px; position: relative; overflow: hidden;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END TIMELINE ITEM WITH GOOGLE MAP -->
-                                            <!-- TIMELINE ITEM -->
-                                            <div class="timeline-item">
-                                                <div class="timeline-badge">
-                                                    <div class="timeline-icon">
-                                                        <i class="icon-user-following font-green-haze"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <div class="timeline-body-arrow"></div>
-                                                    <div class="timeline-body-head">
-                                                        <div class="timeline-body-head-caption">
-                                                            <span class="timeline-body-alerttitle font-red-intense">You have new follower</span>
-                                                            <span class="timeline-body-time font-grey-cascade">at 11:00 PM</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="timeline-body-content">
-                                                                <span class="font-grey-cascade"> You have new follower
-                                                                    <a href="javascript:;">Ivan Rakitic</a>
-                                                                </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END TIMELINE ITEM -->
-                                            <!-- TIMELINE ITEM -->
-                                            <div class="timeline-item">
-                                                <div class="timeline-badge">
-                                                    <div class="timeline-icon">
-                                                        <i class="icon-docs font-red-intense"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <div class="timeline-body-arrow"></div>
-                                                    <div class="timeline-body-head">
-                                                        <div class="timeline-body-head-caption">
-                                                            <span class="timeline-body-alerttitle font-green-haze">Server Report</span>
-                                                            <span class="timeline-body-time font-grey-cascade">Yesterday at 11:00 PM</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="timeline-body-content">
-                                                        <span class="font-grey-cascade"> Lorem ipsum dolore sit amet
-                                                            <a href="javascript:;">Ispect</a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- END TIMELINE ITEM -->
+                                            @endforeach
+
                                         </div>
                                     </div>
                                 </div>

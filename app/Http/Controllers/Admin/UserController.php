@@ -67,7 +67,7 @@ class UserController extends Controller
 
         $userOngoingsEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', null)->with(['event', 'user'])->get(); // Devam eden katılımlar
         $completedOngoingsEvents = UserAttendedEvent::where('user_id', $id)->where('end_date', '!=', null)->with(['event', 'user'])->get(); //Tamamlanan katılımlar
-        $eventsAttended = UserAttendedEvent::where('user_id', $id)->orderBy('created_at', 'DESC')->with(['event'])->get(); // Katıldığı etkinlikler
+        $eventsAttended = UserAttendedEvent::where('user_id', $id)->orderBy('created_at', 'DESC')->with(['event', 'user'])->get(); // Katıldığı etkinlikler
         $comments = Comment::where('user_id', $id)->with(['event'])->get(); // Kullanıcının yaptığı yorumlar
         $follow = Follow::where('from_user_id', $id)->withCount('myFollowers')->with(['myFollowers'])->first(); // Kullanıcının takipçileri
         $user = User::find($id);
