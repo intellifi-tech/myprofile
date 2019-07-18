@@ -5,7 +5,7 @@
 
         <!-- SIDEBAR USERPIC -->
         <div class="profile-userpic">
-            <img src="{{ $user->profile_photo }}" class="img-responsive" alt="">
+            <img src="{!! $user->profile_photo !!}" class="img-responsive" alt="">
         </div>
         <!-- END SIDEBAR USERPIC -->
         <!-- SIDEBAR USER TITLE -->
