@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Company;
 use App\Event;
+use App\Follow;
 use App\User;
 use App\UserAttendedEvent;
 use App\UserExperiences;
@@ -597,16 +598,16 @@ class UserController extends Controller
         }
     }
 
-    public function userExperiences(Request $request, $user_id){
+    public function myFollowers(Request $request, $user_id){
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
-                    $userExperiences = UserExperiences::where('user_id', $user_id)->with(['company'])->get();
-                    if ($userExperiences->count() > 0){
+                    $myFollowers = Follow::where('to_user_id', $user_id)->with(['myFollowers'])->get();
+                    if ($myFollowers->count() > 0){
                         $json['status'] = 200;
                         $json['message'] = "Success";
-                        $json['userExperiences'] = $userExperiences;
+                        $json['myFollowers'] = $myFollowers;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);

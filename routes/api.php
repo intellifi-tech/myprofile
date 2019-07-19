@@ -39,6 +39,7 @@ Route::post('user/likeActivity', 'Api\UserController@likeActivity'); // Kullanı
 Route::get('user/{user_id}/events','Api\UserController@idEvents');
 Route::get('user/{user_id}/gallery','Api\UserController@gallery');
 Route::get('user/{user_id}/userExperiences','Api\UserController@userExperiences');
+Route::get('user/{user_id}/myFollowers','Api\UserController@myFollowers');
 // endregion
 
 
