@@ -605,10 +605,7 @@ class UserController extends Controller
                 if ($user_id) {
                     $myFollowers = Follow::where('to_user_id', $user_id)->with(['myFollowers'])->get();
                     if ($myFollowers->count() > 0){
-                        $json['status'] = 200;
-                        $json['message'] = "Success";
-                        $json['myFollowers'] = $myFollowers;
-                        return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+                        return response()->json($myFollowers, 200, [], JSON_UNESCAPED_UNICODE);
                     }else{
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                     }
