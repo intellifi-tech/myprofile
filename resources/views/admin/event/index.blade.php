@@ -71,7 +71,7 @@
                                         <tr>
                                             <td>{{ $event->title  }}</td>
                                             <td>{{ $event->user_attended_events_count }}</td>
-                                            <td><a href="" class="btn btn-success"><i class="fa fa-users"></i>Katılımcılar</a></td>
+                                            <td><a href="{{ action('Admin\EventController@participants', $event->id) }}" class="btn btn-success"><i class="fa fa-users"></i>Katılımcılar</a></td>
                                         </tr>
                                     @empty
                                         <tr>
