@@ -43,7 +43,7 @@
                     <div class="portlet box blue">
                         <div class="portlet-title">
                             <div class="caption">
-                                <i class="fa fa-building"></i>{{ $page['title'] }}
+                                <i class="fa fa-building"></i>{{ $page['title'] }} ({{ $attendedUsers->count() }}  kişi)
                             </div>
                         </div>
                         <div class="portlet-body">
@@ -75,7 +75,7 @@
                                                     <img src="{{ $attendedUser->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                 @endif
                                             </td>
-                                            <td>{{ $attendedUser->user->name .' '. $attendedUser->user->surname }}</td>
+                                            <td><a href="{{ action('Admin\UserController@show', $attendedUser->user->id) }}">{{ $attendedUser->user->name .' '. $attendedUser->user->surname }}</a></td>
                                         </tr>
                                     @empty
                                         <tr>
