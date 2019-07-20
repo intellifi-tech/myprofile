@@ -69,7 +69,7 @@
                                     @forelse($attendedUsers as $attendedUser)
                                         <tr>
                                             <td>
-                                                @if(is_null($user->profile_photo))
+                                                @if(is_null($attendedUser->user->profile_photo))
                                                     <img src="{{ user_profile_image_path() . "no-profile.png"  }}" style="width: 50px; height: 50px" class="img-circle" />
                                                 @else
                                                     <img src="{{ $attendedUser->user->profile_photo  }}" style="width: 50px; height: 50px" class="img-circle" />
