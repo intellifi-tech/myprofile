@@ -104,7 +104,7 @@ class EventController extends Controller
     public function participants($id)
     {
         $this->page['title'] = 'Katılımcılar';
-        $attendedUsers = UserAttendedEvent::where('event_id', $id)->with(['user'])->get();
+        $attendedUsers = UserAttendedEvent::where('event_id', $id)->with(['user'])->paginate(15);
         return view('admin.event.attended-users', ['attendedUsers' => $attendedUsers, 'page' => $this->page]);
     }
 }
