@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Event;
+use App\UserAttendedEvent;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -98,5 +99,11 @@ class EventController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function participants($id)
+    {
+        $participants = UserAttendedEvent::where('event_id', $id)->with(['user'])->get();
+        dd($participants);
     }
 }

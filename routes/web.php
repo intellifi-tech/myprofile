@@ -22,6 +22,7 @@ Route::middleware('auth')->prefix('yonetim')->as('admin.')->group(function () {
     Route::resource('company', 'Admin\CompanyController');
 
     Route::resource('event', 'Admin\EventController');
+    Route::get('{id}/katilimcilar', 'Admin\EventController@participants');
 
     Route::resource('user', 'Admin\UserController');
     Route::post('getOnlineUserCoordinates', 'Admin\UserController@getOnlineUserCoordinates');
