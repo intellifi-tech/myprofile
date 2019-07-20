@@ -68,7 +68,7 @@
                                     <tbody>
                                     @forelse($attendedUsers as $attendedUser)
                                         <tr>
-                                            <td>{{ $attendedUser->user->profile_photo }}</td>
+                                            <td><img src="{{ $attendedUser->user->profile_photo }}" alt=""></td>
                                             <td>{{ $attendedUser->user->name .' '. $attendedUser->user->surname }}</td>
                                         </tr>
                                     @empty
