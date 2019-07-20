@@ -63,6 +63,7 @@
                                         <tr>
                                             <th>Adı</th>
                                             <th>Katılımcı Sayısı</th>
+                                            <th>İşlemler</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -70,6 +71,7 @@
                                         <tr>
                                             <td>{{ $event->title  }}</td>
                                             <td>{{ $event->user_attended_events_count }}</td>
+                                            <td><a href="" class="btn btn-success"><i class="fa fa-users"></i>Katılımcılar</a></td>
                                         </tr>
                                     @empty
                                         <tr>
@@ -77,6 +79,7 @@
                                         </tr>
                                     @endforelse
                                     </tbody>
+                                    {{ $events->links() }}
                                 </table>
                                 <div class="text-center">
 

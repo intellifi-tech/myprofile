@@ -22,7 +22,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::withCount(['userAttendedEvents'])->get();
+        $events = Event::withCount(['userAttendedEvents'])->paginate(15);
         return view('admin.event.index', ['page' => $this->page, 'events' => $events]);
     }
 
