@@ -61,7 +61,7 @@
                                 <table class="table table-striped table-bordered table-hover datatable">
                                     <thead>
                                         <tr>
-                                            <th>Profil Fotoğrafı</th>
+                                            <th width="50px">Fotoğraf</th>
                                             <th>Adı Soyadı</th>
                                         </tr>
                                     </thead>
