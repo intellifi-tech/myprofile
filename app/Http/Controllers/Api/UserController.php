@@ -40,42 +40,42 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $user = User::where('id', $userId)->first();
-                if (is_null($user->profile_photo)){
+                if (is_null($user->profile_photo)) {
                     $user->profile_photo = "";
                 }
-                if (is_null($user->cover_photo)){
+                if (is_null($user->cover_photo)) {
                     $user->cover_photo = "";
                 }
-                if (is_null($user->title)){
+                if (is_null($user->title)) {
                     $user->title = "";
                 }
-                if (is_null($user->career_history)){
+                if (is_null($user->career_history)) {
                     $user->career_history = "";
                 }
-                if (is_null($user->short_biography)){
+                if (is_null($user->short_biography)) {
                     $user->short_biography = "";
                 }
-                if (is_null($user->credentials)){
+                if (is_null($user->credentials)) {
                     $user->credentials = "";
                 }
-                if (is_null($user->date_of_birth)){
+                if (is_null($user->date_of_birth)) {
                     $user->date_of_birth = "";
                 }
-                if (is_null($user->company_id)){
+                if (is_null($user->company_id)) {
                     $user->company_id = "";
                 }
-                if (is_null($user->sector_id)){
+                if (is_null($user->sector_id)) {
                     $user->sector_id = "";
                 }
-                if (is_null($user->status)){
+                if (is_null($user->status)) {
                     $user->status = "";
                 }
-                if (is_null($user->package)){
+                if (is_null($user->package)) {
                     $user->package = "";
                 }
-                if (!is_null($user)){
+                if (!is_null($user)) {
                     return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
-                }else{
+                } else {
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
@@ -93,42 +93,42 @@ class UserController extends Controller
     public function update(Request $request)
     {
         $user = User::where('api_token', $request->header('api-token'))->first();
-        if ($user){
-            if ($request->profile_photo){
-                if($user->profile_photo != $request->profile_photo){
+        if ($user) {
+            if ($request->profile_photo) {
+                if ($user->profile_photo != $request->profile_photo) {
                     //region Profil Fotoğrafı Yükleme
                     $pathProfile = public_path('uploads/profile/');
                     $profileImage = $request->profile_photo;  // your base64 encoded
                     $profileImage = str_replace('data:image/png;base64,', '', $profileImage);
                     $profileImage = str_replace(' ', '+', $profileImage);
-                    $profileImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
-                    \File::put($pathProfile. '/' . $profileImageName, base64_decode($profileImage));
+                    $profileImageName = remove_turkish(lower_case_turkish($request->name . '-' . $request->surname)) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
+                    \File::put($pathProfile . '/' . $profileImageName, base64_decode($profileImage));
                     // endregion
 
                     $user->profile_photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/profile/" . $profileImageName;
                 }
             }
 
-            if ($request->cover_photo){
-                if ($user->cover_photo != $request->cover_photo){
+            if ($request->cover_photo) {
+                if ($user->cover_photo != $request->cover_photo) {
                     //region Kapak Fotoğrafı Yükleme
                     $pathCover = public_path('uploads/cover/');
                     $coverImage = $request->cover_photo;  // your base64 encoded
                     $coverImage = str_replace('data:image/png;base64,', '', $coverImage);
                     $coverImage = str_replace(' ', '+', $coverImage);
-                    $coverImageName = remove_turkish(lower_case_turkish($request->name.'-'.$request->surname)).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
-                    \File::put($pathCover. '/' . $coverImageName, base64_decode($coverImage));
+                    $coverImageName = remove_turkish(lower_case_turkish($request->name . '-' . $request->surname)) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
+                    \File::put($pathCover . '/' . $coverImageName, base64_decode($coverImage));
                     // endregion
 
                     $user->cover_photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/cover/" . $coverImageName;
                 }
             }
 
-            if (!is_null($request->company_title)){
+            if (!is_null($request->company_title)) {
                 $company = Company::where('name', $request->company_title)->first();
-                if ($company){
+                if ($company) {
                     $user->company_id = $company->id;
-                }else{
+                } else {
                     $company = new Company();
                     $company->name = $request->company_title;
                     $company->save();
@@ -143,7 +143,7 @@ class UserController extends Controller
             $user->sector_id = $request->sector_id;
             $user->name = $request->name;
             $user->surname = $request->surname;
-            if ($user->save()){
+            if ($user->save()) {
                 $json['status'] = 200;
                 $json['message'] = "Güncelleme başarılı";
                 $json['user'] = $user;
@@ -152,7 +152,7 @@ class UserController extends Controller
 
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
-        }else{
+        } else {
             $json['status'] = 204;
             $json['message'] = "api-token geçersizdir.";
 
@@ -181,7 +181,7 @@ class UserController extends Controller
             $userPrivacy->no_follow_up_request = 0;
             $userPrivacy->save();
 
-            if ($user->save()){
+            if ($user->save()) {
                 return response()->json([
                     'status' => 200,
                     'message' => 'Success',
@@ -204,7 +204,7 @@ class UserController extends Controller
                     'no_follow_up_request' => $userPrivacy->no_follow_up_request,
                 ], 200, [], JSON_UNESCAPED_UNICODE);
             }
-        }else{
+        } else {
             $json['status'] = 0;
             $json['message'] = "Adı, Soyadı, E-Mail ve Şifre zorunludur.";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
@@ -214,19 +214,19 @@ class UserController extends Controller
     public function login(Request $request)
     {
         $user = User::where('email', $request->email)->with(['company'])->first();
-        if($user->type == 1){
-            if ($request->email && $request->password){
+        if ($user->type == 1) {
+            if ($request->email && $request->password) {
                 $user = User::where([
                     ['email', $user->email],
                     ['type', 1]
                 ])->first();
-                if ($user){
+                if ($user) {
                     $check = Hash::check($request->password, $user->password);
-                    if ($check == false){
+                    if ($check == false) {
                         $json['status'] = 0;
                         $json['message'] = "Giriş başarısız. Şifre yanlış.";
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
+                    } else {
                         return response()->json([
                             'status' => 200,
                             'message' => 'Giriş yapıldı.',
@@ -247,17 +247,17 @@ class UserController extends Controller
                             'email' => $user->email,
                         ], 200, [], JSON_UNESCAPED_UNICODE);
                     }
-                }else{
+                } else {
                     $json['status'] = 0;
                     $json['message'] = "Giriş başarısız. Böyle bir kullanıcı yok.";
                     return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
                 }
-            }else{
+            } else {
                 $json['status'] = 0;
                 $json['message'] = "Kullanıcı adı ve şifre boş olamaz.";
                 return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
             }
-        }else{
+        } else {
             $json['status'] = 0;
             $json['message'] = "Kullanıcı erişim izni yok.";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
@@ -271,9 +271,9 @@ class UserController extends Controller
             if ($user) {
                 if ($request->title && $request->latitude && $request->latitude && $request->event_image) {
 
-                    if ($request->event_id != 0){
+                    if ($request->event_id != 0) {
                         $attendedEvent = UserAttendedEvent::where('user_id', $user->id)->where('event_id', $request->event_id)->first();
-                        if ($attendedEvent){
+                        if ($attendedEvent) {
                             return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                         }
                         $userAttendedEvent = new UserAttendedEvent();
@@ -286,7 +286,7 @@ class UserController extends Controller
                         $eventImage = $request->event_image;  // your base64 encoded
                         $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                         $eventImage = str_replace(' ', '+', $eventImage);
-                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
                         \File::put($path . $eventImageName, base64_decode($eventImage));
                         // endregion
 
@@ -294,7 +294,7 @@ class UserController extends Controller
                         $userAttendedEvent->date_of_participation = Carbon::now();
                         $userAttendedEvent->end_date = $request->end_date;
                         $userAttendedEvent->save();
-                    }else{
+                    } else {
                         $event = new Event();
                         $event->title = $request->title;
                         $event->latitude = $request->latitude;
@@ -311,7 +311,7 @@ class UserController extends Controller
                         $eventImage = $request->event_image;  // your base64 encoded
                         $eventImage = str_replace('data:image/png;base64,', '', $eventImage);
                         $eventImage = str_replace(' ', '+', $eventImage);
-                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))).chr(rand(65, 90)).chr(rand(65, 90)).rand(10, 99).'.'.'png';
+                        $eventImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
                         \File::put($path . $eventImageName, base64_decode($eventImage));
                         // endregion
 
@@ -428,18 +428,19 @@ class UserController extends Controller
         }
     }
 
-    public function idEvents(Request $request, $user_id){
+    public function idEvents(Request $request, $user_id)
+    {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
                     $userAttendedEvents = UserAttendedEvent::where('user_id', $user_id)->with(['event'])->get();
-                    if ($userAttendedEvents->count() > 0){
+                    if ($userAttendedEvents->count() > 0) {
                         $json['status'] = 200;
                         $json['message'] = "Success";
                         $json['userAttendedEvents'] = $userAttendedEvents;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
+                    } else {
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
@@ -466,9 +467,9 @@ class UserController extends Controller
             if ($user) {
                 $userExperiences = UserExperiences::where('user_id', $user->id)->with(['company'])->get();
 
-                if ($userExperiences->count() > 0){
+                if ($userExperiences->count() > 0) {
                     return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
-                }else{
+                } else {
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
@@ -491,11 +492,11 @@ class UserController extends Controller
 
                 $userExperiences = new UserExperiences();
 
-                if (!is_null($request->company_title)){
+                if (!is_null($request->company_title)) {
                     $company = Company::where('name', $request->company_title)->first();
-                    if ($company){
+                    if ($company) {
                         $userExperiences->company_id = $company->id;
-                    }else{
+                    } else {
                         $company = new Company();
                         $company->name = $request->company_title;
                         $company->save();
@@ -508,9 +509,9 @@ class UserController extends Controller
                 $userExperiences->start_time = $request->start_time;
                 $userExperiences->end_time = $request->end_time;
                 $userExperiences->description = $request->description;
-                if ($userExperiences->save()){
+                if ($userExperiences->save()) {
                     return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
-                }else{
+                } else {
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
@@ -550,9 +551,9 @@ class UserController extends Controller
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 $userExperiences = UserExperiences::where('user_id', $user_id)->with(['company'])->get();
-                if ($userExperiences->count() > 0){
+                if ($userExperiences->count() > 0) {
                     return response()->json($userExperiences, 200, [], JSON_UNESCAPED_UNICODE);
-                }else{
+                } else {
                     return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                 }
             } else {
@@ -567,18 +568,19 @@ class UserController extends Controller
         }
     }
 
-    public function gallery(Request $request, $user_id){
+    public function gallery(Request $request, $user_id)
+    {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
                     $userGallery = UserPhotoGallery::where('user_id', $user_id)->get();
-                    if ($userGallery->count() > 0){
+                    if ($userGallery->count() > 0) {
                         $json['status'] = 200;
                         $json['message'] = "Success";
                         $json['userGallery'] = $userGallery;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
+                    } else {
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
@@ -598,18 +600,19 @@ class UserController extends Controller
         }
     }
 
-    public function userExperiences(Request $request, $user_id){
+    public function userExperiences(Request $request, $user_id)
+    {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
                     $userExperiences = UserExperiences::where('user_id', $user_id)->with(['company'])->get();
-                    if ($userExperiences->count() > 0){
+                    if ($userExperiences->count() > 0) {
                         $json['status'] = 200;
                         $json['message'] = "Success";
                         $json['userExperiences'] = $userExperiences;
                         return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
+                    } else {
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
@@ -629,15 +632,16 @@ class UserController extends Controller
         }
     }
 
-    public function myFollowers(Request $request, $user_id){
+    public function myFollowers(Request $request, $user_id)
+    {
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
                 if ($user_id) {
                     $myFollowers = Follow::where('to_user_id', $user_id)->with(['myFollowers'])->get();
-                    if ($myFollowers->count() > 0){
+                    if ($myFollowers->count() > 0) {
                         return response()->json($myFollowers, 200, [], JSON_UNESCAPED_UNICODE);
-                    }else{
+                    } else {
                         return response()->json(null, 404, [], JSON_UNESCAPED_UNICODE);
                     }
                 } else {
@@ -653,6 +657,25 @@ class UserController extends Controller
         } else {
             $json['status'] = 0;
             $json['message'] = "Api token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function userSearch(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $user = User::where('name', 'LIKE', $request->name . '%')->get();
+                return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
