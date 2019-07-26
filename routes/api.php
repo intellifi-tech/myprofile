@@ -41,6 +41,7 @@ Route::get('user/{user_id}/gallery','Api\UserController@gallery');
 Route::get('user/{user_id}/userExperiences','Api\UserController@userExperiences');
 Route::get('user/{user_id}/myFollowers','Api\UserController@myFollowers');
 Route::get('user/userSearch','Api\UserController@userSearch');
+Route::get('user/togetherness','Api\UserController@togetherness');
 // endregion
 
 

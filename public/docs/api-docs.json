@@ -720,6 +720,32 @@
         }
       }
     },
+    "/user/togetherness": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Token gönderilen kullanıcının işbirliklerini getirir.",
+        "operationId": "togetherness",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/ShowTogetherness"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [

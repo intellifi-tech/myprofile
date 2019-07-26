@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Company;
 use App\Event;
 use App\Follow;
+use App\Togetherness;
 use App\User;
 use App\UserAttendedEvent;
 use App\UserExperiences;
@@ -668,6 +669,25 @@ class UserController extends Controller
             if ($user) {
                 $user = User::where('name', 'LIKE', $request->name . '%')->get();
                 return response()->json($user, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function togetherness(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $userTogetherness = Togetherness::where('user_id', $user->id)->with(['togethernessUsers'])->get();
+                return response()->json($userTogetherness, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "api-token geçersizdir.";
