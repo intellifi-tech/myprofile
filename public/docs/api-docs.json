@@ -1127,6 +1127,41 @@
           }
         }
       }
+    },
+    "/togetherness/addTogetherness": {
+      "post": {
+        "tags": [
+          "togetherness"
+        ],
+        "summary": "İşbirliği ekle",
+        "description": "with_whom_users değerini virgül ile ayırınız ve son elemandan sonra virgül olmasın.",
+        "operationId": "addTogetherness",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/AddTogethernessRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+                "$ref": "#/definitions/AddTogethernessResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -2595,6 +2630,49 @@
       "type": "object",
       "properties": {
         "name": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddTogethernessRequest": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "togetherness_image": {
+          "type": "string"
+        },
+        "with_whom_users": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddTogethernessResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "photo": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
           "type": "string"
         }
       },
