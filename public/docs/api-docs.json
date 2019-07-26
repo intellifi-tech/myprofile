@@ -1245,7 +1245,7 @@
           "togetherness"
         ],
         "summary": "İşbirliği günceller",
-        "operationId": "updateTogetherness",
+        "operationId": "addComment",
         "produces": [
           "application/json"
         ],
