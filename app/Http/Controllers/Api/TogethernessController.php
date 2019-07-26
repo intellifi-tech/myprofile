@@ -28,7 +28,7 @@ class TogethernessController extends Controller
                 \File::put($path . $togethernessImageName, base64_decode($togetherness_image));
                 // endregion
 
-                $togetherness->photo = $togethernessImageName;
+                $togetherness->photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/togetherness/" . $togethernessImageName;
                 $togetherness->save();
 
                 $with_whom_users = explode(',', $request->with_whom_users);
