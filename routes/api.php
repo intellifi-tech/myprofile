@@ -86,7 +86,7 @@ Route::post('togetherness/addTogetherness', 'Api\TogethernessController@addToget
 Route::get('togetherness/{togethernessId}/likeTogetherness', 'Api\TogethernessController@likeTogetherness');
 Route::get('togetherness/{togethernessId}/showTogetherness', 'Api\TogethernessController@showTogetherness');
 Route::put('togetherness/{togethernessId}/updateTogetherness', 'Api\TogethernessController@updateTogetherness');
-Route::put('togetherness/{togethernessId}/addComment', 'Api\TogethernessController@addComment');
+Route::post('togetherness/{togethernessId}/addComment', 'Api\TogethernessController@addComment');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
