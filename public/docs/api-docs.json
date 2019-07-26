@@ -683,6 +683,43 @@
         }
       }
     },
+    "/user/userSearch": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Gönderilen isme göre kullanıcı arar.",
+        "operationId": "userSearch",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/UserSearchRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/User"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [
@@ -2547,6 +2584,17 @@
       "type": "object",
       "properties": {
         "photo": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UserSearchRequest": {
+      "type": "object",
+      "properties": {
+        "name": {
           "type": "string"
         }
       },

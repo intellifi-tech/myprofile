@@ -40,7 +40,7 @@ Route::get('user/{user_id}/events','Api\UserController@idEvents');
 Route::get('user/{user_id}/gallery','Api\UserController@gallery');
 Route::get('user/{user_id}/userExperiences','Api\UserController@userExperiences');
 Route::get('user/{user_id}/myFollowers','Api\UserController@myFollowers');
-Route::post('user/userSearch','Api\UserController@userSearch');
+Route::get('user/userSearch','Api\UserController@userSearch');
 // endregion
 
 
@@ -79,6 +79,10 @@ Route::get('sector/{sector_id}/show', 'Api\SectorController@show');
 //region Kullanıcı Fotoğrafları
 Route::get('photo/{photo_id}/likePhoto', 'Api\UserPhotoGalleryController@likePhoto');
 Route::get('photo/{photo_id}/deletePhoto', 'Api\UserPhotoGalleryController@deletePhoto');
+//endregion
+
+//region Kullanıcı İşbirlikleri
+Route::get('togetherness/addTogetherness', 'Api\TogethernessController@addTogetherness');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
