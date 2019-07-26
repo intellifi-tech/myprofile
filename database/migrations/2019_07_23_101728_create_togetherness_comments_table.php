@@ -16,6 +16,7 @@ class CreateTogethernessCommentsTable extends Migration
         Schema::create('togetherness_comments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('togetherness_id');
+            $table->bigInteger('user_id');
             $table->text('comment');
             $table->timestamps();
         });

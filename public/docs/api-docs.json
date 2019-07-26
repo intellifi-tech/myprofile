@@ -1238,6 +1238,39 @@
           }
         }
       }
+    },
+    "/togetherness/{togethernessId}/addComment": {
+      "put": {
+        "tags": [
+          "togetherness"
+        ],
+        "summary": "İşbirliği günceller",
+        "operationId": "updateTogetherness",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/AddTogethernessCommentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AddTogethernessCommentResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -2811,6 +2844,43 @@
         },
         "rating": {
           "type": "integer"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddTogethernessCommentRequest": {
+      "type": "object",
+      "properties": {
+        "comment": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "AddTogethernessCommentResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "togetherness_id": {
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
         },
         "updated_at": {
           "type": "string"

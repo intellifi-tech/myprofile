@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Togetherness;
+use App\TogethernessComment;
 use App\TogethernessUser;
 use App\User;
 use Illuminate\Http\Request;
@@ -131,6 +132,31 @@ class TogethernessController extends Controller
                     $togethernessUsers->save();
                 }
                 return response()->json($togetherness, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function addComment(Request $request, $togethernessId)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+
+                $togethernessComment = new TogethernessComment();
+                $togethernessComment->togetherness_id = $togethernessId;
+                $togethernessComment->user_id = $user->id;
+                $togethernessComment->comment = $request->commtent;
+                $togethernessComment->save();
+
+                return response()->json($togethernessComment, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
                 $json['message'] = "api-token geçersizdir.";
