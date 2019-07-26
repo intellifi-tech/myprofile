@@ -1162,6 +1162,26 @@
           }
         }
       }
+    },
+    "/togetherness/{togethernessId}/likeTogetherness": {
+      "get": {
+        "tags": [
+          "togetherness"
+        ],
+        "summary": "İşbirliği beğen",
+        "operationId": "$togethernessId",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
     }
   },
   "definitions": {

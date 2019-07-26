@@ -51,4 +51,27 @@ class TogethernessController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function likeTogetherness(Request $request, $togethernessId)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+
+                $togetherness = Togetherness::find($togethernessId);
+                $togetherness->rating = $togetherness->rating + 1;
+                $togetherness->save();
+
+                return response()->json(null, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
