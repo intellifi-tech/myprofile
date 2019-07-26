@@ -1244,7 +1244,7 @@
         "tags": [
           "togetherness"
         ],
-        "summary": "İşbirliği günceller",
+        "summary": "İşbirliğine yorum yap",
         "operationId": "addComment",
         "produces": [
           "application/json"
