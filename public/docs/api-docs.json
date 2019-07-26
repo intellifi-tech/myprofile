@@ -746,6 +746,32 @@
         }
       }
     },
+    "user/{user_id}/userIdTogetherness": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "summary": "id gönderilen kullanıcının işbirliklerini getirir.",
+        "operationId": "userIdTogetherness",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/ShowTogetherness"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/event/index": {
       "get": {
         "tags": [

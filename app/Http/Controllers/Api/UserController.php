@@ -699,4 +699,23 @@ class UserController extends Controller
             return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function userIdTogetherness(Request $request, $user_id)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $userTogetherness = Togetherness::where('user_id', $user_id)->with(['togethernessUsers'])->get();
+                return response()->json($userTogetherness, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
 }
