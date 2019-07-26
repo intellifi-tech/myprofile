@@ -2742,6 +2742,9 @@
         "photo": {
           "type": "string"
         },
+        "rating": {
+          "type": "integer"
+        },
         "updated_at": {
           "type": "string"
         },
@@ -2768,6 +2771,9 @@
         "photo": {
           "type": "string"
         },
+        "rating": {
+          "type": "integer"
+        },
         "updated_at": {
           "type": "string"
         },
@@ -2776,6 +2782,9 @@
         },
         "id": {
           "type": "string"
+        },
+        "togetherness_users_count": {
+          "type": "integer"
         },
         "togetherness_users":{
           "type":"array",
@@ -2799,6 +2808,9 @@
         },
         "photo": {
           "type": "string"
+        },
+        "rating": {
+          "type": "integer"
         },
         "updated_at": {
           "type": "string"
