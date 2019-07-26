@@ -24,7 +24,7 @@ class TogethernessController extends Controller
                 $togetherness_image = $request->togetherness_image;  // your base64 encoded
                 $togetherness_image = str_replace('data:image/png;base64,', '', $togetherness_image);
                 $togetherness_image = str_replace(' ', '+', $togetherness_image);
-                $togethernessImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->title))) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
+                $togethernessImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->description))) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
                 \File::put($path . $togethernessImageName, base64_decode($togetherness_image));
                 // endregion
 
