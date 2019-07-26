@@ -82,7 +82,7 @@ Route::get('photo/{photo_id}/deletePhoto', 'Api\UserPhotoGalleryController@delet
 //endregion
 
 //region Kullanıcı İşbirlikleri
-Route::get('togetherness/addTogetherness', 'Api\TogethernessController@addTogetherness');
+Route::post('togetherness/addTogetherness', 'Api\TogethernessController@addTogetherness');
 //endregion
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
