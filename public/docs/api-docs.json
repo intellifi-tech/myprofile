@@ -1240,7 +1240,7 @@
       }
     },
     "/togetherness/{togethernessId}/addComment": {
-      "put": {
+      "post": {
         "tags": [
           "togetherness"
         ],
