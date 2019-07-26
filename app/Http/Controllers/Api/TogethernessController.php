@@ -153,7 +153,7 @@ class TogethernessController extends Controller
                 $togethernessComment = new TogethernessComment();
                 $togethernessComment->togetherness_id = $togethernessId;
                 $togethernessComment->user_id = $user->id;
-                $togethernessComment->comment = $request->commtent;
+                $togethernessComment->comment = $request->comment;
                 $togethernessComment->save();
 
                 return response()->json($togethernessComment, 200, [], JSON_UNESCAPED_UNICODE);
