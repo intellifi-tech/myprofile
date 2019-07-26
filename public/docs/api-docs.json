@@ -1205,6 +1205,39 @@
           }
         }
       }
+    },
+    "/togetherness/{togethernessId}/updateTogetherness": {
+      "put": {
+        "tags": [
+          "togetherness"
+        ],
+        "summary": "İşbirliği günceller",
+        "operationId": "updateTogetherness",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "type": "string",
+            "schema": {
+              "$ref": "#/definitions/AddTogethernessRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/UpdateTogethernessResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -2749,6 +2782,32 @@
           "items":{
             "$ref":"#/definitions/User"
           }
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "UpdateTogethernessResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "photo": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
         }
       },
       "xml": {

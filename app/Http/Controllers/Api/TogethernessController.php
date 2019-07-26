@@ -80,7 +80,56 @@ class TogethernessController extends Controller
         if ($request->header('api-token')) {
             $user = User::where('api_token', $request->header('api-token'))->first();
             if ($user) {
-                $togetherness = Togetherness::where('id', $togethernessId)->with(['togethernessUsers'])->first();
+                $togetherness = Togetherness::where('id', $togethernessId)->with(['togethernessUsers'])->withCount('togethernessUsers')->first();
+                return response()->json($togetherness, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
+    public function updateTogetherness(Request $request, $togethernessId)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+
+                $togetherness = Togetherness::find($togethernessId);
+                $togetherness->user_id = $user->id;
+                $togetherness->description = $request->description;
+
+                if ($togetherness->photo != $request->togetherness_image){
+                    unlink($togetherness->photo);
+                    //region Etkinlik Fotoğrafı Yükleme
+                    $path = public_path('uploads/togetherness/');
+                    $togetherness_image = $request->togetherness_image;  // your base64 encoded
+                    $togetherness_image = str_replace('data:image/png;base64,', '', $togetherness_image);
+                    $togetherness_image = str_replace(' ', '+', $togetherness_image);
+                    $togethernessImageName = str_replace(' ', '-', remove_turkish(lower_case_turkish($request->description))) . chr(rand(65, 90)) . chr(rand(65, 90)) . rand(10, 99) . '.' . 'png';
+                    \File::put($path . $togethernessImageName, base64_decode($togetherness_image));
+                    // endregion
+
+                    $togetherness->photo = "https://demo.intellifi.tech/demo/MyProfile/web/public/uploads/togetherness/" . $togethernessImageName;
+                }
+
+                $togetherness->save();
+
+                $with_whom_users = explode(',', $request->with_whom_users);
+
+                TogethernessUser::where('togetherness_id', $togethernessId)->delete();
+
+                foreach ($with_whom_users as $with_whom_user){
+                    $togethernessUsers = new TogethernessUser();
+                    $togethernessUsers->togetherness_id = $togetherness->id;
+                    $togethernessUsers->with_whom_user_id = $with_whom_user;
+                    $togethernessUsers->save();
+                }
                 return response()->json($togetherness, 200, [], JSON_UNESCAPED_UNICODE);
             } else {
                 $json['status'] = 0;
