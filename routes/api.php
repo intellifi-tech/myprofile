@@ -84,6 +84,7 @@ Route::get('photo/{photo_id}/deletePhoto', 'Api\UserPhotoGalleryController@delet
 //endregion
 
 //region Kullanıcı İşbirlikleri
+Route::post('togetherness/getAllTogetherness', 'Api\TogethernessController@getAllTogetherness');
 Route::post('togetherness/addTogetherness', 'Api\TogethernessController@addTogetherness');
 Route::get('togetherness/{togethernessId}/likeTogetherness', 'Api\TogethernessController@likeTogetherness');
 Route::get('togetherness/{togethernessId}/showTogetherness', 'Api\TogethernessController@showTogetherness');
