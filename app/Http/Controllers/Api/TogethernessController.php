@@ -11,6 +11,25 @@ use App\Http\Controllers\Controller;
 
 class TogethernessController extends Controller
 {
+    public function getAllTogetherness(Request $request)
+    {
+        if ($request->header('api-token')) {
+            $user = User::where('api_token', $request->header('api-token'))->first();
+            if ($user) {
+                $togetherness = Togetherness::orderBy('id', 'DESC')->with(['togethernessUsers', 'togethernessComments'])->limit(200)->get();
+                return response()->json($togetherness, 200, [], JSON_UNESCAPED_UNICODE);
+            } else {
+                $json['status'] = 0;
+                $json['message'] = "api-token geçersizdir.";
+                return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+            }
+        } else {
+            $json['status'] = 0;
+            $json['message'] = "api-token boş olamaz";
+            return response()->json($json, 200, [], JSON_UNESCAPED_UNICODE);
+        }
+    }
+
     public function addTogetherness(Request $request)
     {
         if ($request->header('api-token')) {
