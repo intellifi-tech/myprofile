@@ -1180,6 +1180,32 @@
         }
       }
     },
+    "/togetherness/getAllTogetherness": {
+      "get": {
+        "tags": [
+          "togetherness"
+        ],
+        "summary": "Tüm işbirliklerini getir",
+        "operationId": "getAllTogetherness",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type" : "array",
+              "items" : {
+                "$ref": "#/definitions/GetAllTogetherness"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
+    },
     "/togetherness/addTogetherness": {
       "post": {
         "tags": [
@@ -2844,6 +2870,47 @@
         "name": "User"
       }
     },
+    "GetAllTogetherness": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "photo": {
+          "type": "string"
+        },
+        "rating": {
+          "type": "integer"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "togetherness_users":{
+          "type":"array",
+          "items":{
+            "$ref":"#/definitions/TogethernessUser"
+          }
+        },
+        "togetherness_comments":{
+          "type":"array",
+          "items":{
+            "$ref":"#/definitions/TogethernessComment"
+          }
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
     "ShowTogetherness": {
       "type": "object",
       "properties": {
@@ -2941,6 +3008,55 @@
           "type": "string"
         },
         "id": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "TogethernessComment": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "togetherness_id": {
+          "type": "integer"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "xml": {
+        "name": "User"
+      }
+    },
+    "TogethernessUser": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "togetherness_id": {
+          "type": "integer"
+        },
+        "with_whom_user_id": {
+          "type": "integer"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
           "type": "string"
         }
       },
